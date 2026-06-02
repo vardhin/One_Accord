@@ -25,10 +25,11 @@ the glyph master deepens beyond surface glyphs. (See `../Lore/ancient-history.md
 
 ## The glyph grammar (elements × modifications)
 
-There are **~10 base glyphs**: **5 elements** and **5 modifications**. Effects are
-**emergent combinations**, not a flat list — a small symbol set generates a large
-operative space (the Witch Hat Atelier principle: a sigil sets the element, a sign
-modifies it, and a flipped/opposite sign yields the opposite effect).
+There are **~10 learnable glyphs**: **5 element sigils** and **5 modifications**.
+Effects are **emergent combinations**, not a flat list — a small symbol set
+generates a large operative space (the Witch Hat Atelier principle: a sigil sets
+the element, a sign modifies it, and a flipped/opposite sign yields the opposite
+effect).
 
 ### 5 elements (the sigil — *what* the magic is)
 
@@ -46,8 +47,13 @@ the kill line" below.)*
 
 ### 5 modifications (the sign — *how* the magic behaves)
 
-Modifications are **operators** applied to an element. The clearest pair is
-**Addition / Subtraction**, which flips polarity:
+Modifications are **operators** applied to one or more element sigils. They do
+**not** make spells by themselves: `Addition` alone is incomplete, and `Heat Flow`
+without an operator is also incomplete. Multi-sigil spells need at least one
+modifier (`Heat + Flow`, `Heat Flow +`, etc.) so the grammar says what the sigils
+are doing together.
+
+The clearest operator pair is **Addition / Subtraction**, which flips polarity:
 
 - `Heat + Addition (+)` → **fire** (add heat)
 - `Heat + Subtraction (−)` → **freezing chill** (remove heat)
@@ -63,7 +69,8 @@ The **5 operators (locked canon):**
 | **Bind** | attach / persist / ward (a lasting effect rather than a burst) |
 
 So `Flow + Focus` ≠ `Flow + Spread`; `Air + Subtraction` pulls a vacuum where
-`Air + Addition` pushes a gust. The same ~10 symbols cover dozens of effects.
+`Air + Addition` pushes a gust. The same ~10 glyphs cover hundreds of valid spell
+identities without treating modifiers-alone or repeated sigils as new spells.
 
 > **Resolved:** the 10 glyphs are a **fixed set**, and Addition / Subtraction are
 > **two distinct entries** in it. So "reversed sign = opposite" is the **fiction /
@@ -79,10 +86,11 @@ So `Flow + Focus` ≠ `Flow + Spread`; `Air + Subtraction` pulls a vacuum where
 > (`../Mechanics/kill-resolution.md`).
 >
 > These 25 single-element × single-operator effects are the **anchors** for the
-> full per-build spell tables (`spells/tier-0..4.md`, 386 builds total). Policy:
-> the **scaffold is generated**, every **effect is hand-authored manually over
-> time** (all 386, no auto-fill) — see `spells/README.md`. When authoring the
-> matching entries, reuse the names below; don't coin a second name.
+> full spell tables (`spells/tier-0..4.md`, 330 spell identities plus the bare
+> blade baseline). Policy: the **scaffold is generated**, every **effect is
+> hand-authored manually over time** (all 330 spells, no auto-fill) — see
+> `spells/README.md`. When authoring the matching entries, reuse the names below;
+> don't coin a second name.
 
 ### The class rule (why this table matters, not just flavors)
 
@@ -149,10 +157,11 @@ surface earlier; only the kill line is gated.
 
 ## Mixing elements — freely allowed, no penalty
 
-Co-inscribing any elements (e.g. `Heat +` and `Flow +` on the same blade) is
-**freely allowed** and carries **no special cost**. There is no misfire, backlash,
-Attunement penalty, **or mixing energy surcharge.** A mixed blade costs exactly the
-same as a clean blade with the same number of glyphs.
+Co-inscribing any elements in a valid statement (e.g. `Heat + Flow`, `Heat Flow +`,
+or a larger sigil mix with an operator) is **freely allowed** and carries **no
+special cost**. There is no misfire, backlash, Attunement penalty, **or mixing
+energy surcharge.** A mixed blade costs exactly the same as a clean blade with the
+same number of glyphs.
 
 This follows the **additive energy rule** (`energy-and-stamina.md`): glyph cost is
 **linear in glyph count** — N glyphs cost N× a single glyph's base, regardless of
@@ -167,7 +176,9 @@ standing costs that apply to *every* extra glyph:
 - **The strength tax** — each glyph is ~−15% base strength whether it's firing or
   not (a 4-glyph blade is ~−60%).
 
-So mixing is a creative freedom, not a trap; build size is what costs you.
+So mixing is a creative freedom, not a trap; build size is what costs you. The
+grammar cap is four slots, which means the largest mixed spell is **three element
+sigils plus one modifier**.
 
 ## Mass-gated slots (the sword core)
 

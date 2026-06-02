@@ -17,7 +17,9 @@ tags, and possibly **early experimental steam engines**.
   bellows, drainage, or mills. Not transport.
 - **No printing press yet.** The printing press is a **major milestone and a
   possible strategic future technology** (mass-copying quarantine rules,
-  severance knowledge, literacy primers).
+  severance knowledge, literacy primers). Its natural **source** is the great
+  archive of the fallen city **Digzarr** (`../Regions/Digzarr/region-digzarr.md`) —
+  recovered as a late, high-value blueprint and spread via the union system.
 
 ## Collapsed object meanings
 

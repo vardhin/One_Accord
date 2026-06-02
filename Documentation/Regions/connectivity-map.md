@@ -22,7 +22,7 @@ threshold), running roughly **west → lower-east**.
 - The **upper / across-the-water** half is the **hive side**: dense reclaimed
   forest, ruins, and hive-concentrated ground.
 - The **south-west mountain** (inside the protective range, above the human pocket)
-  holds the **Sword Sanctum**.
+  holds the **Sword Sanctum (Vaelp)**.
 - The **top-right** holds the **Silent Core**, the densest hive-mind region.
 
 The big symbolic diagonal is:
@@ -41,11 +41,11 @@ Magizhee / start / living procedure  ⇄  Rosetta / origin wound / seal mystery
 
 | Region | Tier | Map position | Role |
 |---|---:|---|---|
-| **Sword Sanctum** | mini (late-gated) | SW mountain, above the human pocket | True-sword maiden. Mini in scale; **story-gated to a late return** via right-side lore. Visible/implied early; terrain + danger block early entry. |
+| **Vaelp** (Sword Sanctum) | mini (late-gated) | SW mountain, above the human pocket | True-sword maiden. Mini in scale; **story-gated to a late return** via right-side lore. Visible/implied early; terrain + danger block early entry. |
 | **Belgond** | dense | West of Magizhee, partway up the predator-mountain Sanctum road | Vendur's raw-materials supplier (quarry/timber/hide/mushroom/game). Reached by armed caravan through the predator gauntlet; last inhabited place before the Sanctum trail. |
 | **Magizhee** | mid | Center of the human pocket | Starter settlement and tutorial root. The hub the four early directions radiate from. |
 | **Old Dock (Mauzuli)** | mid | North of Magizhee, on the water's edge | Two states: the displaced **Fishermen Camp** sub-node + the **reclaimed Dock**. The ferry is the **only** river crossing (hard gate); repairing it via the fishermen's arc opens the hive side. |
-| **Training Camp** | mid | NE of Magizhee (top-right of the pocket) | The coming-of-age / militia hardening settlement. A safe early direction. |
+| **Naerchu** (Training Camp) | mid | NE of Magizhee (top-right of the pocket) | The coming-of-age / militia hardening settlement. A safe early direction. |
 | **Vendur Militia** | (Vendur sub-node) | South of Magizhee | The militia/defence node of Vendur; the southern early route. |
 | **Vendur Hill Fort Market** | dense | Up beyond the Vendur Militia (further south) | Hillfort trade hub, first dungeon, sword homecoming, **forge basics (L1→2)**. |
 | **Teling** | dense | SE of Vendur, human-pocket side | Mastery smithing (**L3→4**: glyph-embedding, silver wards, masterwork). Smith-guild / glyph-keepers with old-hero links; the forge endgame gate. |
@@ -53,8 +53,9 @@ Magizhee / start / living procedure  ⇄  Rosetta / origin wound / seal mystery
 | **Arghanzza** | mini | Across the water, a short distance past the Old Dock landing | First post-crossing region; mangrove-like, possessed-matter threshold. **The fork point of the hive side.** |
 | **Vengarz Hold** | mid | Across the water, reached from Arghanzza via the puzzle route | Mobile wooden/tent stronghold ("camp" they call a "hold"); old hero-legion remnant and Rosetta sortie base. |
 | **Rosetta** | dense | North of Vengarz Hold | Hive arrival site; old research region; main lore source for seal, magic, and Sanctum reinterpretation. |
+| **Digzarr** | dense | Hive side, in the Vengarz → Rosetta orbit (**exact position TBD** vs. `One_Accord_Map.png`) | The **great fallen city** — where the few-thousand era lived. Vast ruin ruled by the early plague's **first-generation horrors**; the only source of recovered **old-tech** (Persian wheels, automations, crossbows, printing press), raided and fed to the union system. No settlement to unite. Vengarz run sorties into it; deep districts are endgame-grade. |
 | **Silent Core** | undecided | North of Rosetta (top-right) | Most hive-concentrated ground; final hive-mind pressure. **May not be a walkable region at all** — could dissolve into the endgame war structure (Stage 7). |
-| **Ancient Divine Labyrinth** | mini (dungeon-spoke) | Across the water, reached from Arghanzza via a **second** path (not the Vengarz route) | Channel-point of the forgotten deities; first Light-glyph knowledge. |
+| **Pathali** (Divine Labyrinth) | mini (dungeon-spoke) | Across the water, reached from Arghanzza via a **second** path (not the Vengarz route) | Channel-point of the forgotten deities; first Light-glyph knowledge. |
 | **Glyph hermit's hole** | mini (single-NPC spoke) | **SE of the hive side**, off the main spine (not Arghanzza-linked) | A strong, self-warded lone glyph-master in a dug-in "hobbit-hole"; an off-grid reward who gives a new glyph/modifier. Access route TBD. |
 | **Medicine hermit's homestead** | mini (small-household spoke) | **Human side, near Velduri** (south of Vendur, southern mountains), off the main spine | A herbalist/medicine hermit + wife + apprentice; patronized by Velduri (silver for medicine), welcomes any who make the trek. Off-grid healing reward (TBD). |
 
@@ -68,7 +69,7 @@ each gated diegetically — readable world limits, not invisible walls:
                   (husk-infested; crossing point)
                           │  ← very tough husks early
                           │
-[Belgond] ── WEST ──[Magizhee]── EAST ──[Training Camp]
+[Belgond] ── WEST ──[Magizhee]── EAST ──[Naerchu / Training Camp]
 (caravan road;          │              (safe early route)
  big cats, bears;       │
  then up to Sanctum)    │
@@ -90,7 +91,7 @@ each gated diegetically — readable world limits, not invisible walls:
   Sanctum** — so west is a **graduated climb** (caravan road → Belgond → Sanctum
   ascent), not a flat "blocked early" wall. Belgond is reachable early *with a
   caravan*; the Sanctum beyond it is not.
-- **East → Training Camp:** the safe early direction. The coming-of-age settlement.
+- **East → Naerchu (the Training Camp):** the safe early direction. The coming-of-age settlement.
 - **South → Vendur (→ Teling / Velduri):** the other safe early direction — the
   **Vendur Militia** first, then up to the **Vendur Hill Fort Market**, and beyond it
   the southern cluster forks: **SE to Teling** (mastery smithing, L3→4) and **S to
@@ -99,7 +100,7 @@ each gated diegetically — readable world limits, not invisible walls:
   mastery at Teling, the rich reserve at Velduri — all on the human-pocket side, no
   river crossing needed.
 
-So the **two safe solo early routes are East (Training Camp) and South (Vendur)**;
+So the **two safe solo early routes are East (Naerchu / Training Camp) and South (Vendur)**;
 North is self-evident danger, and **West is danger you only take with a caravan** —
 which still reaches **Belgond** early, but not the Sanctum beyond it.
 
@@ -141,14 +142,14 @@ dangerous in a different way from the left-side survival pocket.
 ```text
                                          ┌─ (puzzle route) ─▶ [Vengarz Hold] ─N─▶ [Rosetta] ─N─▶ [Silent Core]
 [Old Dock] ──ferry──▶ [Arghanzza] ──────┤
-                                         └─ (second path) ──▶ [Ancient Divine Labyrinth]
+                                         └─ (second path) ──▶ [Pathali / Divine Labyrinth]
 ```
 
 - **Puzzle route → Vengarz Hold:** a **traversal/puzzle gate** out of Arghanzza
   leads to the Vengarz human foothold. From Vengarz Hold, **north** reaches
   **Rosetta**; **north** of Rosetta reaches the **Silent Core**. This is the main
   hive-side spine.
-- **Second path → Ancient Divine Labyrinth:** a different route out of Arghanzza
+- **Second path → Pathali (the Divine Labyrinth):** a different route out of Arghanzza
   reaches the deities' sanctum (first Light-glyph knowledge). It hangs off
   **Arghanzza**, not off Rosetta.
 - **Off-spine SE:** the **glyph hermit's hole** sits in the **southeast of the hive
@@ -156,6 +157,15 @@ dangerous in a different way from the left-side survival pocket.
   Core spine. It's an exploration reward (a strong lone glyph-master in a dug-in
   hobbit-hole who gives a new glyph/modifier), reached by going *out of the way* into
   deep hive ground; exact access route TBD (`region-set.md` #12).
+- **The fallen city — Digzarr:** the **great dead metropolis** of the few-thousand era
+  sits in the **Vengarz → Rosetta orbit** on the hive side (exact position vs.
+  `One_Accord_Map.png` TBD). Unlike the spine settlements it is **not a place to unite
+  or hold** — it is the **raid target** the Vengarz already send sorties toward, where
+  the early plague's first-generation horrors still reign. You go in to extract
+  **recovered old-tech** (Persian wheels, automations, crossbows, the printing press),
+  carry the blueprints back across the water, and install them as **union upgrades**.
+  Deep Digzarr is endgame-grade; access to its depths routes through Vengarz trust and
+  maps (`region-set.md` #15, `Digzarr/region-digzarr.md`).
 
 Vengarz Hold is the human foothold before Rosetta: a mid-size mobile palisade /
 tent / wagon stronghold of old anti-hive fighters. Technically a camp; they call it
@@ -203,6 +213,14 @@ Human-pocket danger still exists:
 
 So the human pocket is not "safe." It is simply not the hive's main strategic front.
 
+Conversely, **Digzarr is where the hive has been *comfortable* the whole time** — the
+dead city it has held uncontested since the plague's early reign. It spends threads
+there cheaply and has never been *squeezed* out of it, which is why its
+**first-generation horrors are the deepest-merged on the map**
+(`../Mechanics/hivemind-threads.md`). Fighting deep into Digzarr is the strongest draw
+on the scheduler the player can make, and the clearest place the tragic loop bites:
+clearing it sharpens what remains.
+
 ## Gate types
 
 1. **Natural boundary gates.** The water, the western/southern mountains (big cats,
@@ -216,12 +234,12 @@ So the human pocket is not "safe." It is simply not the hive's main strategic fr
 
 ## Open
 
-- Exact roads inside the human pocket (Magizhee ↔ Training Camp ↔ Vendur Militia ↔
+- Exact roads inside the human pocket (Magizhee ↔ Naerchu / Training Camp ↔ Vendur Militia ↔
   Hill Fort Market ↔ Belgond) — direct, patrol corridor, or outpost chain.
 - The **Belgond caravan**: route, escort composition (militia-for-hire from the
-  Training Camp?), frequency, and what a player does to/with/against it. Whether
+  Naerchu?), frequency, and what a player does to/with/against it. Whether
   Belgond connects to Vendur directly or only via Magizhee.
-- Exact supply/support reason the Training Camp gives for sending the player to
+- Exact supply/support reason Naerchu (the Training Camp) gives for sending the player to
   Vendur.
 - Who controls/operates the Old Dock ferry, and what clearing the husks there
   requires (militia, Vendur, a ferryman, the sword?).
@@ -231,3 +249,10 @@ So the human pocket is not "safe." It is simply not the hive's main strategic fr
   player unlocks old doctrine with the sword.
 - How many playable sub-areas the mountain trail and Sword Sanctum need.
 - Whether the Silent Core is a single endgame region or a region cluster.
+- **Digzarr's exact map position** (a deeper node past Rosetta? a parallel branch off
+  the Vengarz spine? its own approach across the water?) — pin against
+  `One_Accord_Map.png`, and decide whether it shares Silent Core's top-right ground or
+  sits apart.
+- Which **recovered-tech blueprint** routes to which settlement/specialist (the
+  Digzarr → union-upgrade mapping) — coordinate with
+  `../Mechanics/village-and-union-system.md`.

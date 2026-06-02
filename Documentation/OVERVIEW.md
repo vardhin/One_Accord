@@ -1,14 +1,14 @@
 # One Accord — Design Overview
 
 > Status: the **framework** is largely settled (the spine, the subsystem designs,
-> the caps/tiers/grammars/archetypes — all indexed in `GLOSSARY.md`). The **content**
-> those frameworks hold is still largely unideated: most regions, buildings, NPCs,
-> quests, progression, spells/weapons, and the endgame. That content design is the
-> bulk of remaining ideation, tracked in build-dependency order in `IDEATION-TODO.md`
-> (Regions → Buildings & Mechanics → NPCs → Quests → Progression → Spells & Weapons →
-> Endgame), followed by the **ideation→production bridge** (engine, data formats,
-> tooling, roadmap — mostly deferred until content is far enough along). This file is
-> the entry point. Each subsystem lives in its own folder.
+> the caps/tiers/grammars/archetypes — all indexed in `GLOSSARY.md`). The **region
+> set and connectivity spine** are now catalogued, with every named region in its own
+> folder. Most individual regions are still stubs: the remaining content work is their
+> concept passes, buildings, NPCs, quests, progression, spells/weapons, and the
+> endgame. That content design is tracked in build-dependency order in
+> `IDEATION-TODO.md`, followed by the **ideation→production bridge** (engine, data
+> formats, tooling, roadmap — mostly deferred until content is far enough along). This
+> file is the entry point. Each subsystem lives in its own folder.
 
 ## One-line shape
 
@@ -30,7 +30,7 @@ The premise is **stalemate, not salvation.** The world works but **cannot grow**
 no more food, no expansion past the husk, no pushing the hive back. The player is
 not a savior; they are the **breaking point**, special only as the **first to trust
 the sword.** And the title is a choice: there are **two** soul-sword accords (the
-player's rusty one, and the true maiden who guards herself at the mountain Sword Sanctum),
+player's rusty one, and the true maiden who guards herself at Vaelp, the mountain Sword Sanctum),
 and you may keep **One Accord** — the other pursues its own path. The deeper
 metaphysics — deities as **ascended souls**, the hive as a **Sauron-like possessor**,
 glyphs as the deities' **hidden indirect channel** — live in `Lore/premise-and-the-one-accord.md`
@@ -44,12 +44,11 @@ and `Lore/the-deities-and-the-soul-economy.md`.
 - 2D RPG at roughly Stardew Valley presentation scale, but not necessarily cozy.
 - Structure is Dark Souls–like: a handful of dense authored regions (target
   **~7–8 dense + 3–4 mini**) with quieter traversal corridors between them. Not a
-  huge open world. The **lore-demanded region set** is catalogued: Magizhee (mid
-  starter/hub), Vendur (dense — the sword-girl's birthplace/trade hub), the Training
-  Camp (mid, coming-of-age settlement), Vengarz Hold (mid mobile stronghold south of
-  Rosetta), the Rosetta ruins (dense research ground-zero), the Ancient Deity Sanctum
-  (mini, first Light glyph), the mountain Sword Sanctum (true-sword maiden), and
-  Arghanzza (mini, the post-ferry threshold that forks the hive side). —
+  huge open world. The **lore-demanded region set** is catalogued, with folders for:
+  **dense** — Vendur, Belgond, Rosetta, Teling, Digzarr; **mid** — Magizhee, Mauzuli
+  (Old Dock), Naerchu (Training Camp), Vengarz Hold, Velduri; **mini** — Arghanzza,
+  Vaelp (Sword Sanctum), Pathali (Divine Labyrinth), the glyph hermit's hole, the
+  medicine hermit's homestead; **undecided** — Silent Core. —
   `Regions/region-set.md`, `Regions/world-structure.md`
 - Scale inspiration for settlements and tutorial: Fallout: New Vegas / Fallout 3
   (first settlement is Goodsprings-scale).
@@ -99,16 +98,18 @@ and `Lore/the-deities-and-the-soul-economy.md`.
   resolution (the four-tool economy: plain metal / fire / silver / soul-sword
   severance); Stillpoint; plague/seal/soft-infected model; literacy; log &
   agent-memory; village/union; forge & upgrades; relationship stats.
-- `Regions/` — world structure, Magizhee starter settlement, `Arghanzza/`,
-  `Vengarz/`, and `Vendur/`
-  (deep subfolders). Only these three regions are concluded.
+- `Regions/` — world structure, connectivity map, and the full region catalogue.
+  Every named region has a subfolder: concluded regions (`Magizhee/`, `Vendur/`,
+  `Vengarz/`, `Arghanzza/`, `Digzarr/`) plus stubs for Belgond, Teling, Rosetta,
+  Velduri, Mauzuli, Naerchu, Vaelp, Pathali, GlyphHermit, MedicineHermit, and
+  SilentCore.
 - `Npcs/` — NPC tiers, the Hivemind deep agent, the Core Five starter NPCs, core
   named roster, system NPC roles & facilities.
 - `Enemies/` — hive enemy design (husks/actives/nodes + reusable archetypes),
   Arghanzza bestiary.
 - `Glyphs/` — glyph system (elements × operators grammar, Light kill line,
   Telugu decoding), energy & stamina (the dyadic food→sword-bar economy),
-  `spells/` (the 386-build tables + `generate_spells.py` scaffold, hand-authored).
+  `spells/` (the 330-spell tables + `generate_spells.py` scaffold, hand-authored).
 - `genre-and-themes.md` — the descriptor-stack genre identity & thematic axes.
 - `vibe-lines.md` — the canonical principle/vibe lines.
 - `GLOSSARY.md` — single source of truth for named systems/vocabulary (one
@@ -130,8 +131,9 @@ clean canon pass — all locked and indexed in `GLOSSARY.md`.
 are mostly *empty containers*. Still to design, in build-dependency order
 (`IDEATION-TODO.md`):
 
-- **Regions & world structure:** only 3 of ~11 regions concluded; no connectivity
-  map yet.
+- **Regions & world structure:** the catalogue, folders, tiers, and connectivity map
+  are in place. Concluded: Magizhee, Vendur, Vengarz Hold, Arghanzza-as-pass-through,
+  and Digzarr. Most other region folders are stubs awaiting concept passes.
 - **Buildings & mechanics:** building vocabulary + which systems live where.
 - **NPCs:** only the Core Five + role-slots authored against the 40-named cap.
 - **Quests:** greenfield — no quest taxonomy or main spine yet.

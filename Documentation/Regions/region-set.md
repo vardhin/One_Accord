@@ -31,6 +31,14 @@
 > Status legend: **[concluded]** has its own doc · **[lore-demanded]** the lore requires
 > it, sketched here, not yet a full doc · **[slot]** a position the spine reserves but
 > lore doesn't yet pin.
+>
+> **Folders:** every numbered region below now has its **own subfolder** under
+> `Regions/`, holding a `region-<name>.md` — a full doc for **[concluded]** regions and
+> a **stub** (seeded from this entry) for the rest. Folder names: `Magizhee`, `Vendur`,
+> `Vengarz`, `Arghanzza`, `Digzarr`, `Belgond`, `Teling`, `Rosetta`, `Velduri`,
+> `Mauzuli` (the Old Dock), `Naerchu` (the Training Camp), `Vaelp` (the Sword Sanctum), `Pathali` (the
+> Divine Labyrinth), `GlyphHermit`, `MedicineHermit`, `SilentCore`. This catalogue stays
+> the cross-region source of truth; each stub points back here.
 
 ### 1. Magizhee — *mid* · coolest heat · **[concluded]**
 
@@ -40,10 +48,10 @@
   point by being **the first to trust it.**
 - **Quest-hook:** the local "accused of turning" crisis; the first sword bond.
 - **Map role:** the **hub** at the center of the human pocket. Four early
-  directions: **east → Training Camp** and **south → Vendur** are the safe routes;
+  directions: **east → Naerchu (the Training Camp)** and **south → Vendur** are the safe routes;
   **north → the husk-held Old Dock** (the crossing) and **west → predator-mountains**
   (toward the Sanctum) are self-evident danger early. (`connectivity-map.md`.)
-- Doc: `starter-settlement.md`.
+- Doc: `Magizhee/region-magizhee.md`.
 
 ### 2. Vendur — *dense* · low-but-volatile heat · **[concluded]**
 
@@ -101,13 +109,13 @@
   wagon-palisade stronghold, not stone or mud.
 - **Tier note:** **mid**: ~20 adult fighters, sleeping tents/dorms, training yard,
   glyph hall/map tent, glyph-smith + silver-smith wagon, cookery, armory, sortie
-  gate. Doc: `Vengarz/vengarz-camp.md`.
+  gate. Doc: `Vengarz/region-vengarz.md`.
 
-### 4. The Ancient Divine Labyrinth — *mini* (maze-dungeon) · hot · **[lore-demanded]**
+### 4. Pathali — the Ancient Divine Labyrinth — *mini* (maze-dungeon) · hot · **[lore-demanded]**
 
-> Renamed from "Ancient Deity Sanctum." It is a **maze-dungeon**, not a shrine: a
-> navigable labyrinth you solve and survive, with the **first Light-glyph as its
-> reward.**
+> Name **locked: Pathali.** (Earlier "The Ancient Divine Labyrinth"; before that
+> "Ancient Deity Sanctum.") It is a **maze-dungeon**, not a shrine: a navigable
+> labyrinth you solve and survive, with the **first Light-glyph as its reward.**
 
 - **Why it exists:** the **forgotten-but-living deities** (`../Lore/the-deities-and-the-soul-economy.md`)
   need a place their indirect hand is legible — a divine maze/archive of the ~10. It
@@ -122,7 +130,9 @@
   that does *not* lead to Vengarz Hold). It hangs off **Arghanzza**, not Rosetta.
 - **Tier note:** a **mini maze-dungeon** hung off **Arghanzza** (#6), not a settlement.
 
-### 5. The mountain Sword Sanctum — *mini* (late-gated) · low physical edge / high story weight · **[lore-demanded]**
+### 5. Vaelp — the mountain Sword Sanctum — *mini* (late-gated) · low physical edge / high story weight · **[lore-demanded]**
+
+> Name **locked: Vaelp** (the mountain sanctum).
 
 - **Why it exists:** the hero's old route to the **true Soul Sword.** Per revised canon
   (`../Lore/premise-and-the-one-accord.md`), the true sword **withdrew here and guards
@@ -155,10 +165,12 @@
 - **Map role:** a short distance across the water past the Old Dock landing,
   mangrove-like — and the **fork point of the hive side.** Two paths leave it: the
   **puzzle route → Vengarz Hold → Rosetta → Silent Core**, and a **second path →
-  the Ancient Divine Labyrinth (#4).**
+  Pathali, the Divine Labyrinth (#4).**
 - Docs: `Arghanzza/` (existing depth; **trim/reframe to pass-through** when revisited).
 
-### 7. The Training Camp (militia / coming-of-age settlement) — *mid* · cool-to-mid heat · **[lore-demanded]**
+### 7. Naerchu — the Training Camp (militia / coming-of-age settlement) — *mid* · cool-to-mid heat · **[lore-demanded]**
+
+> Name **locked: Naerchu** (labelled "the Training Camp" on the map by its function).
 
 - **Why it exists:** Vendur is a town of **traders, not soldiers** (`Vendur/vendur-detail.md`),
   and at band scale **no settlement can afford to train fighters at home** — every adult
@@ -196,8 +208,8 @@
 - **Lore role:** the human pocket's **producer end.** Food-independent (hunt +
   forage), so unlike most of the map it does **not fear hunger** — it fears losing
   **tools, wards, and bodies.** A working economic triangle locks here:
-  **Belgond (raw) ↔ Vendur (forge/silver/leather-craft) ↔ Training Camp (fighters
-  for hire).** Belgond ships raw materials; buys back **finished tools** (it has ore
+  **Belgond (raw) ↔ Vendur (forge/silver/leather-craft) ↔ Naerchu (Training Camp;
+  fighters for hire).** Belgond ships raw materials; buys back **finished tools** (it has ore
   and stone but no L2+ forge), **militia-for-hire** (it can't spare workers to
   guard), **silver/wards** (survival-critical, and worse here — see below), and
   **finished leather garments** (it collects the raw hide, Vendur does the craft).
@@ -378,29 +390,77 @@
   **deferred** (the hermit, wife, apprentice, and/or the homestead). **Concept pass
   deferred:** the reward, the cast, and the exact placement.
 
+### 15. Digzarr — the great fallen city — *dense* · deep hive-side heat · **[concluded]**
+
+> The map's answer to **"where did the thousands live?"** Every other region is
+> band-scale; the few-thousand era (`../Lore/premise-and-the-one-accord.md`,
+> `world-structure.md`) had **one true city.** Now a vast hive-side ruin: the place the
+> plague **first reigned**, and the only source of recovered **pre-collapse
+> engineering** (Persian wheels, automations, crossbows, the printing press). Name
+> fossil: **Digzarr** (provisionally *digu*, down/sunken, + an eroded *-ooru/-ur* tail
+> → "the fallen great place"; or *dikku*, quarter → "the city of many quarters").
+
+- **Why it exists:** three converging pressures. **Demographic** — nothing on the map
+  holds a city's worth of former life, yet the lore insists thousands lived; Digzarr is
+  where that becomes physical. **Horror** — the **first-generation grotesque
+  constructs** of the early plague (`../Lore/ancient-history.md`) that "nearly reigned"
+  have nowhere to *be* in the current set; a city is where the hive was most
+  *comfortable* (`../Mechanics/hivemind-threads.md`), so its **oldest, deepest-merged
+  horrors still nest there.** **Technology** — the world has a forge axis
+  (Vendur→Teling) and a glyph axis (deity-lent), but **no source for mundane secular
+  engineering**; Digzarr is that third axis.
+- **Lore role:** the **dead metropolis** — where most of humanity once lived and was
+  eaten. Pure hive ground, no living faction. The inverted Vendur: the largest society,
+  frozen by *death* (the hive won this square a decade ago) rather than by sufficiency.
+  Rosetta is where the world *ended*; Digzarr is where it *lived, then was eaten.* The
+  sword may remember it as a living city — her counterpart to Vendur's homecoming, but
+  colder (the horrors here are what the plague did to the people she lived among).
+- **The old-tech axis (its mechanical reason):** the **source of recovered engineering
+  manuscripts/blueprints.** Delivery is the **union loop**
+  (`../Mechanics/village-and-union-system.md`): recover a blueprint in Digzarr → carry
+  it to the right specialist in a living settlement → they learn it → it becomes a
+  buildable **village/town upgrade** (Persian wheels for irrigation, clockwork
+  automations for gates/bells, crossbows for militia, the **printing press** as a late
+  strategic milestone — `../Lore/setting-and-tech-level.md`). Source region + union
+  delivery; returnable and dense by activity.
+- **Quest-hook:** the **Vengarz** run recovery sorties toward it (they already do toward
+  Rosetta; the city is the richer, deadlier prize and a place they've **lost people**).
+  Access to deep Digzarr routes through Vengarz trust and maps. Staged, repeatable
+  extraction raids that go deeper as the player strengthens.
+- **Map role:** across the water on the **hive side**, in the orbit of the
+  research/horror ground (Vengarz → Rosetta → Silent Core spine), not the human pocket.
+  Exact position pinned in `connectivity-map.md`. Deep Digzarr is endgame-grade.
+- **Tier note:** **dense** — large, returnable, multi-quest, high activity; dense
+  because the **city** is dense (like Rosetta), not because people live there. **The
+  region you cannot hold:** it has no settlement to unite — it *supplies* the upgrades
+  the player installs elsewhere. Doc: `Digzarr/region-digzarr.md` (full design).
+
 ### 14. Reserved slots — **[slot]**
 
-- Remaining **dense** to hit the target (~2–3 more). Current fill: **Vendur, Belgond,
-  Rosetta, Teling** dense; **Magizhee, Old Dock, Training Camp, Vengarz Hold, Velduri**
-  mid; **Arghanzza, Sword Sanctum, Ancient Divine Labyrinth, glyph hermit's hole,
-  medicine hermit's homestead** mini (5 — past the 3–4 target, which was soft); **Silent
-  Core** undecided. Lore doesn't pin the rest yet; the spine reserves their positions
-  (`connectivity-map.md`). Author each **only when a reason appears.** Candidate
-  pressures still open: a region owning a **traversal mechanic**; the **endgame
-  hive-convergence region** (Stage 7). *(Resolved pressures: "second living hub" → #7
-  Training Camp; "where Vendur's trade comes from" → #8 Belgond; "who masters the
-  forge" → #10 Teling; "where the pure silver / elite soldiers are" → #11 Velduri;
-  "off-grid glyph reward" → #12; "off-grid medicine reward" → #13.)*
+- Remaining **dense** to hit the target (~1–2 more). Current fill: **Vendur, Belgond,
+  Rosetta, Teling, Digzarr** dense; **Magizhee, Mauzuli (Old Dock), Naerchu (Training
+  Camp), Vengarz Hold, Velduri** mid; **Arghanzza, Vaelp (Sword Sanctum), Pathali
+  (Divine Labyrinth), glyph hermit's hole, medicine hermit's homestead** mini (5 — past
+  the 3–4 target, which was soft);
+  **Silent Core** undecided. Lore doesn't pin the rest yet; the spine reserves their
+  positions (`connectivity-map.md`). Author each **only when a reason appears.**
+  Candidate pressures still open: a region owning a **traversal mechanic**; the
+  **endgame hive-convergence region** (Stage 7); the union system's **physical home /
+  redoubt** (`../Mechanics/village-and-union-system.md`). *(Resolved pressures: "second
+  living hub" → #7 Naerchu (Training Camp); "where Vendur's trade comes from" → #8 Belgond; "who
+  masters the forge" → #10 Teling; "where the pure silver / elite soldiers are" → #11
+  Velduri; "off-grid glyph reward" → #12; "off-grid medicine reward" → #13; "where the
+  thousands lived / source of old-tech" → #15 Digzarr.)*
 
 ---
 
 ## How the set serves the Fallout-style spine
 
-- **Main route shape:** Magizhee (hub) opens into an early choice — **east → Training
-  Camp** or **south → Vendur** — that converges at Vendur; ferries across from the
+- **Main route shape:** Magizhee (hub) opens into an early choice — **east → Naerchu
+  (the Training Camp)** or **south → Vendur** — that converges at Vendur; ferries across from the
   husk-held Old Dock into **Arghanzza**, which **forks**: the puzzle route to
   **Vengarz Hold → Rosetta** (seal/magic/Sanctum lore) **→ Silent Core/endgame**, or
-  a second path to the **Ancient Divine Labyrinth**. From Rosetta's lore the player can
+  a second path to **Pathali (the Divine Labyrinth)**. From Rosetta's lore the player can
   bend back toward the **Sword Sanctum** revelation (west, up the mountain).
 - **The western branch is now populated.** West of Magizhee was "blocked early,
   predators"; **Belgond** (#8) sits partway up that road as Vendur's raw-materials
@@ -413,11 +473,17 @@
 - **No virgin discovery:** every site is post-history and inhabited, which keeps the
   **stalemate tone** — you are walking a world that already happened, looking for what it
   forgot.
+- **The hive side carries a dense hub of its own.** **Digzarr** (#15), the great fallen
+  city, is the across-the-water counterpart to Vendur's human-side density — dense
+  because the *city* is dense, not because anyone lives there. It is the **source of
+  recovered old-tech** (the third axis beside forge and glyphs), feeding the union
+  system rather than being a settlement to unite, and home to the oldest
+  first-generation horrors of the early plague.
 
 ## Open
 
-- The **second living hub** for the union system — **largely resolved:** the
-  **Training Camp** (#7) is the strong candidate (Magizhee + Vendur + Training Camp).
+- The **second living hub** for the union system — **largely resolved:** **Naerchu**
+  (the Training Camp, #7) is the strong candidate (Magizhee + Vendur + Naerchu).
   Open only on whether the union theme *also* wants a further settlement.
 - Whether the **mountain Sword Sanctum** is one region or a multi-stage ascent (multiple trails =
   multiple sub-areas?).

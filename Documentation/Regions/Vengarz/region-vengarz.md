@@ -70,7 +70,7 @@ Route cluster (Arghanzza forks; the Sanctum hangs off the **other** branch):
 
 ```text
 [Arghanzza] ──puzzle──> [Vengarz Hold] ──N──> [Rosetta Ruins] ──N──> [Silent Core]
-     └──────────── second path ──────────> [Ancient Divine Labyrinth]
+     └──────────── second path ──────────> [Pathali / Divine Labyrinth]
 ```
 
 The structure mirrors the useful design function of Fallout 1's Brotherhood /

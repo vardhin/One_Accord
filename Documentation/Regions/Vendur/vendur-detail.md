@@ -210,7 +210,7 @@ upgraded past Magizhee's bare starter versions:
 - **The trade hub at the center of a network** (`../region-set.md`): Vendur is "the
   silver place" because the map's silver **circulates through it** (~80%, worked into
   tools, ward-lines, coins — not a vault). Its trade lines reach **Belgond** (raw
-  materials in, finished goods out), the **Training Camp** (youth out, fighters back),
+  materials in, finished goods out), **Naerchu** (the Training Camp — youth out, fighters back),
   **Teling** (masterwork smithing it can't do), and **Velduri** (the rich silver-elite
   enclave it trades with only rarely). Vendur makes the whole trade web legible.
 - **Two coupled nodes, one identity:** the upper hillfort (cooler, holds the value) and

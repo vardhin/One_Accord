@@ -1,7 +1,7 @@
 # Starter Settlement NPCs (The Core Five)
 
 > The first settlement is Goodsprings-scale with ~5 core NPCs. Each teaches a
-> slice of the whole game. See `../Regions/starter-settlement.md` for the place.
+> slice of the whole game. See `../Regions/Magizhee/region-magizhee.md` for the place.
 
 ## The five roles
 

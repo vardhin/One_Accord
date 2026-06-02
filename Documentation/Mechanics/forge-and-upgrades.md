@@ -59,7 +59,7 @@ The forge chain is **gated by place**, not just by improving one bench
 (`../Regions/`):
 
 - **Magizhee (L0→1)** — the starter limit: cold bench → working hearth (the
-  grindstone → sharpening chain only). (`../Regions/starter-settlement.md`.)
+  grindstone → sharpening chain only). (`../Regions/Magizhee/region-magizhee.md`.)
 - **Vendur (L1→2)** — the **basics**: a working forge for repair, sharpening, plain
   blades, tempering, simple housings. Vendur is "the silver place," not the master
   smith. (`../Regions/Vendur/vendur-detail.md`.)
@@ -97,7 +97,7 @@ cold-needle, corpse-burner ash-axe. (See `../Glyphs/glyph-system.md`.)
 
 The first settlement should **NOT** unlock full upgrades — only **basic
 maintenance**, especially the **grindstone → sharpening** chain. (See
-`../Regions/starter-settlement.md`.)
+`../Regions/Magizhee/region-magizhee.md`.)
 
 ## Every activity needs an area AND an NPC
 

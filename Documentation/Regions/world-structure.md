@@ -33,8 +33,14 @@ below).
 > - **Velduri** — *mid.* The wealthy self-exiled silver-elite enclave (pure ~20%
 >   silver reserve; endgame alliance = elite soldiers + pure-silver supply). Position
 >   and concept pass deferred.
+> - **Digzarr** — *dense.* The **great fallen city** on the hive side — where most of
+>   humanity once lived. A vast ruin where the early plague's **first-generation
+>   horrors still reign**; the only source of recovered **pre-collapse engineering**
+>   (Persian wheels, automations, crossbows, the printing press), fed to the map via
+>   the union system. No living settlement — the region you raid, not unite. Concluded
+>   (`Digzarr/region-digzarr.md`); exact map position deferred.
 > - **Magizhee** — *mid.* Goodsprings-scale first settlement; the **hub** at the
->   center of the human pocket (Old Dock north, Training Camp east, Vendur south,
+>   center of the human pocket (Old Dock north, Naerchu east, Vendur south,
 >   Belgond/mountains west).
 > - **Arghanzza** — *mini.* A small village (deeply-developed in its own right,
 >   but mini in scale).
@@ -52,14 +58,14 @@ running roughly **west → lower-east**. The water divides the **lower-left huma
 pocket** from the **upper / across-the-water hive ground**.
 
 - **Western / southern edges:** huge mountain ranges. Husks do not arrive from
-  these edges. The **SW mountain above the pocket** holds the **Sword Sanctum**.
+  these edges. The **SW mountain above the pocket** holds the **Sword Sanctum (Vaelp)**.
   The **western predator road** (big cats, bears) is no longer a flat wall: **Belgond**,
   the raw-materials supplier town, sits partway up it (reached by armed caravan), and
   it is the last inhabited place before the Sanctum trail.
 - **Magizhee:** the **hub** at the center of the human pocket. Four early directions
   radiate from it: **north** to the husk-held Old Dock (the crossing), **west** into
   predator-mountains (caravan route to **Belgond**, then up toward the Sanctum), **east**
-  to the Training Camp, **south** to Vendur. East and south are the safe early routes;
+  to Naerchu (the Training Camp), **south** to Vendur. East and south are the safe early routes;
   west is braved by armed caravan, not solo.
 - **Belgond:** west of Magizhee, partway up the predator-mountain Sanctum road. The
   human pocket's **raw-materials supplier** — a dense but *scattered* extraction town
@@ -82,8 +88,8 @@ pocket** from the **upper / across-the-water hive ground**.
   **silver-elite** — old-order remnants holding the map's only **pure silver reserve**
   (~20%; Vendur's ~80% is all in circulation). A rare Vendur client; their endgame
   alliance yields elite soldiers + pure-silver weapon supply.
-- **Training Camp:** NE of Magizhee. The coming-of-age / militia hardening
-  settlement; safe early direction.
+- **Naerchu (the Training Camp):** NE of Magizhee. The coming-of-age / militia
+  hardening settlement; safe early direction.
 - **Vendur:** south of Magizhee — the **Vendur Militia** node first, then up to the
   **Vendur Hill Fort Market** beyond it. The defended hillfort trade hub. From
   Vendur the mountain trail toward the Sanctum becomes visible but stops an early
@@ -92,13 +98,20 @@ pocket** from the **upper / across-the-water hive ground**.
 - **Arghanzza:** a short distance across the water past the landing — a mangrove-like
   possessed-matter threshold, and **the fork point of the hive side.**
 - **Two paths leave Arghanzza:** a **puzzle route → Vengarz Hold → (north) Rosetta →
-  (north) Silent Core**, and a **second path → Ancient Divine Labyrinth**.
+  (north) Silent Core**, and a **second path → Pathali (the Divine Labyrinth)**.
 - **Vengarz Hold:** the human foothold before Rosetta. A mid-size mobile
   wooden/tent/wagon palisade held by remnants of an old anti-hive force from the
   hero's legion. Technically a camp; they call it a **Hold.**
 - **Rosetta:** north of Vengarz Hold. A dense old research region and the hive's
   strategic focus because it arrived from here and wants a way to remove the old
   hero's seal.
+- **Digzarr:** the **great fallen city** on the hive side, in the orbit of the
+  research/horror ground (Vengarz → Rosetta spine; exact position deferred). The one
+  true city the few-thousand era had — now a vast ruin where the early plague's
+  **first-generation horrors still reign.** Pure hive ground, no living faction: the
+  region you **raid for recovered engineering** (Persian wheels, automations,
+  crossbows, the printing press), carry the blueprints back, and install as **union
+  upgrades** in living towns. Dense by activity; deep districts are endgame-grade.
 - **Silent Core:** north of Rosetta (top-right), the most hive-mind-concentrated
   region.
 - **The glyph hermit's hole:** **SE of the hive side**, off the main spine (not
@@ -177,38 +190,66 @@ stillness** — not desperate scrambling.
 
 ## Files in this folder
 
-- `starter-settlement.md` — **Magizhee**, the Goodsprings-scale first settlement
-  (**mid**).
-- `Arghanzza/` — the deeply-developed forest village (**mini**); its own subfolder.
-- `Vengarz/` — the mobile stronghold near Rosetta (**mid**); its own subfolder.
-- `Vendur/` — the sword-girl's birthplace estate, now a trade hub (**dense**);
-  its own subfolder.
+**Every catalogued region has its own subfolder** (`region-set.md` numbering), each
+holding at least a `region-<name>.md` doc — fully authored for concluded regions, a
+**stub** seeded from the catalogue for the rest. Index docs stay at the root.
+
+**Region folders** (tier · status):
+
+- `Magizhee/` — *mid* · concluded. The Goodsprings-scale first settlement and hub.
+- `Vendur/` — *dense* · concluded. The sword-girl's birthplace estate, now a trade hub
+  (the baseline fully-authored region).
+- `Vengarz/` — *mid* · concluded. The mobile stronghold ("Hold") near Rosetta.
+- `Arghanzza/` — *mini* · concluded (demoted to pass-through). The corpse-burner pass.
+- `Digzarr/` — *dense* · concluded. The great fallen city on the hive side; old-tech
+  source and first-horror ground.
+- `Belgond/` — *dense* · stub. Vendur's raw-materials supplier on the predator road.
+- `Teling/` — *dense* · stub. The mastery-smithing guild (forge L3→4) SE of Vendur.
+- `Rosetta/` — *dense* · stub. The old research region where the world ended.
+- `Velduri/` — *mid* · stub. The self-exiled silver-elite enclave.
+- `Mauzuli/` — *mid* · stub. The Old Dock — fishermen camp + the hard river-crossing gate.
+- `Naerchu/` — *mid* · stub. The Training Camp — coming-of-age / militia hardening settlement.
+- `Vaelp/` — *mini (late-gated)* · stub. The mountain Sword Sanctum of the true maiden.
+- `Pathali/` — *mini (maze-dungeon)* · stub. The Divine Labyrinth; first Light-glyph.
+- `GlyphHermit/` — *mini (single-NPC spoke)* · stub. The dug-in lone glyph-master.
+- `MedicineHermit/` — *mini (small-household spoke)* · stub. The off-grid herbalist near Velduri.
+- `SilentCore/` — *undecided* · stub. The densest hive-mind ground (may dissolve into endgame).
+
+**Index docs (root):**
+
 - `connectivity-map.md` — the square-map adjacency graph, corridor/gate model,
   river threshold, Arghanzza fork, and current route shape.
 - `One_Accord_Map.png` — the drawn world map; the **visual source of truth** for
   geography.
 - `region-set.md` — the **lore-demanded** catalogue: every region the story requires
-  (Vendur, Belgond, Teling, Velduri, the Rosetta ruins, the Ancient Divine Labyrinth,
-  the mountain Sword Sanctum, Old Dock/Mauzuli, Arghanzza-as-pass-through) with tier,
-  heat, and quest-hook.
+  (Vendur, Belgond, Teling, Velduri, Digzarr, the Rosetta ruins, Pathali / the Divine
+  Labyrinth, Vaelp / the mountain Sword Sanctum, Old Dock/Mauzuli, Arghanzza-as-pass-through)
+  with tier, heat, and quest-hook.
+- `world-structure.md` — this doc: tiers, scale, the square-map skeleton, and the
+  post-famine demographics.
 
 ## Status — current tiering
 
 | Tier | Regions | Of target |
 | --- | --- | --- |
-| **Dense** | Vendur · Belgond · Rosetta · Teling | 4 of ~7–8 |
-| **Mid** | Old Dock (Mauzuli) · Training Camp · Vengarz Hold · Velduri (Magizhee also mid) | — |
-| **Mini** | Arghanzza · Sword Sanctum *(late-gated)* · Ancient Divine Labyrinth · Glyph hermit's hole · Medicine hermit's homestead | 5 *(soft target was 3–4)* |
+| **Dense** | Vendur · Belgond · Rosetta · Teling · Digzarr | 5 of ~7–8 |
+| **Mid** | Mauzuli (Old Dock) · Naerchu (Training Camp) · Vengarz Hold · Velduri (Magizhee also mid) | — |
+| **Mini** | Arghanzza · Vaelp (Sword Sanctum) *(late-gated)* · Pathali (Divine Labyrinth) · Glyph hermit's hole · Medicine hermit's homestead | 5 *(soft target was 3–4)* |
 | **Undecided** | Silent Core *(may dissolve into the endgame war, not a walkable region)* | — |
 
 Notes: **Teling** is the dense mastery-smithing hub (forge L3→4) SE of Vendur;
 **Velduri** is the mid silver-elite enclave (pure-silver reserve + endgame alliance);
+**Digzarr** is the dense **great fallen city** on the hive side — the lost metropolis
+where the few-thousand era lived, now ruled by the early plague's **first-generation
+horrors**, and the **source of recovered old-tech** (Persian wheels, automations,
+crossbows, printing press) that feeds the union system (no settlement to unite — you
+raid it, then install its blueprints elsewhere);
 the **glyph hermit's hole** is a mini single-NPC spoke (SE hive-side, off-spine) that
 gives a new glyph/modifier; the **medicine hermit's homestead** is a mini
 small-household spoke (human side, near Velduri) for off-grid healing;
-**Old Dock (Mauzuli)** is mid (a displaced fishermen camp + the hard river-crossing
-gate, not just a chokepoint); the **Sword Sanctum** is mini in scale but still
-**story-gated to a late return**; the **Ancient Divine Labyrinth** (renamed from
+**Mauzuli** (the Old Dock) is mid (a displaced fishermen camp + the hard river-crossing
+gate, not just a chokepoint); **Vaelp** (the Sword Sanctum) is mini in scale but still
+**story-gated to a late return**; **Pathali** (the Divine Labyrinth, renamed from
 "Ancient Deity Sanctum") is a mini **maze-dungeon** holding the first Light-glyph.
-Dense still needs **~2–3 more**; mini is near target. Further regions get named
+Dense still needs **~1–2 more**; mini is near target. Further regions get named
 concretely when there's a reason, not as abstract skeleton.

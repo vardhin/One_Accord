@@ -59,5 +59,13 @@ Village conflicts give the system drama:
   spread (see `../Npcs/hivemind-agent.md`).
 - An evolving **union camp / redoubt** (concept, not a designed region yet) could
   be the physical embodiment of accumulated union choices.
+- **Recovered old-tech** is a major class of union upgrade, and its **source** is the
+  fallen city **Digzarr** (`../Regions/Digzarr/region-digzarr.md`): the player raids the
+  ruin for engineering manuscripts/blueprints (Persian wheels, clockwork automations,
+  crossbows, the **printing press** — `../Lore/setting-and-tech-level.md`), carries the
+  right blueprint to the right specialist in a living settlement, who **learns it**, and
+  it becomes a buildable village/town upgrade. Digzarr is the source; this system is the
+  delivery. (Maintenance/operation knowledge is the rare thing, so a blueprint is a
+  quest to the right person, not an instant unlock.)
 - Endgame win condition routes through union + protocols + severance (see
   `plague-and-infection.md`).

@@ -13,7 +13,7 @@ One settlement, the Core Five NPCs, one local crisis, one acquisition of the swo
 No second region, no union-building across settlements, no endgame.
 
 This is the slice the docs already converge on
-(`../Player/opening-and-tutorial.md`, `../Regions/starter-settlement.md`,
+(`../Player/opening-and-tutorial.md`, `../Regions/Magizhee/region-magizhee.md`,
 `../Npcs/starter-npcs.md`).
 
 ## What's IN v0
@@ -48,7 +48,7 @@ This is the slice the docs already converge on
 - Second/third regions (Arghanzza, Vendur) and all traversal between regions.
 - **Village/union mobilization across settlements** — the slice has one settlement;
   the Quartermaster only *seeds* the loop.
-- **Glyphs & the 386-spell tables** — no spellcasting in v0. (The Light kill line,
+- **Glyphs & the 330-spell tables** — no spellcasting in v0. (The Light kill line,
   glyph grammar, Telugu decoding all wait.)
 - **Soul duels / phase-2 boss / merged husk-commanders** — the hive thread
   scheduler does not visibly escalate in one settlement.
@@ -115,7 +115,7 @@ writes phrasing. The deterministic shell is what makes a small model safe to use
 
 ## Related
 
-- `../Player/opening-and-tutorial.md`, `../Regions/starter-settlement.md`,
+- `../Player/opening-and-tutorial.md`, `../Regions/Magizhee/region-magizhee.md`,
   `../Npcs/starter-npcs.md` — the slice content.
 - `../Sword/dialogue-system.md` — the pipeline this implements.
 - `../Mechanics/log-and-agent-memory.md` — the memory backbone (model name now LFM2).

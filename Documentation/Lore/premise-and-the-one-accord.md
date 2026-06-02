@@ -120,11 +120,12 @@ choice live, not cosmetic:
   explored, looted, and inhabited** — you are not the first explorer (see the region
   list, `../Regions/region-set.md`): the Rosetta-stone ruins (where the cleric freed the
   hive) as a dense abandoned research region; **Vengarz Hold**, the mobile stronghold
-  of an old hero-legion remnant that still runs Rosetta sorties; an **Ancient Deity
-  Sanctum** holding the **first Light-glyph knowledge**; the **mountain Sword
-  Sanctum** with its waiting maiden; **Arghanzza** as the first transition across the
-  water.
-- Current map logic: **Magizhee** is the hub — east to the Training Camp or south to
+  of an old hero-legion remnant that still runs Rosetta sorties; **Digzarr**, the
+  great fallen city whose recovered old-tech feeds the union system; **Pathali**, the
+  Divine Labyrinth holding the **first Light-glyph knowledge**; **Vaelp**, the
+  mountain Sword Sanctum with its waiting maiden; **Arghanzza** as the first transition
+  across the water.
+- Current map logic: **Magizhee** is the hub — east to Naerchu (the Training Camp) or south to
   Vendur are the safe early routes. Vendur opens the first dungeon and reveals the
   blocked mountain trail. The ferry from the husk-held Old Dock opens the hive side;
   Arghanzza forks, the Vengarz routes the player into Rosetta, and Rosetta supplies

@@ -1,25 +1,42 @@
 #!/usr/bin/env python3
 """Generate the spell scaffold for One Accord's glyph grammar.
 
-A glyph is ONE of the 10 base symbols (5 elements + 5 modifiers). A blade has up to
-four slots (mass-gated), and any slot may also be left EMPTY — an under-loaded blade
-is a real build. A spell's *identity* is the **set of distinct real symbols** in it,
-sized 0..4; remaining slots are empty.
+A blade has up to four glyph slots (mass-gated). The 10 learnable glyphs split
+into two roles:
 
-Repeats are allowed in play (two Heats = a hotter Heat) but do NOT make a new spell —
-duplicates only shift the stat balance, so they are not separate scaffold entries.
+* 5 element sigils: the thing magic is made from.
+* 5 modifiers: operators that shape element sigils.
 
-So the scaffold is every subset of the 10 symbols of size 0..4:
-    C(10,0) + C(10,1) + C(10,2) + C(10,3) + C(10,4)
-    =   1   +   10    +   45    +   120   +   210   = 386 builds.
+Modifiers do NOT make spells by themselves. Repeating the same element sigil also
+does NOT make a new spell; duplicates only shift stat balance/tuning. Multi-sigil
+spells need at least one modifier, because "Heat Flow" is not a complete magical
+statement while "Heat + Flow" or "Heat Flow +" is.
+
+Valid spell identities therefore have:
+
+* at least one distinct element sigil;
+* no standalone modifiers;
+* no repeated-symbol variants;
+* at least one modifier whenever there is more than one element sigil;
+* at most four total slots, which means the largest element mix is 3 sigils
+  plus 1 modifier.
+
+The spell scaffold is:
+    tier 1:  C(5,1)                                      =   5 spells
+    tier 2:  C(5,1)C(5,1)                                =  25 spells
+    tier 3:  C(5,1)C(5,2) + C(5,2)C(5,1)                 = 100 spells
+    tier 4:  C(5,1)C(5,3) + C(5,2)C(5,2) + C(5,3)C(5,1) = 200 spells
+                                                            330 spells total
+
+Tier 0 is kept as a single bare-blade baseline entry, but it is not a spell.
 
 This script writes one markdown file PER TIER into the `spells/` subfolder:
 
-    spells/tier-0.md   the bare blade (no glyphs)            1 build
-    spells/tier-1.md   one-glyph builds                     10 builds
-    spells/tier-2.md   two-glyph builds                     45 builds
-    spells/tier-3.md   three-glyph builds                  120 builds
-    spells/tier-4.md   full four-glyph blades              210 builds
+    spells/tier-0.md   the bare blade (not a spell)          1 baseline
+    spells/tier-1.md   one-slot spells                       5 spells
+    spells/tier-2.md   two-slot spells                      25 spells
+    spells/tier-3.md   three-slot spells                   100 spells
+    spells/tier-4.md   full four-slot spells               200 spells
 
 Each section is one build (empties shown explicitly) with blank fields
 (Effect / Class / Energy / Notes) to fill in over time. Splitting by tier keeps
@@ -33,13 +50,12 @@ IMPORTANT — do not blindly overwrite hand-written effects:
 """
 
 import argparse
-from itertools import combinations
+from itertools import combinations, product
 from pathlib import Path
 
-# The 10 base symbols. Order here only affects display/numbering, not the math.
+# The 10 learnable glyphs. Order here only affects display/numbering, not the math.
 ELEMENTS = ["Heat", "Flow", "Air", "Earth", "Light"]
 MODIFIERS = ["Addition", "Subtraction", "Spread", "Focus", "Bind"]
-SYMBOLS = ELEMENTS + MODIFIERS  # 10 total
 
 SLOTS = 4  # max glyphs held at once (mass-gated; see glyph-system.md)
 EMPTY = "(empty)"  # an unfilled slot — under-loaded blades are real builds
@@ -57,7 +73,7 @@ _TENS = [
 
 
 def number_to_words(n: int) -> str:
-    """Spell an integer 0..999 in words (enough for 210)."""
+    """Spell an integer 0..999 in words (enough for all tier counts)."""
     if n < 20:
         return _ONES[n]
     if n < 100:
@@ -68,41 +84,70 @@ def number_to_words(n: int) -> str:
     return head if rest == 0 else f"{head} {number_to_words(rest)}"
 
 
-def kind(symbol: str) -> str:
-    return "element" if symbol in ELEMENTS else "modifier"
-
-
 TIER_TITLES = {
-    0: "Tier 0 — Bare Blade (no glyphs)",
-    1: "Tier 1 — One-Glyph Builds",
-    2: "Tier 2 — Two-Glyph Builds",
-    3: "Tier 3 — Three-Glyph Builds",
-    4: "Tier 4 — Four-Glyph Builds (full blade)",
+    0: "Tier 0 — Bare Blade (not a spell)",
+    1: "Tier 1 — One-Slot Spells",
+    2: "Tier 2 — Two-Slot Spells",
+    3: "Tier 3 — Three-Slot Spells",
+    4: "Tier 4 — Four-Slot Spells (full blade)",
 }
 
 
+def valid_spell_builds(tier: int) -> list[tuple[tuple[str, ...], tuple[str, ...]]]:
+    """Return valid spell identities for a slot tier.
+
+    Each identity is a pair of distinct element sigils and distinct modifiers.
+    Repeats are intentionally omitted because they tune strength rather than
+    creating a new spell entry.
+    """
+    if tier == 0:
+        return []
+
+    builds = []
+    for element_count in range(1, min(len(ELEMENTS), tier) + 1):
+        modifier_count = tier - element_count
+        if modifier_count > len(MODIFIERS):
+            continue
+        if element_count > 1 and modifier_count == 0:
+            continue
+        if element_count > 3:
+            continue
+
+        for elements, modifiers in product(
+            combinations(ELEMENTS, element_count),
+            combinations(MODIFIERS, modifier_count),
+        ):
+            builds.append((elements, modifiers))
+    return builds
+
+
 def build_tier(tier: int) -> str:
-    """Render the scaffold markdown for a single tier (subset size == tier)."""
-    builds = list(combinations(SYMBOLS, tier))
-    count = len(builds)
+    """Render the scaffold markdown for a single slot tier."""
+    builds = valid_spell_builds(tier)
+    count = 1 if tier == 0 else len(builds)
 
     lines = []
     lines.append(f"# {TIER_TITLES[tier]}")
     lines.append("")
-    lines.append(
-        f"> {number_to_words(count).capitalize()} ({count}) "
-        f"build{'s' if count != 1 else ''} — every set of "
-        f"**{number_to_words(tier)}** distinct base glyph"
-        f"{'s' if tier != 1 else ''} drawn from the ten symbols "
-        "(five elements + five modifiers). Order does not matter; the remaining "
-        f"{number_to_words(SLOTS - tier)} slot"
-        f"{'s' if (SLOTS - tier) != 1 else ''} are empty."
-    )
-    lines.append(
-        "> Repeats are allowed in play (two Heats = a hotter Heat) but do **not** "
-        "make a new spell — they only shift the stat balance, so duplicates are not "
-        "separate entries. See `../generate_spells.py` and `../glyph-system.md`."
-    )
+    if tier == 0:
+        lines.append(
+            "> One (1) baseline entry — the sword with no glyphs. This is kept "
+            "for balance/reference, but it is not a spell."
+        )
+    else:
+        lines.append(
+            f"> {number_to_words(count).capitalize()} ({count}) "
+            f"spell{'s' if count != 1 else ''} — valid **{number_to_words(tier)}**"
+            f"-slot identities made from element sigils plus optional/required "
+            "modifiers. Modifiers cannot stand alone; two or more element sigils "
+            "require at least one modifier."
+        )
+        lines.append(
+            "> Repeats are allowed in play (two Heats = a hotter Heat) but do "
+            "**not** make a new spell — they only shift stat balance, so duplicates "
+            "are not separate entries. See `../generate_spells.py` and "
+            "`../glyph-system.md`."
+        )
     lines.append("")
     lines.append(
         "Fill each entry over time: a name, what it does, its **class** "
@@ -114,12 +159,17 @@ def build_tier(tier: int) -> str:
     lines.append("")
 
     width = max(len(str(count)), 2)
-    for i, combo in enumerate(builds, start=1):
-        n_elems = sum(1 for s in combo if s in ELEMENTS)
-        n_mods = sum(1 for s in combo if s in MODIFIERS)
-        n_empty = SLOTS - len(combo)
+    if tier == 0:
+        builds_to_render = [((), ())]
+    else:
+        builds_to_render = builds
+
+    for i, (elements, modifiers) in enumerate(builds_to_render, start=1):
+        n_elems = len(elements)
+        n_mods = len(modifiers)
+        n_empty = SLOTS - n_elems - n_mods
         shape = f"{n_elems}E / {n_mods}M / {n_empty}∅"
-        slots = list(combo) + [EMPTY] * n_empty
+        slots = list(elements) + list(modifiers) + [EMPTY] * n_empty
         num = str(i).zfill(width)
         lines.append(f"## T{tier}-{num} — {number_to_words(i).capitalize()}")
         lines.append("")
@@ -148,15 +198,22 @@ def main() -> None:
     out_dir.mkdir(exist_ok=True)
 
     grand_total = 0
+    spell_total = 0
     for tier in range(SLOTS + 1):
         text = build_tier(tier)
-        count = len(list(combinations(SYMBOLS, tier)))
+        count = 1 if tier == 0 else len(valid_spell_builds(tier))
         grand_total += count
+        if tier > 0:
+            spell_total += count
         target = out_dir / f"tier-{tier}.md"
         target.write_text(text, encoding="utf-8")
-        print(f"  tier-{tier}.md  →  {count} builds")
+        label = "baseline" if tier == 0 else "spells"
+        print(f"  tier-{tier}.md  →  {count} {label}")
 
-    print(f"Wrote {grand_total} builds across {SLOTS + 1} files to {out_dir}/")
+    print(
+        f"Wrote {spell_total} spells + {grand_total - spell_total} baseline "
+        f"across {SLOTS + 1} files to {out_dir}/"
+    )
     if not args.force:
         print("(Wrote to spells.generated/ to protect hand-written effects; "
               "use --force only on fresh files.)")

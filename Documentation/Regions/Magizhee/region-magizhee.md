@@ -6,8 +6,8 @@
 > **Current map placement:** Magizhee is the **hub** at the center of the human
 > pocket, diagonal-opposite the Rosetta region across the water. Four early
 > directions radiate from it: **north → the husk-held Old Dock** (the ferry
-> crossing), **west → predator-mountains** (toward the Sword Sanctum), **east → the
-> Training Camp**, **south → Vendur**. East and south are the safe early routes.
+> crossing), **west → predator-mountains** (toward Vaelp, the Sword Sanctum), **east →
+> Naerchu (the Training Camp)**, **south → Vendur**. East and south are the safe early routes.
 
 ## Scale & tone
 
@@ -39,7 +39,7 @@ A **basic safe settlement** with:
 Magizhee is the root of the playable geography and the **hub** of the human pocket
 — a small, constrained crossroads with four directions:
 
-- **East → the Training Camp** — a safe early route.
+- **East → Naerchu (the Training Camp)** — a safe early route.
 - **South → Vendur** (the Vendur Militia first, then the Hill Fort Market beyond).
 - **North → the Old Dock** — naturally denied early: the ferry crossing is
   **husk-infested**, so going straight north throws the player at very tough husks.
@@ -83,7 +83,7 @@ only; see `../Mechanics/forge-and-upgrades.md`.)
 
 ## Early route convergence
 
-If the player goes **east to the Training Camp** first, the camp should send them to
+If the player goes **east to Naerchu (the Training Camp)** first, the camp should send them to
 **Vendur** for supplies, permission, repair material, grain, medicine, or some
 other concrete support. If the player goes **south to Vendur** first, the sword
 nudges them there and the first dungeon can open from Vendur instead.

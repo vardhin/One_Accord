@@ -41,18 +41,19 @@ hivemind thread scheduler, and the seal / soft-infected model.
 
 - [~] **The region set.** Framework locked: **~7–8 dense + 3–4 mini**, tiered. The
   **lore-demanded set is now catalogued** (`Regions/region-set.md`): Magizhee
-  (mid starter/hub), Vendur (dense), the **Training Camp** (mid coming-of-age),
+  (mid starter/hub), Vendur (dense), **Naerchu** (the mid coming-of-age Training Camp),
   **Vengarz Hold** (mid mobile stronghold / old hero-legion remnant), the **Rosetta
-  ruins** (dense/hot research ground-zero), the **Ancient Deity Sanctum** (mini
-  dungeon, first Light glyph), the **mountain Sword Sanctum** (true-sword maiden),
-  and Arghanzza as the post-ferry threshold that forks the hive side. Remaining
+  ruins** (dense/hot research ground-zero), **Digzarr** (the dense fallen city /
+  old-tech source on the hive side), **Pathali** (the mini Divine Labyrinth, first
+  Light glyph), **Vaelp** (the mountain Sword Sanctum, true-sword maiden), and
+  Arghanzza as the post-ferry threshold that forks the hive side. Remaining
   dense + mini slots are reasoned, not filler. — `Regions/region-set.md`, `Regions/world-structure.md`
 - [x] **Open-world / connectivity map.** CONCLUDED as **structure** (the spine, not
   filled with content), now matched to the drawn map (`Regions/One_Accord_Map.png`):
-  Magizhee is the hub (east → Training Camp / south → Vendur are the safe early
+  Magizhee is the hub (east → Naerchu / south → Vendur are the safe early
   routes; north → husk-held Old Dock and west → predator-mountains are danger);
   routes converge at Vendur, ferry across from the Old Dock into Arghanzza, which
-  **forks** to Vengarz Hold → Rosetta → Silent Core or to the Ancient Deity Sanctum.
+  **forks** to Vengarz Hold → Rosetta → Silent Core or to Pathali (the Divine Labyrinth).
   Natural boundaries, heat gates, traversal gates, and story/lore gates define the
   route. — `Regions/connectivity-map.md`
 - [ ] **Per-region concept pass** for each new region: theme, the one mechanic it
@@ -66,7 +67,7 @@ hivemind thread scheduler, and the seal / soft-infected model.
 - [~] **Building/facility vocabulary.** Starter settlement has a concrete layout
   (gatehouse, well, storehouse, healer shed, forge lean-to, training yard, common
   room, corpse pit); system NPC roles imply facilities. Needs to become a **reusable
-  set of building types** with what each *does* mechanically. — `Regions/starter-settlement.md`, `Npcs/system-npc-roles.md`
+  set of building types** with what each *does* mechanically. — `Regions/Magizhee/region-magizhee.md`, `Npcs/system-npc-roles.md`
 - [ ] **Which mechanics live in which building** — forge (levels 0–4), healer/Checkup,
   quartermaster/allocation, training, bell-code comms, etc. Map each game system to
   the physical place(s) the player uses it. — `Mechanics/forge-and-upgrades.md`, `Mechanics/village-and-union-system.md`
@@ -116,7 +117,7 @@ hivemind thread scheduler, and the seal / soft-infected model.
 
 ## 6. Spells & weapons
 
-- [~] **Spell tables (386 builds).** Framework + scaffold done; **tier-0 authored**,
+- [~] **Spell tables (330 spells + bare baseline).** Framework + scaffold done; **tier-0 authored**,
   **tiers 1–4 mostly scaffold** (every effect to be hand-authored, no auto-fill).
   Long-tail; track authored vs. scaffold. — `Glyphs/spells/`, `Glyphs/glyph-system.md`
 - [ ] **Weapon forms & the mass-gated slots** — dagger(1) → … → greatsword(4):
@@ -159,7 +160,7 @@ build it." Ideation isn't finished until these are decided.
 - [x] **MVP feature cut** — CONCLUDED. **In:** deterministic dialogue pipeline
   (real), Clarity/Trust/Resonance, small log/agent-memory (sword only as live deep
   agent), Soulslike combat + consent gate, Stillpoint, forge L0→1, Seek Accord.
-  **Deferred:** glyphs/386 spells, soul duels/phase-2, cross-settlement union,
+  **Deferred:** glyphs/330 spells, soul duels/phase-2, cross-settlement union,
   literacy lexicon UI, the hive as a *live* second LLM agent (offscreen pressure in
   v0), full four-tool kill economy. — `Production/vertical-slice-spec.md`
 - [~] **Production scope reality-check** — the honest target (full game vs.
@@ -221,5 +222,5 @@ Ideation is finished — and we start building in earnest — when:
    milestone roadmap.
 
 Everything past that is production, not ideation. Note: stages don't need to be 100%
-*produced* (the 386 spells, all 40 NPC logs, etc. are long-tail) — they need to be
+*produced* (the 330 spells, all 40 NPC logs, etc. are long-tail) — they need to be
 *decided* and demonstrated as authorable.
