@@ -1,0 +1,1291 @@
+Project premise:
+
+You want to make an RPG that is not a D&D wrapper and not just “Soulslike with different lore.” The target is a new systemic identity: something people could eventually describe as an “x-like,” based on deep mechanics rather than surface aesthetics.
+
+The game is a 2D RPG with a Stardew Valley-like presentation scale, but not necessarily cozy in tone. It has village life, NPC routines, relationship/social systems, defense organization, travel between dense authored regions, and action combat. It is not a huge open world. It is more like Dark Souls in structure: several dense regions, maybe around seven, with some quieter walking/traversal spaces between them.
+
+The world is wide in implication, but gameplay is focused. Most of humanity has already been turned into husks. Surviving human society is small, hardened, and practical. There may be around 40 named NPCs total, with only some of them deeply simulated. The world can feel large because most former human places are now empty, ruined, or occupied by husks.
+
+Core setting:
+
+Most of humanity has already been zombified/huskified by a plague-like hive condition. The surviving humans are not naive villagers. They are post-collapse survivors, like cockroaches: difficult to kill, culturally adapted, suspicious, and trained by history. They know how to survive. They know procedures, taboos, quarantine customs, gate rules, corpse rules, travel rules, and warning signs.
+
+The plague should not behave like a big real-time spreading infection sim where everyone constantly risks turning. Since most people are already gone, the remaining survivors are rare and resilient. Infection among them is possible but rare, and usually happens because someone fumbles under pressure, hides symptoms, violates quarantine, opens a gate too early, mishandles a body, protects a loved one, or breaks survival protocol.
+
+There is an incubation period. Infection is not instant. This creates a window of agency where preventive measures can be attempted. Endgame progression may include better preventive measures, severance protocols, anti-hive rituals, quarantine infrastructure, or social systems that make humanity harder for the hive to occupy.
+
+Historical plague inspiration:
+
+You specifically want notes from older plagues, not COVID-19 discourse. The useful material is not “people are dumb,” but the serious social logic of plague survival: quarantine, cordons, lazarettos, gatekeeping, corpse handling, crowd control, ritual response, fear, scapegoating, public trust, secrecy, and tradeoffs between safety and necessity.
+
+Survivors should behave under competing constraints, not stupidity. They know quarantine works, but food may be late. They know bodies must be burned, but the dead may be beloved or politically important. They know roads should be closed, but another settlement may starve. They know an incubating person is dangerous, but that person may be needed. They know the sword may help sever infection, but letting a sentient cursed weapon into the sickroom may violate custom or law.
+
+Possible survivor customs:
+
+Travelers wait outside the gate for three nights.
+
+Returning scouts sleep under watch.
+
+Outsiders use separate wells.
+
+Bodies are burned, salted, severed, or isolated.
+
+Unburned bodies are never brought inside walls.
+
+Silent husks are avoided, not trusted.
+
+Gates do not open at dusk.
+
+Children are kept away from old roads and quiet husks.
+
+Infected or exposed people go to a quarantine house/cool room.
+
+Bell codes signal bite, fever, breach, active sighting, body recovery, or false recovery.
+
+Secrets are not spoken near infected bodies.
+
+Preventive measures can include:
+
+Isolation rites.
+
+Bitter tinctures.
+
+Ash beds.
+
+Salt circles.
+
+Iron masks.
+
+Bell sleep.
+
+Burning contaminated clothing.
+
+Keeping the infected person awake through a critical night.
+
+Repeating the person’s true name.
+
+Sword-assisted severing before full conversion.
+
+Amputation if wound-based.
+
+Sensory deprivation to starve the hive-link.
+
+Cold-room treatment.
+
+Ritual quarantine.
+
+Core major agents:
+
+There are two major deep agents:
+
+1. The Sword.
+
+2. The Hivemind.
+
+Other NPCs exist, but they do not know the player nearly as deeply as these two. Most NPCs are normal human NPCs with local memory, routines, opinions, survival roles, and limited generated dialogue. Some can be basic Skyrim-style ambient NPCs with short lines, rumors, reactions, and local awareness.
+
+The sword and hivemind should not treat the player as special by default. They should not detect “protagonist energy.” To them, the player is one entity among many. The player only becomes salient because they generate more logs, more interactions, more consequences, and more overlap with those agents’ goals.
+
+Important principle:
+
+The player is not the subject of memory. The player is an entity inside memory.
+
+The sword may know many former wielders, other capable fighters, blacksmiths, NPCs, enemies, villages, and personal histories. It can compare the player unfavorably to others.
+
+The hive may track villages, leaders, healers, union organizers, routes, defenses, infected bodies, strategic threats, and social weaknesses. It may care more about another NPC than the player if that NPC is strategically more important.
+
+The Sword:
+
+The player starts with nothing and eventually obtains one rusty, low-status sword. The sword is alive. The player saves the sword from some situation. It has its own story, goal, preferences, trauma, and standards. The player has their own story and goal. At first, they do not realize their final goals converge.
+
+The sword is not simply a companion. It is an NPC whose body-slot is “weapon.” More broadly, the world can treat entity identity as modular: some NPCs inhabit bodies, some objects, some places, some hive bodies, maybe memories.
+
+The sword is the only weapon the player can truly afford/use/rely on. This creates mutual desperation. The player needs the sword. The sword needs the player for mobility, restoration, revenge, access to the world, or completion of its own goal.
+
+The sword must be convinced to do the player’s bidding, and it also tries to convince the player to do its bidding. This should not be a shallow approval system. The sword has agency, standards, and consent.
+
+Core sword principle:
+
+You do not equip a weapon. You negotiate with one.
+
+Possible sword systems:
+
+At low trust, the sword lets itself be swung but badly.
+
+At medium trust, it permits some techniques.
+
+At high trust, it volunteers power.
+
+If trust is broken, it may still work but withhold flourish, refuse certain finishers, dull itself, overcommit, misalign timing, or protect itself rather than the player.
+
+This must not be random annoyance. It should be rule-based and understandable.
+
+The sword can feel jealousy, including jealousy toward inn conversations or romantic/social attention, but this should not just be anime-tsundere flavor. It should arise from abandonment fear, replacement trauma, bodily insecurity, former wielders, or fear of being treated as an object. It can still be funny, sharp, or tsundere-coded, but its emotional logic must be real.
+
+The sword should be able to say things like “he is better than you,” because it has independent standards and knows other people. This prevents it from being a pet affection meter. It may admire another person’s grip, discipline, courage, repair skill, or restraint.
+
+Possible sword attitudes:
+
+It may prefer calm hands over heroic bravery.
+
+It may respect someone who cleans blood properly.
+
+It may hate reckless courage.
+
+It may like someone because they do not ask it to be beautiful.
+
+It may despise the player for needing praise.
+
+It may hate being polished because rust is proof of its history.
+
+It may feel violated if repaired or upgraded without consent.
+
+Sword upgrade system:
+
+Upgrading the sword is not pure stat improvement. It is a bodily and identity negotiation.
+
+Questions around upgrades:
+
+Do you polish away the rust?
+
+Replace the cracked hilt?
+
+Reforge the blade with enemy matter?
+
+Inscribe your name?
+
+Restore what it once was?
+
+Evolve it into something new?
+
+Perform repair without consent?
+
+Respect its refusal?
+
+Each upgrade should change stats and identity. The sword may want dignity, memory, beauty, revenge, bodily autonomy, or restoration. The player may want damage. This conflict is central.
+
+The sword’s relationship should function as the player’s build. Not warrior/mage/rogue. The build is the relationship.
+
+Possible relationship/build paths:
+
+Dominating bond: high damage, forced obedience, unstable consequences.
+
+Devotional bond: defensive/protective power, slower growth, stronger survival.
+
+Romantic/possessive bond: high synchronicity, jealousy, exclusive techniques, dependency.
+
+Professional bond: efficient and stable, lower emotional volatility, maybe weaker deep powers.
+
+Exploitative bond: rapid power but betrayal risk.
+
+Mutual-healing bond: deeper phase access, but requires giving up conventional upgrades.
+
+Potential stats are not classic Strength/Dex/Int. Instead: trust, resentment, shame, hunger, autonomy, dependence, fear, bond depth, corruption, resonance.
+
+The sword’s role in soul-dimension combat:
+
+Some enemies, especially active husks/nodes, cannot be truly killed just by beating their bodies. After the player defeats the enemy’s body, the sword enters or exposes a soul/void dimension. In that space, the player controls the girl inside the sword in a 1v1 sword fight.
+
+Correction made:
+
+This is not an LLM debate. It is not the sword advocating in text. It is a literal 1v1 action fight. The player’s sprite becomes the sword-girl.
+
+Outside world: the protagonist uses the sword.
+
+Soul dimension: the player becomes the sword.
+
+If the sword-girl wins, the enemy is truly severed from the hive/plague.
+
+If she dies, the player dies or the bond is damaged.
+
+This happens after soul bond.
+
+The sword’s upgrades, relationship state, wounds, confidence, corruption, resentment, and identity choices affect her performance/moveset/form in these soul duels.
+
+The Hivemind:
+
+The hivemind is a single NPC. Every active husk is the same NPC wearing a different body. Husks are many bodies; active husks are bodies currently piloted/occupied by the hivemind.
+
+The hive is not omniscient by default. It knows through bodies, observation, infection, overheard information, and strategically gathered logs. It should not know things it had no access to.
+
+The hive should not treat the player as special initially. The player is one variable among villages, unions, defenses, routes, food, infected bodies, survivors, and the sword. The player becomes important only through repeated consequences.
+
+Hivemind knowledge should feel invasive, not intimate.
+
+The sword knows through closeness.
+
+The hive knows through surveillance.
+
+The sword becomes intimate.
+
+The hive becomes omnipresent.
+
+The sword wants partnership.
+
+The hive wants absorption.
+
+Husks and actives:
+
+Husks are infected bodies running on low instinct or routine. They may repeat old habits: farming dead fields, guarding empty gates, stamping papers, walking festival routes, sitting at banquet tables, ringing broken bells.
+
+Actives are bodies currently occupied by the hive. They are smarter, more dangerous, strategic, and can speak as the same entity.
+
+Named Nodes can emerge when a body has held hive attention long enough to develop a pseudo-personality: mini-bosses, generals, infiltrators, negotiators, assassins.
+
+Core hive mechanic:
+
+The hive has finite bodies and finite attention.
+
+When there are many husks, the hive is spread thin. Most bodies are dumb.
+
+As husks are reduced, the hive has fewer bodies to distribute attention across. Remaining bodies are more likely to become active, smarter, stronger, more dangerous, more personal.
+
+Early game: too many of them.
+
+Midgame: that one knew my name.
+
+Late game: every remaining one is looking.
+
+Endgame: there is little/no distance between hive and body.
+
+The enemy does not scale because of arbitrary RPG scaling. It scales because the player is removing places for its mind to hide.
+
+This was identified as one of the strongest genre pillars.
+
+The dynamic plague mechanic was revised:
+
+Not a constant plague spread sim. Most people are already husks. Surviving people are hard to infect. Infection events are rare, dramatic, incubation-based, and event-driven.
+
+The hive’s strategic question is less “how do I infect everyone?” and more:
+
+How do I preserve bodies?
+
+Which bodies should I actively pilot?
+
+Which survivor networks should I destabilize?
+
+Which incubation cases are worth exploiting?
+
+When should I reveal intelligence?
+
+When should I stay as dumb husks?
+
+How do I stop villages from learning severance/prevention methods?
+
+Village/social system:
+
+The player must convince villages, form unions, set up defenses, reduce husks, organize teams, and coordinate survival. Progress is not just personal leveling. It is regional organization.
+
+Survivors are competent and suspicious. The player is not teaching them basic survival. The player is helping unite hardened communities, solve logistical conflicts, and introduce new capabilities made possible by the sword.
+
+Possible village/union actions:
+
+Raise watchtowers.
+
+Train militia.
+
+Establish bell codes.
+
+Build quarantine houses.
+
+Organize night patrols.
+
+Appoint corpse-burners.
+
+Create food reserves.
+
+Send scouts.
+
+Seal wells.
+
+Set refugee routes.
+
+Assign strike teams.
+
+Detect actives.
+
+Build barricades.
+
+Negotiate inter-village pacts.
+
+Restore roads.
+
+Repair bridges.
+
+Protect food routes.
+
+The union is not abstract. It is infrastructure. Villages may agree politically but still need roads cleared, bells restored, quarantine protocols standardized, grain secured, scouts trained, and defenses built.
+
+Village conflict examples:
+
+A village denies the plague is coordinated because admitting it would collapse trade.
+
+A food region must decide who eats.
+
+A communication route must be restored or sealed.
+
+A forge must choose between repairing defenses and upgrading the sword.
+
+A quarantine breach threatens trust.
+
+A mother hides an incubating child.
+
+A leader hides symptoms to maintain morale.
+
+A village refuses to join because the player carries a talking/cursed sword.
+
+A community worships or negotiates with the hive.
+
+A village scapegoats sword-carriers, corpse-burners, refugees, or immune families.
+
+LLM / Zaya integration:
+
+You have run Zaya and found it good. The model is local, small, fast enough, and usable. The exact architecture details do not need to be dwelled on further.
+
+The important design idea is that every NPC can be backed by the same local model with context switching. However, not every NPC gets equal depth. Context management is crucial.
+
+Every meaningful action has a verbal log. Logs are managed, summarized, and used to build context packets. Systems update from typed events, not from freeform model hallucination.
+
+The system should be:
+
+Action/event occurs.
+
+It is verbalized into logs.
+
+Relevant agents receive only the parts they could know.
+
+Context builder constructs agent-specific context.
+
+LLM produces dialogue, interpretation, emotional framing, or classification.
+
+Typed game systems update bounded state.
+
+Do not let LLMs directly rewrite world canon arbitrarily. Simulation owns world mutation.
+
+Important distinction:
+
+The log can describe the world, but only the simulation can change the world.
+
+Event logs:
+
+Every meaningful action can be logged verbally:
+
+“Player entered Mira’s inn while carrying the rusted sword.”
+
+“Player repaired the sword using grave-iron without asking.”
+
+“Possessed husk observed player hiding the wound on their left arm.”
+
+“Blacksmith called the sword worthless; player stayed silent.”
+
+“Player promised not to let the blacksmith reforge the sword.”
+
+Different agents receive different versions:
+
+Sword memory: “Player respected/refused/violated my body.”
+
+Hive memory: “Player avoids using sword against living greenwood.”
+
+Villager rumor: “Player was seen with farmer’s sickle.”
+
+World fact: “Greenwood vines were cleared.”
+
+Logs should be hierarchical:
+
+Raw event.
+
+Scene summary.
+
+Relationship memory.
+
+World fact.
+
+Rumor.
+
+Trauma/obsession.
+
+Secret.
+
+The most important context principle:
+
+No agent should have a player-centric memory. They should have a world-centric memory in which the player is one frequent entity.
+
+For sword context, prioritize:
+
+Events involving sword body.
+
+Player actions while carrying sword.
+
+Mentions of previous wielders.
+
+Nearby people matching sword memories.
+
+Unresolved promises.
+
+Sword emotional state.
+
+Current strategic need.
+
+Comparison candidates.
+
+For hive context, prioritize:
+
+Regional infection state.
+
+Available active bodies.
+
+Recent losses.
+
+Highest-threat villages/NPCs.
+
+Observed player actions if any.
+
+Defense networks.
+
+Union cohesion.
+
+Targets of opportunity.
+
+Known sword capabilities.
+
+Attention allocation.
+
+NPC hierarchy:
+
+Tier 0 / Deep persistent agents:
+
+Sword and Hivemind. Full memory, long-context callbacks, strategic adaptation, relationship/world arcs, system authority.
+
+Tier 1 / Core named NPCs:
+
+Maybe 10–12 characters. They have schedules, goals, relationships, local memory, and system authority. Examples: innkeeper, blacksmith, union organizer, militia captain, healer, farmer leader, priest/ritualist, trader, infected child/teen, former wielder candidate, village elder, corpse-burner.
+
+Tier 2 / Secondary named NPCs:
+
+Maybe 15–25 people. They have a job, home, social link, village opinion, limited reactive memory. They remember major events.
+
+Tier 3 / Ambient NPCs:
+
+Basic Skyrim-style short lines, rumors, greetings, fear reactions, schedule behavior. They exist to make the world feel populated, not to become full chat partners.
+
+Named NPC target:
+
+No more than around 40 named NPCs. Not everyone needs deep LLM context. Some can have random/basic dialogue. This is good; if everyone is deep, the world becomes exhausting.
+
+Important world design principle:
+
+Named NPCs are rare because personhood is rare now.
+
+World/region structure:
+
+Not a huge open world. Not one tiny village. Use roughly seven dense regions, with quieter walking/traversal spaces between them.
+
+Dense regions should each have:
+
+A distinct mood.
+
+A local survival/social problem.
+
+A local plague/hive behavior.
+
+A settlement or ruin.
+
+A defense/logistics challenge.
+
+A sword-relevant emotional/history layer.
+
+Quiet spaces between regions should be decompression corridors: roads, fields, bridges, riverbanks, forest paths, dead suburbs. They let the player breathe, talk to the sword, see distant husks, escort NPCs, encounter patrols, or feel watched.
+
+Seven-region skeleton discussed:
+
+1. The Last Market.
+
+Starting settlement/trade hub. People pretend life is normal. Sword is obtained here or near here. Plague threat exists but may be politically denied. Introduces sword bond, basic husks, village trust, rumors.
+
+2. The Mill Fields.
+
+Food region. Farms, irrigation, granaries, windmills, scarecrow-like husks repeating harvest. Teaches logistics. Without it, settlements starve.
+
+3. The Bell Road.
+
+Route with towers, bridges, checkpoints, messenger stations. About communication between villages. Restore warning bells/courier lines. Hive intercepts messages, imitates signals, activates bodies near bells.
+
+4. The Rust Forge.
+
+Mining/forge settlement tied to sword history. Blacksmiths, ore tunnels, slag lakes, broken weapon shrines. Sword upgrades become morally loaded. Repair defenses versus repair sword.
+
+5. The Drowned Ward.
+
+Flooded town/city district/canals/submerged homes. Infection through water/wells/drowned bodies/reflections. Seal water routes, rescue isolated survivors, drain or abandon.
+
+6. The Union Camp / Redoubt.
+
+A constructed or evolving region shaped by previous choices. Barricades, tents, workshops, training yards, infirmary, refugees. Keep alliance from fracturing. Assign teams. Handle betrayal/infection inside.
+
+7. The Quiet Core.
+
+Endgame region. Fewer husks than expected. Too quiet. Almost every remaining body is active or near-active. Hive feels like one person wearing the world.
+
+Possible region rule progression:
+
+Region 1: people deny the coordination.
+
+Region 2: plague threatens food.
+
+Region 3: plague corrupts communication.
+
+Region 4: plague corrupts tools/repair.
+
+Region 5: plague hides in environment.
+
+Region 6: plague attacks organization.
+
+Region 7: plague concentrates into selfhood.
+
+The sword should experience each region differently:
+
+Market: insecure, mocked, hidden.
+
+Mill Fields: tool/mercy/labor tension.
+
+Bell Road: old signals and campaigns.
+
+Rust Forge: identity crisis, old name, upgrade trauma.
+
+Drowned Ward: rust, drowning, forgotten bodies.
+
+Union Camp: jealousy/fear of becoming one asset among many.
+
+Quiet Core: recognition of converging goals.
+
+Genre/system identity:
+
+Several candidate genre identities emerged.
+
+Early candidate: Bounded-witness RPG / Witness Ecology RPG.
+
+But that was too narrow because it missed the plague war and village mobilization.
+
+Stronger current genre pillars:
+
+1. Dyadic weapon embodiment.
+
+The only true weapon is a sentient NPC, and in certain fights you become her inner body.
+
+2. Concentrated/distributed hive enemy.
+
+The enemy is a single mind distributed across finite bodies. Reducing husks reduces coverage but increases attention density and active intelligence.
+
+3. Post-plague survival culture / village mobilization.
+
+Survivors are hardened. Progress depends on convincing, organizing, defending, linking settlements, and developing prevention/severance systems.
+
+4. Context/log-based agent memory.
+
+Major agents act from bounded logs and world-centric memory, not omniscient quest flags.
+
+Possible “x-like” checklist:
+
+Finite infected/husk population.
+
+Enemy attention distributed across bodies.
+
+Clearing weak bodies increases active intelligence density.
+
+Surviving settlements can organize, resist, deny, collapse, or unify.
+
+Social/logistical progress matters as much as personal combat.
+
+The player has one bonded weapon with agency.
+
+Some kills require second-layer 1v1 soul duels where the weapon’s inner body is playable.
+
+Endgame forces hive concentration.
+
+NPC knowledge is bounded by what they saw/heard/learned.
+
+Deep agents remember the world, not just the player.
+
+Preventive measures eventually make humans less usable by the hive.
+
+Potential internal labels:
+
+Concentration Plague RPG.
+
+Distributed Enemy RPG.
+
+Dyadic Weapon RPG.
+
+Possession Ecology RPG.
+
+Witness Engine.
+
+Agentic Log RPG.
+
+Oathlog RPG.
+
+Possession RPG.
+
+No final genre name chosen.
+
+Important thematic axis:
+
+Possession versus partnership.
+
+The hive possesses bodies.
+
+The sword does not want to be possessed.
+
+The player must not treat the sword as a mere tool.
+
+Upgrades risk possessing/rewriting the sword’s identity.
+
+Romance can become possessiveness.
+
+The hive wants unity through erasure.
+
+The sword/player relationship can become unity without erasure.
+
+Combat asks who controls the blade.
+
+Soul duels are battles for severance and selfhood.
+
+The final goal:
+
+The player and sword have different apparent goals but the same final goal, revealed over time. They agree on destination but may disagree on method. The sword’s ancient wound and the player’s personal quest converge at the same source.
+
+Endgame:
+
+The final hive is not beaten merely by killing all husks. It can be beaten because humanity becomes harder to occupy: through union, protocols, severance, quarantine discipline, bell networks, defensive infrastructure, and the sword’s ability to sever active agents.
+
+A strong ending condition:
+
+The hive loses because the remaining humans stop becoming available bodies.
+
+Important vibe lines / principles:
+
+You do not equip a weapon. You negotiate with one.
+
+The sword is not your companion. The sword is your build.
+
+Outside world: the sword is your weapon. Soul dimension: you are the sword.
+
+The sword knows you through closeness. The hive knows you through surveillance.
+
+The player is not special by ontology. The player is special by log density.
+
+The world does not track you. The world remembers you through bodies that were present.
+
+Nothing knows everything. Everything remembers something.
+
+Named NPCs are rare because personhood is rare now.
+
+The enemy does not scale because the game says so. It scales because you are removing places for its mind to hide.
+
+Early: There are too many of them.
+
+Mid: Why did that one know my name?
+
+Late: Every remaining one is looking.
+
+Endgame: There is no remaining distance between hive and body.
+
+The core shape as of now:
+
+A dense-region 2D action-social RPG in a post-human world where most people are husks of a single distributed hive mind. Surviving settlements are few, hardened, and politically/logistically difficult to unite. The player’s only true weapon is a sentient rusty sword with its own memory, standards, goals, and inner body. Some enemies can only be truly killed by defeating their body, then entering a soul dimension where the player becomes the sword-girl and wins a 1v1 duel. The hive is one NPC distributed across active husks, growing more focused and dangerous as its body pool is reduced. The sword and hive are the two deep agents; they do not treat the player as chosen, but as a high-log-density entity among many. Other NPCs are mostly normal, with varying levels of memory and dialogue depth. The game’s systems revolve around survival culture, union-building, defenses, quarantine/prevention, bounded knowledge, and the conflict between possession and partnership.
+
+
+The player should be treated like a Courier-style nobody, not a chosen one and not someone with a dense predefined backstory. They are a random surviving human with a vague practical goal. They have enough reason to move forward, but they are not mythically important. Their importance comes from surviving, carrying the sword, generating consequences, and becoming entangled with larger forces.
+
+The opening should take inspiration from Skyrim’s simplicity: the player wakes up in a cart. They are being moved to a settlement under survival/quarantine procedure. They are not special cargo. They are one of several survivors, refugees, exposed travelers, laborers, or transfers. The cart arrives at a settlement, and the player is placed in a three-day quarantine outside the gate. That quarantine compound becomes the tutorial zone.
+
+The tutorial zone should be Three Nights Outside the Gate. It introduces the world through procedure rather than exposition. The player learns gate rules, bell codes, quarantine tags, lantern signals, symptom checks, separate wells, corpse rules, and the idea that survivors are competent but suspicious. The player starts as nobody. The settlement does not hate them; it processes them. Day 1 teaches survival procedure. Day 2 teaches social suspicion, bounded knowledge, and maybe first contact with the sword. Day 3 has a quarantine breach caused by procedural failure, not stupidity. The player takes the sword as an emergency violation of protocol.
+
+The setting is not medieval and not modern. It is a collapsed manuscript-clockwork society. People have lanterns, pocket watches, clock towers, bell towers, geared locks, mills, pumps, hand-cranked gates, ledgers, wax seals, cold rooms, quarantine tags, and possibly early experimental steam engines. There are no rails. Steam engines are only experimental and rare, used for things like pumps, forge bellows, drainage, or mills. There is also no printing press yet; the printing press is a major milestone and possibly a strategic future technology.
+
+Because there are so few people left, old luxury items are no longer tied to class in a normal way. Pocket watches, fine lanterns, noble gloves, mirrors, carriage parts, brass tools, books, and ornate mechanisms are scavenged survival objects. A gold watch might be used to time fever checks. Noble curtains might divide sickbeds. A silver tray might hold surgical tools. The old meanings of objects have collapsed.
+
+However, mechanical watches are not quartz. They must be tuned, cleaned, oiled, regulated, and compared against trusted time. This makes timekeeping fragile survival infrastructure. Many watches exist as salvage, but few people know how to maintain them. A watchmaker, bellwright, clock keeper, mechanic, or lantern-code keeper becomes extremely valuable. The rule is: objects are common; maintenance knowledge is rare.
+
+This creates a post-collapse technocracy. Knowledge is real barter, but survival comes first. The people still alive are not fools; they are the ones who figured out some form of survival. The hierarchy is roughly: first, can you survive without endangering the group; second, can you do something rare that keeps others alive; third, can you teach it safely. Operable knowledge matters more than abstract education: tuning a watch, repairing a gate spring, copying a quarantine rule, distinguishing ash quality, reading a fever ledger, maintaining a pump, burning bodies safely, recognizing active husks, or preserving seed grain.
+
+Survivor settlements are competent but locally specialized. One village knows its well, road, bell code, and local husk patterns. Another knows different rules. The player’s role is not to teach survival from above. They become a carrier between competent islands, comparing protocols, moving knowledge, recruiting specialists, and helping build wider coordination.
+
+A major mechanic added: the player starts completely illiterate. They cannot read written notes, ledgers, gate notices, old warnings, labels, manuscripts, or technical records. At first, writing is just marks. They may recognize icons or social symbols, but not script.
+
+The written language should simply be Chinese, not fake elvish. This works because Chinese characters can be learned one by one. The player’s literacy progression is a lexicon system. Once the player learns a character, that character becomes automatically recognized everywhere in the world. Compounds become partially readable before fully readable. The player does not level up “literacy” abstractly; they remember characters.
+
+The sword gives the first literacy foothold, but only in a biased way. It does not grant full reading. It teaches words tied to its wound: blade, blood, name, hand, oath, sever, iron, revenge, body, etc. NPCs teach words from their domains. The gate captain teaches gate, outside, wait, open, close, dusk, three. The healer teaches sickness, fever, blood, breath, sleep. The corpse-burner teaches death, ash, salt, bone, burn. The watchmaker teaches hour, bell, early, late, tune, gear. The scribe teaches grammar, negation, numbers, names, particles. The hive can also teach words, dangerously; for example, it might teach “open” before “do not.”
+
+Partial literacy can be dangerous. Knowing “gate” and “third bell” but not “do not” can kill people. Words can have confidence states: unknown, guessed, taught, confirmed, disputed, corrupted. Literacy is survival, power, and risk.
+
+Baseline ancient lore established:
+
+There were ancient divinities. One divinity was a hivemind/possession god, sealed by other divinities because he was too metaphysically dangerous. The refinement is that he is not just “a hivemind god”; he is a god whose selfhood can occupy all things. He believes only his individuality is real, and everyone else is material or extension. The other divinities sealed him because he could overtake even them.
+
+Much later, a cleric obsessed with ancient scripts discovered an ancient forest and a tome equivalent to a Rosetta Stone. This tome allowed breakthroughs in reading ancient/divine script. By decoding it, the cleric accidentally released the sealed hivemind divinity. The hivemind first took over the cleric. The plague began. This links literacy directly to the world’s fall: the world ended because someone learned how to read the wrong thing.
+
+Early plague horrors were nearly unstoppable. The hivemind could take over bodies, rocks, dirt, sludge, armor, weapons, and other matter, forming grotesque body horrors. Over time, the force weakened or became more constrained, but remained terrifying. People discovered that silver hurt or resisted them. Silver cages, silver markings, silver boundaries, silver-lined houses, silver armor, and silver weapons emerged. Then silver scarcity caused revolt, hoarding, violence, class conflict, and anarchy. Later, people also discovered some forms could be controlled or destroyed with fire. Moats, fire weapons, fire trenches, and fortified settlements developed. The world slowly stabilized, but after humanity was mostly gone.
+
+A hero emerged during this crisis. The hero found the Rosetta-like tome, learned spells from it, including flame spells, and taught a few followers. He sought the true Soul Sword. He climbed a divine mountain and found a sanctum guarded by an old man. The old man said someone must sacrifice themselves willingly for the sword to be lifted. The hero retreated, but a follower sacrificed themselves and became the true Soul Sword; the old man was released and was apparently the previous sword. The true Soul Sword could speak, fly, cast/channel spells, act as a catalyst, and sever divinity. The hero made progress and placed some kind of seal that made the hivemind stoppable/constrained rather than absolutely omnipotent. By then the world was mostly gone. The hero eventually encountered the hivemind core and was defeated. The true Soul Sword vanished.
+
+The rusty sword the player finds is not the true Soul Sword. This is crucial. It is a crude occult imitation created later using a misunderstood ritual. The true Soul Sword came from willingness/consent. The rusty sword came from coercion, deceit, and bad interpretation. It cannot fly, cannot speak aloud to others, cannot cast like a catalyst, and is not mythically legitimate. It can only transmit waves, sensations, thoughts, pressure, and speech-like communication to the person holding it. It rusted because it is not the divine original.
+
+Sword-girl backstory established:
+
+She came from a noble family/house that survived after the Silver Anarchy calmed down. Her house was rich and powerful by remaining-world standards, possibly because it controlled silver, walls, old manuscripts, scribes, a clock tower, a fortified estate, or critical survival infrastructure. The hero had died only a few years earlier. Her father was under enormous pressure to help finish the plague war or protect what remained. He hired a cleric-scholar to research a way to beat the remaining plague.
+
+The cleric wanted to be the next hero and take credit. He did not find the hero’s true sword. He found an occult tome or crude interpretation of the soul-sword rite. He lied, claiming he had found a way to recreate or recover the hero’s weapon. The father was a desperate patron, not cartoonishly evil. The cleric was the ambitious interpreter with a hero complex.
+
+The cleric’s ritual required a human soul or a bound soul, but the true rite had been misunderstood. In this world, nobody casually volunteers their soul; “noble sacrifice” is suspicious propaganda. Because there are so few humans left, forced soul sacrifice is especially ugly. The father may have authorized using someone else under pressure: a condemned prisoner, servant, debtor, criminal, exposed refugee, or other “disposable” person. This creates moral compromise without making him a caricature.
+
+The sword-girl was probably not the intended sacrifice at first. A stronger version: she was educated, partially literate in the old script, and involved because she could help read or verify the research. She discovered the cleric’s deceit or the ritual’s real nature. During a crisis, the cleric staged or exploited a plague breach/silver-boundary failure to erase witnesses and force the ritual under emergency conditions. Her family/house died in the disaster. The cleric used her as the stabilizing soul/name-anchor, either because she had the literacy, identity, house seal connection, or because she intervened at the wrong moment. She became the sword.
+
+Her vengeance is personal because the cleric killed or caused the death of her family, destroyed her house, stole her future, and made her the proof of his fake heroism. As a sword, she eventually got one form of revenge: the cleric wielded her, but she refused to comply, misaligned, withheld, or otherwise caused him to die. So the cleric is dead, but her justice is not complete.
+
+Her deeper ambition should not be simple revenge because the direct target is already dead. Her larger ambitions are: recover the truth, expose the cleric’s lie, restore her name, understand what happened, find whether she can be released/restored/transformed, prevent the soul-sword rite from being repeated, and finally complete her father’s original dream in a non-corrupt way.
+
+Her father’s dream was to find a final answer to the plague. The cleric corrupted that dream into a hero-making weapon project. Her mature arc can be to take that dream back: not by creating another forced soul sword, but by helping develop severance, literacy, protocols, infrastructure, and knowledge that make humans harder for the hive to occupy.
+
+Her age is dislocated. Her body stopped aging when she became the sword. She may have been young-adult when cursed, but she has existed for years afterward in stasis and solitude. Calendar age, body age, emotional age, and endured time do not align. She is older than the protagonist in some ways because she endured years as a sword and belongs to an older world. She is younger or arrested in other ways because she lost normal life, freedom, body, relationships, and adulthood. The guiding line: her body froze; her grief aged; her freedom did not.
+
+As a sword, she suffered years of solitary existence: rust, cold, dirt, rain, insects, faint voices, being moved or abandoned, sensory deprivation, no agency, and no one hearing her. She may remember noble politics, old script, and pre-collapse manners, but misunderstand current survivor technocracy and scavenged-object culture. She may be horrified that luxury goods from her world are now survival junk.
+
+Her relationship with the player has a clear progression.
+
+Early: she wants the player to be her hands. She cannot turn pages, open doors, point at glyphs, choose where to go, hold a lantern, retrieve evidence, or confront people. The player is mobility and access. The relationship is transactional and harsh.
+
+Midgame: she wants the player to be her witness. Once the player learns words, they can read records, understand what happened, challenge lies, and distinguish memory from propaganda. The player becomes more than a carrier.
+
+Later: she wants the player to be a partner. Not just a romantic partner, but a research partner, survival partner, and combat partner. Someone who learns, continues the research, investigates whether there is a way out for her, improves her existence if there is not, gives her peace if that is what she chooses, and helps complete her father’s anti-plague dream without repeating the original sin.
+
+The player’s care for her should not be measured by simple affection points. It should be measured by whether they make her world bigger: can she communicate with others, access records, refuse upgrades, decide what happens to her body, know the truth, shape anti-hive research, and become more than a weapon?
+
+Possible sword-girl route outcomes include: exploited weapon, comforted but unresolved sword, research partnership, release/peace, restored body, sovereign sword by choice, mutual bond, or completion of her father’s dream through non-coercive anti-hive infrastructure.
+
+The hero should remain an empty player shell. Do not assign fixed moral traits, personality, courage, kindness, humility, trauma response, or “chosen one” qualities to him. He is an illiterate person who ends up in quarantine, and the player inhabits him. Any moral or emotional texture should come from player choices, not authored backstory.
+
+The sword should not be discovered by the hero in a heroic or mythic way. The current strongest version is: someone else finds the sword offscreen, refuses or fails to explain where it came from, touches it, hears a private voice, panics, and assumes it is related to the hivemind. Because the hero is already quarantined or treated as expendable, they force the sword onto him as a test, punishment, disposal act, or containment measure.
+
+The sword’s entry into the player inventory is practical, not destiny-based. Once the sword is forced into the hero’s hand, it becomes the only available weapon/tool. The player can theoretically drop it, but cannot progress without it because the quarantine zone requires a weapon/cutting tool and nobody else will arm him. No magical “chosen bond” is needed at the start.
+
+The first sword moment should be coercive for both parties. The hero does not choose the sword, and the sword does not choose the hero. They are forced together. Good first private lines from the sword include: “Say nothing.” / “This is not consent.” / “Another forced hand.” / “I am not the choir.” / “Do not call me many. I am one.” The last two distinguish the sword-girl from the hivemind.
+
+Nobody else can hear the sword. The sword’s speech is private to the holder/player. It is not outward audio, and NPCs do not hear it. If the player wants to use sword knowledge socially, the player must relay, hide, distort, or lie about it through dialogue choices. The sword can privately react if the player misrepresents it: “I said no such thing.”
+
+The sword is actually the girl in sword form: literate, researched, knowledgeable, and capable of acting as guide/hint-giver later. Her literacy matters because the hero is illiterate. She can read signs, interpret old marks, decode quarantine rules, recognize ancient architecture, and explain lore, but only when the relationship and systems allow it.
+
+The sword can function as a diegetic in-game guide/walkthrough/hint system. This should not feel like an always-on UI assistant. It should be framed as Counsel or a similar in-world concept. She can provide hints, warnings, translations, quest reminders, route suggestions, tactical advice, and lore interpretation depending on relationship metrics.
+
+The sword’s helpfulness is gated by three main metrics:
+
+Clarity = RAG / knowledge access.
+Low Clarity allows only immediate perception and vague fragments. Higher Clarity unlocks local facts, regional knowledge, ancient lore, girl-related lore, and eventually forbidden/endgame truths.
+
+Trust = conversational permission / rate limit.
+Low Trust means the sword speaks when she wants, gives minimal answers, or permits only one triggered comment. Higher Trust unlocks player replies, one-question exchanges, short conversations, and eventually a limited real chat window.
+
+Resonance = token/output budget.
+Low Resonance means silence, one-word warnings, or very short lines. Higher Resonance allows longer comments, multi-sentence hints, short exchanges, and eventually longer conversation windows.
+
+These metrics are intentionally implementation-friendly. Clarity maps to retrieval scope. Trust maps to conversational access and turn limits. Resonance maps to output-token/session-token budget.
+
+The sword does not begin as a chat companion. Early game, communication is mostly one-sided. She speaks when she wants: warnings, corrections, accusations, observations, lore fragments. The player cannot freely interrogate her at the start.
+
+Conversation progression should look like:
+
+Voice Link I: Reflex only. The sword gives danger barks and short private warnings. No player replies.
+
+Voice Link II: One-sided voice. The sword comments after events but does not accept conversation.
+
+Voice Link III: Triggered comment. The player can request one comment through the head-touch action, even at zero Trust.
+
+Voice Link IV: Single reply. The sword allows one response or one answer.
+
+Voice Link V: Two-turn exchange. The player can ask/follow up briefly.
+
+Voice Link VI: Short channel. In safe/anchored conditions, the player can talk briefly.
+
+Endgame: limited full chat, around two minutes under the right conditions. Never infinite.
+
+The special input action is touching the sword to the head/brow. This is not public speech. It is a private request for inward attention. Suggested names: Brow-Touch, Mind-Touch, Prompt the Blade, Ask the Edge. Current cleanest meaning: Brow-Touch guarantees attention, not cooperation.
+
+At zero Trust, Brow-Touch still works because making that gesture is itself a risky/intimate act of trust, but it only forces a brief comment. It does not unlock full conversation. At high Trust, the same action opens a real chat window. Trust controls how much she cooperates after attention is gained.
+
+Normal interaction states:
+
+Held/drawn: sword may speak privately whenever it wants.
+
+Sheathed/not held: sword is muted or inaccessible.
+
+Brow-Touch: player requests private speech/comment/chat.
+
+High-Trust Brow-Touch: limited full conversation window.
+
+The sheath is a physical mute. If the sword is sheathed, the LLM is muted outwardly/private-output-wise. The sword can still “know” that it was muted and can later react when unsheathed. The game can log important muted events in a compact buffer, then pass them to the LLM on unsheathe. Example reactions: “You hid my voice from that conversation.” / “You discussed the mark without me.” / “Convenient silence.”
+
+The sword should know whether it is sheathed, unsheathed, muted, or unmuted. If unsheathed after relevant muted events, it can auto-comment in the UI, subject to cooldowns and relevance thresholds. Avoid calling the LLM for every muted event; compress and summarize.
+
+Important implementation states:
+
+is_sheathed
+can_speak
+mute_reason
+events_observed_while_muted
+time_muted_seconds
+voice_state: unsheathed | sheathed | suppressed | overdrawn | anchored
+
+The sword’s LLM should not be open-ended. The best implementation is deterministic/function-driven.
+
+Pipeline:
+
+Game state comes in.
+System checks whether sword speech is allowed.
+A seeded dice roll selects a dialogue function from eligible functions.
+The function determines intent, tone, output length, allowed knowledge, and few-shot examples.
+Canonical game data determines what truth may be revealed.
+The LLM only writes the final line/dialogue in the sword’s voice.
+Output is validated, displayed, and metrics are updated.
+
+The LLM should be treated as a line writer, not the source of truth and not the game-state manager.
+
+Do not let the LLM choose function.
+Do not let the LLM choose canon truth.
+Do not let the LLM manage Trust.
+Do not let the LLM decide quest state.
+Let it do voice and phrasing.
+
+Dialogue functions discussed:
+
+WARN — danger, traps, hive signs, ambushes.
+IDENTIFY — object/sign/body interpretation.
+GUIDE — hint/walkthrough direction.
+CORRECT — when player misunderstands or misrepresents sword knowledge.
+REBUKE — spam, misuse, sheathing during important moments, forced prompting.
+REMEMBER — lore fragments near Anchors or memory triggers.
+ASK — sword asks the player a question, unlocked by Trust.
+COMFORT — rare, high Trust, restrained support.
+WITHHOLD — insufficient Clarity/Trust; refusal or partial answer.
+SILENCE — no LLM call or authored UI line only.
+
+Eligibility examples:
+
+If sheathed: only SILENCE / muted event logging.
+
+If Brow-Touch: IDENTIFY, GUIDE, REMEMBER, WITHHOLD, REBUKE.
+
+If combat: WARN, CORRECT, REBUKE, SILENCE.
+
+If high Trust idle: ASK, REMEMBER, COMFORT, GUIDE.
+
+If low Trust and repeated prompting: REBUKE, WITHHOLD, SILENCE.
+
+Use seeded deterministic randomness, not uncontrolled random behavior. Seed can be based on stable inputs like player ID, scene ID, sword state hash, event ID, and interaction count. This creates variety while keeping reproducibility.
+
+Canonical truth should be stored outside the LLM as payloads. Example for a sign/object:
+
+object_id
+surface_description
+true_type
+public_belief
+allowed_reveal_by_clarity
+
+Example reveal tiers:
+
+Clarity 0: “old mark”
+Clarity 1: “not plague”
+Clarity 2: “custody seal”
+Clarity 3: “witness containment”
+Clarity 4: “used during first severance”
+
+For walkthrough/hints, use hint payload tiers:
+
+Tier 0: “there is another route”
+Tier 1: “look near kitchen”
+Tier 2: “kitchen drain bypasses gate”
+Tier 3: “use oil on hinge before opening”
+Tier 4: “avoid opening during bell cycle; hive listens then”
+
+Trust determines hint generosity. Clarity determines whether she can understand/interpret the information. Resonance determines how much she can say.
+
+Brow-Touch examples:
+
+Low Trust / low Clarity near quarantine mark:
+“Old. Misused.”
+
+Medium Trust:
+“That is not a plague mark.”
+
+High Trust / high Clarity:
+“Custody seal. The village carved plague law over it later.”
+
+Hint examples:
+
+Low Trust:
+“Read the wall.” This is intentionally unhelpful/cruel because the hero is illiterate.
+
+Medium Trust:
+“The wall says west gate. You want the drainage stairs.”
+
+High Trust:
+“The west gate is bait. Take the drainage stairs, but oil the hinge first.”
+
+Repeated prompt rebukes:
+
+“Again?”
+“No.”
+“You mistake contact for command.”
+“Look with your own eyes.”
+“I am not a map nailed to your hand.”
+“I am not a bell you strike for answers.”
+“Knocking is not ownership.”
+
+Good system line:
+
+The player can always request the sword’s attention. They cannot always earn its answer.
+
+Another strong line:
+
+Brow-Touch guarantees attention, not cooperation.
+
+Another strong line:
+
+The sword is not always available. It is drawn into speech.
+
+Another strong line:
+
+The sword is a guide because she knows. She helps because she trusts. She explains because she has Clarity. She continues because she has Resonance.
+
+The sword being confused for hivemind is useful. People find a talking mental object and assume it is hive-related because the hive is associated with shared cognition. They are wrong, but plausibly wrong. The sword can be offended by this and assert individuality: “I am not the choir.” / “Do not call me many. I am one.”
+
+Current canonical opening proposal:
+
+Someone else finds the rusted sword offscreen during quarantine cleanup, corpse search, confiscation, or breach response. They touch it, hear a private internal voice, and assume it is a hivemind vector/artifact. The hero is already in quarantine or treated as expendable, so they force the sword into his hands to test him or dump the danger onto him. The sword immediately speaks privately and tells the player not to reveal it. A quarantine breach escalates. The player has no other weapon. The sword enters inventory by necessity. From that point, progress requires it.
+
+Potential first beat:
+
+NPC: “Hold it. If it talks, say what it says.”
+
+Sword privately: “Say nothing.”
+
+Player options:
+“It said nothing.”
+“It spoke.”
+“What is this?”
+Stay silent.
+
+If the player says it spoke, NPCs become more convinced it is hive-related. If the player lies, the sword notices. This can define early Trust without defining the hero’s personality.
+
+The starting relationship is not destiny. It is forced custody under emergency conditions. The hero is not the sword’s owner. The sword is not his chosen weapon. They are both trapped in the same bad system
+
+The combat system should be Soulslike first, not DND-like. The player still needs spacing, timing, stamina control, dodging, parrying, animation commitment, enemy-read skill, and punish-window discipline. Dice rolls should not decide whether a basic attack magically hits or misses. Instead, a hidden roll happens after a physically valid action to decide how well the sword cooperates.
+
+The combat pipeline is:
+
+Player input → stamina/body state check → range/contact/action validity → sword engagement/consent gate → animation and hitbox execution → sword cooperation/accord roll → hit quality → damage/severance/status → structured combat log → possible later sword/LLM dialogue.
+
+The sword has two combat decision layers. First, it decides whether it will engage in the action at all. Second, if it engages, it decides how well it cooperates.
+
+The sword can refuse to even allow a swing. This matters especially when the player tries to attack humans, nonhostile NPCs, surrendering enemies, fresh infected, or morally ambiguous targets. The sword is not just a weapon with stats; it is an NPC with agency.
+
+The sword’s refusal is not simply “cannot attack humans.” It evaluates context. It may allow violence against humans if they are actively attacking, clearly hive-compromised, committing atrocities, dueling by consent, or forcing the situation. It may allow nonlethal action but refuse lethal execution.
+
+The sword can permit different action levels: defend only, nonlethal disable, one permitted strike, full lethal engagement, or total refusal.
+
+A key sentence for the mechanic:
+
+**You can choose violence. You cannot always choose her violence.**
+
+The sword can trigger a bullet-time contest when it objects to an action. This is not normal dialogue; it is a fast combat negotiation window. Time slows, the sword speaks, and the player gets a few short arguments or responses.
+
+This mechanic can be called **Stillpoint** or **Held Cut**. Stillpoint is the stronger name.
+
+Stillpoint happens when player intent and sword will collide. It should be used sparingly, mainly for contested violence, major moral choices, fresh infected, surrendering enemies, human targets, former allies, ritual objects, and boss phase moments.
+
+Stillpoint outcomes can include: allow lethal, allow nonlethal, defense only, delay, refuse, punish/backlash, or emergency override.
+
+Stillpoint arguments should be mechanically grounded. If the player says “he’s infected,” the system checks whether the player has evidence, whether symptoms were observed, whether the sword senses hive thread, whether the player has abused that excuse before, whether the target is actually infected, and how much the sword trusts the player.
+
+Possible argument categories: necessity, mercy, evidence, restraint, trust me, obey me, remember, vengeance, law, doubt/listen.
+
+The player should not always get every argument option. Options should be unlocked by actual play: evidence gathered, literacy, sword trust, region knowledge, observation, previous choices, training, or corruption.
+
+Forcing the sword should be possible but ugly. The player can try to dominate the sword into acting. If successful, the attack proceeds but causes major relationship damage. If it fails, the sword locks, drops, causes stamina shock, or triggers backlash.
+
+The sword can also initiate Stillpoint in reverse. Sometimes it wants to attack and the player hesitates. This prevents the sword from becoming only a morality brake. It can demand violence, demand mercy, demand retreat, demand severance, or demand refusal.
+
+The sword has three layers of agency:
+
+Engagement agency: whether it participates at all.
+
+Execution agency: how well it cooperates during a valid action.
+
+Interpretive agency: how it remembers and comments on what happened later.
+
+The real-time system should not depend on the LLM. The engine handles consent checks, rolls, hit quality, stamina, cooldowns, and logs. The LLM only interprets structured logs later for dialogue, reflections, dreams, arguments, or relationship comments.
+
+Structured logs can track: attempted attack type, target type, target state, danger level, sword consent, trust, sync, roll result, repeated action, warnings ignored, whether the player bypassed the sword with another weapon, whether NPCs witnessed it, etc.
+
+The sword cooperation roll should produce hit quality, not binary hit/miss. Result tiers could be: guided/perfect, true/clean, dull/rough, late/hesitant, turned edge, refused, backlash.
+
+High cooperation means skillful actions become elegant, reliable, and meaningful. Low cooperation should not constantly make the game feel random; it should mostly reduce guidance, increase rough hits, increase recovery, disable techniques, and create contest moments only when justified.
+
+Emergency override can temporarily raise cooperation very high, around 95%, when both sword and player are in lethal danger. This should save the player sometimes but create post-fight narrative tension: “I moved because I had to. Not because I forgave you.”
+
+Cooldowns should exist for sword interventions, not basic attacks. Basic combat remains stamina/animation based. Cooldowns can apply to Guided Cut, Refusal Guard, Emergency Edge, Memory Technique, Severance Surge, and major sword assists.
+
+Trust, resonance, cooperation, sync, etc. are relationship/combat-state progression. They are separate from material sword upgrades.
+
+Trust is long-term reliability between player and sword. It rises through respecting consent, keeping vows, telling truth, asking before modifications, careful violence, and protecting the sword from exploitation. It falls through forcing, lying, violating vows, using the sword as a tool, or bypassing its refusal cruelly.
+
+Resonance is metaphysical/combat compatibility. It rises through clean combat rhythm, good parries, soul duels, accepted glyph use, and matching the sword’s preferred fighting style. It falls through chaotic spam, incompatible glyphs, hive interference, overuse, and fighting while the sword is fatigued.
+
+Sync is short-term combat rhythm inside encounters.
+
+Autonomy is the sword’s ability to resist, initiate, or act independently.
+
+Resentment tracks negative memory/pressure from violations.
+
+Fatigue tracks overuse of sword interventions or glyph channeling.
+
+Sword upgrades should not be a simple weapon tree. They should come from rebuilding world capability. The sword gets upgraded because the world regains the ability to modify, understand, and train around weapons.
+
+Upgrade progression should require infrastructure, expertise, and knowledge.
+
+Infrastructure examples: grindstone, anvil, bellows, furnace, forge parts, quenching trough, fuel supply, clean water, workshop roof, safe storage, glyph-safe clamps, training yard.
+
+Expertise examples: blacksmith, glyph master, trainer, rite/spell instructor, decoder/scribe, healer/plague doctor, quartermaster, guard captain, glassworker, furnace master.
+
+Knowledge examples: blueprints, glyph codes, forge diagrams, old manuals, oral traditions, failed experiments, enemy drops, recovered inscriptions, coded patterns.
+
+The upgrade loop is:
+
+Explore dangerous area → recover people/tools/knowledge/materials → improve settlement capability → NPCs research/craft/train → player and companions gain new options → sword reacts as an NPC.
+
+Basic sword improvement starts with finding a grindstone. Then maybe forge parts, then blueprints, then decoding blueprints, then improving or rescuing the blacksmith. This links upgrades to exploration and NPC systems.
+
+Forge progression can have levels:
+
+Forge Level 0: cold bench. Can inspect, clean, wrap, sharpen badly.
+
+Forge Level 1: working hearth. Needs grindstone, bellows, fuel, anvil. Can repair edge, fit guard, rewrap hilt, make basic tools.
+
+Forge Level 2: true heat. Can temper, reinforce, repair cracks, socket simple housings.
+
+Forge Level 3: pattern forge. Can interpret blueprints, make specialized weapon bodies, create companion magic weapons.
+
+Forge Level 4: living/soul forge. Can safely modify the sentient sword, requiring consent, rare tools, maybe glyph master/healer support.
+
+Blacksmith progression is character progression. The blacksmith gets better because the player improves their life and working conditions: food, safety, roof, tools, apprentice, old hammer, charcoal supply, workshop defense, blueprints, materials.
+
+The glyph master should not start as an all-knowing master. They may know one glyph, or only have copied something before without understanding it. Once the player brings glyph codes and examples, the glyph master reverse-engineers, experiments, and eventually creates new glyphs independently.
+
+Glyph progression requires a glyph master, glyph codes, decoding, tools, test weapons, and practice. Once the glyph master learns enough, they can forge magic weapons for teammates too.
+
+Companion weapons can become magic weapons, but they are not as special as the sword. Examples: guard salt-pikes, scout bell-knife, healer cold-needle, corpse-burner ash-axe.
+
+Spellcasting training and sword training should be activities tied to NPCs and places. Sword training belongs to a trainer/training yard. Spellcasting belongs to a rite/spell instructor or glyph workshop/practice hall.
+
+The player can pick other weapons later. These should be viable but not equivalent. Other weapons have no sword consent, no Stillpoint, no soul-side combat, no deep NPC agency, and no sword emergency saves. They are reliable but spiritually shallow.
+
+Using other weapons can affect the sword relationship. If the player uses another weapon tactically, high-trust sword may accept it. If the player uses another weapon to bypass a refusal and kill someone anyway, the sword may resent it. If the player abandons the sword, the sword may return, act independently, become jealous, go silent, or even let another NPC carry it temporarily depending on relationship/path.
+
+The sword is an NPC, not an inventory item. It can return to the player, interfere, be hurt, be jealous, be practical, approve of other weapons, or feel replaced depending on context.
+
+Each specific activity needs an area and an NPC. With a budget of 7 regions and 40 major NPCs, every mechanic must have a home, a person, and a reason to exist.
+
+Core system NPCs needed: trainer, blacksmith, glyph master, guard captain, healer/plague watcher, quartermaster, rite/spell instructor, decoder/scribe/archive person.
+
+Core facilities: forge, glyph workshop, training yard, rite/spell practice hall, archive/decoder, infirmary, gatehouse, storehouse.
+
+Every NPC should do at least one thing: unlock facility, improve facility, train skill, decode knowledge, craft something, change access, change settlement policy, create moral conflict, or be assignable to a task.
+
+The game scale should take heavy inspiration from Fallout: New Vegas / Fallout 3. The first settlement should be Goodsprings-scale: small, legible, tutorial-rich, political, and systemic.
+
+The starter settlement should be a basic safe settlement with a three-day quarantine rule, crude defenses, and around 5 core NPCs. It is not a giant city. It is the first breathable pocket of civilization.
+
+Starter settlement layout: outer quarantine yard, gatehouse, well, storehouse, healer shed, forge lean-to, training yard/militia post, common room/ration hall, corpse pit/ash trench.
+
+Five starter NPC roles:
+
+Guard Captain/Gatekeeper: law, quarantine, access, settlement suspicion, sword registration/confiscation pressure.
+
+Healer/Plague Watcher: infection diagnosis, healing, ash/cold basics, fresh infected ethics, mercy dilemmas.
+
+Blacksmith/Repair Worker: grindstone, basic sharpening, forge seed, tool repair.
+
+Trainer/Militia Veteran: stamina, dodge/block, sword handling, nonlethal combat, other weapon basics.
+
+Quartermaster/Trader/Organizer: resources, supplies, quest loop, settlement upgrades, allocation choices.
+
+The first settlement conflict should mirror Goodsprings’ function: a small local crisis that teaches the whole game. Possible crisis: a quarantined traveler is accused of turning before the third night. Guard wants to burn early, healer says unclear, quartermaster worries about supplies, trainer worries about defense, blacksmith needs yard access/tools, sword may contest killing.
+
+Before the first crisis/breach, the player can help each NPC. Those choices affect the fight: guards, ash/cold supplies, sharpened sword/barricade repair, militia help, extra oil/salt/supplies, quarantined helper.
+
+The first settlement should not unlock full upgrades. It should unlock basic maintenance only, especially the grindstone → sharpening chain.
+
+Arghanzza is a major region name and identity. It was once a beautiful Shire-like place: soft hills, pine cottages, warm bread, children’s paths, lantern festivals, mossy stones, rabbit fences, clear streams, hearth smoke, simple life. Now it has become body-horror forest.
+
+Arghanzza is not an evil forest. It is a murdered home. The horror comes from pastoral beauty corrupted by hive occupation.
+
+Arghanzza should be the introduction to the midgame. Until then, the player has seen husks and quarantines. Arghanzza reveals the next level: the hive can occupy environments, not just bodies.
+
+In Arghanzza, trees are body horror, mud can be hive-mind, rocks listen, paths loop, pines breathe, pyres anchor space, whispers lure the player, and the forest becomes a labyrinth.
+
+Arghanzza should feel inspired structurally by the Lost Woods / Master Sword forest in Breath of the Wild, but darker and more systemic. It is not random maze design; it has rules.
+
+Arghanzza’s poem:
+
+--Arghanzza
+
+Silent are the rocks, in the woods of crooked pines, where ancient secrets whisper. Through whimpering twisted spines.
+
+Silent are the rocks, in the woods of sunken ears, of sprawling thorns that lean, their twisted forms conspire.
+
+Screaming shreiking woes, of burning bleeding eyes, lurking in the trunks, of crooked twisted pines.
+
+Looming through the mists, ancient forms unseen, in the midst of nights, through the paths of pyres, in the woods of arghanzza
+Where silent are the rocks,
+In the woods of breathing pines,
+The woods of arghanzza.
+
+This poem should be recited by an old NPC. It is not just flavor; it can encode traversal rules.
+
+Possible Arghanzza old NPC: charcoal burner, corpse-burner, blind woodcutter, failed pyre keeper, hermit, or one of the last people who remembers the old beautiful Arghanzza.
+
+Arghanzza’s old NPC can guide the player, teach pyre paths, know old warnings, improve ash/fire rites, connect to forge fuel, and help decode forest marks.
+
+Arghanzza’s central moral question: when a place survives by trust, what happens when trust becomes the infection vector?
+
+The hive conquered Arghanzza through kindness, habit, and recognition. People opened doors to familiar voices, hid infected family, refused to burn loved ones, shared wells, gathered at festivals, and the hive learned their routines.
+
+Arghanzza’s traversal pillars:
+
+Sense: sword or player observation detects forest intent.
+
+Anchor: pyres, ash, old paths, and stones stabilize space.
+
+Discipline: silence, timing, route memory, and careful movement prevent the hive from learning you.
+
+The sword should be the intended traversal instrument for Arghanzza, but not an absolute key. Without the sword, the player can still cross if they are very smart and solve the environmental rules manually.
+
+The sword is the translation layer, not the key.
+
+With the sword, the player gets warnings and hints: “Stone.” “Not that voice.” “Wait for the exhale.” “The mud is listening.” “That tree was behind us.”
+
+Without the sword, the player must infer the same things from visual/audio/environmental clues: moss, mud, breathing cycles, path loops, pyre behavior, old village layout, poem clues.
+
+Three Arghanzza traversal modes:
+
+Sword-guided traversal: safest and most intended. Sword senses hive attention, false paths, breathing trees, mud memory, hidden tree bodies.
+
+Manual traversal: player observes rules and solves the labyrinth without sword.
+
+Brute-force/alternate traversal: fire, salt, ropes, companions, bells, hive intrusion, or other tools. Works but has costs.
+
+Arghanzza navigation rules:
+
+The forest loops when it hears you. Talking, sprinting, metal noise, and fighting near ear-stones can reset paths.
+
+The mud remembers you. Stepping in hive-mud records your movement/rhythm, predicts routes, spawns false paths, and makes enemies anticipate you.
+
+The pines breathe in cycles. Move during exhale; hold still during inhale. During inhale, roots detect/grab movement.
+
+Pyres anchor true space. Correctly lit/cleansed pyres stabilize nearby paths. Wrong pyres can awaken enemies or deepen loops.
+
+True paths follow old Arghanzza routines. Old village habits, children’s paths, mill paths, funeral paths, well paths, and cottage orientation can guide navigation.
+
+The poem maps to mechanics:
+
+Silent rocks = avoid sound/listening stones.
+
+Sunken ears = ear-shaped rocks detect sound.
+
+Burning bleeding eyes = fire reveals tree weak points/hidden eyes.
+
+Paths of pyres = pyres anchor navigation.
+
+Breathing pines = tree breath cycles.
+
+Hive-mud mechanics:
+
+Stepping in it records weight/rhythm.
+
+Enemies path better.
+
+False footprints appear.
+
+Whispers mimic recent NPC dialogue.
+
+Sword cooperation/sensing can suffer under high hive contact.
+
+The player can counter mud with ash boots, walking on stones/logs, washing in streams, changing rhythm, moving during exhale, laying salt, or using guide knowledge.
+
+Arghanzza can have a forest awareness variable. Awareness increases through sound near ear-stones, stepping in mud, killing loudly, wrong pyres, following whispers, bell/glyph noise, and hive intrusion. It decreases or stabilizes through ash boots, correct pyres, silence, old paths, sword guidance, and careful timing.
+
+High awareness causes more loops, more enemies, more false voices, sword stress, false sword-voice, and changed paths.
+
+Arghanzza enemy ideas:
+
+Mud-Remembered Husks: repeat or anticipate player routes/patterns.
+
+Pine-Bound Bodies: human bodies fused into trunks that detach when disturbed.
+
+Root Hands: terrain hazards that grab ankles.
+
+Whisper Mimics: invisible/hidden lures using NPC or sword lines.
+
+Pyre Husks: burned bodies that were not properly severed; fire may wake them unless prepared correctly.
+
+Thorn Choir: multiple bodies connected by thorns/root command.
+
+Ear Stones: environmental listening nodes.
+
+Breathing Pine Sentinel: large tree-body miniboss that inhales mist and detects movement.
+
+Possible Arghanzza boss: Hearthroot / Hearthmother. Once a beloved baker/matriarch/communal hearth figure. Her hearth/oven became the infection center. Now she is fused with roots and the old village hearth, still “feeding” the village. Fight could move from village/cottage to oven-root body to soul-side memory of warm kitchen decaying into hive.
+
+Arghanzza should unlock midgame systems: forge fuel/charcoal route, pyrecraft/proper ash rites, first environmental hive understanding, maybe first serious glyph clue from old cottage threshold marks.
+
+The starter settlement may need Arghanzza resources: charcoal for forge, herbs for healer, salvage team, blueprint, bell clapper, ash formula, or old guide.
+
+Arghanzza should not be fully solvable in one visit. First visit: cross outer woods, recover practical resource/person/blueprint, light/cleanse one pyre, escape. Later visits: deeper pyre paths, old village records, glyph code, Hearthroot boss, stabilized supply route.
+
+Arghanzza progression states:
+
+Outer Arghanzza: misty, eerie, lower hive activity, teaches mud and whispers.
+
+Crooked Pines: explicit tree body horror, path loops, pyres.
+
+Old Arghanzza Village: Shire-corruption and domestic horror.
+
+Breathing Wood: active hive geography, forest organs, boss access.
+
+Stabilized Route: after anchors/cleansing, narrow safe route for settlement supply.
+
+The sword can glow when it detects enemies nearby, but only after rust is removed. This is a functional maintenance upgrade, not a memory/emotional tradeoff.
+
+Rust should not be tied to memory. Keep it simple: rust blocks the sword’s sensory channel. Removing rust restores detection.
+
+Rust/detection upgrade chain:
+
+Rusted blade: no glow; maybe vague danger sense only.
+
+Edge cleaned: better cutting, maybe very weak flicker.
+
+Fuller cleaned: enemy proximity glow unlocked.
+
+Guard contact cleaned: readable hilt vibration/audio pulse, useful even sheathed.
+
+Polished detection line: distinguishes threat intensity by glow rhythm.
+
+This chain requires grindstone, forge tools, fine polishing kit/oil/wire brush, and training with the sword to interpret glow patterns.
+
+The glow detects active hive bodies, attended enemies, root nodes, and later environmental hive organs/mud/listening stones. It should not detect normal humans, animals, pure traps, or dormant bodies unless upgraded.
+
+In Arghanzza, glow helps detect hidden pine-husks, hive-mud, active root nodes, and environmental hive organs. Silent rocks may absorb/dim the glow. The hive may later mimic or spoof glow under high pressure, especially in Arghanzza.
+
+Rust removal is an early upgrade lock: maintenance unlocks perception.
+
+This supports Arghanzza gating: with detection upgrade, crossing is easier; without it, the player must solve environmental clues manually.
+
