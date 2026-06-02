@@ -338,9 +338,9 @@ A community worships or negotiates with the hive.
 
 A village scapegoats sword-carriers, corpse-burners, refugees, or immune families.
 
-LLM / Zaya integration:
+LLM integration:
 
-You have run Zaya and found it good. The model is local, small, fast enough, and usable. The exact architecture details do not need to be dwelled on further.
+The local model is LiquidAI LFM2-8B-A1B (Q4_K_M GGUF), served by llama.cpp on port 8080 — local, small, fast enough, usable. (Earlier braindumps named "Zaya"; that model is forsaken.) The LLM is purely a language interface: it writes the line, never picks functions or decides canon.
 
 The important design idea is that every NPC can be backed by the same local model with context switching. However, not every NPC gets equal depth. Context management is crucial.
 
@@ -458,7 +458,7 @@ Sword and Hivemind. Full memory, long-context callbacks, strategic adaptation, r
 
 Tier 1 / Core named NPCs:
 
-Maybe 10–12 characters. They have schedules, goals, relationships, local memory, and system authority. Examples: innkeeper, blacksmith, union organizer, militia captain, healer, farmer leader, priest/ritualist, trader, infected child/teen, former wielder candidate, village elder, corpse-burner.
+Maybe 10–12 characters. They have schedules, goals, relationships, local memory, and system authority. Examples: innkeeper, blacksmith, union organizer, militia captain, healer, farmer leader, priest/ritualist, trader, soft-infected adult (a hive backdoor, not an infected/turning case — and never a child), village elder, corpse-burner.
 
 Tier 2 / Secondary named NPCs:
 

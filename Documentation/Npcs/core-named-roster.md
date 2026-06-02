@@ -28,8 +28,9 @@ From the brainstorm:
 - Farmer leader
 - Priest / ritualist
 - Trader
-- Soft-infected child/teen (a beloved person who is *almost* right — a backdoor,
-  not an infected/turning case; see `../Mechanics/plague-and-infection.md`)
+- Soft-infected adult (an ordinary, trusted grown NPC who is *almost* right — a
+  backdoor the sealed hive can puppet for a blackout, **not** an infected/turning
+  case, and **not** a child; see `../Mechanics/plague-and-infection.md`)
 - Village elder
 - Corpse-burner
 

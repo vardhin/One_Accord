@@ -1,7 +1,7 @@
 # Stillpoint — The Combat Negotiation Window
 
-> A bullet-time contest when player intent and sword will collide. Name candidate
-> "Held Cut" also considered; **Stillpoint is the stronger name.**
+> A bullet-time contest when player intent and sword will collide.
+> **"Stillpoint" is canonical** (the alternative "Held Cut" was dropped).
 
 ## What it is
 

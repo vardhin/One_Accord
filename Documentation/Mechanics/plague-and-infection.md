@@ -42,7 +42,7 @@ I'm not a human."*
   (`../Glyphs/glyph-system.md`). Light's in-world identity is partly *the thing
   that reveals the soft-infected.*
 - Before Light, you **cannot reliably tell.** Early and mid game you live among
-  them blind. The sword may *sense unease* via Brow-Touch
+  them blind. The sword may *sense unease* via Seek Accord
   (`../Sword/voice-and-brow-touch.md`), but cannot *confirm.*
 - The tools to know arrive too late to feel safe — that is the point.
 

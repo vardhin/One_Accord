@@ -49,7 +49,7 @@ access and turn limits.**
 
 ## Worked examples
 
-### Brow-Touch near a quarantine mark
+### Seek Accord near a quarantine mark
 
 | State | Line |
 | --- | --- |

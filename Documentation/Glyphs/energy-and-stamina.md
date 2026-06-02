@@ -110,14 +110,33 @@ Food
 (SHORT stamina runs combat only — never feeds glyphs.)
 ```
 
-## Mixing incompatible elements costs more energy
+## Glyph energy cost is additive (linear in glyph count)
 
-Co-inscribing **incompatible** elements (e.g. `Heat +` and `Flow +`) is allowed,
-but it draws **far more** from her bar per fire than a clean or compatible build.
-There is **no misfire, backlash, or Attunement penalty** — the cost is purely
-energy. The empty-bar fallback above does the disciplining: an over-mixed blade
-drains fast and reverts to penalized plain steel, while a clean build runs cheap
-and stays charged. Full grammar context in `glyph-system.md`.
+Glyph cost scales **additively** with the number of inscribed glyphs: **N glyphs
+cost N× a single glyph's base.** If one glyph costs 20, two cost 40, three cost 60,
+four cost 80. (Exact base value is implementation tuning; the **rule** — linear,
+not exponential — is canon.)
+
+**Mixing is free.** Co-inscribing incompatible elements (e.g. `Heat +` and
+`Flow +`) is **allowed at no extra cost** — there is **no mix surcharge**, misfire,
+backlash, or Attunement penalty. A mixed blade costs exactly the same as a clean
+blade with the same glyph count.
+
+What disciplines big builds is therefore the additive rule itself plus the
+**strength tax**, not a mix penalty:
+
+- **Additive drain** — a 4-glyph blade burns 4× per fire, emptying her bar fast and
+  reverting to penalized plain steel (empty-bar fallback above).
+- **Strength tax** — ~−15% base strength per glyph, firing or not.
+
+So loading up is costly because it's *more glyphs*, never because they're *mixed*.
+Full grammar context in `glyph-system.md`.
+
+### The Light kill line under this rule
+
+The Light kill glyphs (Silverlight, Pierce-of-Day) aren't a separate system: they
+are simply glyphs with a **very high per-fire base cost**, so they dominate the
+additive total when inscribed and make each shot a real sacrifice of her reserve.
 
 ## Cross-links
 
@@ -129,8 +148,10 @@ and stays charged. Full grammar context in `glyph-system.md`.
 
 ## Open
 
-- Numbers: long-stamina cost per glyph tier, meditation transfer curve, how big
-  "likes you" can push her ceiling vs. a silver baseline.
+- Numbers: single-glyph base cost, the Light-line's high per-fire base, the
+  meditation transfer curve, and how big "likes you" can push her ceiling vs. a
+  silver baseline. *(The **additive rule** — N glyphs = N× base, mixing free — and
+  the **direction** Light ≫ normal are locked; only the base values are tuning.)*
 - Whether food variety/quality matters (different foods → different long-stamina
   yield) or it's a single calorie value.
 - Whether the sword's bar visibly drains over time (the "feed her periodically"

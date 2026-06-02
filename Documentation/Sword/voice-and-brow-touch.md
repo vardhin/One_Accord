@@ -1,6 +1,13 @@
-# Sword Voice, Brow-Touch & Voice Links
+# Sword Voice, Seek Accord & Voice Links
 
 > How the sword communicates, when, and how the player requests it.
+>
+> **Canonical name:** the brow-touch input action is **Seek Accord** (gesture:
+> touch the sword to your brow to seek her alignment/attention). The word *Accord*
+> ties to the title and the sword bond; the **verb phrase** keeps it distinct from
+> the combat **accord roll** (cooperation roll — `../Mechanics/combat-system.md`).
+> Older drafts called this "Brow-Touch"; that is now just the *gesture*, and
+> **Seek Accord** is the action.
 
 ## Private speech only
 
@@ -16,8 +23,8 @@ It is not outward audio; NPCs do not hear it.
 
 - **Held / drawn:** the sword may speak privately whenever it wants.
 - **Sheathed / not held:** the sword is muted or inaccessible.
-- **Brow-Touch:** the player requests private speech / comment / chat.
-- **High-Trust Brow-Touch:** opens a limited full conversation window.
+- **Seek Accord:** the player requests private speech / comment / chat.
+- **High-Trust Seek Accord:** opens a limited full conversation window.
 
 ## The sheath is a physical mute
 
@@ -45,13 +52,13 @@ The sword should know whether it's sheathed/unsheathed/muted/unmuted. If
 unsheathed after relevant muted events, it can **auto-comment** in the UI,
 subject to cooldowns and relevance thresholds.
 
-## Brow-Touch (the special input action)
+## Seek Accord (the special input action)
 
 Touching the sword to the **head/brow**. Not public speech — a **private request
-for inward attention.**
+for inward attention.** Canonically named **Seek Accord** (the *brow-touch* is the
+gesture; *Seek Accord* is the action).
 
-- Candidate names: Brow-Touch, Mind-Touch, Prompt the Blade, Ask the Edge.
-- Cleanest meaning: **Brow-Touch guarantees attention, not cooperation.**
+- Cleanest meaning: **Seeking Accord guarantees attention, not cooperation.**
 
 Behavior by Trust:
 
@@ -72,7 +79,7 @@ Communication starts one-sided and opens up over the game.
   player replies.
 - **Voice Link II — One-sided voice.** Comments after events; no conversation.
 - **Voice Link III — Triggered comment.** Player can request one comment via
-  Brow-Touch, even at zero Trust.
+  Seek Accord, even at zero Trust.
 - **Voice Link IV — Single reply.** The sword allows one response/answer.
 - **Voice Link V — Two-turn exchange.** Player can ask/follow up briefly.
 - **Voice Link VI — Short channel.** In safe/anchored conditions, brief talk.

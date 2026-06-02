@@ -58,6 +58,16 @@ recognize ancient architecture, and explain lore — but only when relationship 
 systems allow (gated by Clarity — see
 `../Sword/metrics-clarity-trust-resonance.md`).
 
+## Not the same as Telugu decoding
+
+This lexicon is **Chinese only** — the mundane survivor language. The **ancient
+Telugu scripture** (the deep root of the glyph grammar) is a **separate system**
+and does **not** use this UI: the player never learns it character-by-character.
+Telugu is read by the **sword** (best reader — she lived the renaissance), the
+glyph master, and a few rare NPCs; the player recovers inscriptions and brings
+them to a reader. See `../Glyphs/glyph-system.md` → "Surfacing & decoding ancient
+Telugu scripture."
+
 ## Design hooks (open)
 
 - How are characters surfaced in the UI when partially known? (greyed glyphs,

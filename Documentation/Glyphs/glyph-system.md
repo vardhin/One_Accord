@@ -38,10 +38,11 @@ modifies it, and a flipped/opposite sign yields the opposite effect).
 | **Flow** | water / fluid / current |
 | **Air** | wind / pressure / motion |
 | **Earth** | mass / stone / weight |
-| **Light** | radiance / sense / silver-adjacent (see open Q) |
+| **Light** | radiance / sense / **silver-equivalent kill line** (locked) |
 
-*(Element roster is a working draft — names/identities can shift. "Light" is a
-candidate to tie into silver/anti-hive themes; not committed.)*
+*(Element roster is **locked canon**: Heat / Flow / Air / Earth / Light. **Light is
+committed** as the silver-equivalent anti-hive kill line — see "Light, silver, and
+the kill line" below.)*
 
 ### 5 modifications (the sign — *how* the magic behaves)
 
@@ -51,7 +52,7 @@ Modifications are **operators** applied to an element. The clearest pair is
 - `Heat + Addition (+)` → **fire** (add heat)
 - `Heat + Subtraction (−)` → **freezing chill** (remove heat)
 
-Working set of 5 operators (draft):
+The **5 operators (locked canon):**
 
 | Modifier | Effect on the element |
 | --- | --- |
@@ -64,15 +65,24 @@ Working set of 5 operators (draft):
 So `Flow + Focus` ≠ `Flow + Spread`; `Air + Subtraction` pulls a vacuum where
 `Air + Addition` pushes a gust. The same ~10 symbols cover dozens of effects.
 
-> Open: exact operator set and whether "reversed sign = opposite" is literal
-> mirroring (draw the glyph flipped) or a distinct subtraction glyph. Leaning
-> Witch-Hat-literal: a flipped sign reverses the effect.
+> **Resolved:** the 10 glyphs are a **fixed set**, and Addition / Subtraction are
+> **two distinct entries** in it. So "reversed sign = opposite" is the **fiction /
+> mnemonic** — Subtraction *reads* as Addition's mirror (mystically the same root
+> sign inverted), but in practice the player learns and inscribes it as its own
+> glyph. **No orientation-sensitive input engine** is required (you don't reverse
+> the effect by drawing a glyph flipped). Poetic grammar, simple implementation.
 
 ## Worked effect table (5 elements × 5 modifiers)
 
 > The canonical named effects the grammar produces. Names are a working draft; the
 > **classes** are load-bearing and tie directly to the four-tool kill economy
 > (`../Mechanics/kill-resolution.md`).
+>
+> These 25 single-element × single-operator effects are the **anchors** for the
+> full per-build spell tables (`spells/tier-0..4.md`, 386 builds total). Policy:
+> the **scaffold is generated**, every **effect is hand-authored manually over
+> time** (all 386, no auto-fill) — see `spells/README.md`. When authoring the
+> matching entries, reuse the names below; don't coin a second name.
 
 ### The class rule (why this table matters, not just flavors)
 
@@ -126,8 +136,10 @@ The **`Light` element is the silver-equivalent kill line** — but it is deliber
 - **Telugu-gated.** The Light kill glyphs (Silverlight, Pierce-of-Day) come only
   from recovered **ancient/Telugu scripture**, not surface glyph codes — late-game
   by construction (see ancient-history / glyph-master progression below).
-- **Energy-brutal.** They cost far more from the sword's bar than any other glyph,
-  so firing one is a real sacrifice of her reserve, not a spam tool.
+- **Energy-brutal.** The Light kill glyphs simply have a **much higher per-fire
+  base cost** than any other glyph (the additive rule still holds — they're just an
+  expensive glyph to fire), so each shot is a real sacrifice of her reserve, not a
+  spam tool. The cost lives in the *firing*, not a separate penalty system.
 - **Same backfire.** Like physical silver, they perma-kill the dumb and **backfire
   on Actives** — scarcity by cost, not by prohibition.
 
@@ -135,18 +147,27 @@ So the grammar *has* a clean-kill answer, but it's the one you almost never want
 fire. Light utility glyphs (Dawnspread, Lantern-Bind, Dusklock) are cheaper and
 surface earlier; only the kill line is gated.
 
-## Mixing incompatible elements — energy penalty only
+## Mixing elements — freely allowed, no penalty
 
-Incompatible co-inscribed elements (e.g. `Heat +` and `Flow +` on the same blade)
-are **not** a misfire or relationship mechanic. They simply cost **much more
-energy** to run from the sword's bar (`energy-and-stamina.md`). No new HP-loss or
-backlash system; the cost is the cost.
+Co-inscribing any elements (e.g. `Heat +` and `Flow +` on the same blade) is
+**freely allowed** and carries **no special cost**. There is no misfire, backlash,
+Attunement penalty, **or mixing energy surcharge.** A mixed blade costs exactly the
+same as a clean blade with the same number of glyphs.
 
-This is self-balancing and needs no extra punishment layer: an over-mixed blade
-**drains its bar fast and reverts to penalized plain steel** — the energy doc's
-existing empty-bar failure state does the disciplining for free. A clean,
-single-element or compatible build runs cheap and stays charged; a chaotic mixed
-build is powerful in bursts but can't sustain.
+This follows the **additive energy rule** (`energy-and-stamina.md`): glyph cost is
+**linear in glyph count** — N glyphs cost N× a single glyph's base, regardless of
+whether they're compatible. If one glyph costs 20, two cost 40, three cost 60, four
+cost 80.
+
+What disciplines "load it up" is therefore **not** a mix penalty but the two
+standing costs that apply to *every* extra glyph:
+
+- **Additive energy drain** — a 4-glyph blade burns 4× per the rule above, so it
+  empties her bar fast and reverts to penalized plain steel (empty-bar fallback).
+- **The strength tax** — each glyph is ~−15% base strength whether it's firing or
+  not (a 4-glyph blade is ~−60%).
+
+So mixing is a creative freedom, not a trap; build size is what costs you.
 
 ## Mass-gated slots (the sword core)
 
@@ -254,6 +275,50 @@ Both ultimately draw on the same operative symbols; spellcasting is casting the
 grammar *unbound* (in the air, Witch-Hat-style) where glyph craft **binds** it to
 a weapon body.
 
+## Surfacing & decoding ancient Telugu scripture
+
+> **Resolved:** Telugu is **not** a player lexicon. It does **not** reuse the
+> Chinese literacy UI (`../Mechanics/literacy-system.md`). Almost no one alive can
+> read it; the player never learns it character-by-character.
+
+**Who can read Telugu, ranked:**
+
+- **The sword — the best reader alive.** She was **present during the
+  renaissance**: she saw how the early glyphs were discovered, and she knew how
+  **people were made into weapons** (the soul-sword rite — her own origin, see
+  `../Lore/sword-girl-backstory.md`, `../Lore/the-hero-and-true-sword.md`). She is
+  a *primary source*, not a scholar reconstructing from fragments.
+- **The glyph master** — reads **bits and pieces**; reconstructs slowly through
+  research, tools, and cross-referencing recovered inscriptions.
+- **A few very rare NPCs** — fragmentary, partial, often wrong (hermits, the last
+  who remember, a corrupted scribe-line).
+
+**How it surfaces in play:**
+
+- The player **recovers** Telugu inscriptions in the world (ruins, the hero's
+  trail, deep regions) — as *objects/evidence*, not vocabulary to memorize.
+- Meaning comes from **bringing them to a reader.** The **sword is the strongest
+  decode path**, but she is **gated by relationship** — reading the thing that
+  *ended the world and made her a sword* is loaded for her, so deep Telugu reads
+  unlock through **Clarity/Trust/Resonance** (`../Sword/metrics-clarity-trust-resonance.md`),
+  not on demand. She may **refuse**, **partially read**, or **withhold**.
+- The **glyph master** is the slower, safer, always-available path: hand over an
+  inscription and they grind out a partial decode over time — the route that
+  *doesn't* cost sword relationship but is weaker and incomplete.
+
+**What decoding outputs** (never "reading fluency"): new glyphs, the **Light kill
+line** (Silverlight, Pierce-of-Day — Telugu-gated by construction above), lore
+truth about the renaissance / the rite / the hero, and glyph-master progression.
+
+**Why this is the right shape:**
+
+- It makes the **sword a narrative authority**, not just a weapon — she is the
+  living memory of how the world's magic *and* her own curse came to be.
+- It gates deep power through the **sword relationship**, reinforcing "you
+  negotiate with your weapon" instead of adding a second literacy grind.
+- It keeps the danger theme intact: **using the grammar is touching the thing that
+  ended the world**, and the best translator is its first victim.
+
 ## Connection to lore
 
 The ancient scripture (Telugu, the old form of the glyphs) underlies all of this
@@ -265,20 +330,29 @@ and `../Mechanics/literacy-system.md`.)
 
 ## Open
 
-- Exact element roster and the 5 operators (drafts above).
-- Whether "reversed sign = opposite" is literal mirroring or a distinct glyph.
-- How ancient/Telugu scripture is surfaced and decoded in-game (parallel to the
-  Chinese lexicon UI, or its own thing).
 - Tuning: how much more energy mixed-element builds cost vs. clean ones, and how
   high the Light-kill-line energy cost sits relative to a normal glyph.
 
 ### Resolved
 
+- **Element roster + operators LOCKED.** Canon: **5 elements** (Heat / Flow / Air /
+  Earth / Light) × **5 operators** (Addition / Subtraction / Spread / Focus / Bind).
+  Draft disclaimers removed.
+- **"Reversed sign = opposite" = fiction only.** Addition/Subtraction are two
+  distinct glyphs in the fixed 10; the mirror idea is the mnemonic, not an
+  orientation-based input mechanic. No flip-to-reverse engine needed.
 - **Worked effect table** — the 5×5 named-effect table is now drafted above, sorted
   by loan-class / kill-class / severance-class.
 - **Light = silver-equivalent kill line**, but Telugu-gated, late, and
   energy-brutal so it never trivializes scarce silver (see "Light, silver, and the
   kill line" above).
-- **Mixing incompatible elements = energy penalty only** — no misfire or
-  Attunement coupling; the empty-bar failure state does the disciplining (see
-  "Mixing incompatible elements" above).
+- **Energy cost is ADDITIVE & mixing is free.** Glyph cost is linear in count
+  (N glyphs = N× base); a mixed blade costs the same as a clean blade of the same
+  size — **no mix penalty.** Discipline comes from additive drain + the ~15%/glyph
+  strength tax. The **Light kill line** is just a glyph with a very high per-fire
+  base. (See "Mixing elements" above and `energy-and-stamina.md`.)
+- **Telugu decoding = its own system, sword-led** (not the Chinese lexicon UI).
+  The **sword** is the best reader (she lived the renaissance); glyph master + rare
+  NPCs read fragments; player recovers inscriptions and brings them to a reader.
+  Output = glyphs / Light line / lore, gated by sword relationship. See "Surfacing
+  & decoding ancient Telugu scripture" above.

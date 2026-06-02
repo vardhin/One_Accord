@@ -1,144 +1,177 @@
 # Ideation TODO — What's Left to Finalize Before Building
 
-> Purpose: the spine and most systems are designed (OVERVIEW calls it ~30–40%;
-> in practice the *fiction + systems* are closer to ~60%). What is **not** done is
-> (a) a handful of explicitly-open design questions, and (b) the entire bridge from
-> "design ideation" to "buildable spec." This file tracks both so we know when
-> ideation is actually *finished* and we can start making the game.
+> Reframed 2026-06-02. The earlier framing ("~70% done, only a production bridge
+> left") was misleading: what's settled is the **framework** — the caps, tiers,
+> grammars, archetypes, and core mechanics. The **content** those frameworks are
+> meant to hold is still largely unideated: most regions, buildings, NPCs, quests,
+> progression, spells/weapons, and the endgame. That content design is real
+> ideation, not production.
+>
+> The old Sections A & B (settled framework questions + the consistency pass) are
+> **deleted** from this tracker — every conclusion in them now lives in its own doc
+> and is indexed in `GLOSSARY.md` (the single source of truth for locked terms).
+> This file now tracks the **content-ideation worklist** in build-dependency order,
+> followed by the **production bridge** (which correctly comes *after* content).
 >
 > Legend: `[ ]` open · `[~]` partially decided / drafted · `[x]` concluded.
 > Each item points at the doc it lives in. Resolve items **in the doc**, then tick here.
 
 ---
 
-## 0. Core mechanic concluded this pass — the Hivemind Thread Scheduler
+## The approach: build-dependency order
 
-> The spine of the game, now written: `Mechanics/hivemind-threads.md`.
+We ideate content in the order each stage feeds the next:
 
-- [x] **Hive = an AI on a finite thread budget**, dynamically allocating attention.
-  "Concentration" is the *local face* of that allocation.
-- [x] **Quantity→quality arc:** early = ~200 dumb threads (swarm pressure); under
-  player pressure they **merge** into smart **husk-commanders** (coordinate
-  hundreds, telekinesis, body-horror); endgame = **one** total Hivemind
-  (Mahabharata-scale war).
-- [x] **Player progress drives the merge** — your success sharpens the enemy (the
-  tragic loop). Killing a merged thread → **1v1 soul combat / phase-2 boss.**
-- [x] **The seal: the living can't be infected.** The inversion of zombie-survival.
-  Residue = **soft-infected** people: themselves day-to-day, but a **backdoor** the
-  hive can take over (blackout, no memory). **Only late-game Light glyphs detect
-  them.** Quarantine → **Checkup.** — `Mechanics/plague-and-infection.md`
+> **Regions → Buildings & Mechanics → NPCs → Quests → Progression → Spells & Weapons → Endgame**
 
----
+Regions define *where*; buildings & mechanics define *what operates there*; NPCs
+*staff and inhabit* it; quests *give it motion*; progression *gates the motion*;
+spells & weapons *are the reward currency of progression*; the endgame *is where it
+all converges*. We don't have to finish one stage 100% before touching the next, but
+this is the priority spine.
 
-## A. Open design questions already flagged in the docs
-
-These are the items the docs themselves mark as undecided.
-
-### Identity & framing
-
-- [x] **Final genre name / internal label.** Concluded: **no coined name** — use a
-  descriptor stack ("top-down 2D action-RPG survival-sim with Soulslike combat and
-  a living LLM-driven cast; Stardew *shape*, tone from Dark Souls to fairy-tale").
-  — `genre-and-themes.md`
-
-### World & regions
-
-- [x] Three regions concluded **and tiered**: **Silvergate** (dense), **starter
-  settlement** (mid), **Arghanzza** (mini). Tiers = size + population + story
-  weight. — `Regions/world-structure.md`
-- [x] **Region structure concluded.** Targets: **~7–8 dense + 3–4 mini.** The old
-  7-name skeleton (Last Market, Mill Fields, …) is **deleted** as pointless. New
-  regions get *designed concretely when there's a reason* — remaining region
-  *content* is production work, not an open conceptual question.
-  — `Regions/world-structure.md`
-- [~] **Endgame** — explicitly **deferred to the end of ideation** (per decision).
-  Expected shape now recorded: threads converge to **one** total Hivemind in a
-  Mahabharata-scale final war. — `Mechanics/hivemind-threads.md`, `OVERVIEW.md`
-
-### NPCs
-
-- [x] **NPC budget concluded: 40 named is a HARD CAP**; everything else is ambient
-  (Tier 3, not simulated). — `Npcs/core-named-roster.md`
-- [~] Tier 1 roster: ~10–12 *role-slots* listed. **Names deferred to per-NPC
-  authoring** (Chinese-fitting names assigned when each becomes a real character —
-  not an open conceptual gap). — `Npcs/core-named-roster.md`
-- [x] **Tier 2 roster** — *not invented abstractly.* Fills in under the 40 cap as
-  regions are authored (production content).
-- [x] **Which NPCs can be infected / become Named Nodes — RESOLVED: none.** The old
-  hero **sealed** the hive; the living can't be infected. Named Nodes are
-  hive-grown merged threads, not people. Human channel = **soft-infected** backdoor
-  (temporary blackout takeover). — `Mechanics/plague-and-infection.md`,
-  `Enemies/hive-enemy-design.md`
-- [x] **The "former-wielder candidate" — RESOLVED: deleted.** Lore says the
-  cleric was the *only* wielder and she killed him, so there is no admired
-  predecessor. The "you fall short" standard is now the **imagined ideal wielder**
-  (aspirational, not historical) — no NPC slot needed.
-  — `Sword/sword-as-npc.md`, `Npcs/core-named-roster.md`
-
-### Enemies
-
-- [ ] **Generic husk/active stat blocks + behaviors per region.** — `Enemies/hive-enemy-design.md`
-- [~] Arghanzza bestiary drafted; other regions' bestiaries not started.
-
-### Glyphs & magic
-
-- [ ] **Exact element roster + the 5 operators** (currently drafts; "Light" tie to
-  silver not committed). — `Glyphs/glyph-system.md` (Open)
-- [ ] **"Reversed sign = opposite"**: literal mirrored glyph vs. a distinct
-  subtraction glyph. — `Glyphs/glyph-system.md`
-- [ ] **How ancient/Telugu scripture is surfaced & decoded in-game** (parallel to
-  the Chinese lexicon UI, or its own system). — `Glyphs/glyph-system.md`
-- [ ] **Energy tuning**: mixed-element cost vs. clean; Light-kill-line cost vs. a
-  normal glyph. — `Glyphs/glyph-system.md`
-- [ ] **Fill the spell tables** — `Glyphs/spells/tier-0..4.md` are mostly `(TODO)`
-  for Effect / Class / Energy / Notes. Decide whether these are hand-authored or
-  generated by `generate_spells.py`, then complete them. — `Glyphs/spells/`
-
-### Sword systems (mostly designed; confirm naming)
-
-- [~] Brow-Touch name (candidates: Brow-Touch / Mind-Touch / Prompt the Blade /
-  Ask the Edge). Pick the canonical one. — `Sword/voice-and-brow-touch.md`
-- [~] Stillpoint vs. Held Cut — "Stillpoint" leaning canonical; confirm. — `Mechanics/stillpoint.md`
+Locked frameworks each stage builds on (see `GLOSSARY.md` for definitions):
+region tiers, the 40-NPC cap & NPC tiers, the four-tool kill economy, the glyph
+grammar (5×5) & classes, forge levels, the Clarity/Trust/Resonance metrics, the
+hivemind thread scheduler, and the seal / soft-infected model.
 
 ---
 
-## B. Cross-system consistency pass (no new design, just lock it down)
+## 1. Regions & open-world structure
 
-- [ ] **One-pass reconciliation of all docs** — the design has grown; resolve any
-  contradictions between OVERVIEW and subsystem docs (e.g. region count, %-done
-  number, which Brow-Touch/Stillpoint names are canonical).
-- [ ] **Update OVERVIEW "% ideated" and "Open questions"** to match reality once
-  the above are resolved.
-- [ ] **Glossary / canon-terms sheet** — single source of truth for named systems
-  (Clarity/Trust/Resonance, Voice Links, Stillpoint, Accord roll, forge levels,
-  glyph classes) so build specs reference one vocabulary.
+- [~] **The region set.** Framework locked: **~7–8 dense + 3–4 mini**, tiered.
+  **3 of ~11 concluded:** Silvergate (dense), starter settlement (mid), Arghanzza
+  (mini). The rest are **unideated** — design each concretely when there's a reason,
+  to the per-region checklist in the doc. — `Regions/world-structure.md`
+- [ ] **Open-world / connectivity map.** How the dense regions and mini spokes
+  connect via **decompression corridors**: the actual adjacency graph, traversal
+  gating (what blocks/opens each link), and the intended route(s) through the game.
+  Currently only the *concept* of corridors exists, not a map. — `Regions/world-structure.md`
+- [ ] **Per-region concept pass** for each new region: theme, the one mechanic it
+  teaches/owns, its crisis, its tie to the hive's concentration map, and its tier.
+- [ ] **Concentration / difficulty layout** across the map — where the hive's
+  authored baseline attention is high vs. low, and how that shapes route order.
+  — `Mechanics/hive-concentration.md`
+
+## 2. Buildings & mechanics (per region)
+
+- [~] **Building/facility vocabulary.** Starter settlement has a concrete layout
+  (gatehouse, well, storehouse, healer shed, forge lean-to, training yard, common
+  room, corpse pit); system NPC roles imply facilities. Needs to become a **reusable
+  set of building types** with what each *does* mechanically. — `Regions/starter-settlement.md`, `Npcs/system-npc-roles.md`
+- [ ] **Which mechanics live in which building** — forge (levels 0–4), healer/Checkup,
+  quartermaster/allocation, training, bell-code comms, etc. Map each game system to
+  the physical place(s) the player uses it. — `Mechanics/forge-and-upgrades.md`, `Mechanics/village-and-union-system.md`
+- [ ] **Region-specific mechanics** — the one new system each region introduces
+  (e.g. Arghanzza traversal already drafted; others not). — `Regions/Arghanzza/traversal.md`
+- [ ] **The village/union system, concretely** — what "organizing a settlement"
+  *is* in buildings + actions, not just as a concept. — `Mechanics/village-and-union-system.md`
+
+## 3. NPCs (fill the 40-named cap)
+
+- [~] **The named roster.** Cap locked at **40**; tiers locked. Authored so far:
+  the **Core Five** + ~10–12 Tier-1 **role-slots** (unnamed). The bulk of the 40 —
+  names, per-NPC depth, region, what they teach/offer/want — is **unwritten.**
+  — `Npcs/core-named-roster.md`, `Npcs/npc-tiers.md`
+- [ ] **Per-NPC authoring** as regions come online: name (Chinese-fitting), tier,
+  home region/building, role, relationship hooks, literacy domain, log seeds.
+- [ ] **Tier-2 secondary cast (~15–25)** — invented under the cap as regions are
+  authored (not abstractly).
+- [ ] **The Hivemind as inhabitant** — how its threads/Named Nodes populate regions
+  as a live presence, region by region. — `Npcs/hivemind-agent.md`, `Enemies/hive-enemy-design.md`
+
+## 4. Quests
+
+- [ ] **Quest structure & taxonomy** — what a "quest" *is* here (this is a
+  log/agent-memory world, not quest-flag-driven). Main-arc beats vs. regional vs.
+  emergent/relationship-driven. **No quest docs exist yet** — this is greenfield.
+  — relates to `Mechanics/log-and-agent-memory.md`
+- [ ] **The main spine** — the through-line from the starter crisis to the endgame
+  war, region by region.
+- [ ] **Per-region quest set** — the crises/arcs each region carries (starter
+  settlement's "accused of turning" crisis is the only one drafted).
+- [ ] **Sword-relationship arcs as quests** — Voice Link unlocks, soul-duel gates,
+  the bond paths. — `Sword/upgrades-and-identity.md`, `Sword/voice-and-brow-touch.md`
+
+## 5. Progression
+
+- [ ] **The progression spine** — what the player actually advances along. Likely
+  axes: forge level (0–4), Voice Links (I–VI), glyph/Light-line unlocks, sword
+  bond depth, settlement/union cohesion, literacy. How they interlock and gate each
+  other. **No unified progression doc exists** — pull the scattered ladders together.
+  — `Mechanics/forge-and-upgrades.md`, `Sword/voice-and-brow-touch.md`, `Glyphs/glyph-system.md`
+- [ ] **Gating & pacing** — what unlocks what, in what order, tied to the region map
+  (Section 1) and quests (Section 4).
+- [ ] **"The relationship IS the build"** — concretize the bond paths
+  (Dominating/Devotional/Romantic/Professional/Exploitative/Mutual-healing) as an
+  actual progression system, not just a lens. — `Sword/upgrades-and-identity.md`
+
+## 6. Spells & weapons
+
+- [~] **Spell tables (386 builds).** Framework + scaffold done; **tier-0 authored**,
+  **tiers 1–4 mostly scaffold** (every effect to be hand-authored, no auto-fill).
+  Long-tail; track authored vs. scaffold. — `Glyphs/spells/`, `Glyphs/glyph-system.md`
+- [ ] **Weapon forms & the mass-gated slots** — dagger(1) → … → greatsword(4):
+  feel, trade-offs, how forms are acquired/changed. — `Glyphs/glyph-system.md`
+- [ ] **Companion weapons** — the salt-pike / bell-knife / cold-needle / ash-axe
+  set for teammates: what each does, who gets them. — `Npcs/system-npc-roles.md`
+- [ ] **The Light kill line, concretely** — Silverlight / Pierce-of-Day: where
+  they're earned, energy cost, the soft-infected detection use. — `Glyphs/glyph-system.md`
+
+## 7. Endgame
+
+- [~] **Shape recorded, content deferred.** Threads converge to **one** total
+  Hivemind in a **Mahabharata-scale final war**. The *design* of that war — its
+  structure, the final soul-duel(s), how the map/union/progression feed it — is
+  **unideated** (deliberately deferred to the end of ideation).
+  — `Mechanics/hivemind-threads.md`, `OVERVIEW.md`
+- [ ] **The convergence ramp** — how the merge (quantity→quality) is *played* across
+  the late game, not just stated. — `Mechanics/hivemind-threads.md`
+- [ ] **Final-region design** + the climactic confrontation.
 
 ---
 
-## C. The ideation→production bridge (currently 0% — this is the real gap)
+## 8. The ideation→production bridge
 
-Every doc so far is *fiction + systems*. None of it answers "how do we build it."
-Ideation isn't finished until these are decided.
+> This is the *last* stage, after content ideation. Some early de-risking work is
+> already done (the vertical-slice spec, the local-model choice) because they
+> unblock prototyping — but the bulk waits until content above is far enough along.
+
+Every design doc is *fiction + systems + content*. This section answers "how do we
+build it." Ideation isn't finished until these are decided.
 
 ### Scope & slice
 
-- [ ] **Define the vertical slice** — almost certainly *Three Nights Outside the
-  Gate + starter settlement + first sword bond*. Decide exactly what's in/out of v0.
-  — relates to `Player/opening-and-tutorial.md`, `Regions/starter-settlement.md`,
-  `Npcs/starter-npcs.md`
-- [ ] **MVP feature cut**: which of the deep systems (Stillpoint, soul duels,
-  glyphs, union-building, literacy, agent memory) are in the slice vs. deferred.
-- [ ] **Production scope reality-check** — 7 regions × 40 NPCs × LLM-per-NPC is
-  large for a solo/small team; decide the honest target (full game vs.
-  proof-of-concept slice first).
+> Concluded — written as `Production/vertical-slice-spec.md`.
+
+- [x] **Define the vertical slice** — CONCLUDED: *Three Nights Outside the Gate +
+  starter settlement + first sword bond*. One settlement, the Core Five, one local
+  crisis, one sword acquisition; no second region, no cross-settlement union, no
+  endgame. In/out list written in the spec. — `Production/vertical-slice-spec.md`
+- [x] **MVP feature cut** — CONCLUDED. **In:** deterministic dialogue pipeline
+  (real), Clarity/Trust/Resonance, small log/agent-memory (sword only as live deep
+  agent), Soulslike combat + consent gate, Stillpoint, forge L0→1, Seek Accord.
+  **Deferred:** glyphs/386 spells, soul duels/phase-2, cross-settlement union,
+  literacy lexicon UI, the hive as a *live* second LLM agent (offscreen pressure in
+  v0), full four-tool kill economy. — `Production/vertical-slice-spec.md`
+- [~] **Production scope reality-check** — the honest target (full game vs.
+  proof-of-concept-first) is **explicitly deferred** (decision 2026-06-02). The
+  slice is built first and the target decided after; architecture is NOT to be sized
+  for the full 7-region game on the strength of the slice spec.
+  — `Production/vertical-slice-spec.md`
 
 ### Tech decisions
 
-- [ ] **Engine / framework** (2D, Stardew-scale presentation). Godot vs. Unity vs.
-  bespoke, etc.
-- [ ] **LLM integration architecture** — Zaya confirmed usable; decide model
-  serving, the deterministic dialogue-function pipeline implementation, context
-  builder, log store. — `Mechanics/log-and-agent-memory.md`, `Sword/dialogue-system.md`
+- [~] **Engine / framework** (2D, Stardew-scale presentation). Godot vs. Unity vs.
+  bespoke — **explicitly deferred** (decision 2026-06-02); the slice spec is
+  engine-agnostic on purpose. — `Production/vertical-slice-spec.md`
+- [~] **LLM integration architecture** — partially concluded. **Model: LiquidAI
+  LFM2-8B-A1B** (`Q4_K_M` GGUF), served via **llama.cpp `llama-server` on port 8080**
+  (OpenAI-compatible `/v1`). **Zaya is forsaken.** Role locked: the LLM is a **pure
+  language interface** (function + few-shot tone + context + canonical payload in →
+  one in-voice line out); it never picks functions, manages state, or decides canon.
+  Still open: context-builder & log-store *implementation* (data-format pass below).
+  — `Production/vertical-slice-spec.md`, `Mechanics/log-and-agent-memory.md`, `Sword/dialogue-system.md`
 - [ ] **Data formats** for the canonical payloads the docs already imply: object
   reveal tiers, hint tiers, dialogue-function eligibility, combat logs,
   relationship stats, lexicon/literacy state. Pick a schema (JSON/DB/etc.).
@@ -158,23 +191,27 @@ Ideation isn't finished until these are decided.
 ### Process
 
 - [ ] **Milestone roadmap** — slice → playable demo → region-by-region.
-- [ ] **Repo/project setup** — currently not even a git repo; decide structure for
-  code vs. these design docs.
+- [x] **Repo/project setup** — now a git repo (design docs under `Documentation/`).
+  Code-vs-docs structure to be decided alongside the engine choice.
 - [ ] **Risk list** — the LLM-NPC depth, combat feel (Soulslike-first with a
   consent gate), and Arghanzza traversal rules are the highest-risk-to-prove
   systems; plan to prototype them early.
 
 ---
 
-## D. Definition of "ideation done"
+## Definition of "ideation done"
 
-Ideation is finished — and we start building — when:
+Ideation is finished — and we start building in earnest — when:
 
-1. All Section A open questions are resolved in their docs.
-2. Section B consistency pass is complete and OVERVIEW reflects reality.
-3. A written **vertical-slice spec** exists (Section C scope) naming exactly what
-   v0 contains.
-4. Engine + LLM architecture + data formats are chosen (Section C tech).
-5. A milestone roadmap exists.
+1. **Content stages 1–7** are ideated to a buildable level: the region map exists,
+   each region has a concept + buildings + mechanics, the 40 NPCs are authored, the
+   quest spine and per-region quests are designed, the progression spine is unified,
+   spells/weapons are filled enough to play, and the endgame is designed (not just
+   shape-recorded).
+2. **The production bridge (Section 8)** is decided: vertical-slice spec (done),
+   engine, LLM architecture, data formats, save system, art/audio/tooling, and a
+   milestone roadmap.
 
-Everything past that is production, not ideation.
+Everything past that is production, not ideation. Note: stages don't need to be 100%
+*produced* (the 386 spells, all 40 NPC logs, etc. are long-tail) — they need to be
+*decided* and demonstrated as authorable.

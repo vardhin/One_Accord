@@ -25,8 +25,8 @@ adaptation, relationship/world arcs, system authority.
 Schedules, goals, relationships, local memory, and system authority.
 
 Examples: innkeeper, blacksmith, union organizer, militia captain, healer, farmer
-leader, priest/ritualist, trader, infected child/teen, former-wielder candidate,
-village elder, corpse-burner.
+leader, priest/ritualist, trader, soft-infected adult (a hive backdoor, not an
+infected/turning case — and never a child), village elder, corpse-burner.
 
 (See `core-named-roster.md`.)
 

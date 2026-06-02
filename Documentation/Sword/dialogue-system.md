@@ -56,7 +56,7 @@ interaction count. This gives variety while staying reproducible.
 | Context | Eligible functions |
 | --- | --- |
 | Sheathed | SILENCE / muted-event logging only |
-| Brow-Touch | IDENTIFY, GUIDE, REMEMBER, WITHHOLD, REBUKE |
+| Seek Accord | IDENTIFY, GUIDE, REMEMBER, WITHHOLD, REBUKE |
 | Combat | WARN, CORRECT, REBUKE, SILENCE |
 | High-Trust idle | ASK, REMEMBER, COMFORT, GUIDE |
 | Low Trust + repeated prompting | REBUKE, WITHHOLD, SILENCE |

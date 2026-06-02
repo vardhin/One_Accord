@@ -1,12 +1,16 @@
 # Log & Agent-Memory System
 
 > The backbone for LLM-backed NPCs. Simulation owns world mutation; the LLM
-> writes voice. Built on the local model (Zaya) with context switching.
+> writes voice. Built on the local model (**LiquidAI LFM2-8B-A1B**, served via
+> llama.cpp on port 8080) with context switching.
 
-## LLM integration premise (Zaya)
+## LLM integration premise
 
-- The local model (Zaya) has been tested and works: small, fast enough, usable.
-  Exact architecture details don't need further dwelling.
+- The local model is **LiquidAI LFM2-8B-A1B** (`Q4_K_M` GGUF), served by llama.cpp
+  `llama-server` on port 8080 (OpenAI-compatible `/v1`). Small, fast, usable.
+  *(This supersedes the earlier "Zaya" model, now forsaken.)* The LLM is a **pure
+  language interface** — it writes the line; it never selects functions, manages
+  state, or decides canon. See `../Production/vertical-slice-spec.md`.
 - **Every NPC can be backed by the same local model with context switching.**
 - **But not every NPC gets equal depth.** Context management is crucial. (See
   `../Npcs/npc-tiers.md`.)

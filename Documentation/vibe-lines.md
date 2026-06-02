@@ -10,7 +10,7 @@ for in-game/marketing voice.
 - Outside world: the sword is your weapon. Soul dimension: you are the sword.
 - The sword knows you through closeness. The hive knows you through surveillance.
 - The sword is not always available. It is drawn into speech.
-- Brow-Touch guarantees attention, not cooperation.
+- Seeking Accord guarantees attention, not cooperation.
 - The player can always request the sword's attention. They cannot always earn
   its answer.
 - The sword is a guide because she knows. She helps because she trusts. She
