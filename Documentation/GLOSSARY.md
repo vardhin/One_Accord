@@ -198,22 +198,34 @@
   **sword-led** decoding system (NOT the Chinese lexicon UI). The sword is the best
   reader; player recovers inscriptions and brings them to a reader.
   → `Glyphs/glyph-system.md`, `Mechanics/literacy-system.md`
+- **Language fossils** — place and faction names often preserve eroded Telugu roots
+  across millennia (e.g. `vendi + ooru -> Vendur`), even when modern people no
+  longer understand the etymology. → `Lore/setting-and-tech-level.md`
 
 ## World, NPCs & progress
 
 - **Region tiers** — **Dense** (~7–8, returnable hubs) · **Mid** (Goodsprings-scale
-  settlement) · **Mini** (~3–4, single-arc spokes). Concluded: Vendur (dense),
-  starter settlement (mid), Arghanzza (mini). → `Regions/world-structure.md`
+  settlement / focused stronghold) · **Mini** (~3–4, single-arc spokes). Concluded:
+  Vendur (dense), Magizhee (mid), Arghanzza (mini). Lore-demanded: Rosetta ruins
+  (dense), Vengarz Camp (mid), underground sanctum (mini). → `Regions/world-structure.md`
+- **Magizhee** — the Goodsprings-scale starter settlement; left of the river,
+  between the militia zone and Vendur. → `Regions/starter-settlement.md`
+- **Vendur** — silver trade hillfort; name fossil from `vendi + ooru -> venduru ->
+  Vendur`. Dense hub, sword-girl's old home. → `Regions/Vendur/region-vendur.md`
+- **Vengarz Camp** — mid-size mobile wooden/tent/wagon stronghold near Rosetta;
+  remnant of an old anti-hive force from the hero's legion. → `Regions/Vengarz/vengarz-camp.md`
+- **Rosetta ruins** — confirmed dense hazard/lore region; old research ground-zero
+  where the hive first entered. → `Regions/region-set.md`
 - **Decompression corridors** — the quiet traversal spaces between regions; on the
   map they are the **edges** of the graph (and playable rooms that can hold a single
   mini-arc). → `Regions/world-structure.md`, `Regions/connectivity-map.md`
-- **Route spine** — the heat-ordered Dark Souls **lattice** of regions: a linear
-  backbone (ascending concentration baseline) with optional loops/shortcuts. Region
-  order **is** difficulty order; the connectivity graph and difficulty layout are one
-  graph. → `Regions/connectivity-map.md`
-- **Reserved slot** — an unfilled position on the route spine with a known
-  neighbor/gate/heat-band; future regions claim a slot rather than being designed in a
-  vacuum. → `Regions/connectivity-map.md`
+- **Route shape** — square-map lattice: Magizhee opens into militia/Vendur, converges
+  at Vendur, crosses the river into Arghanzza, reaches Vengarz Camp, then Rosetta
+  and Silent Core. Region heat still orders pressure, but the current map is anchored
+  by natural boundaries and the river threshold. → `Regions/connectivity-map.md`
+- **Reserved slot** — an unfilled position in the route shape with a known
+  neighbor/gate/heat-band; future regions claim a slot rather than being designed
+  in a vacuum. → `Regions/connectivity-map.md`
 - **Gate types** — what blocks/opens a map edge, soft→hard: **heat gate** (baseline
   floor punishes going too early — the default ordering mechanism), **tool gate**
   (needs a learned traversal capability), **story gate** (opens on a narrative beat).

@@ -30,7 +30,7 @@ The premise is **stalemate, not salvation.** The world works but **cannot grow**
 no more food, no expansion past the husk, no pushing the hive back. The player is
 not a savior; they are the **breaking point**, special only as the **first to trust
 the sword.** And the title is a choice: there are **two** soul-sword accords (the
-player's rusty one, and the true maiden who guards herself on the divine mountain),
+player's rusty one, and the true maiden who guards herself at the mountain Sword Sanctum),
 and you may keep **One Accord** — the other pursues its own path. The deeper
 metaphysics — deities as **ascended souls**, the hive as a **Sauron-like possessor**,
 glyphs as the deities' **hidden indirect channel** — live in `Lore/premise-and-the-one-accord.md`
@@ -44,11 +44,12 @@ and `Lore/the-deities-and-the-soul-economy.md`.
 - 2D RPG at roughly Stardew Valley presentation scale, but not necessarily cozy.
 - Structure is Dark Souls–like: a handful of dense authored regions (target
   **~7–8 dense + 3–4 mini**) with quieter traversal corridors between them. Not a
-  huge open world. The **lore-demanded region set** is catalogued: starter (mid),
-  Vendur (dense — the sword-girl's birthplace/trade hub), the Rosetta ruins (dense,
-  hive ground-zero, now squatted by scavengers), the deities' underground sanctum
-  (mini, first Light glyph), the divine mountain (the true-sword maiden, endgame-tier),
-  and Arghanzza (mini, demoted to a pass-through). — `Regions/region-set.md`, `Regions/world-structure.md`
+  huge open world. The **lore-demanded region set** is catalogued: Magizhee (mid
+  starter), Vendur (dense — the sword-girl's birthplace/trade hub), Vengarz Camp
+  (mid mobile stronghold near Rosetta), the Rosetta ruins (dense research
+  ground-zero), the deities' underground sanctum (mini, first Light glyph), the
+  mountain Sword Sanctum (true-sword maiden), and Arghanzza (mini, post-river
+  transition). — `Regions/region-set.md`, `Regions/world-structure.md`
 - Scale inspiration for settlements and tutorial: Fallout: New Vegas / Fallout 3
   (first settlement is Goodsprings-scale).
 
@@ -97,7 +98,8 @@ and `Lore/the-deities-and-the-soul-economy.md`.
   resolution (the four-tool economy: plain metal / fire / silver / soul-sword
   severance); Stillpoint; plague/seal/soft-infected model; literacy; log &
   agent-memory; village/union; forge & upgrades; relationship stats.
-- `Regions/` — world structure, starter settlement, `Arghanzza/` and `Vendur/`
+- `Regions/` — world structure, Magizhee starter settlement, `Arghanzza/`,
+  `Vengarz/`, and `Vendur/`
   (deep subfolders). Only these three regions are concluded.
 - `Npcs/` — NPC tiers, the Hivemind deep agent, the Core Five starter NPCs, core
   named roster, system NPC roles & facilities.

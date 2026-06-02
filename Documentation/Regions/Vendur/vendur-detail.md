@@ -181,7 +181,7 @@ Authored as beats, not a cutscene:
 ## Buildings & facilities
 
 Vendur is dense, so it carries the **full facility set** (`../../Npcs/system-npc-roles.md`),
-upgraded past the starter settlement's bare versions:
+upgraded past Magizhee's bare starter versions:
 
 | Facility | Vendur version | Where / who holds it |
 | --- | --- | --- |
@@ -202,17 +202,18 @@ upgraded past the starter settlement's bare versions:
 
 ## Role on the spine
 
-- **Mid-spine dense hub** (`../connectivity-map.md`): a power spike (full forge + silver)
-  and the sword's emotional pivot, reached through at least one corridor from the starter
-  settlement. The player carries her **home without knowing it.**
+- **Early convergence dense hub** (`../connectivity-map.md`): a power spike (full
+  forge + silver) and the sword's emotional pivot, reached from Magizhee directly
+  or after the militia sends the player for support. The player carries her
+  **home without knowing it.**
 - **Two coupled nodes, one identity:** the upper hillfort (cooler, holds the value) and
   the lower trader town (warmer, exposed) are mechanically distinct — the lower can fall
   while the fort holds (`../connectivity-map.md`).
 - **The handoff happens elsewhere** (`region-vendur.md`); the player *brings* her back
   over the rust-years' drift.
-- Branch point: from Vendur the spine continues toward the hotter lore regions (Rosetta
-  ruins → sanctum → mountain); a **caravan tie** runs to the militia/coming-of-age
-  settlement (`../region-set.md`).
+- Branch point: from Vendur the route can point back toward the militia, toward the
+  river-crossing/right-side lore regions (Arghanzza → Rosetta → Silent Core), or
+  toward the mountain trail that an early player cannot yet complete.
 
 ## Open
 
@@ -225,6 +226,5 @@ upgraded past the starter settlement's bare versions:
   registered as a region (`../region-set.md`) but **unnamed and not yet authored.**
 - Exact **heat split** between the upper and lower nodes (resolve in the concentration
   pass, `../../Mechanics/hive-concentration.md`).
-- A **place name** for Vendur in the world's invented-name style (e.g. *Ionir / Ira /
-  Adry* flavor), written in the **glyph script** — a naming/script decision, not a
-  conceptual gap.
+- The **glyph-script rendering** of Vendur's name. The etymology is pinned:
+  `vendi + ooru -> venduru -> Vendur`.

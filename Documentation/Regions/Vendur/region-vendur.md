@@ -5,7 +5,7 @@
 >
 > The sword-girl's **birthplace estate** — now a living **trade hub
 > built on her grave.** The map's one crowded place, and the region where her arc
-> gears from Witness → Partner. A little far from the starter settlement, so the
+> gears from Witness → Partner. A little far from **Magizhee**, so the
 > player carries her *home* without knowing it.
 
 ## What it was
@@ -96,6 +96,7 @@ a caravan tie to a separate **militia / coming-of-age settlement** (`../region-s
   with the underground sanctum).
 - The **militia / coming-of-age settlement** at the far end of the caravan tie —
   registered (`../region-set.md`) but unnamed and unbuilt.
-- Where precisely Vendur sits relative to the starter settlement and the corridors, and
-  the heat split between its upper and lower nodes (`../connectivity-map.md`).
-- A **place name** in the world's invented style (*Ionir/Ira/Adry* flavor), glyph script.
+- The exact road/corridor shape between Magizhee, the militia zone, and Vendur, and
+  the heat split between Vendur's upper and lower nodes (`../connectivity-map.md`).
+- The **glyph-script rendering** of Vendur's name. The etymology is now pinned:
+  `vendi + ooru -> venduru -> Vendur` (silver town/region).

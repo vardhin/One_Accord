@@ -40,17 +40,18 @@ hivemind thread scheduler, and the seal / soft-infected model.
 ## 1. Regions & open-world structure
 
 - [~] **The region set.** Framework locked: **~7–8 dense + 3–4 mini**, tiered. The
-  **lore-demanded set is now catalogued** (`Regions/region-set.md`): starter (mid),
-  Vendur (dense), the **Rosetta ruins** (scavengers on hive ground-zero, dense/hot), the
-  **deities' underground sanctum** (mini dungeon, first Light glyph), the **divine
-  mountain** (true-sword maiden, endgame-tier), Arghanzza **demoted to a pass-through**.
-  ~3–4 dense + 1–2 mini remain as reasoned slots. — `Regions/region-set.md`, `Regions/world-structure.md`
+  **lore-demanded set is now catalogued** (`Regions/region-set.md`): Magizhee
+  (mid starter), Vendur (dense), **Vengarz Camp** (mid mobile stronghold / old
+  hero-legion remnant), the **Rosetta ruins** (dense/hot research ground-zero),
+  the **deities' underground sanctum** (mini dungeon, first Light glyph), the
+  **mountain Sword Sanctum** (true-sword maiden), and Arghanzza as the first
+  post-river transition mini. Remaining dense + mini slots are reasoned, not
+  filler. — `Regions/region-set.md`, `Regions/world-structure.md`
 - [x] **Open-world / connectivity map.** CONCLUDED as **structure** (the spine, not
-  filled with content): heat-ordered Dark Souls lattice; the 3 known regions placed
-  (starter root → corridor(s) → Vendur mid-spine hub → … → story-gated endgame
-  terminus; Arghanzza an off-spine hot mini-spoke); node types (hub/spoke/corridor);
-  three gate types (heat-soft, tool-hard, story-hard) + shortcuts; **reserved slots**
-  so future regions claim a position+gate+heat-band instead of being designed blind.
+  filled with content): square-map lattice with a river threshold; Magizhee opens
+  into militia/Vendur, converges at Vendur, crosses the river into Arghanzza,
+  reaches Vengarz Camp, then Rosetta and the Silent Core. Natural boundaries,
+  heat gates, traversal gates, and story/lore gates define the route.
   — `Regions/connectivity-map.md`
 - [ ] **Per-region concept pass** for each new region: theme, the one mechanic it
   teaches/owns, its crisis, its tie to the hive's concentration map, and its tier.

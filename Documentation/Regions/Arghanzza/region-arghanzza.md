@@ -1,7 +1,8 @@
 # Arghanzza — Region Overview
 
-> A major region and the introduction to the midgame: the reveal that the hive
-> can occupy ENVIRONMENTS, not just bodies. A murdered home, not an evil forest.
+> A post-river mini region and introduction to the right-side midgame: the reveal
+> that the hive can occupy ENVIRONMENTS, not just bodies. A murdered home, not an
+> evil forest.
 
 ## Identity
 
@@ -16,9 +17,12 @@ Now it has become a **body-horror forest.**
 
 ## Role in the game
 
-The **introduction to the midgame.** Until now the player has seen husks and
-quarantines. Arghanzza reveals the next level: **the hive can occupy
-environments.**
+The **first real region after the river crossing.** Until now the player has seen
+left-side husk drift, survival procedure, and human systems under strain.
+Arghanzza reveals the next level: **the hive can occupy environments.**
+
+Map role: right of the diagonal river, close to the crossing, likely
+mangrove-like. It is not an early dependency for Magizhee.
 
 Structural inspiration: the **Lost Woods / Master Sword forest** in Breath of the
 Wild — but darker and **more systemic.** Not a random maze; it **has rules** (see
@@ -26,12 +30,13 @@ Wild — but darker and **more systemic.** Not a random maze; it **has rules** (
 
 ## The central moral question
 
-> When a place survives by **trust**, what happens when **trust becomes the
-> infection vector**?
+> When a place survives by **trust**, what happens when trust teaches the hive
+> every door, path, and habit?
 
-The hive conquered Arghanzza through **kindness, habit, and recognition:** people
-opened doors to familiar voices, hid infected family, refused to burn loved ones,
-shared wells, gathered at festivals — and the hive **learned their routines.**
+Historically, before the seal stopped new living infection, the hive conquered
+Arghanzza through **kindness, habit, and recognition:** people opened doors to
+familiar voices, hid doomed family, refused to burn loved ones, shared wells,
+gathered at festivals — and the hive **learned their routines.**
 
 ## What it looks/feels like
 
@@ -39,17 +44,11 @@ Trees are body horror · mud can be hive-mind · rocks listen · paths loop · p
 breathe · pyres anchor space · whispers lure the player · the forest becomes a
 labyrinth.
 
-## Midgame systems it unlocks
+## Midgame systems it can unlock
 
-- Forge **fuel / charcoal** route.
 - **Pyrecraft** / proper ash rites.
 - First **environmental hive** understanding.
 - Maybe first serious **glyph clue** from old cottage threshold marks.
-
-## Resources the starter settlement may need from here
-
-Charcoal for forge · herbs for healer · salvage team · blueprint · bell clapper ·
-ash formula · old guide. (See `../starter-settlement.md`.)
 
 ## Not solvable in one visit
 

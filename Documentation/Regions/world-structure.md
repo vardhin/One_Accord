@@ -24,7 +24,8 @@ below).
 > - **Vendur** — *dense.* The sword-girl's birthplace estate, now a trade hub — an
 >   earth-rampart **hillfort of ~13 trader households** read as **two coupled nodes**
 >   (upper fort / exposed lower town). "Dense" still means band-scale (~55–60 souls).
-> - **Starter settlement** — *mid.* Goodsprings-scale first settlement.
+> - **Magizhee** — *mid.* Goodsprings-scale first settlement, placed between the
+>   militia zone and Vendur.
 > - **Arghanzza** — *mini.* A small village (deeply-developed in its own right,
 >   but mini in scale).
 >
@@ -32,6 +33,41 @@ below).
 > Mill Fields, etc. — is **deleted**; it was pointless scaffolding. New regions get
 > designed concretely when there's a reason, under the ~7–8 dense / 3–4 mini
 > targets.)
+
+## Current square-map skeleton
+
+The latest geography is deliberately simple: imagine a square map split by a
+river flowing roughly **top-left → bottom-right**. The river divides the early
+left-side human pocket from the hotter right-side hive ground.
+
+- **Bottom-left / left / bottom edges:** huge mountain ranges. Husks do not
+  arrive from these edges. The bottom-left-most high peak holds the **Sword
+  Sanctum**.
+- **Vendur:** inside the mountain basin, still bottom-left, perfect for a
+  defended hillfort. From Vendur a mountain trail becomes visible, but it stops
+  an early player. Midgame lore can make the player reinterpret that blocked
+  trail and return toward the Sanctum.
+- **Magizhee:** starting region, diagonal-opposite **Rosetta**, located between
+  the militia zone and Vendur.
+- **Militia zone:** left of the river, part of the first-half game. Reachable
+  early from Magizhee; militia-first naturally sends the player toward Vendur
+  for supplies or support.
+- **River:** hard early boundary. Crossing requires a small boat or equivalent
+  midgame permission/tool.
+- **Arghanzza:** right of the river and close to it, likely a mangrove-like
+  transition region after the first crossing.
+- **Vengarz Camp:** right side, near Rosetta but not inside it. A mid-size mobile
+  wooden/tent/wagon palisade held by remnants of an old anti-hive force from the
+  hero's legion.
+- **Rosetta region:** right of the river, farther past Arghanzza/Vengarz and between
+  the river-crossing side and the Silent Core. This is a dense old research region
+  and the hive's strategic focus because it arrived from here and wants a way to
+  remove the old hero's seal.
+- **Silent Core:** top-right, the most hive-mind-concentrated region.
+
+The left side is not overrun because the old hero's seal prevents new infection.
+Only runaway, drifted, or low-level husks leak into the left region; that is still
+enough to threaten the few hundred humans left, because the world has no slack.
 
 ## What each dense region needs
 
@@ -95,19 +131,21 @@ stillness** — not desperate scrambling.
 
 ## Files in this folder
 
-- `starter-settlement.md` — the Goodsprings-scale first settlement (**mid**).
+- `starter-settlement.md` — **Magizhee**, the Goodsprings-scale first settlement
+  (**mid**).
 - `Arghanzza/` — the deeply-developed forest village (**mini**); its own subfolder.
+- `Vengarz/` — the mobile stronghold near Rosetta (**mid**); its own subfolder.
 - `Vendur/` — the sword-girl's birthplace estate, now a trade hub (**dense**);
   its own subfolder.
-- `connectivity-map.md` — the adjacency graph, corridor/gate model, and the
-  heat-ordered **route spine** with reserved slots for unbuilt regions.
+- `connectivity-map.md` — the square-map adjacency graph, corridor/gate model,
+  river threshold, and current route shape.
 - `region-set.md` — the **lore-demanded** catalogue: every region the story requires
-  (Vendur, the Rosetta ruins, the deities' underground sanctum, the divine mountain,
+  (Vendur, the Rosetta ruins, the deities' underground sanctum, the mountain Sword Sanctum,
   Arghanzza-as-pass-through) with tier, heat, and quest-hook.
 
 ## Status
 
-Three concluded regions, tiered: **Vendur** (dense), **starter settlement**
+Three concluded regions, tiered: **Vendur** (dense), **Magizhee**
 (mid), **Arghanzza** (mini). Targets: **~7–8 dense + 3–4 mini.** No further regions
 named or designed yet — they get authored concretely when there's a reason, not as
 abstract skeleton.

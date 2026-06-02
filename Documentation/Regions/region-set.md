@@ -32,14 +32,17 @@
 > it, sketched here, not yet a full doc · **[slot]** a position the spine reserves but
 > lore doesn't yet pin.
 
-### 1. Starter settlement — *mid* · coolest heat · **[concluded]**
+### 1. Magizhee — *mid* · coolest heat · **[concluded]**
 
 - **Why it exists:** the player's entry; teaches the world by procedure
   (`../Player/opening-and-tutorial.md`). The spine's root.
 - **Lore role:** where the player is handed the rusty sword and becomes the breaking
   point by being **the first to trust it.**
 - **Quest-hook:** the local "accused of turning" crisis; the first sword bond.
-- Doc: `starter-settlement.md`. *(Name still a placeholder — like Vendur was.)*
+- **Map role:** the starting pocket between the **militia zone** and **Vendur**.
+  The player can choose either route first; river, mountains, and husk-heavy ground
+  close the other axes.
+- Doc: `starter-settlement.md`.
 
 ### 2. Vendur — *dense* · low-but-volatile heat · **[concluded]**
 
@@ -51,37 +54,64 @@
   **hillfort of ~13 trader households** read as two coupled nodes (upper fort / exposed
   lower town); one trader faction, **band sociology, not factions** (`Vendur/vendur-detail.md`).
 - **Quest-hook:** the sword sends you here; the dungeon-under-the-town arc.
+- **Map role:** bottom-left mountain basin hillfort. Vendur is where the
+  Magizhee→militia and Magizhee→Vendur routes converge. After Vendur, the player
+  can find the mountain trail toward the Sword Sanctum, but an early player cannot
+  complete it.
 - Docs: `Vendur/region-vendur.md` (overview) + `Vendur/vendur-detail.md` (full design —
   the **first fully-authored region**, baseline for the rest). The map's central dense hub.
 
-### 3. The Rosetta ruins (scavenger ground-zero) — *dense* · hot · **[lore-demanded]**
+### 3. The Rosetta ruins — *dense* · hot · **[lore-demanded]**
 
 - **Why it exists:** this is **where the world ended** — the ancient forest and the
   **Rosetta tome** the first cleric decoded, **accidentally freeing the hive**
   (`../Lore/ancient-history.md`). Lore's single most important site.
-- **Lore role:** already picked clean of its famous tome, but **squatted by a small band
-  of scavengers** who live on/around ground-zero — people who made a home on the wound
-  that killed the world. High baseline heat (it's where the hive woke). The sword's
-  knowledge-quest needs what was *left behind* here, not the tome itself.
-- **Quest-hook:** the scavengers are the **only living link** to the underground sanctum
-  (#4) — you reach #4 *through* them.
-- **Tier note:** dense **because** the scavenger community + ground-zero significance carry
-  it; could flex to mid if the cast stays small.
+- **Lore role:** the old research region itself: once full of hundreds of researchers,
+  field camps, glyph halls, containment attempts, failed expeditions, and decade-old
+  camping sites. It is dense because the **site** is dense, not because people live
+  there now. The sword's knowledge-quest needs what was *left behind* here, not the
+  famous tome itself.
+- **Quest-hook:** the **Vengarz** (#3b) are the living link to Rosetta's routes and
+  to the underground sanctum (#4). They send recovery sorties into Rosetta and can
+  test the player there.
+- **Map role:** diagonal-opposite **Magizhee**, right of the river, past Arghanzza
+  and before the Silent Core. The hive's attention bends here because it arrived
+  from here and may be trying to remove or bypass the old hero's seal.
+- **Tier note:** confirmed **dense**: a large ruin/research/hazard zone with major
+  story weight and repeated exploration.
+
+### 3b. Vengarz Camp — *mid* · hot-adjacent · **[lore-demanded]**
+
+- **Why it exists:** Rosetta is too actively contested for people to live directly
+  inside it. The human foothold must sit nearby as a hardened, mobile camp.
+- **Lore role:** the **Vengarz** are remnants of an old anti-hive force, likely tied
+  to one of the older houses and the hero's legion. They fought beside the hero in
+  the seal era and preserve glyphed silver weapons, field doctrine, Rosetta route
+  knowledge, and recovery procedures.
+- **Quest-hook:** Brotherhood/Glow-style threshold: the disciplined war-remnant
+  distrusts the player, then sends them on Rosetta recovery/test sorties. The sword
+  can identify old defensive principles in their preserved doctrine and unlock new
+  camp defenses.
+- **Map role:** right side, near Rosetta but not on ground-zero. A mobile wooden /
+  tent / wagon-palisade stronghold, not stone or mud.
+- **Tier note:** **mid**: ~20 adult fighters, sleeping tents/dorms, training yard,
+  glyph hall/map tent, glyph-smith + silver-smith wagon, cookery, armory, sortie
+  gate. Doc: `Vengarz/vengarz-camp.md`.
 
 ### 4. The underground sanctum of the forgotten deities — *mini* (dungeon-spoke) · hot · **[lore-demanded]**
 
 - **Why it exists:** the **forgotten-but-living deities** (`../Lore/the-deities-and-the-soul-economy.md`)
   need a place their indirect hand is legible — a shrine/archive of the ~10, reachable
-  **only near the Rosetta ruins** (via the scavengers). It holds the **first Light-glyph
+  **only near the Rosetta ruins** (via Vengarz routes / trust). It holds the **first Light-glyph
   knowledge** — the deities' most overt lent power.
 - **Lore role:** where the **"glyphs are gods" truth** first surfaces (humans think it's
   decoded technique; here the sword realizes otherwise). Not a tomb of sealed gods — a
   channel-point of living, abstaining ones.
-- **Quest-hook:** recover the Light line; the metaphysics reveal. Gated behind the
-  scavengers' trust and (likely) a traversal/tool gate.
+- **Quest-hook:** recover the Light line; the metaphysics reveal. Gated behind
+  Vengarz trust and (likely) a traversal/tool gate.
 - **Tier note:** a **mini dungeon-spoke** hung off #3, not a settlement.
 
-### 5. The divine mountain & its sanctum — *dense or endgame-tier* · highest heat · **[lore-demanded, late]**
+### 5. The mountain Sword Sanctum — *late-return destination* · low physical edge / high story weight · **[lore-demanded]**
 
 - **Why it exists:** the hero's old route to the **true Soul Sword.** Per revised canon
   (`../Lore/premise-and-the-one-accord.md`), the true sword **withdrew here and guards
@@ -90,18 +120,25 @@
 - **Lore role:** the **One Accord** payoff — where you can bind to the true sword and must
   choose between her and your rusty one. The sanctum is **untouched** (only the hero ever
   came). Its relationship to the ~10 deities is flagged open.
-- **Quest-hook:** the climactic relationship/choice arc; **story-gated**, designed late.
-- **Tier note:** functionally an **endgame-tier destination**; treat as the spine's far
-  region, not an early dense hub.
+- **Quest-hook:** a midgame/late-return revelation. The player can discover the
+  mountain trail after Vendur, but it stops an early player. Right-side lore,
+  especially Rosetta, teaches the player how to reinterpret the trail and return.
+- **Map role:** bottom-left-most high peak, inside the protective mountain range.
+  It is physically near the early region but meaningfully inaccessible until the
+  player has the right lore, strength, and relationship context.
+- **Tier note:** not a normal settlement hub. Treat as a story-heavy route,
+  ascent, and sanctum sequence.
 
 ### 6. Arghanzza (the corpse-burner pass) — *mini* · past-threshold heat · **[concluded, demoted]**
 
-- **Why it exists:** **demoted** from a destination to a **pass-through mini site.** Its
-  past-threshold baseline (possessed matter) still teaches that horror early-ish, but it's
-  no longer a place you go *for* something — you pass through it.
+- **Why it exists:** **demoted** from a destination to a **post-crossing transition
+  mini site.** Its past-threshold baseline (possessed matter) still teaches that
+  horror, but it is no longer an early dependency for Magizhee.
 - **Lore role:** maybe just a **corpse-burner** living near it — someone who burns old husk
   bodies (pyrecraft, `../Mechanics/kill-resolution.md`). One person, one function, one beat.
-- **Quest-hook:** minimal — a corridor with a face. Off-spine.
+- **Quest-hook:** minimal — a corridor with a face. First right-side threshold
+  after the river crossing.
+- **Map role:** right of the river and close to it, likely mangrove-like.
 - Docs: `Arghanzza/` (existing depth; **trim/reframe to pass-through** when revisited).
 
 ### 7. The militia / coming-of-age settlement — *mid* · cool-to-mid heat · **[lore-demanded]**
@@ -117,17 +154,20 @@
   sends people + trade goods, gets back trained adults + defence. Emotionally it's
   **where childhood ends** in this world, which keeps it from being a generic "army town."
   A natural candidate for the **union-system's second hub** (uniting it with Vendur and
-  the starter settlement — `../Mechanics/village-and-union-system.md`).
-- **Quest-hook:** Vendur's dependence routes the player here (resupply defence, a missing
-  sent-away youth, a training arc); off the main lore-spine but tightly coupled to Vendur.
+  Magizhee — `../Mechanics/village-and-union-system.md`).
+- **Quest-hook:** if visited first from Magizhee, the militia sends the player to
+  Vendur for supplies/support. Vendur's dependence can also route the player back
+  here later (resupply defence, a missing sent-away youth, a training arc).
+- **Map role:** left of the river, close enough to Magizhee to be an early option,
+  and logistically tied to Vendur.
 - **Tier note:** **mid** (focused cast), not dense — a Goodsprings-scale settlement with
   one strong function. **Unnamed and not yet authored** (working name "the militia /
   coming-of-age settlement"); placed on the spine in `connectivity-map.md`.
 
 ### 8–11. Reserved dense + mini slots — **[slot]**
 
-- The remaining **dense + mini** to hit the target (the militia settlement #7 now claims
-  one mid slot). Lore doesn't pin the rest yet; the spine reserves their positions
+- The remaining **dense + mini** to hit the target (the Vengarz camp and militia
+  settlement now claim mid slots). Lore doesn't pin the rest yet; the spine reserves their positions
   (`connectivity-map.md`). Author each **only when a reason appears** — e.g. a region the
   sword's knowledge-quest demands, a settlement the union/stalemate theme needs, or a
   corridor that wants a face. Candidate pressures: a region owning a **traversal
@@ -138,8 +178,10 @@
 
 ## How the set serves the Fallout-style spine
 
-- **Main spine (the sword's knowledge-quest):** starter → Vendur → Rosetta ruins → the
-  underground sanctum (Light line) → … → the divine mountain (One Accord) → endgame.
+- **Main route shape:** Magizhee opens into an early left-side choice
+  (militia/Vendur), converges at Vendur, crosses the river into Arghanzza, pushes to
+  Vengarz Camp, then into Rosetta for the seal/magic/Sanctum lore, then bends either
+  back toward the Sword Sanctum revelation or onward toward the Silent Core/endgame.
 - **Each region is a self-contained problem** (Fallout-1 discipline) but **loosely bound**
   (FNV exploration): you can wander in early and eat the heat (`connectivity-map.md`).
 - **No virgin discovery:** every site is post-history and inhabited, which keeps the
@@ -148,13 +190,11 @@
 
 ## Open
 
-- Whether the **Rosetta ruins** are dense (scavenger community) or mid (small band).
 - The **second living hub** for the union system — **largely resolved:** the militia /
-  coming-of-age settlement (#7) is the strong candidate (starter + Vendur + militia). Open
+  coming-of-age settlement (#7) is the strong candidate (Magizhee + Vendur + militia). Open
   only on whether the union theme *also* wants a further settlement.
-- Whether the **divine mountain** is one region or a multi-stage ascent (multiple trails =
+- Whether the **mountain Sword Sanctum** is one region or a multi-stage ascent (multiple trails =
   multiple sub-areas?).
-- Names for everything still unnamed (starter settlement; the new lore-demanded regions).
+- Names for everything still unnamed (the militia zone; the new lore-demanded regions).
 - Exact **heat-band ordering** of #3/#4 vs. Vendur — both are hot; resolve in the
   concentration/difficulty-layout pass (`../Mechanics/hive-concentration.md`).
-```

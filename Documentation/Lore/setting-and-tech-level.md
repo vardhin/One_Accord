@@ -33,6 +33,30 @@ They are scavenged survival objects:
 > The old meanings of objects have collapsed. (The sword-girl is horrified by
 > this — see `sword-girl-backstory.md`.)
 
+## Language fossils and later scripts
+
+Place names are often **language fossils**, not arbitrary fantasy sounds. The old
+cultural layer is Telugu-derived, eroded across millennia.
+
+Example: **Vendur** comes from **vendi** (silver) + **ooru/uru** (town/region):
+
+```text
+vendi + ooru -> venduru -> Vendur
+```
+
+Most people no longer consciously parse the roots. They inherit the name as a
+place, not a definition. This makes names archaeological: the old meaning can be
+rediscovered later.
+
+The writing systems sit on top of this cultural drift:
+
+- **Ancient scripture / old glyph-root script:** Telugu-derived, tied to old
+  research, divine script, glyph ancestry, and the sword's deepest memory.
+- **Modern mundane script:** Chinese/logographic, used by survivors because
+  symbolic writing can teach, compress, label, and carry practical knowledge even
+  when literacy is uneven.
+- **Glyphs:** operative magic symbols, separate from mundane writing.
+
 ## Fragile timekeeping = survival infrastructure
 
 Mechanical watches are **not quartz**. They must be tuned, cleaned, oiled,

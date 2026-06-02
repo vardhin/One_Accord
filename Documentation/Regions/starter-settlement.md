@@ -1,7 +1,11 @@
-# Starter Settlement (Goodsprings-scale)
+# Magizhee — Starter Settlement (Goodsprings-scale)
 
 > The first breathable pocket of civilization. Small, legible, tutorial-rich,
 > political, systemic. Scale inspiration: Goodsprings (Fallout: New Vegas).
+>
+> **Current map placement:** Magizhee sits in the left-side early-game pocket,
+> between the **militia zone** and **Vendur**, and diagonal-opposite the Rosetta
+> region across the map.
 
 ## Scale & tone
 
@@ -27,6 +31,21 @@ A **basic safe settlement** with:
 - Training yard / militia post.
 - Common room / ration hall.
 - Corpse pit / ash trench.
+
+## World-position role
+
+Magizhee is the root of the playable geography, but not a hub city. It is a
+small, constrained crossroads.
+
+- One viable axis leads toward the **militia zone**.
+- One viable axis leads toward **Vendur**.
+- Other axes are naturally denied early: **river** the player cannot yet cross,
+  **mountains** the player cannot yet climb, or husk-heavy ground that an early
+  player can technically test and should learn to avoid.
+
+This keeps the first map simple without making the world feel fake. The player
+can choose militia-first or Vendur-first; both routes naturally fold back toward
+Vendur.
 
 ## The first conflict (Goodsprings-style)
 
@@ -59,8 +78,13 @@ The first settlement should **NOT** unlock full upgrades — only **basic
 maintenance**, especially the **grindstone → sharpening** chain. (Forge Level 0→1
 only; see `../Mechanics/forge-and-upgrades.md`.)
 
-## Possible Arghanzza dependency
+## Early route convergence
 
-The starter settlement may need **Arghanzza resources** to progress: charcoal for
-the forge, herbs for the healer, a salvage team, a blueprint, a bell clapper, an
-ash formula, or an old guide. (See `Arghanzza/region-arghanzza.md`.)
+If the player goes to the **militia zone** first, the militia should send them to
+**Vendur** for supplies, permission, repair material, grain, medicine, or some
+other concrete support. If the player goes to **Vendur** first, the sword nudges
+them there and the first dungeon can open from Vendur instead.
+
+Arghanzza is no longer an early dependency. It sits on the far side of the river,
+near the first right-side crossing, and belongs to the post-crossing pressure
+ramp.

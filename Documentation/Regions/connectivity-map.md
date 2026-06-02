@@ -1,170 +1,155 @@
-# Connectivity Map — Adjacency, Corridors, and the Route Spine
+# Connectivity Map — Square Layout, Gates, and Route Spine
 
-> The thing `world-structure.md` left as *concept only*: how the dense hubs and mini
-> spokes actually connect, what gates each link, and the intended route through the
-> game. This doc is **structure, not content** — it places the three concluded
-> regions on the spine and reserves slots for the unbuilt ones, so future regions get
-> designed into a **known position with a known gate and a known heat**, not into a
-> vacuum. Companion to `world-structure.md` (tiers) and
-> `../Mechanics/hive-concentration.md` (the heat that orders the route).
+> Companion to `world-structure.md` (tiers) and
+> `../Mechanics/hive-concentration.md` (heat). This doc is **structure, not
+> content**: it fixes the current map skeleton, the early route choices, the river
+> threshold, and the late reinterpretation of the mountain Sanctum.
 
 ---
 
-## The ordering principle: heat **is** the route
+## The physical map
 
-Region order ≈ **ascending concentration baseline** (`hive-concentration.md`). The
-map is not free-roam-from-minute-one; it's a **Dark Souls lattice** — mostly linear
-spine, with optional loops and shortcuts that open as the player gains traversal
-tools and forge level. You *can* walk into a hotter region early; the baseline floor
-punishes it, which is the soft gate (see "Gating," below).
+Imagine the world as a square.
 
-So the connectivity graph and the difficulty layout are **the same graph**. We don't
-maintain two maps.
+- A river cuts it diagonally, flowing roughly **top-left → bottom-right**.
+- The **left side of the river** is the first-half human pocket: less forested,
+  more inhabited, and safer only by comparison.
+- The **right side of the river** is hotter: reclaimed forest, mangrove, ruins,
+  and hive-concentrated ground.
+- The **left and bottom edges**, especially the bottom-left corner, are sealed by
+  huge mountain ranges. Husks do not approach from those edges.
+- The **bottom-left-most high peak** holds the **Sword Sanctum**.
+- The **top-right** holds the **Silent Core**, the densest hive-mind region.
 
----
+The big symbolic diagonal is:
 
-> **The lore-demanded region set now drives this spine** — see `region-set.md` for why
-> each place exists. The pinned points below are no longer just the three concluded
-> regions; the sword's knowledge-quest threads starter → Vendur → **Rosetta ruins** →
-> **underground sanctum** → … → **divine mountain** → endgame.
-
-## The concluded + lore-demanded regions, placed
-
-| # | Region | Tier | Baseline heat | Role on the spine |
-|---|--------|------|---------------|-------------------|
-| 1 | **Starter settlement** | mid | coolest (floor) | Tutorial crisis; forge L0→1; first sword bond. The spine's root. |
-| 2 | **Vendur** | dense | low-but-volatile | The sword's home; full forge; Witness→Partner. "A little far" from starter — reached **through a corridor**, carried by the player who doesn't know it's her home. **Two coupled nodes:** upper hillfort (cooler) + lower trader town (warmer, can fall while the fort holds). |
-| 2b | **Militia / coming-of-age settlement** | mid | cool-to-mid | Where Vendur (and others) **send their teens to harden**; the militia supply. **Caravan-coupled to Vendur** (`../region-set.md` #7); union-system second-hub candidate. Unnamed/unbuilt. |
-| 3 | **Arghanzza** | mini | **past threshold** (hot) | First possessed-matter region; a single-arc spoke hung **off** the spine, not on it — reached late or via a hard optional link. |
-
-> These three do **not** form the whole spine — they are three fixed points on it.
-> Vendur being "a little far" from the starter settlement means **at least one
-> corridor (and possibly an unbuilt region) sits between them.** Arghanzza's hot
-> baseline means it is **not** an early stop even though it's mini.
-
----
-
-## Node types on the graph
-
-- **Hub (dense)** — multi-exit. A dense region is a graph *node with several edges*:
-  it's where the lattice branches, where shortcuts loop back, where the player
-  re-supplies. Returnable.
-- **Spoke (mid / mini)** — typically **one or two edges.** A mini spoke is often a
-  **dead-end**: one corridor in, the same corridor out, one arc inside. Mid
-  settlements may have two edges (on-spine) or one (off-spine).
-- **Corridor** — the **edge** itself, and a playable space (see below). Every
-  region-to-region link is a corridor; there are no instant/teleport adjacencies
-  except unlocked **shortcuts** within an already-cleared stretch.
-
----
-
-## Corridors are edges *and* rooms
-
-From `world-structure.md`: corridors are the decompression spaces (roads, fields,
-bridges, riverbanks, forest paths, dead suburbs). For the map, formalize them:
-
-- **A corridor is a directed-feeling but bidirectional edge** between two region
-  nodes. It carries its own **light, drifting concentration** (lower than either
-  endpoint's baseline by default — corridors are where you breathe) but it is **not
-  safe**: distant husks, patrols, escort beats, "feel watched."
-- **Corridor length = pacing dial.** A long corridor (Vendur is "a little far")
-  is a deliberate decompression + dread ramp before a heavy region. A short corridor
-  is a quick stitch between two arcs.
-- **Corridors can hold a single mini-arc** without being a region: one household, one
-  husk patrol with a name, one escort. This is how the world stays "wide in
-  implication" cheaply.
-
----
-
-## Gating model — three gate types, soft-first
-
-What blocks or opens each edge. Listed weakest→hardest:
-
-1. **Heat gate (soft, default).** Nothing physically stops you walking into a hotter
-   region — but its **baseline floor** (`hive-concentration.md`) means you meet
-   smarter Actives / possessed matter you're under-equipped for. This is the primary
-   ordering mechanism. It teaches route order through pressure, not walls. *Most*
-   edges use only this.
-2. **Tool gate (hard, traversal).** Some edges need a **traversal capability** to
-   pass at all — Arghanzza's drafted traversal rules (`Arghanzza/traversal.md`) are
-   the model: a region/corridor whose passage *is* a learned mechanic. These gate the
-   off-spine spokes and the late loops. Acquiring the tool is itself progression.
-3. **Story gate (hard, narrative).** A few edges open only on a beat: a bell-code
-   alliance, a union threshold, a forge level, a Voice Link, the sword consenting to
-   go somewhere. Reserved for the spine's major transitions (e.g. whatever opens the
-   approach to the endgame region).
-
-> **Shortcuts** are the inverse of gates: edges that *exist* but are revealed/opened
-> from the far side after you've done the long way once (Dark Souls ladders/elevators).
-> They turn the spine into a lattice and make backtracking to hubs cheap.
-
----
-
-## The route spine (current, with reserved slots)
-
-A linear backbone with the three known regions pinned and unbuilt slots marked
-`[slot]`. Heat ascends left→right. `══` = on-spine corridor, `┄┄` = off-spine /
-gated edge.
-
-```
-[Starter settlement]══[corridor]══[Vendur: upper⇄lower]══ … ══[Rosetta ruins]══ … ══[Divine Mountain]══[endgame]
-        (mid, floor)                (dense — 2 coupled nodes)      (dense, hot)         (true sword / story)  (story)
-              ┊                        ┊       ┊                        ┊
-              ┄┄[Arghanzza]            ┊       ┄┄[Militia settlement]    ┄┄[Underground sanctum]
-               (mini pass-through)     ┄┄[slot]   (mid — coming-of-age)    (mini dungeon — first Light glyph)
+```text
+Sword Sanctum / mountains / old resistance  ⇄  Silent Core / forest / hive mind
 ```
 
-> Lore-demanded nodes (`region-set.md`) now fill what were anonymous slots: **Rosetta
-> ruins** (scavengers on hive ground-zero) sit hot, mid-to-late; the **underground
-> sanctum** hangs off them as a Light-glyph dungeon-spoke; the **divine mountain** is the
-> story-gated, endgame-tier One Accord region. The **militia / coming-of-age settlement**
-> hangs **caravan-coupled off Vendur** (mid; where hubs send teens to harden; union
-> second-hub candidate). Remaining `[slot]`s are any region a future reason demands.
->
-> **Vendur is itself two coupled nodes:** an **upper hillfort** (cooler, holds the value)
-> and a **lower trader town** (warmer, exposed) — `upper⇄lower` above. The lower can be
-> pressed/fall while the fort holds; treat them as distinct heat sub-nodes that share one
-> hub identity.
+Magizhee and Rosetta form another design diagonal:
 
-- The **root** is fixed: starter settlement, lowest heat, where the player gets the
-  sword. Non-negotiable first node.
-- The **endgame region** is the spine's far terminus, **story-gated**, designed last
-  (`../Mechanics/hivemind-threads.md`, Stage 7). One total Hivemind converges there.
-- Everything between root and terminus is **reserved slots** filled by the ~7–8 dense
-  / 3–4 mini targets, **in ascending-heat order**, each authored when there's a reason
-  (per `world-structure.md`). When a new region is designed, it claims a slot — which
-  hands the designer its **neighbors, its corridor type, its gate type, and its
-  heat band** for free.
-- Vendur sits **mid-spine** (dense hub, branch point), not at the end: it's a
-  power spike (full forge, silver) and an emotional pivot, reached after at least one
-  corridor from the starter settlement.
-- Arghanzza hangs **off** the spine as a hot mini-spoke: you detour to it, you don't
-  pass *through* it to progress.
+```text
+Magizhee / start / living procedure  ⇄  Rosetta / origin wound / seal mystery
+```
 
----
+## Current pinned regions
 
-## How this feeds later stages
+| Region | Tier | Map position | Role |
+|---|---:|---|---|
+| **Magizhee** | mid | Left of river; between militia zone and Vendur; diagonal-opposite Rosetta | Starter settlement and tutorial root. |
+| **Militia zone** | mid | Left of river, near Magizhee | Early optional route; sends player to Vendur for supplies/support if visited first. |
+| **Vendur** | dense | Bottom-left mountain basin | Hillfort trade hub, first dungeon, sword homecoming, full forge. |
+| **Mountain trail / Sword Sanctum** | late-return destination | Bottom-left peak above/behind Vendur | Visible or implied early; blocks early player; becomes meaningful after right-side lore. |
+| **River crossing** | gate/corridor | Diagonal river | Hard early boundary; requires boat, permission, or midgame route opening. |
+| **Arghanzza** | mini | Right of river, close to crossing | Mangrove-like transition region and first true right-side pressure. |
+| **Vengarz Camp** | mid | Right side, near Rosetta but not inside it | Mobile wooden/tent stronghold; old hero-legion remnant and Rosetta sortie base. |
+| **Rosetta region** | dense | Right of river, past Arghanzza/Vengarz, before Silent Core | Hive arrival site; old research region; main lore source for seal, magic, and Sanctum reinterpretation. |
+| **Silent Core** | endgame-tier | Top-right | Most hive-concentrated region; final hive-mind pressure. |
 
-- **Stage 4 (Quests).** The **main spine = the route spine.** Each on-spine node is a
-  main-arc beat; each spoke/corridor is regional or emergent. The through-line from
-  starter crisis → endgame war literally walks this graph.
-- **Stage 5 (Progression).** **Gating & pacing** maps onto the gate types here: forge
-  levels / Voice Links / traversal tools are *what open the next edge.* Progression
-  and the map are the same gate list.
-- **Region authoring.** A new region is never designed blind: the slot fixes its
-  position, neighbors, gate, and heat band before any content is invented.
+## Early-game routing
+
+The start is simple on purpose. From **Magizhee**, the player has two sane routes:
+
+```text
+                 [Militia zone]
+                       ║
+                       ║
+[blocked: river]══[Magizhee]══[Vendur: upper⇄lower]══[mountain trail: too hard early]
+                       ║
+             [blocked: husk-heavy ground]
+```
+
+- **Militia-first:** the militia asks the player to go to Vendur for supplies,
+  repairs, grain, medicine, authority, or another practical need.
+- **Vendur-first:** the sword suggests Vendur; Vendur opens the first dungeon and
+  the sword's homecoming arc.
+- **Other axes:** early player hits river, mountains, or husk-filled regions. These
+  are readable world limits, not arbitrary walls.
+
+Vendur is where the early routes converge. It is still the first major hub and the
+region where the player gains enough material and emotional context to understand
+that the world is older than the local survival problem.
+
+## Midgame river threshold
+
+The river is the true act boundary.
+
+- The player cannot cross it freely at the start.
+- Crossing should require a **small boat**, a restored ferry, permission, or a
+  practical river-route solution.
+- The first crossing should feel like leaving the human-maintained half of the map
+  and entering ground the hive has had time to re-grow.
+
+Right-side route sketch:
+
+```text
+[Vendur / Magizhee / Militia]══[river crossing]══[Arghanzza]══[Vengarz Camp]══[Rosetta region]══[Silent Core]
+```
+
+Arghanzza is no longer an early resource dependency. It is the first post-crossing
+threshold: close to the river, wet, root-tangled, mangrove-like, and dangerous in a
+different way from the left-side survival pocket.
+
+Vengarz Camp is the human foothold before Rosetta: a mid-size mobile palisade /
+tent / wagon stronghold of old anti-hive fighters. They do not live in Rosetta
+because the hive is actively interfering there.
+
+## The Sanctum return
+
+After Vendur, the player can find or hear of the **mountain trail**. An early-level
+player should be stopped by terrain, danger, traversal limits, or simple practical
+impossibility.
+
+The trail's real meaning unlocks later. The player returns because they have found
+enough lore to reinterpret it, not because an NPC plainly says, "there is a magic
+sword on the mountain."
+
+Primary sources for this reinterpretation:
+
+- Right-side lore, especially **Rosetta**.
+- Old people speaking indirectly about **Silver Anarchy**, magic, old weapons with
+  names, or the mountain's historical terror.
+- The sword's own partial, emotional, and possibly unreliable nudges.
+
+The midgame return reveals the **true Sword Maiden** at the Sanctum. This makes the
+mountain a late-reinterpreted place, not simply a far-away final node.
+
+## Hive pressure model on the map
+
+The old hero's seal prevents new living infection. Because of that, the hive has
+lost much of its motivation to actively invade the left-side human pocket. Its
+attention bends toward **Rosetta**, the region where it arrived from, because that
+is where it may find a way to remove or bypass the seal.
+
+Left side danger still exists:
+
+- Runaway husks.
+- Low-level drift across roads or along water.
+- Old husk pockets in ruins, caves, or bad corridors.
+- Accidents that become catastrophic because only a few hundred humans remain.
+
+So the left side is not "safe." It is simply not the hive's main strategic front.
+
+## Gate types
+
+1. **Natural boundary gates.** River, mountains, and husk-heavy ground establish
+   early map legibility.
+2. **Heat gates.** Hotter regions punish early entry through baseline hive
+   concentration (`../Mechanics/hive-concentration.md`).
+3. **Traversal/tool gates.** Boat crossing, mountain trail survival, Arghanzza
+   navigation, and any later right-side tools.
+4. **Story/lore gates.** The Sanctum return in particular should be unlocked by
+   understanding, not just stats.
 
 ## Open
 
-- How many slots actually sit **between** starter and Vendur (1 corridor only, or
-  a region too?) — resolve when the first new region is authored.
-- Whether the off-spine spokes (Arghanzza, future minis) cluster off **hubs** or off
-  **corridors** — lean toward off-hubs so hubs stay the branch points. (The **militia
-  settlement** already follows this: it hangs caravan-coupled off the Vendur hub.)
-- The **gate type and corridor length** of the Vendur⇄militia caravan tie, and whether
-  the militia settlement is reachable only *through* Vendur or also from elsewhere.
-- The **internal edge** between Vendur's upper and lower nodes — how the player moves
-  between them and what (if anything) gates falling back to the fort.
-- The endgame region's story gate — deferred to Stage 7 with the rest of the endgame.
-- Exact corridor count and which carry mini-arcs vs. pure decompression.
-```
+- Exact route from Magizhee to the militia zone: direct road, patrol corridor, or
+  training-yard outpost chain.
+- Exact supply/support reason the militia gives for sending the player to Vendur.
+- Exact river-crossing method and whether it is controlled by militia, Vendur, or a
+  separate ferryman.
+- Whether Vengarz Camp becomes **Vengarz Hold** after the player unlocks old
+  defensive tech with the sword.
+- How many playable sub-areas the mountain trail and Sword Sanctum need.
+- Whether the Silent Core is a single endgame region or a region cluster.

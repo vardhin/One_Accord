@@ -90,6 +90,13 @@ Because it cannot infect the living, the hive instead asks:
 - Which **survivor networks** should I destabilize?
 - When should I **reveal** intelligence vs. stay as dumb husks?
 - How do I **stop villages from learning** severance / Light-detection methods?
+- How do I return pressure toward the **Rosetta region**, where I first arrived,
+  and find a way to remove or work around the old hero's seal?
+
+This means the hive is not strongly motivated to actively invade the left-side
+human pocket. The left still sees danger from runaway husks, drift, old bodies,
+and accidents, but the real strategic pressure points inward toward Rosetta and
+eventually the Silent Core.
 
 ## Related
 

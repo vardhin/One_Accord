@@ -55,8 +55,8 @@ hero's personality):
 The sword's speech is **private to the holder** — NPCs never hear it (see
 `../Sword/voice-and-brow-touch.md`).
 
-## Connection to the starter settlement
+## Connection to Magizhee
 
-This quarantine compound sits outside the **starter settlement** (Goodsprings-
-scale). After the breach, the player enters that settlement proper. See
+This quarantine compound sits outside **Magizhee**, the starter settlement
+(Goodsprings-scale). After the breach, the player enters that settlement proper. See
 `../Regions/starter-settlement.md`.
