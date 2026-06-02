@@ -33,7 +33,8 @@ maintain two maps.
 | # | Region | Tier | Baseline heat | Role on the spine |
 |---|--------|------|---------------|-------------------|
 | 1 | **Starter settlement** | mid | coolest (floor) | Tutorial crisis; forge L0→1; first sword bond. The spine's root. |
-| 2 | **Vendur** | dense | low-but-volatile | The sword's home; full forge; Witness→Partner. "A little far" from starter — reached **through a corridor**, carried by the player who doesn't know it's her home. |
+| 2 | **Vendur** | dense | low-but-volatile | The sword's home; full forge; Witness→Partner. "A little far" from starter — reached **through a corridor**, carried by the player who doesn't know it's her home. **Two coupled nodes:** upper hillfort (cooler) + lower trader town (warmer, can fall while the fort holds). |
+| 2b | **Militia / coming-of-age settlement** | mid | cool-to-mid | Where Vendur (and others) **send their teens to harden**; the militia supply. **Caravan-coupled to Vendur** (`../region-set.md` #7); union-system second-hub candidate. Unnamed/unbuilt. |
 | 3 | **Arghanzza** | mini | **past threshold** (hot) | First possessed-matter region; a single-arc spoke hung **off** the spine, not on it — reached late or via a hard optional link. |
 
 > These three do **not** form the whole spine — they are three fixed points on it.
@@ -106,18 +107,24 @@ A linear backbone with the three known regions pinned and unbuilt slots marked
 gated edge.
 
 ```
-[Starter settlement]══[corridor]══[Vendur]══ … ══[Rosetta ruins]══ … ══[Divine Mountain]══[endgame]
-        (mid, floor)                (dense)          (dense, hot)         (true sword / story)  (story)
-              ┊                        ┊                  ┊
-              ┄┄[Arghanzza]            ┄┄[slot]           ┄┄[Underground sanctum]
-               (mini pass-through)                         (mini dungeon — first Light glyph)
+[Starter settlement]══[corridor]══[Vendur: upper⇄lower]══ … ══[Rosetta ruins]══ … ══[Divine Mountain]══[endgame]
+        (mid, floor)                (dense — 2 coupled nodes)      (dense, hot)         (true sword / story)  (story)
+              ┊                        ┊       ┊                        ┊
+              ┄┄[Arghanzza]            ┊       ┄┄[Militia settlement]    ┄┄[Underground sanctum]
+               (mini pass-through)     ┄┄[slot]   (mid — coming-of-age)    (mini dungeon — first Light glyph)
 ```
 
 > Lore-demanded nodes (`region-set.md`) now fill what were anonymous slots: **Rosetta
 > ruins** (scavengers on hive ground-zero) sit hot, mid-to-late; the **underground
 > sanctum** hangs off them as a Light-glyph dungeon-spoke; the **divine mountain** is the
-> story-gated, endgame-tier One Accord region. Remaining `[slot]`s are the union-system
-> second hub and any region a future reason demands.
+> story-gated, endgame-tier One Accord region. The **militia / coming-of-age settlement**
+> hangs **caravan-coupled off Vendur** (mid; where hubs send teens to harden; union
+> second-hub candidate). Remaining `[slot]`s are any region a future reason demands.
+>
+> **Vendur is itself two coupled nodes:** an **upper hillfort** (cooler, holds the value)
+> and a **lower trader town** (warmer, exposed) — `upper⇄lower` above. The lower can be
+> pressed/fall while the fort holds; treat them as distinct heat sub-nodes that share one
+> hub identity.
 
 - The **root** is fixed: starter settlement, lowest heat, where the player gets the
   sword. Non-negotiable first node.
@@ -152,7 +159,12 @@ gated edge.
 - How many slots actually sit **between** starter and Vendur (1 corridor only, or
   a region too?) — resolve when the first new region is authored.
 - Whether the off-spine spokes (Arghanzza, future minis) cluster off **hubs** or off
-  **corridors** — lean toward off-hubs so hubs stay the branch points.
+  **corridors** — lean toward off-hubs so hubs stay the branch points. (The **militia
+  settlement** already follows this: it hangs caravan-coupled off the Vendur hub.)
+- The **gate type and corridor length** of the Vendur⇄militia caravan tie, and whether
+  the militia settlement is reachable only *through* Vendur or also from elsewhere.
+- The **internal edge** between Vendur's upper and lower nodes — how the player moves
+  between them and what (if anything) gates falling back to the fort.
 - The endgame region's story gate — deferred to Stage 7 with the rest of the endgame.
 - Exact corridor count and which carry mini-arcs vs. pure decompression.
 ```

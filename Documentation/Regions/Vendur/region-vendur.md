@@ -25,7 +25,7 @@ self-sufficiency can't produce alone: **silver, salvaged tools, maintenance
 knowledge, seed varieties, medicine, blueprints, skills.**
 
 - The map's **one relatively crowded, almost-warm place** — bustle, haggling,
-  multiple factions under one roof, the safest walls around. After the stillness of
+  ~13 trader households under the safest walls around. After the stillness of
   everywhere else, it's a relief. Then the sword goes silent.
 - **Home of the full forge / blacksmith** — the upgrade chain past the starter
   settlement's Forge L0→1 (see `../../Mechanics/forge-and-upgrades.md`).
@@ -58,6 +58,17 @@ evidence to restore her name.
 
 > Vendur is a **town on top of a wound.**
 
+## Shape & population (see `vendur-detail.md`)
+
+Vendur is an old-style **hillfort** — earth ramparts and wooden pikes — read as **two
+coupled places under one name**: an **upper fort** (the estate bones — clock/watch
+tower, silver vault, forge, "the bad room") and a **lower trader town** down the slope
+(market, caravan yard, daily life, more exposed). About **13 trader households / 55–60
+souls**, of whom **4 elderly**; ~4 households hold the exposed edge. **One faction (the
+traders); power is functions held by named people, not blocs** — band sociology, not a
+city (`../world-structure.md`). It trades — and **sends its children** to mature — along
+a caravan tie to a separate **militia / coming-of-age settlement** (`../region-set.md`).
+
 ## Role in the game
 
 - The **sword's region** — the one place tied directly to her origin. Her arc gears
@@ -79,6 +90,12 @@ evidence to restore her name.
 
 ## Open
 
-- The trade factions / who runs the town now.
-- The dungeon layout and exactly what the cleric's room reveals.
-- Where precisely it sits relative to the starter settlement and the corridors.
+- **Named NPCs** among the 13 households (silver-keeper, smith, elders, edge-household
+  heads) — deferred to per-NPC authoring under the 40-cap (`../../Npcs/`).
+- The dungeon layout and exactly what the cleric's room reveals (and the reveal-split
+  with the underground sanctum).
+- The **militia / coming-of-age settlement** at the far end of the caravan tie —
+  registered (`../region-set.md`) but unnamed and unbuilt.
+- Where precisely Vendur sits relative to the starter settlement and the corridors, and
+  the heat split between its upper and lower nodes (`../connectivity-map.md`).
+- A **place name** in the world's invented style (*Ionir/Ira/Adry* flavor), glyph script.

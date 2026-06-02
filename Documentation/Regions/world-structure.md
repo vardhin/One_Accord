@@ -21,7 +21,9 @@ below).
 
 > **Three regions are concluded so far, and now tiered:**
 >
-> - **Vendur** — *dense.* The sword-girl's birthplace estate, now a trade hub.
+> - **Vendur** — *dense.* The sword-girl's birthplace estate, now a trade hub — an
+>   earth-rampart **hillfort of ~13 trader households** read as **two coupled nodes**
+>   (upper fort / exposed lower town). "Dense" still means band-scale (~55–60 souls).
 > - **Starter settlement** — *mid.* Goodsprings-scale first settlement.
 > - **Arghanzza** — *mini.* A small village (deeply-developed in its own right,
 >   but mini in scale).

@@ -47,9 +47,12 @@
   hub**; the place her **lost-knowledge questline routes the player to first.** Now a
   diminished-but-real barter hub with solid defenses (`Vendur/region-vendur.md`).
 - **Lore role:** her homecoming (Witness → Partner); the **sealed cleric's room beneath
-  the town** holds the truth of her making and the rite. Full forge + silver supply.
+  the town** holds the truth of her making and the rite. Full forge + silver supply. A
+  **hillfort of ~13 trader households** read as two coupled nodes (upper fort / exposed
+  lower town); one trader faction, **band sociology, not factions** (`Vendur/vendur-detail.md`).
 - **Quest-hook:** the sword sends you here; the dungeon-under-the-town arc.
-- Doc: `Vendur/region-vendur.md`. The map's central dense hub.
+- Docs: `Vendur/region-vendur.md` (overview) + `Vendur/vendur-detail.md` (full design —
+  the **first fully-authored region**, baseline for the rest). The map's central dense hub.
 
 ### 3. The Rosetta ruins (scavenger ground-zero) — *dense* · hot · **[lore-demanded]**
 
@@ -101,14 +104,35 @@
 - **Quest-hook:** minimal — a corridor with a face. Off-spine.
 - Docs: `Arghanzza/` (existing depth; **trim/reframe to pass-through** when revisited).
 
-### 7–11. Reserved dense + mini slots — **[slot]**
+### 7. The militia / coming-of-age settlement — *mid* · cool-to-mid heat · **[lore-demanded]**
 
-- The remaining **~3–4 dense + 1–2 mini** to hit the target. Lore doesn't pin them yet;
-  the spine reserves their positions (`connectivity-map.md`). Author each **only when a
-  reason appears** — e.g. a region the sword's knowledge-quest demands, a settlement the
-  union/stalemate theme needs, or a corridor that wants a face. Candidate pressures: a
-  **second living hub** the player can unite with Vendur (union system); a region owning a
-  **traversal mechanic**; the **endgame hive-convergence region** (Stage 7).
+- **Why it exists:** Vendur is a town of **traders, not soldiers** (`Vendur/vendur-detail.md`),
+  and at band scale **no settlement can afford to train fighters at home** — every adult
+  is a working household (`world-structure.md`: no slack). So the lore *requires* a
+  separate place that does nothing but **harden people**: where Vendur (and likely other
+  hubs) **send their teenagers to mature** — learn basic self-defence, and some become
+  **militia**. A rite-of-passage region: kids leave home soft and come back adults, or
+  don't come back.
+- **Lore role:** the **militia supply** at the far end of Vendur's caravan tie — Vendur
+  sends people + trade goods, gets back trained adults + defence. Emotionally it's
+  **where childhood ends** in this world, which keeps it from being a generic "army town."
+  A natural candidate for the **union-system's second hub** (uniting it with Vendur and
+  the starter settlement — `../Mechanics/village-and-union-system.md`).
+- **Quest-hook:** Vendur's dependence routes the player here (resupply defence, a missing
+  sent-away youth, a training arc); off the main lore-spine but tightly coupled to Vendur.
+- **Tier note:** **mid** (focused cast), not dense — a Goodsprings-scale settlement with
+  one strong function. **Unnamed and not yet authored** (working name "the militia /
+  coming-of-age settlement"); placed on the spine in `connectivity-map.md`.
+
+### 8–11. Reserved dense + mini slots — **[slot]**
+
+- The remaining **dense + mini** to hit the target (the militia settlement #7 now claims
+  one mid slot). Lore doesn't pin the rest yet; the spine reserves their positions
+  (`connectivity-map.md`). Author each **only when a reason appears** — e.g. a region the
+  sword's knowledge-quest demands, a settlement the union/stalemate theme needs, or a
+  corridor that wants a face. Candidate pressures: a region owning a **traversal
+  mechanic**; the **endgame hive-convergence region** (Stage 7). *(The "second living hub"
+  pressure is largely answered by #7, the militia settlement.)*
 
 ---
 
@@ -125,8 +149,9 @@
 ## Open
 
 - Whether the **Rosetta ruins** are dense (scavenger community) or mid (small band).
-- The **second living hub** for the union system — does the stalemate/union theme demand a
-  fourth settlement beyond starter + Vendur? (Likely yes; left as a slot.)
+- The **second living hub** for the union system — **largely resolved:** the militia /
+  coming-of-age settlement (#7) is the strong candidate (starter + Vendur + militia). Open
+  only on whether the union theme *also* wants a further settlement.
 - Whether the **divine mountain** is one region or a multi-stage ascent (multiple trails =
   multiple sub-areas?).
 - Names for everything still unnamed (starter settlement; the new lore-demanded regions).
