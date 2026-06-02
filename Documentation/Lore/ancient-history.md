@@ -4,13 +4,21 @@
 
 ## The divinities
 
-There were ancient divinities. One of them was a hivemind/possession god.
+There were ancient divinities — **~10 ascended souls** from the beginning of eons.
+One of them was a hivemind/possession god.
 
 The refinement: he is **not** merely "a hivemind god." He is a god whose
 **selfhood can occupy all things**. He believes only his individuality is real,
-and that everyone else is material or extension of him. The other divinities
-sealed him because he was too metaphysically dangerous — he could overtake even
-*them*.
+and that everyone else is material or extension of him. He was too metaphysically
+dangerous — he could overtake even *them*.
+
+> **Important (corrected canon):** the other deities did **not** seal him, and they
+> are **not** themselves sealed. They are **forgotten, alive, and deliberately
+> abstaining** — direct interference risks the hive taking even one of them, which
+> would end everything, so they lend power only **indirectly, through glyphs.** The
+> full soul-economy that governs all of this lives in
+> `the-deities-and-the-soul-economy.md`; read it for the metaphysics this doc only
+> sketches.
 
 This is the seed of the game's central theme: **possession vs. partnership** (see
 `../genre-and-themes.md`).

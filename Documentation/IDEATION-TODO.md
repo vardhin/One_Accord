@@ -39,14 +39,19 @@ hivemind thread scheduler, and the seal / soft-infected model.
 
 ## 1. Regions & open-world structure
 
-- [~] **The region set.** Framework locked: **~7–8 dense + 3–4 mini**, tiered.
-  **3 of ~11 concluded:** Silvergate (dense), starter settlement (mid), Arghanzza
-  (mini). The rest are **unideated** — design each concretely when there's a reason,
-  to the per-region checklist in the doc. — `Regions/world-structure.md`
-- [ ] **Open-world / connectivity map.** How the dense regions and mini spokes
-  connect via **decompression corridors**: the actual adjacency graph, traversal
-  gating (what blocks/opens each link), and the intended route(s) through the game.
-  Currently only the *concept* of corridors exists, not a map. — `Regions/world-structure.md`
+- [~] **The region set.** Framework locked: **~7–8 dense + 3–4 mini**, tiered. The
+  **lore-demanded set is now catalogued** (`Regions/region-set.md`): starter (mid),
+  Vendur (dense), the **Rosetta ruins** (scavengers on hive ground-zero, dense/hot), the
+  **deities' underground sanctum** (mini dungeon, first Light glyph), the **divine
+  mountain** (true-sword maiden, endgame-tier), Arghanzza **demoted to a pass-through**.
+  ~3–4 dense + 1–2 mini remain as reasoned slots. — `Regions/region-set.md`, `Regions/world-structure.md`
+- [x] **Open-world / connectivity map.** CONCLUDED as **structure** (the spine, not
+  filled with content): heat-ordered Dark Souls lattice; the 3 known regions placed
+  (starter root → corridor(s) → Vendur mid-spine hub → … → story-gated endgame
+  terminus; Arghanzza an off-spine hot mini-spoke); node types (hub/spoke/corridor);
+  three gate types (heat-soft, tool-hard, story-hard) + shortcuts; **reserved slots**
+  so future regions claim a position+gate+heat-band instead of being designed blind.
+  — `Regions/connectivity-map.md`
 - [ ] **Per-region concept pass** for each new region: theme, the one mechanic it
   teaches/owns, its crisis, its tie to the hive's concentration map, and its tier.
 - [ ] **Concentration / difficulty layout** across the map — where the hive's

@@ -21,7 +21,7 @@ below).
 
 > **Three regions are concluded so far, and now tiered:**
 >
-> - **Silvergate** — *dense.* The sword-girl's birthplace estate, now a trade hub.
+> - **Vendur** — *dense.* The sword-girl's birthplace estate, now a trade hub.
 > - **Starter settlement** — *mid.* Goodsprings-scale first settlement.
 > - **Arghanzza** — *mini.* A small village (deeply-developed in its own right,
 >   but mini in scale).
@@ -95,12 +95,17 @@ stillness** — not desperate scrambling.
 
 - `starter-settlement.md` — the Goodsprings-scale first settlement (**mid**).
 - `Arghanzza/` — the deeply-developed forest village (**mini**); its own subfolder.
-- `Silvergate/` — the sword-girl's birthplace estate, now a trade hub (**dense**);
+- `Vendur/` — the sword-girl's birthplace estate, now a trade hub (**dense**);
   its own subfolder.
+- `connectivity-map.md` — the adjacency graph, corridor/gate model, and the
+  heat-ordered **route spine** with reserved slots for unbuilt regions.
+- `region-set.md` — the **lore-demanded** catalogue: every region the story requires
+  (Vendur, the Rosetta ruins, the deities' underground sanctum, the divine mountain,
+  Arghanzza-as-pass-through) with tier, heat, and quest-hook.
 
 ## Status
 
-Three concluded regions, tiered: **Silvergate** (dense), **starter settlement**
+Three concluded regions, tiered: **Vendur** (dense), **starter settlement**
 (mid), **Arghanzza** (mini). Targets: **~7–8 dense + 3–4 mini.** No further regions
 named or designed yet — they get authored concretely when there's a reason, not as
 abstract skeleton.

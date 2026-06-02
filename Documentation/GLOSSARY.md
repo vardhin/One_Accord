@@ -16,9 +16,34 @@
 - **The Hivemind (the hive)** — one sealed possession-god mind distributed across
   bodies; the other Tier 0 deep agent. Knows through surveillance, not intimacy.
   → `Npcs/hivemind-agent.md`, `Lore/ancient-history.md`
-- **True Soul Sword** — the legitimate, consent-born original weapon (could fly,
-  speak aloud, cast, **sever divinity**); vanished when the hero fell. Distinct
-  from the player's rusty imitation. → `Lore/the-hero-and-true-sword.md`
+- **True Soul Sword (the maiden)** — the legitimate, consent-born original weapon
+  (flies, speaks aloud to anyone, casts, **severs divinity**). Did **not** vanish when
+  the hero fell — it **withdrew to the divine-mountain sanctum and guards itself**, now
+  as a **young sword maiden** (recent grief; no longer demands self-sacrifice).
+  **Findable and obtainable** — the other half of the One Accord choice. Distinct from
+  the player's rusty imitation. → `Lore/the-hero-and-true-sword.md`, `Lore/premise-and-the-one-accord.md`
+
+## Souls, deities & the One Accord
+
+- **The soul economy** — the unifying metaphysics: deities, soul swords, and the hive are
+  **all souls** in one possession economy. Severance works because it meets the hive
+  **soul-to-soul** (metal/fire/silver only hit bodies). → `Lore/the-deities-and-the-soul-economy.md`
+- **The deities (~10)** — **ascended souls** from the beginning of eons; **forgotten but
+  alive.** They **deliberately abstain** from direct action: the hive could take even one
+  of them, and one taken deity = the hive wins. *(corrects the "they sealed him" line in
+  `ancient-history.md`)* → `Lore/the-deities-and-the-soul-economy.md`
+- **Glyphs are deity-lent (hidden)** — **all** glyph magic is the deities' **indirect
+  channel**; humans believe it's merely decoded technique. The truth is a lore reveal.
+  → `Lore/the-deities-and-the-soul-economy.md`, `Glyphs/glyph-system.md`
+- **The hive as Sauron** — a possessing will that can **influence/take over** anything with
+  a soul-channel: people, the soul swords, even deities. The **soul duel** is where that
+  takeover is contested; **fail it and you die.** → `Lore/the-deities-and-the-soul-economy.md`, `Sword/soul-duels.md`
+- **The One Accord (the title)** — you may bond with **two** sword-accords (your rusty
+  sword; the true maiden) but may keep **only one.** A **forsaken** accord pursues its own
+  path — may hunt you or take a new wielder (a rival). → `Lore/premise-and-the-one-accord.md`
+- **Stalemate frame** — the world **works but cannot grow** (no more food, no expansion past
+  the husk, no pushing the hive back). The player is the **breaking point**, special only as
+  the **first to trust the sword** — **not** a savior. → `Lore/premise-and-the-one-accord.md`
 
 ## The hive engine
 
@@ -177,10 +202,23 @@
 ## World, NPCs & progress
 
 - **Region tiers** — **Dense** (~7–8, returnable hubs) · **Mid** (Goodsprings-scale
-  settlement) · **Mini** (~3–4, single-arc spokes). Concluded: Silvergate (dense),
+  settlement) · **Mini** (~3–4, single-arc spokes). Concluded: Vendur (dense),
   starter settlement (mid), Arghanzza (mini). → `Regions/world-structure.md`
-- **Decompression corridors** — the quiet traversal spaces between regions.
-  → `Regions/world-structure.md`
+- **Decompression corridors** — the quiet traversal spaces between regions; on the
+  map they are the **edges** of the graph (and playable rooms that can hold a single
+  mini-arc). → `Regions/world-structure.md`, `Regions/connectivity-map.md`
+- **Route spine** — the heat-ordered Dark Souls **lattice** of regions: a linear
+  backbone (ascending concentration baseline) with optional loops/shortcuts. Region
+  order **is** difficulty order; the connectivity graph and difficulty layout are one
+  graph. → `Regions/connectivity-map.md`
+- **Reserved slot** — an unfilled position on the route spine with a known
+  neighbor/gate/heat-band; future regions claim a slot rather than being designed in a
+  vacuum. → `Regions/connectivity-map.md`
+- **Gate types** — what blocks/opens a map edge, soft→hard: **heat gate** (baseline
+  floor punishes going too early — the default ordering mechanism), **tool gate**
+  (needs a learned traversal capability), **story gate** (opens on a narrative beat).
+  Plus **shortcuts** (far-side-unlocked edges that turn the spine into a lattice).
+  → `Regions/connectivity-map.md`
 - **NPC tiers (0–3)** — Tier 0 deep agents (Sword, Hive) · Tier 1 core named
   (~10–12) · Tier 2 secondary (~15–25) · Tier 3 ambient. **40 named is a HARD CAP.**
   → `Npcs/npc-tiers.md`, `Npcs/core-named-roster.md`

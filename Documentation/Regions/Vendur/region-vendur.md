@@ -1,6 +1,9 @@
-# Silvergate — Region Overview
+# Vendur — Region Overview
 
-> Working name. The sword-girl's **birthplace estate** — now a living **trade hub
+> Full design (factions, buildings, the dungeon, the homecoming arc as beats) lives in
+> `vendur-detail.md`. This file is the overview.
+>
+> The sword-girl's **birthplace estate** — now a living **trade hub
 > built on her grave.** The map's one crowded place, and the region where her arc
 > gears from Witness → Partner. A little far from the starter settlement, so the
 > player carries her *home* without knowing it.
@@ -33,7 +36,7 @@ knowledge, seed varieties, medicine, blueprints, skills.**
 
 ## The horror: recognition under noise
 
-Silvergate's horror is **personal and quiet**, not environmental. The sword
+Vendur's horror is **personal and quiet**, not environmental. The sword
 **recognizes it.** The clock tower is hers. The **house seal over the gate** is now
 a trade-guild mark — nobody alive knows what it meant. The new owners renovated
 over her family's death.
@@ -53,7 +56,7 @@ bad room"). It is the **sealed dungeon beneath the trade town**, and it holds th
 truth she has been chasing: the cleric's research, the real nature of the rite, the
 evidence to restore her name.
 
-> Silvergate is a **town on top of a wound.**
+> Vendur is a **town on top of a wound.**
 
 ## Role in the game
 
@@ -76,7 +79,6 @@ evidence to restore her name.
 
 ## Open
 
-- Final name (Silvergate is a working title).
 - The trade factions / who runs the town now.
 - The dungeon layout and exactly what the cleric's room reveals.
 - Where precisely it sits relative to the starter settlement and the corridors.

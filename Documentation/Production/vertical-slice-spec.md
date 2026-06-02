@@ -45,7 +45,7 @@ This is the slice the docs already converge on
 
 ## What's OUT of v0 (deferred, not cut from the game)
 
-- Second/third regions (Arghanzza, Silvergate) and all traversal between regions.
+- Second/third regions (Arghanzza, Vendur) and all traversal between regions.
 - **Village/union mobilization across settlements** — the slice has one settlement;
   the Quartermaster only *seeds* the loop.
 - **Glyphs & the 386-spell tables** — no spellcasting in v0. (The Light kill line,
