@@ -19,14 +19,17 @@ weight** together (not one axis alone):
 Plus **quieter walking/traversal spaces** between them (decompression corridors,
 below).
 
-> **Three regions are concluded so far, and now tiered:**
+> **Regions concluded/locked so far, tiered:**
 >
 > - **Vendur** — *dense.* The sword-girl's birthplace estate, now a trade hub — an
 >   earth-rampart **hillfort of ~13 trader households** read as **two coupled nodes**
 >   (upper fort / exposed lower town). "Dense" still means band-scale (~55–60 souls).
+> - **Belgond** — *dense.* Vendur's raw-materials supplier on the western
+>   predator-mountain road. Dense by activity but *scattered*: one main colony of homes,
+>   worksites ~5 min out (quarry / timber / hide / mushroom / game). Concept pass deferred.
 > - **Magizhee** — *mid.* Goodsprings-scale first settlement; the **hub** at the
 >   center of the human pocket (Old Dock north, Training Camp east, Vendur south,
->   mountains west).
+>   Belgond/mountains west).
 > - **Arghanzza** — *mini.* A small village (deeply-developed in its own right,
 >   but mini in scale).
 >
@@ -44,10 +47,20 @@ pocket** from the **upper / across-the-water hive ground**.
 
 - **Western / southern edges:** huge mountain ranges. Husks do not arrive from
   these edges. The **SW mountain above the pocket** holds the **Sword Sanctum**.
+  The **western predator road** (big cats, bears) is no longer a flat wall: **Belgond**,
+  the raw-materials supplier town, sits partway up it (reached by armed caravan), and
+  it is the last inhabited place before the Sanctum trail.
 - **Magizhee:** the **hub** at the center of the human pocket. Four early directions
   radiate from it: **north** to the husk-held Old Dock (the crossing), **west** into
-  predator-mountains (toward the Sanctum, blocked early), **east** to the Training
-  Camp, **south** to Vendur. East and south are the two safe early routes.
+  predator-mountains (caravan route to **Belgond**, then up toward the Sanctum), **east**
+  to the Training Camp, **south** to Vendur. East and south are the safe early routes;
+  west is braved by armed caravan, not solo.
+- **Belgond:** west of Magizhee, partway up the predator-mountain Sanctum road. The
+  human pocket's **raw-materials supplier** — a dense but *scattered* extraction town
+  (quarry, timber, hide, mushroom, game). One main colony of homes with worksites ~5
+  min out; reached by armed caravan because the road's big cats and bears kill lone
+  travelers. Ships raw materials to Vendur; buys back tools, militia-for-hire,
+  silver/wards, and finished leather.
 - **Old Dock:** north of Magizhee, on the water. The ferry crossing **and** a
   husk-infested chokepoint — crossing it is a midgame fight, not a free move.
 - **Training Camp:** NE of Magizhee. The coming-of-age / militia hardening
@@ -148,12 +161,15 @@ stillness** — not desperate scrambling.
 - `One_Accord_Map.png` — the drawn world map; the **visual source of truth** for
   geography.
 - `region-set.md` — the **lore-demanded** catalogue: every region the story requires
-  (Vendur, the Rosetta ruins, the deities' underground sanctum, the mountain Sword Sanctum,
-  Arghanzza-as-pass-through) with tier, heat, and quest-hook.
+  (Vendur, Belgond, the Rosetta ruins, the deities' underground sanctum, the mountain
+  Sword Sanctum, Arghanzza-as-pass-through) with tier, heat, and quest-hook.
 
 ## Status
 
-Three concluded regions, tiered: **Vendur** (dense), **Magizhee**
-(mid), **Arghanzza** (mini). Targets: **~7–8 dense + 3–4 mini.** No further regions
-named or designed yet — they get authored concretely when there's a reason, not as
-abstract skeleton.
+Regions named/tiered so far: **Vendur** (dense), **Belgond** (dense), **Magizhee**
+(mid), **Vengarz Hold** (mid), **Training Camp** (mid), **Arghanzza** (mini),
+**Ancient Deity Sanctum** (mini), plus **Rosetta** (dense), the **Sword Sanctum**
+(late-return), **Silent Core** (endgame), and the **Old Dock** (gate). Targets:
+**~7–8 dense + 3–4 mini.** Dense filled: Vendur, Belgond, Rosetta (≈3 of 7–8). Mini
+filled: Arghanzza, Deity Sanctum (2 of 3–4). Further regions get named concretely
+when there's a reason, not as abstract skeleton.

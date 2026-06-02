@@ -175,15 +175,60 @@
   with one strong function. Named on the map as the **Training Camp**; not yet
   authored as a full doc. Placed on the spine in `connectivity-map.md`.
 
-### 8–11. Reserved dense + mini slots — **[slot]**
+### 8. Belgond — *dense* · cool-but-exposed heat · **[lore-demanded]**
 
-- The remaining **dense + mini** to hit the target (the Vengarz camp and militia
-  settlement now claim mid slots). Lore doesn't pin the rest yet; the spine reserves their positions
-  (`connectivity-map.md`). Author each **only when a reason appears** — e.g. a region the
-  sword's knowledge-quest demands, a settlement the union/stalemate theme needs, or a
-  corridor that wants a face. Candidate pressures: a region owning a **traversal
-  mechanic**; the **endgame hive-convergence region** (Stage 7). *(The "second living hub"
-  pressure is largely answered by #7, the militia settlement.)*
+> The reason appeared: Vendur is the prime **trade hub**, but a hub needs the
+> **other ends of its caravan lines.** Belgond is Vendur's **raw-materials
+> supplier** — the place the irreplaceables come *from.*
+
+- **Why it exists:** the trade economy demands a source. Vendur crafts and keeps
+  silver, but it sits in a hillfort basin and **cannot extract** stone, timber,
+  hide, or game at scale. Belgond is the mountain-pass town that does nothing but
+  **extract** — quarry stone, harvested timber, foraged mushrooms, hunted meat &
+  raw hide — and ships it down to Vendur. It makes the trade hub *make sense.*
+- **Lore role:** the human pocket's **producer end.** Food-independent (hunt +
+  forage), so unlike most of the map it does **not fear hunger** — it fears losing
+  **tools, wards, and bodies.** A working economic triangle locks here:
+  **Belgond (raw) ↔ Vendur (forge/silver/leather-craft) ↔ Training Camp (fighters
+  for hire).** Belgond ships raw materials; buys back **finished tools** (it has ore
+  and stone but no L2+ forge), **militia-for-hire** (it can't spare workers to
+  guard), **silver/wards** (survival-critical, and worse here — see below), and
+  **finished leather garments** (it collects the raw hide, Vendur does the craft).
+- **Shape:** one **main colony of homes** — the dense, warm, defensible core you
+  return to — with the **worksites scattered ~5 minutes out** (quarry, wood-lots,
+  hunting ranges, mushroom grounds). People **sleep together, work apart**: dawn
+  muster, scatter to the sites, regroup at the colony at dusk. "Sparse but not
+  sparse" — a sparse *labor* footprint over a dense *living* footprint. Its defense
+  logic falls out of this: the colony is wallable, but the workers are **exposed at
+  the scattered sites by day**, which is far more perimeter than its silver can ward.
+- **Quest-hook:** caravans. The road up to Belgond runs the **western
+  predator-mountains** (big cats, bears — the same range that climbs toward the
+  Sword Sanctum), and **no lone traveler survives it** — so all movement is **armed
+  convoy.** That is *why caravans exist* on this map, and Belgond is their
+  destination. The player reaches it as escort, trader, or hired militia.
+- **Map role:** **west of Magizhee,** partway up the western Sanctum road —
+  previously "blocked early, predators," now **populated with a reason to brave it
+  and a means (caravans).** It makes the western mountains a **graduated climb**
+  instead of a flat wall: predator road → Belgond → (much later) the Sanctum ascent.
+  Belgond is the **last inhabited place** before the trail climbs to the **mountain
+  Sword Sanctum** (#5), so it naturally **stages the Sanctum return.**
+- **Tier note:** **dense** — large, returnable, multi-quest, high activity — though
+  *physically scattered* rather than packed. Counts as a **dense hub.** Name locked:
+  **Belgond** (a Deccan-style hill/place fossil, consistent with `vendi+ooru →
+  Vendur` and the eroded `Vengarz`). **Concept pass deferred:** mood, local crisis,
+  local hive behavior, and the sword-history layer are not yet authored.
+
+### 9–11. Reserved dense + mini slots — **[slot]**
+
+- The remaining **dense + mini** to hit the target (Belgond now claims a dense slot;
+  the Vengarz camp and Training Camp claim mid slots). Lore doesn't pin the rest yet;
+  the spine reserves their positions (`connectivity-map.md`). Author each **only when
+  a reason appears** — e.g. a region the sword's knowledge-quest demands, a settlement
+  the union/stalemate theme needs, or a corridor that wants a face. Candidate
+  pressures: a region owning a **traversal mechanic**; the **endgame hive-convergence
+  region** (Stage 7). *(The "second living hub" pressure is largely answered by #7,
+  the Training Camp; the "where does Vendur's trade come from" pressure is answered by
+  #8, Belgond.)*
 
 ---
 
@@ -195,6 +240,12 @@
   **Vengarz Hold → Rosetta** (seal/magic/Sanctum lore) **→ Silent Core/endgame**, or
   a second path to the **Ancient Deity Sanctum**. From Rosetta's lore the player can
   bend back toward the **Sword Sanctum** revelation (west, up the mountain).
+- **The western branch is now populated.** West of Magizhee was "blocked early,
+  predators"; **Belgond** (#8) sits partway up that road as Vendur's raw-materials
+  supplier, reached by **armed caravan** through the predator gauntlet. It turns the
+  western mountains into a **graduated climb** (predator road → Belgond → Sanctum
+  ascent) and is the last inhabited place before the **Sword Sanctum** trail —
+  staging that late return.
 - **Each region is a self-contained problem** (Fallout-1 discipline) but **loosely bound**
   (FNV exploration): you can wander in early and eat the heat (`connectivity-map.md`).
 - **No virgin discovery:** every site is post-history and inhabited, which keeps the

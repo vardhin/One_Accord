@@ -42,6 +42,7 @@ Magizhee / start / living procedure  ⇄  Rosetta / origin wound / seal mystery
 | Region | Tier | Map position | Role |
 |---|---:|---|---|
 | **Sword Sanctum** | late-return destination | SW mountain, above the human pocket | True-sword maiden. Visible/implied early; terrain + danger block early entry; meaningful only after right-side lore. |
+| **Belgond** | dense | West of Magizhee, partway up the predator-mountain Sanctum road | Vendur's raw-materials supplier (quarry/timber/hide/mushroom/game). Reached by armed caravan through the predator gauntlet; last inhabited place before the Sanctum trail. |
 | **Magizhee** | mid | Center of the human pocket | Starter settlement and tutorial root. The hub the four early directions radiate from. |
 | **Old Dock** | gate/corridor | North of Magizhee, on the water's edge | The ferry crossing — **and a husk-infested chokepoint.** Crossing is both a tool gate (ferry) and a fight. |
 | **Training Camp** | mid | NE of Magizhee (top-right of the pocket) | The coming-of-age / militia hardening settlement. A safe early direction. |
@@ -63,9 +64,10 @@ each gated diegetically — readable world limits, not invisible walls:
                   (husk-infested; crossing point)
                           │  ← very tough husks early
                           │
-[mountains] ── WEST ──[Magizhee]── EAST ──[Training Camp]
-(big cats, bears;        │              (safe early route)
- way up to Sanctum)      │
+[Belgond] ── WEST ──[Magizhee]── EAST ──[Training Camp]
+(caravan road;          │              (safe early route)
+ big cats, bears;       │
+ then up to Sanctum)    │
                        SOUTH
                           │
                    [Vendur Militia]
@@ -77,15 +79,20 @@ each gated diegetically — readable world limits, not invisible walls:
 - **North → Old Dock:** the ferry crossing, but **husk-infested.** Going straight
   north early throws the player at **very tough husks.** This is the river threshold
   *and* a fight.
-- **West → mountains:** tough mountainous routes with **dangerous big cats and
-  bears.** This is also the way up toward the **Sword Sanctum** — so it reads as
-  "blocked early" terrain, not a path.
+- **West → Belgond → mountains:** tough mountainous routes with **dangerous big cats
+  and bears** — the road no lone traveler survives, so it is walked by **armed
+  caravan.** Its destination is **Belgond**, Vendur's raw-materials supplier town
+  (partway up the slope). Beyond Belgond the same road climbs toward the **Sword
+  Sanctum** — so west is a **graduated climb** (caravan road → Belgond → Sanctum
+  ascent), not a flat "blocked early" wall. Belgond is reachable early *with a
+  caravan*; the Sanctum beyond it is not.
 - **East → Training Camp:** the safe early direction. The coming-of-age settlement.
 - **South → Vendur:** the other safe early direction — the **Vendur Militia** first,
   then up to the **Vendur Hill Fort Market** beyond it.
 
-So the **two sane early routes are East (Training Camp) and South (Vendur)**; North
-and West are self-evident danger early.
+So the **two safe solo early routes are East (Training Camp) and South (Vendur)**;
+North is self-evident danger, and **West is danger you only take with a caravan** —
+which still reaches **Belgond** early, but not the Sanctum beyond it.
 
 - **Training-Camp-first:** the camp can send the player to Vendur for supplies,
   repairs, grain, medicine, authority, or another practical need.
@@ -137,8 +144,12 @@ there.
 ## The Sanctum return
 
 After Vendur, the player can find or hear of the **mountain trail** west/up toward
-the **Sword Sanctum**. An early-level player is stopped by terrain, predators
-(big cats, bears), traversal limits, or simple practical impossibility.
+the **Sword Sanctum** — the trail that climbs **beyond Belgond**, the last inhabited
+place on the western road. An early-level player is stopped by terrain, predators
+(big cats, bears), traversal limits, or simple practical impossibility — Belgond is
+reachable by caravan, the Sanctum past it is not. Belgond naturally **stages** the
+return: the player has already been there for trade, so the trail beyond it is
+familiar ground reinterpreted, not a cold far node.
 
 The trail's real meaning unlocks later. The player returns because they have found
 enough lore to reinterpret it, not because an NPC plainly says, "there is a magic
@@ -185,7 +196,10 @@ So the human pocket is not "safe." It is simply not the hive's main strategic fr
 ## Open
 
 - Exact roads inside the human pocket (Magizhee ↔ Training Camp ↔ Vendur Militia ↔
-  Hill Fort Market) — direct, patrol corridor, or outpost chain.
+  Hill Fort Market ↔ Belgond) — direct, patrol corridor, or outpost chain.
+- The **Belgond caravan**: route, escort composition (militia-for-hire from the
+  Training Camp?), frequency, and what a player does to/with/against it. Whether
+  Belgond connects to Vendur directly or only via Magizhee.
 - Exact supply/support reason the Training Camp gives for sending the player to
   Vendur.
 - Who controls/operates the Old Dock ferry, and what clearing the husks there
