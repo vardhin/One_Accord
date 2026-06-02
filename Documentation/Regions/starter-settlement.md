@@ -3,9 +3,11 @@
 > The first breathable pocket of civilization. Small, legible, tutorial-rich,
 > political, systemic. Scale inspiration: Goodsprings (Fallout: New Vegas).
 >
-> **Current map placement:** Magizhee sits in the left-side early-game pocket,
-> between the **militia zone** and **Vendur**, and diagonal-opposite the Rosetta
-> region across the map.
+> **Current map placement:** Magizhee is the **hub** at the center of the human
+> pocket, diagonal-opposite the Rosetta region across the water. Four early
+> directions radiate from it: **north → the husk-held Old Dock** (the ferry
+> crossing), **west → predator-mountains** (toward the Sword Sanctum), **east → the
+> Training Camp**, **south → Vendur**. East and south are the safe early routes.
 
 ## Scale & tone
 
@@ -34,14 +36,15 @@ A **basic safe settlement** with:
 
 ## World-position role
 
-Magizhee is the root of the playable geography, but not a hub city. It is a
-small, constrained crossroads.
+Magizhee is the root of the playable geography and the **hub** of the human pocket
+— a small, constrained crossroads with four directions:
 
-- One viable axis leads toward the **militia zone**.
-- One viable axis leads toward **Vendur**.
-- Other axes are naturally denied early: **river** the player cannot yet cross,
-  **mountains** the player cannot yet climb, or husk-heavy ground that an early
-  player can technically test and should learn to avoid.
+- **East → the Training Camp** — a safe early route.
+- **South → Vendur** (the Vendur Militia first, then the Hill Fort Market beyond).
+- **North → the Old Dock** — naturally denied early: the ferry crossing is
+  **husk-infested**, so going straight north throws the player at very tough husks.
+- **West → predator-mountains** — naturally denied early: dangerous big cats and
+  bears, on the terrain that climbs toward the Sword Sanctum.
 
 This keeps the first map simple without making the world feel fake. The player
 can choose militia-first or Vendur-first; both routes naturally fold back toward
@@ -80,10 +83,10 @@ only; see `../Mechanics/forge-and-upgrades.md`.)
 
 ## Early route convergence
 
-If the player goes to the **militia zone** first, the militia should send them to
+If the player goes **east to the Training Camp** first, the camp should send them to
 **Vendur** for supplies, permission, repair material, grain, medicine, or some
-other concrete support. If the player goes to **Vendur** first, the sword nudges
-them there and the first dungeon can open from Vendur instead.
+other concrete support. If the player goes **south to Vendur** first, the sword
+nudges them there and the first dungeon can open from Vendur instead.
 
 Arghanzza is no longer an early dependency. It sits on the far side of the river,
 near the first right-side crossing, and belongs to the post-crossing pressure

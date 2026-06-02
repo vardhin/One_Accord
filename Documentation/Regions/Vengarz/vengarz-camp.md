@@ -1,8 +1,9 @@
-# Vengarz Camp — Mobile Stronghold Near Rosetta
+# Vengarz Hold — Mobile Stronghold Near Rosetta
 
-> A mid-size, mobile fortified camp near Rosetta. Outsiders may mistake them for
-> scavengers, but the Vengarz are the remnant of an old anti-hive force that fought
-> beside the hero during the seal era.
+> A mid-size, mobile fortified camp south of Rosetta, reached from Arghanzza via the
+> puzzle route. Technically a **camp**; the Vengarz call it a **Hold.** Outsiders may
+> mistake them for scavengers, but the Vengarz are the remnant of an old anti-hive
+> force that fought beside the hero during the seal era.
 
 ## Identity
 
@@ -62,13 +63,14 @@ The Vengarz are a stronghold by **discipline**, not architecture.
 
 Rosetta itself is a **dense hazard/lore region** because it once held hundreds of
 researchers: old camps, research halls, field stations, glyph archives,
-containment attempts, and failed expeditions. The Vengarz camp is the human
+containment attempts, and failed expeditions. The Vengarz Hold is the human
 foothold near it, not inside it.
 
-Route cluster:
+Route cluster (Arghanzza forks; the Sanctum hangs off the **other** branch):
 
 ```text
-[Arghanzza] -> [Vengarz Camp] -> [Rosetta Ruins] -> [Underground Sanctum]
+[Arghanzza] ──puzzle──> [Vengarz Hold] ──N──> [Rosetta Ruins] ──N──> [Silent Core]
+     └──────────── second path ──────────> [Ancient Deity Sanctum]
 ```
 
 The structure mirrors the useful design function of Fallout 1's Brotherhood /

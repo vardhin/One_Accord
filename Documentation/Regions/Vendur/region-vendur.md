@@ -93,10 +93,10 @@ a caravan tie to a separate **militia / coming-of-age settlement** (`../region-s
 - **Named NPCs** among the 13 households (silver-keeper, smith, elders, edge-household
   heads) — deferred to per-NPC authoring under the 40-cap (`../../Npcs/`).
 - The dungeon layout and exactly what the cleric's room reveals (and the reveal-split
-  with the underground sanctum).
-- The **militia / coming-of-age settlement** at the far end of the caravan tie —
-  registered (`../region-set.md`) but unnamed and unbuilt.
-- The exact road/corridor shape between Magizhee, the militia zone, and Vendur, and
+  with the Ancient Deity Sanctum).
+- The **Training Camp** (coming-of-age settlement) at the far end of the caravan tie —
+  registered (`../region-set.md`) but unbuilt.
+- The exact road/corridor shape between Magizhee, the Training Camp, and Vendur, and
   the heat split between Vendur's upper and lower nodes (`../connectivity-map.md`).
 - The **glyph-script rendering** of Vendur's name. The etymology is now pinned:
   `vendi + ooru -> venduru -> Vendur` (silver town/region).

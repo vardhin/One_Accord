@@ -207,22 +207,33 @@
 - **Region tiers** — **Dense** (~7–8, returnable hubs) · **Mid** (Goodsprings-scale
   settlement / focused stronghold) · **Mini** (~3–4, single-arc spokes). Concluded:
   Vendur (dense), Magizhee (mid), Arghanzza (mini). Lore-demanded: Rosetta ruins
-  (dense), Vengarz Camp (mid), underground sanctum (mini). → `Regions/world-structure.md`
-- **Magizhee** — the Goodsprings-scale starter settlement; left of the river,
-  between the militia zone and Vendur. → `Regions/starter-settlement.md`
+  (dense), Vengarz Hold (mid), Ancient Deity Sanctum (mini). → `Regions/world-structure.md`
+- **Magizhee** — the Goodsprings-scale starter settlement; the **hub** at the center
+  of the human pocket (Old Dock north, Training Camp east, Vendur south, predator-
+  mountains west). → `Regions/starter-settlement.md`
 - **Vendur** — silver trade hillfort; name fossil from `vendi + ooru -> venduru ->
-  Vendur`. Dense hub, sword-girl's old home. → `Regions/Vendur/region-vendur.md`
-- **Vengarz Camp** — mid-size mobile wooden/tent/wagon stronghold near Rosetta;
-  remnant of an old anti-hive force from the hero's legion. → `Regions/Vengarz/vengarz-camp.md`
+  Vendur`. Dense hub, sword-girl's old home; south of Magizhee (Vendur Militia, then
+  the Hill Fort Market beyond it). → `Regions/Vendur/region-vendur.md`
+- **Old Dock** — the husk-infested ferry crossing north of Magizhee; the water
+  threshold is both a tool gate (ferry) and a fight. → `Regions/connectivity-map.md`
+- **Training Camp** — the coming-of-age / militia hardening settlement NE of
+  Magizhee; the safe eastern early route. → `Regions/region-set.md`
+- **Vengarz Hold** — mid-size mobile wooden/tent/wagon stronghold (a camp they call a
+  **Hold**), south of Rosetta, reached from Arghanzza via the puzzle route; remnant
+  of an old anti-hive force from the hero's legion. → `Regions/Vengarz/vengarz-camp.md`
 - **Rosetta ruins** — confirmed dense hazard/lore region; old research ground-zero
-  where the hive first entered. → `Regions/region-set.md`
+  where the hive first entered; north of Vengarz Hold, below the Silent Core. → `Regions/region-set.md`
+- **Ancient Deity Sanctum** — mini dungeon-spoke off the **second** path out of
+  Arghanzza (not the Vengarz route); channel-point of the forgotten deities, first
+  Light-glyph knowledge. → `Regions/region-set.md`
 - **Decompression corridors** — the quiet traversal spaces between regions; on the
   map they are the **edges** of the graph (and playable rooms that can hold a single
   mini-arc). → `Regions/world-structure.md`, `Regions/connectivity-map.md`
-- **Route shape** — square-map lattice: Magizhee opens into militia/Vendur, converges
-  at Vendur, crosses the river into Arghanzza, reaches Vengarz Camp, then Rosetta
-  and Silent Core. Region heat still orders pressure, but the current map is anchored
-  by natural boundaries and the river threshold. → `Regions/connectivity-map.md`
+- **Route shape** — Magizhee (hub) opens east → Training Camp or south → Vendur,
+  converging at Vendur; ferries from the husk-held Old Dock into **Arghanzza**, which
+  **forks**: puzzle route → Vengarz Hold → Rosetta → Silent Core, or a second path →
+  Ancient Deity Sanctum. Region heat orders pressure; the map is anchored by natural
+  boundaries and the water threshold. → `Regions/connectivity-map.md`
 - **Reserved slot** — an unfilled position in the route shape with a known
   neighbor/gate/heat-band; future regions claim a slot rather than being designed
   in a vacuum. → `Regions/connectivity-map.md`

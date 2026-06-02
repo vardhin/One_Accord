@@ -41,18 +41,20 @@ hivemind thread scheduler, and the seal / soft-infected model.
 
 - [~] **The region set.** Framework locked: **~7–8 dense + 3–4 mini**, tiered. The
   **lore-demanded set is now catalogued** (`Regions/region-set.md`): Magizhee
-  (mid starter), Vendur (dense), **Vengarz Camp** (mid mobile stronghold / old
-  hero-legion remnant), the **Rosetta ruins** (dense/hot research ground-zero),
-  the **deities' underground sanctum** (mini dungeon, first Light glyph), the
-  **mountain Sword Sanctum** (true-sword maiden), and Arghanzza as the first
-  post-river transition mini. Remaining dense + mini slots are reasoned, not
-  filler. — `Regions/region-set.md`, `Regions/world-structure.md`
+  (mid starter/hub), Vendur (dense), the **Training Camp** (mid coming-of-age),
+  **Vengarz Hold** (mid mobile stronghold / old hero-legion remnant), the **Rosetta
+  ruins** (dense/hot research ground-zero), the **Ancient Deity Sanctum** (mini
+  dungeon, first Light glyph), the **mountain Sword Sanctum** (true-sword maiden),
+  and Arghanzza as the post-ferry threshold that forks the hive side. Remaining
+  dense + mini slots are reasoned, not filler. — `Regions/region-set.md`, `Regions/world-structure.md`
 - [x] **Open-world / connectivity map.** CONCLUDED as **structure** (the spine, not
-  filled with content): square-map lattice with a river threshold; Magizhee opens
-  into militia/Vendur, converges at Vendur, crosses the river into Arghanzza,
-  reaches Vengarz Camp, then Rosetta and the Silent Core. Natural boundaries,
-  heat gates, traversal gates, and story/lore gates define the route.
-  — `Regions/connectivity-map.md`
+  filled with content), now matched to the drawn map (`Regions/One_Accord_Map.png`):
+  Magizhee is the hub (east → Training Camp / south → Vendur are the safe early
+  routes; north → husk-held Old Dock and west → predator-mountains are danger);
+  routes converge at Vendur, ferry across from the Old Dock into Arghanzza, which
+  **forks** to Vengarz Hold → Rosetta → Silent Core or to the Ancient Deity Sanctum.
+  Natural boundaries, heat gates, traversal gates, and story/lore gates define the
+  route. — `Regions/connectivity-map.md`
 - [ ] **Per-region concept pass** for each new region: theme, the one mechanic it
   teaches/owns, its crisis, its tie to the hive's concentration map, and its tier.
 - [ ] **Concentration / difficulty layout** across the map — where the hive's

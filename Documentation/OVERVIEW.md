@@ -45,11 +45,12 @@ and `Lore/the-deities-and-the-soul-economy.md`.
 - Structure is Dark Souls–like: a handful of dense authored regions (target
   **~7–8 dense + 3–4 mini**) with quieter traversal corridors between them. Not a
   huge open world. The **lore-demanded region set** is catalogued: Magizhee (mid
-  starter), Vendur (dense — the sword-girl's birthplace/trade hub), Vengarz Camp
-  (mid mobile stronghold near Rosetta), the Rosetta ruins (dense research
-  ground-zero), the deities' underground sanctum (mini, first Light glyph), the
-  mountain Sword Sanctum (true-sword maiden), and Arghanzza (mini, post-river
-  transition). — `Regions/region-set.md`, `Regions/world-structure.md`
+  starter/hub), Vendur (dense — the sword-girl's birthplace/trade hub), the Training
+  Camp (mid, coming-of-age settlement), Vengarz Hold (mid mobile stronghold south of
+  Rosetta), the Rosetta ruins (dense research ground-zero), the Ancient Deity Sanctum
+  (mini, first Light glyph), the mountain Sword Sanctum (true-sword maiden), and
+  Arghanzza (mini, the post-ferry threshold that forks the hive side). —
+  `Regions/region-set.md`, `Regions/world-structure.md`
 - Scale inspiration for settlements and tutorial: Fallout: New Vegas / Fallout 3
   (first settlement is Goodsprings-scale).
 

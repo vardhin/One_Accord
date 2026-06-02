@@ -24,8 +24,9 @@ below).
 > - **Vendur** — *dense.* The sword-girl's birthplace estate, now a trade hub — an
 >   earth-rampart **hillfort of ~13 trader households** read as **two coupled nodes**
 >   (upper fort / exposed lower town). "Dense" still means band-scale (~55–60 souls).
-> - **Magizhee** — *mid.* Goodsprings-scale first settlement, placed between the
->   militia zone and Vendur.
+> - **Magizhee** — *mid.* Goodsprings-scale first settlement; the **hub** at the
+>   center of the human pocket (Old Dock north, Training Camp east, Vendur south,
+>   mountains west).
 > - **Arghanzza** — *mini.* A small village (deeply-developed in its own right,
 >   but mini in scale).
 >
@@ -36,38 +37,43 @@ below).
 
 ## Current square-map skeleton
 
-The latest geography is deliberately simple: imagine a square map split by a
-river flowing roughly **top-left → bottom-right**. The river divides the early
-left-side human pocket from the hotter right-side hive ground.
+The geography is fixed by the drawn map (`One_Accord_Map.png`; adjacency and gates
+in `connectivity-map.md`). A square split diagonally by a **broad body of water**
+running roughly **west → lower-east**. The water divides the **lower-left human
+pocket** from the **upper / across-the-water hive ground**.
 
-- **Bottom-left / left / bottom edges:** huge mountain ranges. Husks do not
-  arrive from these edges. The bottom-left-most high peak holds the **Sword
-  Sanctum**.
-- **Vendur:** inside the mountain basin, still bottom-left, perfect for a
-  defended hillfort. From Vendur a mountain trail becomes visible, but it stops
-  an early player. Midgame lore can make the player reinterpret that blocked
-  trail and return toward the Sanctum.
-- **Magizhee:** starting region, diagonal-opposite **Rosetta**, located between
-  the militia zone and Vendur.
-- **Militia zone:** left of the river, part of the first-half game. Reachable
-  early from Magizhee; militia-first naturally sends the player toward Vendur
-  for supplies or support.
-- **River:** hard early boundary. Crossing requires a small boat or equivalent
-  midgame permission/tool.
-- **Arghanzza:** right of the river and close to it, likely a mangrove-like
-  transition region after the first crossing.
-- **Vengarz Camp:** right side, near Rosetta but not inside it. A mid-size mobile
+- **Western / southern edges:** huge mountain ranges. Husks do not arrive from
+  these edges. The **SW mountain above the pocket** holds the **Sword Sanctum**.
+- **Magizhee:** the **hub** at the center of the human pocket. Four early directions
+  radiate from it: **north** to the husk-held Old Dock (the crossing), **west** into
+  predator-mountains (toward the Sanctum, blocked early), **east** to the Training
+  Camp, **south** to Vendur. East and south are the two safe early routes.
+- **Old Dock:** north of Magizhee, on the water. The ferry crossing **and** a
+  husk-infested chokepoint — crossing it is a midgame fight, not a free move.
+- **Training Camp:** NE of Magizhee. The coming-of-age / militia hardening
+  settlement; safe early direction.
+- **Vendur:** south of Magizhee — the **Vendur Militia** node first, then up to the
+  **Vendur Hill Fort Market** beyond it. The defended hillfort trade hub. From
+  Vendur the mountain trail toward the Sanctum becomes visible but stops an early
+  player; midgame lore makes the player reinterpret it and return.
+- **The water:** hard early boundary. Crossing is by **ferry from the Old Dock**.
+- **Arghanzza:** a short distance across the water past the landing — a mangrove-like
+  possessed-matter threshold, and **the fork point of the hive side.**
+- **Two paths leave Arghanzza:** a **puzzle route → Vengarz Hold → (north) Rosetta →
+  (north) Silent Core**, and a **second path → Ancient Deity Sanctum**.
+- **Vengarz Hold:** the human foothold before Rosetta. A mid-size mobile
   wooden/tent/wagon palisade held by remnants of an old anti-hive force from the
-  hero's legion.
-- **Rosetta region:** right of the river, farther past Arghanzza/Vengarz and between
-  the river-crossing side and the Silent Core. This is a dense old research region
-  and the hive's strategic focus because it arrived from here and wants a way to
-  remove the old hero's seal.
-- **Silent Core:** top-right, the most hive-mind-concentrated region.
+  hero's legion. Technically a camp; they call it a **Hold.**
+- **Rosetta:** north of Vengarz Hold. A dense old research region and the hive's
+  strategic focus because it arrived from here and wants a way to remove the old
+  hero's seal.
+- **Silent Core:** north of Rosetta (top-right), the most hive-mind-concentrated
+  region.
 
-The left side is not overrun because the old hero's seal prevents new infection.
-Only runaway, drifted, or low-level husks leak into the left region; that is still
-enough to threaten the few hundred humans left, because the world has no slack.
+The human pocket is not overrun because the old hero's seal prevents new infection.
+Only runaway, drifted, or low-level husks leak in (the Old Dock being a standing
+example); that is still enough to threaten the few hundred humans left, because the
+world has no slack.
 
 ## What each dense region needs
 
@@ -138,7 +144,9 @@ stillness** — not desperate scrambling.
 - `Vendur/` — the sword-girl's birthplace estate, now a trade hub (**dense**);
   its own subfolder.
 - `connectivity-map.md` — the square-map adjacency graph, corridor/gate model,
-  river threshold, and current route shape.
+  river threshold, Arghanzza fork, and current route shape.
+- `One_Accord_Map.png` — the drawn world map; the **visual source of truth** for
+  geography.
 - `region-set.md` — the **lore-demanded** catalogue: every region the story requires
   (Vendur, the Rosetta ruins, the deities' underground sanctum, the mountain Sword Sanctum,
   Arghanzza-as-pass-through) with tier, heat, and quest-hook.

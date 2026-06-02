@@ -119,16 +119,16 @@ choice live, not cosmetic:
 - The **lore-demanded places** exist because the *past* left them, and are **already
   explored, looted, and inhabited** — you are not the first explorer (see the region
   list, `../Regions/region-set.md`): the Rosetta-stone ruins (where the cleric freed the
-  hive) as a dense abandoned research region; **Vengarz Camp**, the mobile stronghold
-  of an old hero-legion remnant that still runs Rosetta sorties; an **underground
-  sanctum of other ancient divinities** holding the **first Light-glyph knowledge**;
-  the **mountain Sword Sanctum** with its waiting maiden; **Arghanzza** as the first
-  right-side transition after the river.
-- Current map logic: **Magizhee** starts the player between the militia zone and
-  Vendur. Vendur opens the first dungeon and reveals the blocked mountain trail.
-  The river crossing opens the right side; Vengarz routes the player into Rosetta,
-  and Rosetta supplies the lore that lets the player reinterpret the mountain and
-  the true Sword Maiden.
+  hive) as a dense abandoned research region; **Vengarz Hold**, the mobile stronghold
+  of an old hero-legion remnant that still runs Rosetta sorties; an **Ancient Deity
+  Sanctum** holding the **first Light-glyph knowledge**; the **mountain Sword
+  Sanctum** with its waiting maiden; **Arghanzza** as the first transition across the
+  water.
+- Current map logic: **Magizhee** is the hub — east to the Training Camp or south to
+  Vendur are the safe early routes. Vendur opens the first dungeon and reveals the
+  blocked mountain trail. The ferry from the husk-held Old Dock opens the hive side;
+  Arghanzza forks, the Vengarz routes the player into Rosetta, and Rosetta supplies
+  the lore that lets the player reinterpret the mountain and the true Sword Maiden.
 - The **endgame** is still the convergence to one total Hivemind
   (`../Mechanics/hivemind-threads.md`) — but now also resolves the **One Accord**: which
   sword stands with you at the end, and what the other one has become.

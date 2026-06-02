@@ -39,9 +39,10 @@
 - **Lore role:** where the player is handed the rusty sword and becomes the breaking
   point by being **the first to trust it.**
 - **Quest-hook:** the local "accused of turning" crisis; the first sword bond.
-- **Map role:** the starting pocket between the **militia zone** and **Vendur**.
-  The player can choose either route first; river, mountains, and husk-heavy ground
-  close the other axes.
+- **Map role:** the **hub** at the center of the human pocket. Four early
+  directions: **east → Training Camp** and **south → Vendur** are the safe routes;
+  **north → the husk-held Old Dock** (the crossing) and **west → predator-mountains**
+  (toward the Sanctum) are self-evident danger early. (`connectivity-map.md`.)
 - Doc: `starter-settlement.md`.
 
 ### 2. Vendur — *dense* · low-but-volatile heat · **[concluded]**
@@ -74,13 +75,16 @@
 - **Quest-hook:** the **Vengarz** (#3b) are the living link to Rosetta's routes and
   to the underground sanctum (#4). They send recovery sorties into Rosetta and can
   test the player there.
-- **Map role:** diagonal-opposite **Magizhee**, right of the river, past Arghanzza
-  and before the Silent Core. The hive's attention bends here because it arrived
-  from here and may be trying to remove or bypass the old hero's seal.
+- **Map role:** diagonal-opposite **Magizhee**, across the water, **north of Vengarz
+  Hold** and before the Silent Core (north of Rosetta). The hive's attention bends
+  here because it arrived from here and may be trying to remove or bypass the old
+  hero's seal.
 - **Tier note:** confirmed **dense**: a large ruin/research/hazard zone with major
   story weight and repeated exploration.
 
-### 3b. Vengarz Camp — *mid* · hot-adjacent · **[lore-demanded]**
+### 3b. Vengarz Hold — *mid* · hot-adjacent · **[lore-demanded]**
+
+> Technically a mobile **camp**; the Vengarz call it a **Hold.**
 
 - **Why it exists:** Rosetta is too actively contested for people to live directly
   inside it. The human foothold must sit nearby as a hardened, mobile camp.
@@ -92,24 +96,26 @@
   distrusts the player, then sends them on Rosetta recovery/test sorties. The sword
   can identify old defensive principles in their preserved doctrine and unlock new
   camp defenses.
-- **Map role:** right side, near Rosetta but not on ground-zero. A mobile wooden /
-  tent / wagon-palisade stronghold, not stone or mud.
+- **Map role:** across the water, reached from **Arghanzza via the puzzle route**;
+  **south of Rosetta**, near it but not on ground-zero. A mobile wooden / tent /
+  wagon-palisade stronghold, not stone or mud.
 - **Tier note:** **mid**: ~20 adult fighters, sleeping tents/dorms, training yard,
   glyph hall/map tent, glyph-smith + silver-smith wagon, cookery, armory, sortie
   gate. Doc: `Vengarz/vengarz-camp.md`.
 
-### 4. The underground sanctum of the forgotten deities — *mini* (dungeon-spoke) · hot · **[lore-demanded]**
+### 4. The Ancient Deity Sanctum — *mini* (dungeon-spoke) · hot · **[lore-demanded]**
 
 - **Why it exists:** the **forgotten-but-living deities** (`../Lore/the-deities-and-the-soul-economy.md`)
-  need a place their indirect hand is legible — a shrine/archive of the ~10, reachable
-  **only near the Rosetta ruins** (via Vengarz routes / trust). It holds the **first Light-glyph
-  knowledge** — the deities' most overt lent power.
+  need a place their indirect hand is legible — a shrine/archive of the ~10. It holds
+  the **first Light-glyph knowledge** — the deities' most overt lent power.
 - **Lore role:** where the **"glyphs are gods" truth** first surfaces (humans think it's
   decoded technique; here the sword realizes otherwise). Not a tomb of sealed gods — a
   channel-point of living, abstaining ones.
-- **Quest-hook:** recover the Light line; the metaphysics reveal. Gated behind
-  Vengarz trust and (likely) a traversal/tool gate.
-- **Tier note:** a **mini dungeon-spoke** hung off #3, not a settlement.
+- **Quest-hook:** recover the Light line; the metaphysics reveal. Gated by a
+  traversal/tool gate on the Arghanzza branch.
+- **Map role:** across the water, on the **second path out of Arghanzza** (the one
+  that does *not* lead to Vengarz Hold). It hangs off **Arghanzza**, not Rosetta.
+- **Tier note:** a **mini dungeon-spoke** hung off **Arghanzza** (#6), not a settlement.
 
 ### 5. The mountain Sword Sanctum — *late-return destination* · low physical edge / high story weight · **[lore-demanded]**
 
@@ -123,8 +129,9 @@
 - **Quest-hook:** a midgame/late-return revelation. The player can discover the
   mountain trail after Vendur, but it stops an early player. Right-side lore,
   especially Rosetta, teaches the player how to reinterpret the trail and return.
-- **Map role:** bottom-left-most high peak, inside the protective mountain range.
-  It is physically near the early region but meaningfully inaccessible until the
+- **Map role:** the **SW mountain** above the human pocket, inside the protective
+  range — reached **west** out of Magizhee through predator-terrain (big cats,
+  bears). Physically near the early region but meaningfully inaccessible until the
   player has the right lore, strength, and relationship context.
 - **Tier note:** not a normal settlement hub. Treat as a story-heavy route,
   ascent, and sanctum sequence.
@@ -136,12 +143,15 @@
   horror, but it is no longer an early dependency for Magizhee.
 - **Lore role:** maybe just a **corpse-burner** living near it — someone who burns old husk
   bodies (pyrecraft, `../Mechanics/kill-resolution.md`). One person, one function, one beat.
-- **Quest-hook:** minimal — a corridor with a face. First right-side threshold
-  after the river crossing.
-- **Map role:** right of the river and close to it, likely mangrove-like.
+- **Quest-hook:** minimal — a corridor with a face. First post-crossing threshold
+  after the ferry.
+- **Map role:** a short distance across the water past the Old Dock landing,
+  mangrove-like — and the **fork point of the hive side.** Two paths leave it: the
+  **puzzle route → Vengarz Hold → Rosetta → Silent Core**, and a **second path →
+  the Ancient Deity Sanctum (#4).**
 - Docs: `Arghanzza/` (existing depth; **trim/reframe to pass-through** when revisited).
 
-### 7. The militia / coming-of-age settlement — *mid* · cool-to-mid heat · **[lore-demanded]**
+### 7. The Training Camp (militia / coming-of-age settlement) — *mid* · cool-to-mid heat · **[lore-demanded]**
 
 - **Why it exists:** Vendur is a town of **traders, not soldiers** (`Vendur/vendur-detail.md`),
   and at band scale **no settlement can afford to train fighters at home** — every adult
@@ -155,14 +165,15 @@
   **where childhood ends** in this world, which keeps it from being a generic "army town."
   A natural candidate for the **union-system's second hub** (uniting it with Vendur and
   Magizhee — `../Mechanics/village-and-union-system.md`).
-- **Quest-hook:** if visited first from Magizhee, the militia sends the player to
-  Vendur for supplies/support. Vendur's dependence can also route the player back
-  here later (resupply defence, a missing sent-away youth, a training arc).
-- **Map role:** left of the river, close enough to Magizhee to be an early option,
-  and logistically tied to Vendur.
-- **Tier note:** **mid** (focused cast), not dense — a Goodsprings-scale settlement with
-  one strong function. **Unnamed and not yet authored** (working name "the militia /
-  coming-of-age settlement"); placed on the spine in `connectivity-map.md`.
+- **Quest-hook:** the **east** route from Magizhee; if visited first, the Training
+  Camp sends the player to Vendur for supplies/support. Vendur's dependence can also
+  route the player back here later (resupply defence, a missing sent-away youth, a
+  training arc).
+- **Map role:** **NE of Magizhee** (top-right of the human pocket), the safe eastern
+  early route, and logistically tied to Vendur.
+- **Tier note:** **mid** (focused cast), not dense — a Goodsprings-scale settlement
+  with one strong function. Named on the map as the **Training Camp**; not yet
+  authored as a full doc. Placed on the spine in `connectivity-map.md`.
 
 ### 8–11. Reserved dense + mini slots — **[slot]**
 
@@ -178,10 +189,12 @@
 
 ## How the set serves the Fallout-style spine
 
-- **Main route shape:** Magizhee opens into an early left-side choice
-  (militia/Vendur), converges at Vendur, crosses the river into Arghanzza, pushes to
-  Vengarz Camp, then into Rosetta for the seal/magic/Sanctum lore, then bends either
-  back toward the Sword Sanctum revelation or onward toward the Silent Core/endgame.
+- **Main route shape:** Magizhee (hub) opens into an early choice — **east → Training
+  Camp** or **south → Vendur** — that converges at Vendur; ferries across from the
+  husk-held Old Dock into **Arghanzza**, which **forks**: the puzzle route to
+  **Vengarz Hold → Rosetta** (seal/magic/Sanctum lore) **→ Silent Core/endgame**, or
+  a second path to the **Ancient Deity Sanctum**. From Rosetta's lore the player can
+  bend back toward the **Sword Sanctum** revelation (west, up the mountain).
 - **Each region is a self-contained problem** (Fallout-1 discipline) but **loosely bound**
   (FNV exploration): you can wander in early and eat the heat (`connectivity-map.md`).
 - **No virgin discovery:** every site is post-history and inhabited, which keeps the
@@ -190,11 +203,13 @@
 
 ## Open
 
-- The **second living hub** for the union system — **largely resolved:** the militia /
-  coming-of-age settlement (#7) is the strong candidate (Magizhee + Vendur + militia). Open
-  only on whether the union theme *also* wants a further settlement.
+- The **second living hub** for the union system — **largely resolved:** the
+  **Training Camp** (#7) is the strong candidate (Magizhee + Vendur + Training Camp).
+  Open only on whether the union theme *also* wants a further settlement.
 - Whether the **mountain Sword Sanctum** is one region or a multi-stage ascent (multiple trails =
   multiple sub-areas?).
-- Names for everything still unnamed (the militia zone; the new lore-demanded regions).
+- The nature of the **Arghanzza→Vengarz puzzle route** (what kind of traversal gate).
+- Whether **Vengarz Hold** changes status after the player unlocks old defensive
+  doctrine with the sword.
 - Exact **heat-band ordering** of #3/#4 vs. Vendur — both are hot; resolve in the
   concentration/difficulty-layout pass (`../Mechanics/hive-concentration.md`).
