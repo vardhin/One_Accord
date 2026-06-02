@@ -1,9 +1,9 @@
 # Glyph System
 
-> Glyphs power magic weapons and certain sword techniques. The system is built on
-> **mass-gated slots** and a **glyph grammar** (elements × modifications), inspired
-> by Witch Hat Atelier. Progression is driven by an NPC (the glyph master) who
-> LEARNS over the game, not a static vendor.
+> Glyphs power magic weapons, hand-cast spells, and certain sword techniques. The
+> system is built on **slot limits** and a **glyph grammar** (elements ×
+> modifications), inspired by Witch Hat Atelier. Progression is driven by an NPC
+> (the glyph master) who LEARNS over the game, not a static vendor.
 
 ## Three separate writing systems
 
@@ -13,7 +13,7 @@ conflate them:
 | System | What it is | Role |
 | --- | --- | --- |
 | **Human Chinese** | The mundane written language of survivors | Literacy mechanic — read notes, ledgers, warnings (see `../Mechanics/literacy-system.md`) |
-| **Glyphs** | A separate set of operative **symbols** | Magic — bind effects to weapon matter |
+| **Glyphs** | A separate set of operative **symbols** | Magic — produce effects from a carrier/emitter |
 | **Ancient scripture** | The **old form of glyphs**, written in **Telugu** | The deep/divine root; mostly lore + endgame decoding |
 
 Glyphs are NOT part of human Chinese. The ancient scripture is the archaic form
@@ -92,11 +92,30 @@ identities without treating modifiers-alone or repeated sigils as new spells.
 > `spells/README.md`. When authoring the matching entries, reuse the names below;
 > don't coin a second name.
 
+### Medium does not change the spell
+
+The glyph formula is the spell. The carrier/emitter — sword, staff, hand, or some
+other implement — does **not** create a separate version of the effect. This is
+not a weapon-scaling moveset table.
+
+`Heat + Addition` always means the same thing: fire/heat is added and projected.
+On a sword, activation can make the blade blaze **and** release a heat blast; if
+held, it keeps releasing fire as a heat wave. On a staff, the same formula emits
+the same heat blast from the staff. On a hand, it emits from the hand. The medium
+only changes origin point, collision feel, animation, and how the particle stream
+inherits movement.
+
+Implementation note: model glyph output as particles/fields emitted from the
+active carrier. If the carrier swings, thrusts, points, or drifts, the particles
+inherit that motion and can read as a projectile, arc, cone, trail, or wave. The
+spell table still has **one** `Heat + Addition` entry.
+
 ### The class rule (why this table matters, not just flavors)
 
-A glyph fires off the sword's **steel body**. By kill resolution, plain metal is
-*always a loan*. So every glyph answers one question first — does it change *what
-tool the hit counts as*, or only *how hard the loan lands*?
+A glyph fires from its active carrier/emitter. By kill resolution, plain metal is
+*always a loan*, but the glyph output can change what the contact counts as. So
+every glyph answers one question first — does it change *what tool the hit counts
+as*, or only *how hard the loan lands*?
 
 - **Loan-class** — a better plain-metal hit (more damage, control, mobility, or
   utility). Still a loan; still seeds a mutant; still adds drift. **Most glyphs.**
@@ -111,7 +130,7 @@ tool the hit counts as*, or only *how hard the loan lands*?
 
 | | **+ Addition** | **− Subtraction** | **Spread** | **Focus** | **Bind** |
 | --- | --- | --- | --- | --- | --- |
-| **Heat** | **Ember Edge** — *kill-class (fire)*: true death on the dumb, **backfires on Actives** | **Killfrost** — drain heat; stagger + brittle (loan, control) | **Hearthwave** — cone of heat, crowd-stagger (loan) | **Lance-of-Coals** — armor-piercing burning thrust (*kill-class if target is dumb*) | **Smolder-Ward** — blade stays hot, ignites on next contact (kill-class, delayed) |
+| **Heat** | **Ember Edge** — *kill-class (fire)*: emits a fire/heat blast; hold to sustain it into a heat wave. On a sword, the carrier also blazes. True death on the dumb, **backfires on Actives** | **Killfrost** — drain heat; stagger + brittle (loan, control) | **Hearthwave** — broad sustained fire/heat wave, crowd-stagger (loan) | **Lance-of-Coals** — armor-piercing burning thrust (*kill-class if target is dumb*) | **Smolder-Ward** — carrier stays hot, ignites on next contact (kill-class, delayed) |
 | **Flow** | **Tidecut** — water-jet pressure, knockback (loan) | **Cold-Needle** — chill needle; the healer's weapon, slows incubation in allies | **Mistveil** — diffusion; drops detection glow (stealth — see `glow-and-detection.md`) | **Hollowpoint** — focused current, floods/drowns one body (loan) | **Brine-Bind** — salt-water ward; *the salt circle as a glyph* (anti-incubation) |
 | **Air** | **Gust** — push, gap-opener (loan) | **Vacuum-Pull** — pull bodies in, group them (sets up a sweep) | **Scatter** — wide pushback (crowd control) | **Whistlecut** — line of wind, ranged tick (loan) | **Stillwind-Bind** — local silence; suppresses bell-call / active-call (tactical) |
 | **Earth** | **Weight** — heavy hit, the broadsword's friend (loan, +stagger) | **Hollow** — drain mass; shatters brittle/frozen targets (combo finisher) | **Quake** — area stagger/knockdown (crowd) | **Boring-Spike** — pierces stone & possessed masonry (Arghanzza/Vendur matter) | **Anchor-Bind** — root self; immovable parry stance (defensive) |
@@ -193,6 +212,9 @@ dagger (core) → shortsword → katana / scimitar → longsword → broadsword 
 
 - **More mass = more glyph slots.** Core/dagger holds **1 glyph**. Maximum is
   **4 glyphs**, available only on a long/greatsword.
+- Sword form changes slot capacity, reach, origin points, collision geometry, and
+  how emitted particles inherit motion. It does **not** create separate spell
+  effects; `Heat + Addition` remains `Heat + Addition` on every form.
 - Form is set by **forging, casting, reforging** (ties directly to forge levels
   and the sword's consent over her own body — see below).
 
@@ -202,8 +224,8 @@ Glyphs draw **energy**. The core tradeoff:
 
 - **More glyphs on a given mass** → stronger and/or **mixed/emergent** effects,
   but **higher energy cost**.
-- **More mass, fewer glyphs** → each glyph's effect is **weaker/diffused** across
-  the larger body, but **cheaper** to run.
+- **More mass / larger carrier** → more slot capacity and different emission
+  geometry, but not a different spell list.
 
 There is also a flat **strength tax: each inscribed glyph lowers the blade's base
 physical strength by ~15%** (a 4-glyph greatsword is ~−60% base, but carries the
@@ -216,8 +238,9 @@ This mirrors two Witch Hat Atelier rules:
 - *Several small linked spells can beat one big spell* → loading **4 glyphs** on a
   greatsword can out-power 1 huge glyph, at the cost of energy and stability.
 
-So the player is always trading **mass (form), glyph count, effect strength, and
-energy** against each other. There is no strictly-best build; it's a balance.
+So the player is always trading **form, glyph count, emission geometry, physical
+strength, and energy** against each other. There is no strictly-best build; it's a
+balance.
 
 **Energy is player stamina (calories), spent through the sword's own bar** — the
 player eats, meditates to charge the sword, and glyphs fire from *her* reserve.
@@ -263,7 +286,8 @@ too.**
 ## Companion magic weapons
 
 Companion weapons can become magic weapons — **not as special as the sword**, and
-**not core-bearing**, so they follow the same mass/slot logic with their own forms.
+**not core-bearing**, so they can carry glyphs with their own slot limits and
+emission origins. Their weapon type does **not** rewrite the spell.
 Examples mapped to roles:
 
 - Guard **salt-pikes**

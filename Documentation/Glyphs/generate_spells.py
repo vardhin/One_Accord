@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate the spell scaffold for One Accord's glyph grammar.
 
-A blade has up to four glyph slots (mass-gated). The 10 learnable glyphs split
+A carrier/emitter has up to four active glyph slots. The 10 learnable glyphs split
 into two roles:
 
 * 5 element sigils: the thing magic is made from.
@@ -32,7 +32,7 @@ Tier 0 is kept as a single bare-blade baseline entry, but it is not a spell.
 
 This script writes one markdown file PER TIER into the `spells/` subfolder:
 
-    spells/tier-0.md   the bare blade (not a spell)          1 baseline
+    spells/tier-0.md   no-glyph carrier (not a spell)        1 baseline
     spells/tier-1.md   one-slot spells                       5 spells
     spells/tier-2.md   two-slot spells                      25 spells
     spells/tier-3.md   three-slot spells                   100 spells
@@ -57,7 +57,7 @@ from pathlib import Path
 ELEMENTS = ["Heat", "Flow", "Air", "Earth", "Light"]
 MODIFIERS = ["Addition", "Subtraction", "Spread", "Focus", "Bind"]
 
-SLOTS = 4  # max glyphs held at once (mass-gated; see glyph-system.md)
+SLOTS = 4  # max active glyphs held at once; see glyph-system.md
 EMPTY = "(empty)"  # an unfilled slot — under-loaded blades are real builds
 
 # Spell out small integers as words (the doc wants the count "written by word").
@@ -85,7 +85,7 @@ def number_to_words(n: int) -> str:
 
 
 TIER_TITLES = {
-    0: "Tier 0 — Bare Blade (not a spell)",
+    0: "Tier 0 — No-Glyph Carrier (not a spell)",
     1: "Tier 1 — One-Slot Spells",
     2: "Tier 2 — Two-Slot Spells",
     3: "Tier 3 — Three-Slot Spells",
@@ -131,7 +131,7 @@ def build_tier(tier: int) -> str:
     lines.append("")
     if tier == 0:
         lines.append(
-            "> One (1) baseline entry — the sword with no glyphs. This is kept "
+            "> One (1) baseline entry — a carrier with no glyphs. This is kept "
             "for balance/reference, but it is not a spell."
         )
     else:

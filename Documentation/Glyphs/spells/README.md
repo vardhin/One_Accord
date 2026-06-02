@@ -6,13 +6,13 @@
 ## What's here
 
 `tier-0.md` … `tier-4.md` — one file per glyph-count tier, covering **330 spell
-identities plus one bare-blade baseline**. Valid spells use at least one element
+identities plus one no-glyph carrier baseline**. Valid spells use at least one element
 sigil; modifiers never make spells by themselves; two or more element sigils need
 at least one modifier. The split and numbering are produced by
 `../generate_spells.py`:
 
 ```text
-tier 0:   1 bare-blade baseline (not a spell)
+tier 0:   1 no-glyph carrier baseline (not a spell)
 tier 1:   5 spells
 tier 2:  25 spells
 tier 3: 100 spells
@@ -48,6 +48,9 @@ Anchor every effect to the locked systems — don't invent free-floating spells:
   ≈ N× a single-glyph base); mixing elements adds nothing extra. The Light kill
   line is just a glyph with a very high per-fire base. Exact base values are
   implementation tuning. See `../energy-and-stamina.md`.
+- **Medium invariance:** weapon/body type does not create a second spell. A sword,
+  staff, or hand using `Heat + Addition` all produce the same fire/heat blast; the
+  carrier only changes origin, animation, collision feel, and particle motion.
 - **Grammar validity:** modifiers do not stand alone, and unmodified multi-sigil
   strings do not make spells. `Heat` is valid; `Addition` is not. `Heat Flow` is
   not valid until an operator is present (`Heat + Flow`, `Heat Flow +`, etc.).

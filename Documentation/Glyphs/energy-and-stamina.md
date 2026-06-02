@@ -35,8 +35,12 @@ stamina bar**.
 
 ## The sword has her own stamina bar
 
-Glyphs do **not** fire directly off the player. They fire off **the sword's own
-stamina bar**, which the player keeps topped up.
+For the Soul Sword loop, glyphs do **not** fire directly off the player. They fire
+off **the sword's own stamina bar**, which the player keeps topped up.
+
+This is the sword's special dyadic economy, not a rule that changes spell identity.
+The same glyph formula can be emitted from a sword, staff, or hand; the carrier
+defines the energy source and particle origin, not a new spell effect.
 
 - She is an **NPC dependent on you**: you must **feed her from time to time**, like
   a companion who needs food. Neglect her bar and her glyphs go cold.
@@ -61,8 +65,9 @@ the penalty still on it**, so a heavily-glyphed sword that runs dry is a notably
 
 ## The glyph strength tax
 
-Inscribing a glyph **reduces the blade's base physical strength by ~15% per
-glyph.** This is the cost that keeps "load it up" from being a free upgrade.
+Inscribing a glyph on a weapon **reduces that weapon's base physical strength by
+~15% per glyph.** This is the cost that keeps "load it up" from being a free
+upgrade.
 
 | Glyphs | Approx. base-strength penalty |
 | --- | --- |
