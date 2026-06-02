@@ -30,9 +30,15 @@ system.** The sword has agency, standards, and consent.
 
 ## Not a pet affection meter
 
-The sword has **independent standards** and knows other people. It can say things
-like *"he is better than you,"* because it has met better. It may admire another
-person's grip, discipline, courage, repair skill, or restraint.
+The sword has **independent standards** and knows other people. It may admire
+another living person's grip, discipline, courage, repair skill, or restraint —
+and hold the player to that bar. It can say things like *"he is steadier than
+you,"* about someone it has actually met (a careful blacksmith, a disciplined
+captain). Its standard is real and external, not flattery.
+
+> **Canon note:** the *cleric* was the **only person who ever wielded her**, and
+> she **killed him** (`../Lore/sword-girl-backstory.md`). So the bar is **not** a
+> beloved former wielder — there was none. See "The imagined ideal wielder" below.
 
 ## The player is one entity among many
 
@@ -41,9 +47,10 @@ The sword does **not** treat the player as special by default. It does not detec
 become salient only because they generate more logs, interactions, consequences,
 and overlap with the sword's goals.
 
-The sword may know many former wielders, other fighters, blacksmiths, NPCs,
-enemies, villages, and personal histories. It can **compare the player
-unfavorably** to others.
+The sword knows other fighters, blacksmiths, NPCs, enemies, villages, and
+personal histories — **living people**, not a line of past wielders. It can
+**compare the player unfavorably** to any of them, and to the wielder it imagines
+it deserved (below).
 
 > The player is not the subject of memory. The player is an entity inside memory.
 
@@ -55,7 +62,7 @@ romantic/social attention — but it must arise from real emotional logic:
 - Abandonment fear.
 - Replacement trauma.
 - Bodily insecurity.
-- Former wielders.
+- The cleric — the one hand she ever knew, which she had to kill.
 - Fear of being treated as an object.
 
 It can still be funny, sharp, or tsundere-coded — but the emotion underneath must
@@ -72,6 +79,26 @@ be **real**.
   an emotional attitude. The functional rust/detection upgrade is separate and
   NOT tied to memory — see `glow-and-detection.md`.)*
 - Feels **violated** if repaired or upgraded without consent.
+
+## The imagined ideal wielder
+
+The sword holds the player to a high bar — but that bar is **aspirational, not
+historical.** She had exactly one wielder, the cleric, and she **killed him**
+(`../Lore/sword-girl-backstory.md`). There is no beloved predecessor.
+
+Instead she measures the player against the **partner she believes she deserved
+and never got**: an imagined ideal — patient, literate, honest, calm-handed, who
+would have freed her instead of using her. Lines land as *"someone who actually
+listened would have…"* / *"I keep waiting for hands I was never given,"* not
+*"the last wielder did it better."* The standard is a wound, not a memory.
+
+Why this matters:
+
+- It preserves the **"you fall short" pressure** without inventing a former-wielder
+  NPC (that role-slot is deleted — see `../Npcs/core-named-roster.md`).
+- It's **canon-true**: her only real hand was an enemy she destroyed.
+- It gives the arc a payoff — as Trust/Resonance grow, the gap between the
+  imagined ideal and the actual player can **close**, or she can let the ideal go.
 
 ## Cross-references
 

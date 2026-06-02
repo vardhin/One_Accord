@@ -69,8 +69,11 @@ These are the items the docs themselves mark as undecided.
   hive-grown merged threads, not people. Human channel = **soft-infected** backdoor
   (temporary blackout takeover). — `Mechanics/plague-and-infection.md`,
   `Enemies/hive-enemy-design.md`
-- [ ] **The "former-wielder candidate"** — concrete identity/role (the person the
-  sword compares the player to). — `Npcs/core-named-roster.md`
+- [x] **The "former-wielder candidate" — RESOLVED: deleted.** Lore says the
+  cleric was the *only* wielder and she killed him, so there is no admired
+  predecessor. The "you fall short" standard is now the **imagined ideal wielder**
+  (aspirational, not historical) — no NPC slot needed.
+  — `Sword/sword-as-npc.md`, `Npcs/core-named-roster.md`
 
 ### Enemies
 
