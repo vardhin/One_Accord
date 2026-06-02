@@ -103,21 +103,26 @@
   glyph hall/map tent, glyph-smith + silver-smith wagon, cookery, armory, sortie
   gate. Doc: `Vengarz/vengarz-camp.md`.
 
-### 4. The Ancient Deity Sanctum — *mini* (dungeon-spoke) · hot · **[lore-demanded]**
+### 4. The Ancient Divine Labyrinth — *mini* (maze-dungeon) · hot · **[lore-demanded]**
+
+> Renamed from "Ancient Deity Sanctum." It is a **maze-dungeon**, not a shrine: a
+> navigable labyrinth you solve and survive, with the **first Light-glyph as its
+> reward.**
 
 - **Why it exists:** the **forgotten-but-living deities** (`../Lore/the-deities-and-the-soul-economy.md`)
-  need a place their indirect hand is legible — a shrine/archive of the ~10. It holds
-  the **first Light-glyph knowledge** — the deities' most overt lent power.
+  need a place their indirect hand is legible — a divine maze/archive of the ~10. It
+  holds the **first Light-glyph knowledge** — the deities' most overt lent power,
+  earned by **navigating/surviving the labyrinth.**
 - **Lore role:** where the **"glyphs are gods" truth** first surfaces (humans think it's
   decoded technique; here the sword realizes otherwise). Not a tomb of sealed gods — a
-  channel-point of living, abstaining ones.
+  channel-point of living, abstaining ones, shaped as a maze that tests the seeker.
 - **Quest-hook:** recover the Light line; the metaphysics reveal. Gated by a
-  traversal/tool gate on the Arghanzza branch.
+  traversal/tool gate on the Arghanzza branch, then by the maze itself.
 - **Map role:** across the water, on the **second path out of Arghanzza** (the one
   that does *not* lead to Vengarz Hold). It hangs off **Arghanzza**, not Rosetta.
-- **Tier note:** a **mini dungeon-spoke** hung off **Arghanzza** (#6), not a settlement.
+- **Tier note:** a **mini maze-dungeon** hung off **Arghanzza** (#6), not a settlement.
 
-### 5. The mountain Sword Sanctum — *late-return destination* · low physical edge / high story weight · **[lore-demanded]**
+### 5. The mountain Sword Sanctum — *mini* (late-gated) · low physical edge / high story weight · **[lore-demanded]**
 
 - **Why it exists:** the hero's old route to the **true Soul Sword.** Per revised canon
   (`../Lore/premise-and-the-one-accord.md`), the true sword **withdrew here and guards
@@ -133,8 +138,10 @@
   range — reached **west** out of Magizhee through predator-terrain (big cats,
   bears). Physically near the early region but meaningfully inaccessible until the
   player has the right lore, strength, and relationship context.
-- **Tier note:** not a normal settlement hub. Treat as a story-heavy route,
-  ascent, and sanctum sequence.
+- **Tier note:** **mini** in scale (the maiden + the sanctum, a handful of beats) but
+  **story-gated to a late return** — "mini" describes its size, not when you reach it.
+  Treat as a story-heavy route, ascent, and sanctum sequence. Belgond (#8) is the last
+  inhabited place before the trail climbs here.
 
 ### 6. Arghanzza (the corpse-burner pass) — *mini* · past-threshold heat · **[concluded, demoted]**
 
@@ -148,7 +155,7 @@
 - **Map role:** a short distance across the water past the Old Dock landing,
   mangrove-like — and the **fork point of the hive side.** Two paths leave it: the
   **puzzle route → Vengarz Hold → Rosetta → Silent Core**, and a **second path →
-  the Ancient Deity Sanctum (#4).**
+  the Ancient Divine Labyrinth (#4).**
 - Docs: `Arghanzza/` (existing depth; **trim/reframe to pass-through** when revisited).
 
 ### 7. The Training Camp (militia / coming-of-age settlement) — *mid* · cool-to-mid heat · **[lore-demanded]**
@@ -218,17 +225,172 @@
   Vendur` and the eroded `Vengarz`). **Concept pass deferred:** mood, local crisis,
   local hive behavior, and the sword-history layer are not yet authored.
 
-### 9–11. Reserved dense + mini slots — **[slot]**
+### 9. The Old Dock (Mauzuli) — *mid* · husk-pressed heat · **[lore-demanded]**
 
-- The remaining **dense + mini** to hit the target (Belgond now claims a dense slot;
-  the Vengarz camp and Training Camp claim mid slots). Lore doesn't pin the rest yet;
-  the spine reserves their positions (`connectivity-map.md`). Author each **only when
-  a reason appears** — e.g. a region the sword's knowledge-quest demands, a settlement
-  the union/stalemate theme needs, or a corridor that wants a face. Candidate
-  pressures: a region owning a **traversal mechanic**; the **endgame hive-convergence
-  region** (Stage 7). *(The "second living hub" pressure is largely answered by #7,
-  the Training Camp; the "where does Vendur's trade come from" pressure is answered by
-  #8, Belgond.)*
+> Promoted from a pure gate/chokepoint to a **mid region** — the whole dock, ferry,
+> and reclamation complex. Two states across one identity: the **Fishermen Camp**
+> (displaced start) and the **reclaimed Dock** (after repair). Name fossil:
+> **Mauzuli** (echoing the real port Machilipatnam / Masulipatnam) — a coastal
+> ferry/fishing town.
+
+- **Why it exists:** the ferry crossing is the **only way across the river** — a
+  **hard gate** (`connectivity-map.md`). It has to be *operated* by someone, and the
+  water's edge once supported a livelihood. The fisherfolk who **maintained the dock
+  and ran the ferry** were pushed out when the husks took it; getting it back is the
+  region's spine and the door to the entire hive side.
+- **Lore role:** the standing example of the human pocket *not* being safe
+  (`connectivity-map.md`): a husk-held site **inside** the sealed half. Answers the
+  open "who operates the ferry" question: the fisherfolk did.
+- **Two coupled nodes (cf. Vendur):**
+  - **The Fishermen Camp** *(sub-node, the start state).* Where the displaced
+    fisherfolk cling **now** — pushed off the dock, no proper place to live, near the
+    water but not on it. The mini-arc lives here: meet them, take up their cause.
+  - **The Old Dock proper** *(the objective).* The husk-held crossing itself. You
+    **repair/clear it**, the fisherfolk **shift back onto it**, and the **ferry is
+    restored.**
+- **The progression chain (mandatory main-spine):**
+  **meet fishermen at the camp → clear & repair the Old Dock → fisherfolk relocate
+  onto the dock → ferry runs → river crossing opens.** No dock = no hive side = no
+  midgame. This is a **hard gate**, not optional content.
+- **Quest-hook:** the **north** route from Magizhee — naturally denied early (very
+  tough husks); the player comes for the fishermen's plight and comes *back* once
+  strong enough to take the dock. Taking it is the **midgame crossing achievement.**
+- **Map role:** **north of Magizhee, on the water.** Both a **tool gate** (the ferry)
+  and a **fight** (the infestation); the far-side landing leads a short distance to
+  Arghanzza.
+- **Tier note:** **mid** — small, but quest-dense around the displacement + reclamation,
+  with a camp sub-node and a reclaimed-dock state. **Concept pass deferred:** the
+  fisher cast, the reclamation arc, and the dock's hive behavior are not yet authored.
+
+### 10. Teling — *dense* · cool / safe heat · **[lore-demanded]**
+
+> The mastery smithing region — the **making** counterpart to Vengarz's **doctrine.**
+> Another Vendur client, and the gate to the high end of the forge chain. Name fossil:
+> **Teling** (from "Teling steel," the old name for Telangana's famous wootz steel —
+> the place known abroad by what it makes).
+
+- **Why it exists:** Vendur does **forge basics (L1→2)** but is "the silver place,"
+  not the master smith. The lore needs somewhere the **high craft** actually lives:
+  glyph-embedding, silver wards, masterwork weapon bodies, companion magic weapons,
+  and the soul-forge work on the sentient sword. Teling is that place — the **L3→4
+  mastery gate** (`../Mechanics/forge-and-upgrades.md`).
+- **Lore role:** a hereditary **smith-guild + craft lineage + glyph-keepers**, with
+  **old-hero-legion links** — they forged and embedded for the hero's war. They are
+  the *making* fragment of the old war effort, as **Vengarz** is the *fighting*
+  fragment; the hero's gear may have been **Teling steel.** Their glyph-embedding
+  knowledge edges toward the "glyphs are gods" truth
+  (`../Lore/the-deities-and-the-soul-economy.md`). Clannish: they keep their craft
+  secrets, which is *why* they remained their own region instead of folding into Vendur.
+- **Quest-hook:** a Vendur client — Vendur trades Teling's masterwork output. To take
+  the sword past L2 the player must reach Teling and likely earn the guild's trust (a
+  threshold like Vengarz's). A natural **sword-history** site.
+- **Map role:** **SE of Vendur, human-pocket side** — mastery is reachable *without*
+  crossing the river, deepening the southern corridor (Magizhee → Vendur → Teling).
+- **Tier note:** **dense** — a returnable hub the player keeps coming back to for
+  upgrades, glyphs, and wards. **Concept pass deferred:** mood, crisis, hive behavior,
+  and the full sword-history layer.
+
+### 11. Velduri — *mid* · safe / very cool heat · **[lore-demanded]**
+
+> The wealthy, self-exiled **silver-elite** enclave — old-order remnants, not war
+> remnants. Another (rare) Vendur client. Name fossil: **Velduri** (from *velli*,
+> silver — a "silver-place" name that quietly echoes Vendur's own `vendi+ooru`).
+
+- **Why it exists:** silver is the survival/anti-husk metal, and the map's silver is
+  **~80% Vendur's — but all in circulation** (worked into tools, ward-lines, coins;
+  the name stuck, not the hoard). The other **~20% is held as an actual *pure,
+  uncirculated reserve* by Velduri** — the only true silver stockpile on the map.
+  That reserve is what lets them stay rich, safe, and aloof.
+- **Lore role:** **old elite who fled the collapse** — descendants of a pre-collapse
+  wealthy house/merchant line who withdrew to a defensible, silver-rich spot and rode
+  out the famine in comfort. A **third kind of survivor**: remnants of the *old order*
+  (manners and wealth intact), distinct from the war-remnants (Vengarz/Teling) and the
+  working bands (Vendur/Belgond). Safe partly *because* silver wards the husks off —
+  and partly because the **mountains defend it** (husks don't arrive from the mountain
+  edges, `../Regions/world-structure.md`). Its security is **terrain + pure silver**,
+  **not a hillfort** like Vendur — the elite chose a naturally sheltered place, they
+  didn't have to build ramparts.
+- **Endgame hook:** courting **Velduri's alliance** unlocks **elite soldiers** (their
+  private retainers/guard) and **pure-silver access for endgame weapon supply** — a
+  late-game union objective feeding the Mahabharata-scale final war
+  (`../Mechanics/hivemind-threads.md`, `../Mechanics/village-and-union-system.md`).
+- **Quest-hook:** a **rare** Vendur trade partner (they barely need anyone). Insular,
+  proud, distrustful of outsiders and of a talking sword; winning them over is a
+  distinct social arc with a real payoff.
+- **Map role:** **south of Vendur**, deeper into the southern mountain range, on the
+  human-pocket side — a **mountain-defended** enclave (not a hillfort), off the main
+  spine. It extends the southern cluster: Magizhee → Vendur → (SE) Teling / (S) Velduri.
+- **Tier note:** **mid** — safe, focused, self-sufficient; matters most as a
+  late-game alliance. **Concept pass deferred:** the elite cast and the alliance arc.
+
+### 12. The glyph hermit's hole — *mini* (single-NPC spoke) · deep hive-side heat · **[lore-demanded]**
+
+> A corridor with a face (the Arghanzza-corpse-burner model): **one person, one
+> function, one beat.** A lone glyph-master who gives the player a **new glyph or
+> modifier** — a content delivery point for the glyph system (`../Glyphs/glyph-system.md`).
+
+- **Why it exists:** the glyph system wants an **off-grid delivery point** — somewhere
+  the player earns a new modifier/glyph by *exploring*, not by settlement progression.
+  The institutional **glyph master** role (`../Npcs/system-npc-roles.md`) lives in
+  towns; this is its opposite — a solitary obsessive researching alone.
+- **Lore role:** a **strong, self-sufficient glyph-master hermit** who survives **deep
+  on the hive side by his own power** — not hiding, not soft-infected, but genuinely
+  capable of defending himself. He lives in a warm, dug-in, concealed **"hobbit-hole"**
+  burrow — a cozy earth-set home incongruously tucked into hostile hive ground. His
+  isolated research brushes the **"glyphs are gods"** edge
+  (`../Lore/the-deities-and-the-soul-economy.md`) from a lone-scholar angle.
+- **Quest-hook:** reaching him is itself the reward-gate — he's **out of the way**, off
+  the main spine, in deep hive territory. The payoff is a **new glyph or modifier**
+  (rarer/riskier than town-taught ones, fitting the depth). A natural sword-reaction
+  beat (does she trust a man who studies hive-glyphs?).
+- **Map role:** the **southeast of the hive side** — **not** Arghanzza-linked, **not**
+  on the Arghanzza → Vengarz → Rosetta → Silent Core spine. He populates an otherwise
+  empty SE corner of the across-the-water half. Exact access route deferred.
+- **Tier note:** **mini** — a single-NPC spoke, not a settlement. Naming **deferred**
+  (the man and/or the hole). Counts as the **4th mini** (target was 3–4, now at the
+  top). **Concept pass deferred:** which glyph/modifier, the access route, his cast.
+
+### 13. The medicine hermit's homestead — *mini* (small-household spoke) · safe / cool heat · **[lore-demanded]**
+
+> The human-side companion to #12: an off-grid **medicine/herb researcher** — the
+> healing counterpart to the glyph hermit. Not a lone figure but a **household of
+> three.** Reaching them *is* the gate; the welcome is the reward.
+
+- **Why it exists:** mirrors the institutional **healer/plague-watcher**
+  (`../Npcs/system-npc-roles.md`) the way #12 mirrors the glyph master — an **off-grid
+  medicine delivery point** earned by *journey*, not settlement progression. Minis
+  aren't capped at 3–4 (that was a target); good single-purpose faces are welcome.
+- **Lore role:** a **herbalist/medicine hermit** who experiments with herbs and
+  remedies far from the survivor settlements, with his **wife** and an **apprentice**
+  (≈3 toward the 40-NPC roster). Warm and welcoming — they **help anyone who makes the
+  trek**, because the trek itself is long from where people live.
+- **The Velduri tie:** the homestead sits **near Velduri** (#11) and is **patronized by
+  it** — the silver-elite are self-sufficient in most things but **not medicine**, so
+  they send **periodic silver offerings** for his services. That funds his research and
+  gives **Velduri a second dependency** beyond Vendur. Everyone else reaches him by
+  pilgrimage.
+- **Quest-hook:** the **journey** is the gate (off-route, far from the spine); the
+  payoff is medicine-side help. **Reward deferred** (remedies / a healing upgrade /
+  plague knowledge — decided in the concept pass).
+- **Map role:** **human-pocket side, near Velduri** (so **south of Vendur**, in the
+  southern mountain zone), off the main spine.
+- **Tier note:** **mini** — a small-household spoke, not a settlement. Naming
+  **deferred** (the hermit, wife, apprentice, and/or the homestead). **Concept pass
+  deferred:** the reward, the cast, and the exact placement.
+
+### 14. Reserved slots — **[slot]**
+
+- Remaining **dense** to hit the target (~2–3 more). Current fill: **Vendur, Belgond,
+  Rosetta, Teling** dense; **Magizhee, Old Dock, Training Camp, Vengarz Hold, Velduri**
+  mid; **Arghanzza, Sword Sanctum, Ancient Divine Labyrinth, glyph hermit's hole,
+  medicine hermit's homestead** mini (5 — past the 3–4 target, which was soft); **Silent
+  Core** undecided. Lore doesn't pin the rest yet; the spine reserves their positions
+  (`connectivity-map.md`). Author each **only when a reason appears.** Candidate
+  pressures still open: a region owning a **traversal mechanic**; the **endgame
+  hive-convergence region** (Stage 7). *(Resolved pressures: "second living hub" → #7
+  Training Camp; "where Vendur's trade comes from" → #8 Belgond; "who masters the
+  forge" → #10 Teling; "where the pure silver / elite soldiers are" → #11 Velduri;
+  "off-grid glyph reward" → #12; "off-grid medicine reward" → #13.)*
 
 ---
 
@@ -238,7 +400,7 @@
   Camp** or **south → Vendur** — that converges at Vendur; ferries across from the
   husk-held Old Dock into **Arghanzza**, which **forks**: the puzzle route to
   **Vengarz Hold → Rosetta** (seal/magic/Sanctum lore) **→ Silent Core/endgame**, or
-  a second path to the **Ancient Deity Sanctum**. From Rosetta's lore the player can
+  a second path to the **Ancient Divine Labyrinth**. From Rosetta's lore the player can
   bend back toward the **Sword Sanctum** revelation (west, up the mountain).
 - **The western branch is now populated.** West of Magizhee was "blocked early,
   predators"; **Belgond** (#8) sits partway up that road as Vendur's raw-materials

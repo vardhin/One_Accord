@@ -27,6 +27,12 @@ below).
 > - **Belgond** — *dense.* Vendur's raw-materials supplier on the western
 >   predator-mountain road. Dense by activity but *scattered*: one main colony of homes,
 >   worksites ~5 min out (quarry / timber / hide / mushroom / game). Concept pass deferred.
+> - **Teling** — *dense.* The mastery-smithing hub SE of Vendur (forge L3→4:
+>   glyph-embedding, silver wards, masterwork). Smith-guild / glyph-keepers with
+>   old-hero links. Concept pass deferred.
+> - **Velduri** — *mid.* The wealthy self-exiled silver-elite enclave (pure ~20%
+>   silver reserve; endgame alliance = elite soldiers + pure-silver supply). Position
+>   and concept pass deferred.
 > - **Magizhee** — *mid.* Goodsprings-scale first settlement; the **hub** at the
 >   center of the human pocket (Old Dock north, Training Camp east, Vendur south,
 >   Belgond/mountains west).
@@ -61,8 +67,21 @@ pocket** from the **upper / across-the-water hive ground**.
   min out; reached by armed caravan because the road's big cats and bears kill lone
   travelers. Ships raw materials to Vendur; buys back tools, militia-for-hire,
   silver/wards, and finished leather.
-- **Old Dock:** north of Magizhee, on the water. The ferry crossing **and** a
-  husk-infested chokepoint — crossing it is a midgame fight, not a free move.
+- **Old Dock (Mauzuli):** north of Magizhee, on the water. The ferry crossing **and** a
+  husk-infested chokepoint — crossing it is a midgame fight, not a free move. A
+  displaced **Fishermen Camp** (sub-node) drives its reclamation; the repaired ferry is
+  the **only** way across the river (hard gate).
+- **Teling:** SE of Vendur, human-pocket side. The **mastery smithing** hub (forge
+  **L3→4**: glyph-embedding, silver wards, masterwork weapons). A hereditary
+  smith-guild / glyph-keeper region with old-hero links — the *making* counterpart to
+  Vengarz's *doctrine*. Vendur does basics (L1→2); the player reaches Teling to take
+  the sword past L2.
+- **Velduri:** **south of Vendur**, deeper into the southern mountain range; a
+  **mountain-defended** enclave (**not** a hillfort like Vendur — its safety is
+  terrain, since husks don't come from the mountain edges). The wealthy self-exiled
+  **silver-elite** — old-order remnants holding the map's only **pure silver reserve**
+  (~20%; Vendur's ~80% is all in circulation). A rare Vendur client; their endgame
+  alliance yields elite soldiers + pure-silver weapon supply.
 - **Training Camp:** NE of Magizhee. The coming-of-age / militia hardening
   settlement; safe early direction.
 - **Vendur:** south of Magizhee — the **Vendur Militia** node first, then up to the
@@ -73,7 +92,7 @@ pocket** from the **upper / across-the-water hive ground**.
 - **Arghanzza:** a short distance across the water past the landing — a mangrove-like
   possessed-matter threshold, and **the fork point of the hive side.**
 - **Two paths leave Arghanzza:** a **puzzle route → Vengarz Hold → (north) Rosetta →
-  (north) Silent Core**, and a **second path → Ancient Deity Sanctum**.
+  (north) Silent Core**, and a **second path → Ancient Divine Labyrinth**.
 - **Vengarz Hold:** the human foothold before Rosetta. A mid-size mobile
   wooden/tent/wagon palisade held by remnants of an old anti-hive force from the
   hero's legion. Technically a camp; they call it a **Hold.**
@@ -82,6 +101,14 @@ pocket** from the **upper / across-the-water hive ground**.
   hero's seal.
 - **Silent Core:** north of Rosetta (top-right), the most hive-mind-concentrated
   region.
+- **The glyph hermit's hole:** **SE of the hive side**, off the main spine (not
+  Arghanzza-linked). A strong, self-warded lone glyph-master in a dug-in "hobbit-hole"
+  who gives the player a new glyph/modifier — an off-grid exploration reward in deep
+  hive ground.
+- **The medicine hermit's homestead:** **human side, near Velduri** (south of Vendur,
+  in the southern mountains), off the main spine. A herbalist/medicine hermit with
+  wife + apprentice; Velduri patronizes him (silver for medicine) and he welcomes any
+  who make the long trek. The healing counterpart to the glyph hermit.
 
 The human pocket is not overrun because the old hero's seal prevents new infection.
 Only runaway, drifted, or low-level husks leak in (the Old Dock being a standing
@@ -161,15 +188,27 @@ stillness** — not desperate scrambling.
 - `One_Accord_Map.png` — the drawn world map; the **visual source of truth** for
   geography.
 - `region-set.md` — the **lore-demanded** catalogue: every region the story requires
-  (Vendur, Belgond, the Rosetta ruins, the deities' underground sanctum, the mountain
-  Sword Sanctum, Arghanzza-as-pass-through) with tier, heat, and quest-hook.
+  (Vendur, Belgond, Teling, Velduri, the Rosetta ruins, the Ancient Divine Labyrinth,
+  the mountain Sword Sanctum, Old Dock/Mauzuli, Arghanzza-as-pass-through) with tier,
+  heat, and quest-hook.
 
-## Status
+## Status — current tiering
 
-Regions named/tiered so far: **Vendur** (dense), **Belgond** (dense), **Magizhee**
-(mid), **Vengarz Hold** (mid), **Training Camp** (mid), **Arghanzza** (mini),
-**Ancient Deity Sanctum** (mini), plus **Rosetta** (dense), the **Sword Sanctum**
-(late-return), **Silent Core** (endgame), and the **Old Dock** (gate). Targets:
-**~7–8 dense + 3–4 mini.** Dense filled: Vendur, Belgond, Rosetta (≈3 of 7–8). Mini
-filled: Arghanzza, Deity Sanctum (2 of 3–4). Further regions get named concretely
-when there's a reason, not as abstract skeleton.
+| Tier | Regions | Of target |
+| --- | --- | --- |
+| **Dense** | Vendur · Belgond · Rosetta · Teling | 4 of ~7–8 |
+| **Mid** | Old Dock (Mauzuli) · Training Camp · Vengarz Hold · Velduri (Magizhee also mid) | — |
+| **Mini** | Arghanzza · Sword Sanctum *(late-gated)* · Ancient Divine Labyrinth · Glyph hermit's hole · Medicine hermit's homestead | 5 *(soft target was 3–4)* |
+| **Undecided** | Silent Core *(may dissolve into the endgame war, not a walkable region)* | — |
+
+Notes: **Teling** is the dense mastery-smithing hub (forge L3→4) SE of Vendur;
+**Velduri** is the mid silver-elite enclave (pure-silver reserve + endgame alliance);
+the **glyph hermit's hole** is a mini single-NPC spoke (SE hive-side, off-spine) that
+gives a new glyph/modifier; the **medicine hermit's homestead** is a mini
+small-household spoke (human side, near Velduri) for off-grid healing;
+**Old Dock (Mauzuli)** is mid (a displaced fishermen camp + the hard river-crossing
+gate, not just a chokepoint); the **Sword Sanctum** is mini in scale but still
+**story-gated to a late return**; the **Ancient Divine Labyrinth** (renamed from
+"Ancient Deity Sanctum") is a mini **maze-dungeon** holding the first Light-glyph.
+Dense still needs **~2–3 more**; mini is near target. Further regions get named
+concretely when there's a reason, not as abstract skeleton.

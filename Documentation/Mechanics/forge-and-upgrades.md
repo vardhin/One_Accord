@@ -50,8 +50,27 @@ This links upgrades to **exploration and NPC systems.**
 | 0 | Cold bench | Inspect, clean, wrap, sharpen badly |
 | 1 | Working hearth | (needs grindstone, bellows, fuel, anvil) Repair edge, fit guard, rewrap hilt, basic tools |
 | 2 | True heat | Temper, reinforce, repair cracks, socket simple housings |
-| 3 | Pattern forge | Interpret blueprints, make specialized weapon bodies, **companion magic weapons** |
+| 3 | Pattern forge | Interpret blueprints, make specialized weapon bodies, **companion magic weapons**, glyph-embedding |
 | 4 | Living / soul forge | Safely modify the **sentient sword** — requires consent, rare tools, maybe glyph master/healer support |
+
+## Forge levels map to geography
+
+The forge chain is **gated by place**, not just by improving one bench
+(`../Regions/`):
+
+- **Magizhee (L0→1)** — the starter limit: cold bench → working hearth (the
+  grindstone → sharpening chain only). (`../Regions/starter-settlement.md`.)
+- **Vendur (L1→2)** — the **basics**: a working forge for repair, sharpening, plain
+  blades, tempering, simple housings. Vendur is "the silver place," not the master
+  smith. (`../Regions/Vendur/vendur-detail.md`.)
+- **Teling (L3→4)** — the **mastery gate**: glyph-embedding, silver wards, masterwork
+  weapon bodies, companion magic weapons, and the soul-forge work on the sentient
+  sword. Teling is the hereditary smith-guild / glyph-keeper region with old-hero
+  links (the *making* counterpart to Vengarz's *doctrine*); the player must reach it
+  to take the sword past L2. (`../Regions/region-set.md`.)
+
+So **mastery is a destination**, reachable on the human-pocket side (Teling is SE of
+Vendur), not a thing the first towns can do.
 
 ## Blacksmith progression IS character progression
 

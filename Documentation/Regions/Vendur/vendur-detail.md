@@ -99,7 +99,7 @@ two halves are **mechanically distinct nodes that share one identity:**
 ### Upper — the hillfort proper
 
 The defensible core on the high ground: the old estate bones — the **clock tower, silver
-vault, the full forge, and "the bad room" beneath.** Holds the value and the
+vault, the working forge (L1→2 basics), and "the bad room" beneath.** Holds the value and the
 people-you-can't-lose. **Lower heat, harder to reach.** When the lower town is pressed,
 survivors fall back *up* here.
 
@@ -185,7 +185,7 @@ upgraded past Magizhee's bare starter versions:
 
 | Facility | Vendur version | Where / who holds it |
 | --- | --- | --- |
-| **Forge** | The **full forge** (L0→4 chain, `../../Mechanics/forge-and-upgrades.md`) — the map's real blacksmith | Upper; the smith household |
+| **Forge** | A **working forge — basics only (L1→2)**: repair, sharpening, plain blades, tempering, simple housings. Vendur is "the silver place," not the master smith; **mastery (L3→4) lives at Teling** (`../region-set.md`, `../../Mechanics/forge-and-upgrades.md`). | Upper; the smith household |
 | **Silver vault & boundary** | The estate's working silver lines + store, run along the rampart | Upper; the silver-keeper household |
 | **Gatehouse** | Hardened access control + quarantine (1–2 capacity, `../world-structure.md`) | The line between upper & lower; the edge households |
 | **Market / storehouse** | The barter floor; allocation of irreplaceables | Lower town; the traders |
@@ -202,10 +202,17 @@ upgraded past Magizhee's bare starter versions:
 
 ## Role on the spine
 
-- **Early convergence dense hub** (`../connectivity-map.md`): a power spike (full
-  forge + silver) and the sword's emotional pivot, reached from Magizhee directly
-  or after the militia sends the player for support. The player carries her
-  **home without knowing it.**
+- **Early convergence dense hub** (`../connectivity-map.md`): a power spike (basic
+  forge L1→2 + silver supply) and the sword's emotional pivot, reached from Magizhee
+  directly or after the militia sends the player for support. The player carries her
+  **home without knowing it.** Mastery smithing (L3→4) is **not** here — it's at
+  **Teling** (SE), the next step on the southern deepening corridor.
+- **The trade hub at the center of a network** (`../region-set.md`): Vendur is "the
+  silver place" because the map's silver **circulates through it** (~80%, worked into
+  tools, ward-lines, coins — not a vault). Its trade lines reach **Belgond** (raw
+  materials in, finished goods out), the **Training Camp** (youth out, fighters back),
+  **Teling** (masterwork smithing it can't do), and **Velduri** (the rich silver-elite
+  enclave it trades with only rarely). Vendur makes the whole trade web legible.
 - **Two coupled nodes, one identity:** the upper hillfort (cooler, holds the value) and
   the lower trader town (warmer, exposed) are mechanically distinct — the lower can fall
   while the fort holds (`../connectivity-map.md`).

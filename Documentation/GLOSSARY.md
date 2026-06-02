@@ -205,17 +205,46 @@
 ## World, NPCs & progress
 
 - **Region tiers** — **Dense** (~7–8, returnable hubs) · **Mid** (Goodsprings-scale
-  settlement / focused stronghold) · **Mini** (~3–4, single-arc spokes). Concluded:
-  Vendur (dense), Magizhee (mid), Arghanzza (mini). Lore-demanded: Rosetta ruins
-  (dense), Vengarz Hold (mid), Ancient Deity Sanctum (mini). → `Regions/world-structure.md`
+  settlement / focused stronghold) · **Mini** (~3–4, single-arc spokes). Current
+  tiering: **Dense** — Vendur, Belgond, Rosetta, Teling · **Mid** — Old Dock (Mauzuli),
+  Training Camp, Vengarz Hold, Velduri (Magizhee also mid) · **Mini** — Arghanzza,
+  Sword Sanctum, Ancient Divine Labyrinth, glyph hermit's hole, medicine hermit's
+  homestead (5; the 3–4 target was soft). **Undecided** — Silent Core (may not be a
+  walkable region at all; could dissolve into the endgame war). → `Regions/world-structure.md`
 - **Magizhee** — the Goodsprings-scale starter settlement; the **hub** at the center
   of the human pocket (Old Dock north, Training Camp east, Vendur south, predator-
   mountains west). → `Regions/starter-settlement.md`
 - **Vendur** — silver trade hillfort; name fossil from `vendi + ooru -> venduru ->
   Vendur`. Dense hub, sword-girl's old home; south of Magizhee (Vendur Militia, then
-  the Hill Fort Market beyond it). → `Regions/Vendur/region-vendur.md`
-- **Old Dock** — the husk-infested ferry crossing north of Magizhee; the water
-  threshold is both a tool gate (ferry) and a fight. → `Regions/connectivity-map.md`
+  the Hill Fort Market beyond it, then **Teling** SE). "The silver place" because the
+  map's silver (~80%) **circulates through it** — worked into tools/wards/coins, not
+  hoarded. Forge does **basics (L1→2)** only; mastery is at Teling.
+  → `Regions/Vendur/region-vendur.md`
+- **Belgond** — dense raw-materials supplier town west of Magizhee on the
+  predator-mountain Sanctum road; ships quarry stone, timber, hide, mushroom, and
+  game down to Vendur, buys back tools, militia-for-hire, silver/wards, and finished
+  leather. One main colony of homes with worksites ~5 min out; reached by armed
+  caravan (the predator road kills lone travelers); last inhabited place before the
+  Sword Sanctum trail. → `Regions/region-set.md`
+- **Old Dock (Mauzuli)** — **mid** region north of Magizhee with two coupled states:
+  the displaced **Fishermen Camp** (sub-node — the fisherfolk pushed off the dock by
+  the husks) and the **reclaimed Dock**. The ferry is the **only river crossing (hard
+  gate)**: meet the fishermen → clear & repair the dock → they relocate back → ferry
+  runs → hive side opens. The fisherfolk are the ferry's old operators. Name fossil:
+  **Mauzuli** (echoing Machilipatnam / Masulipatnam). → `Regions/connectivity-map.md`
+- **Teling** — **dense** mastery-smithing hub SE of Vendur (human-pocket side); the
+  forge **L3→4** gate (glyph-embedding, silver wards, masterwork weapons). A
+  hereditary smith-guild / craft-lineage / glyph-keepers with **old-hero-legion
+  links** — the *making* counterpart to Vengarz's *doctrine*. Vendur does basics
+  (L1→2); the player reaches Teling to take the sword past L2. Name fossil from
+  "Teling steel" (Telangana wootz). → `Regions/region-set.md`
+- **Velduri** — **mid** wealthy self-exiled **silver-elite** enclave (old-order
+  remnants who fled the collapse); holds the map's only **pure silver reserve**
+  (~20%; Vendur's ~80% is all in circulation). A **rare** Vendur client; depends on the
+  nearby **medicine hermit** for healing (paid in silver). **Endgame
+  alliance** unlocks elite soldiers + pure-silver weapon supply. Name fossil from
+  *velli* (silver), quietly echoing Vendur. **South of Vendur** in the southern
+  mountains; **mountain-defended, not a hillfort** (off-spine). → `Regions/region-set.md`
 - **Training Camp** — the coming-of-age / militia hardening settlement NE of
   Magizhee; the safe eastern early route. → `Regions/region-set.md`
 - **Vengarz Hold** — mid-size mobile wooden/tent/wagon stronghold (a camp they call a
@@ -223,16 +252,33 @@
   of an old anti-hive force from the hero's legion. → `Regions/Vengarz/vengarz-camp.md`
 - **Rosetta ruins** — confirmed dense hazard/lore region; old research ground-zero
   where the hive first entered; north of Vengarz Hold, below the Silent Core. → `Regions/region-set.md`
-- **Ancient Deity Sanctum** — mini dungeon-spoke off the **second** path out of
-  Arghanzza (not the Vengarz route); channel-point of the forgotten deities, first
-  Light-glyph knowledge. → `Regions/region-set.md`
+- **Ancient Divine Labyrinth** — mini **maze-dungeon** off the **second** path out of
+  Arghanzza (not the Vengarz route); channel-point of the forgotten deities. The
+  **first Light-glyph** is earned by navigating/surviving the labyrinth.
+  (Renamed from "Ancient Deity Sanctum.") → `Regions/region-set.md`
+- **Medicine hermit's homestead** — **mini** small-household spoke on the **human
+  side, near Velduri** (off the main spine). A herbalist/medicine hermit + wife +
+  apprentice who experiment with herbs and remedies; **Velduri patronizes them** (silver
+  offerings for medicine the elite can't make), and they welcome anyone who makes the
+  long trek. The healing counterpart to the glyph hermit (#12); **south of Vendur**,
+  near Velduri. Reward and naming deferred. → `Regions/region-set.md`
+- **Glyph hermit's hole** — **mini** single-NPC spoke in the **SE of the hive side**,
+  off the main spine (not Arghanzza-linked). A strong, self-warded lone glyph-master
+  living in a dug-in **"hobbit-hole"** who survives deep hive ground by his own power;
+  an off-grid exploration reward who gives the player a **new glyph or modifier**
+  (rarer/riskier than town-taught ones). Naming and access route deferred.
+  → `Regions/region-set.md`
+- **Silent Core** — northernmost, most hive-concentrated ground. **Tier undecided:**
+  may not be a walkable settlement-style region at all — could dissolve into the
+  endgame war structure (resolved in Stage 7 endgame design). → `Regions/region-set.md`
 - **Decompression corridors** — the quiet traversal spaces between regions; on the
   map they are the **edges** of the graph (and playable rooms that can hold a single
   mini-arc). → `Regions/world-structure.md`, `Regions/connectivity-map.md`
 - **Route shape** — Magizhee (hub) opens east → Training Camp or south → Vendur,
   converging at Vendur; ferries from the husk-held Old Dock into **Arghanzza**, which
   **forks**: puzzle route → Vengarz Hold → Rosetta → Silent Core, or a second path →
-  Ancient Deity Sanctum. Region heat orders pressure; the map is anchored by natural
+  Ancient Divine Labyrinth. West of Magizhee, the predator road leads by caravan to
+  Belgond and then up to the Sword Sanctum. Region heat orders pressure; the map is anchored by natural
   boundaries and the water threshold. → `Regions/connectivity-map.md`
 - **Reserved slot** — an unfilled position in the route shape with a known
   neighbor/gate/heat-band; future regions claim a slot rather than being designed

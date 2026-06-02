@@ -27,8 +27,10 @@ knowledge, seed varieties, medicine, blueprints, skills.**
 - The map's **one relatively crowded, almost-warm place** — bustle, haggling,
   ~13 trader households under the safest walls around. After the stillness of
   everywhere else, it's a relief. Then the sword goes silent.
-- **Home of the full forge / blacksmith** — the upgrade chain past the starter
-  settlement's Forge L0→1 (see `../../Mechanics/forge-and-upgrades.md`).
+- **Home of the working forge / blacksmith** — forge **basics (L1→2)** past the
+  starter settlement's Forge L0→1: repair, sharpening, plain blades, tempering. Vendur
+  is "the silver place," **not** the master smith — mastery (L3→4) lives at **Teling**
+  (see `../../Mechanics/forge-and-upgrades.md`, `../region-set.md`).
 - **Why silver matters here mechanically:** silver perma-kills **dumb husks**
   quietly, without summoning hive attention (see
   `../../Mechanics/kill-resolution.md`). Whoever controls silver controls *quiet*
@@ -73,8 +75,9 @@ a caravan tie to a separate **militia / coming-of-age settlement** (`../region-s
 
 - The **sword's region** — the one place tied directly to her origin. Her arc gears
   from **Witness → Partner** here (see `../../Lore/sword-girl-backstory.md`).
-- Materially the region that makes the player **stronger** (full forge, silver
-  supply) — at the cost of walking the sword through her own murdered home.
+- Materially the region that makes the player **stronger** (forge basics L1→2, silver
+  supply — with mastery still ahead at Teling) — at the cost of walking the sword
+  through her own murdered home.
 - The **handoff** (someone shoving the sword onto the player, assuming it's a hive
   vector — see `../../Player/player-premise.md`) happens **elsewhere**; over the
   rust-years she drifted away from home. The player carries her back.
@@ -93,7 +96,7 @@ a caravan tie to a separate **militia / coming-of-age settlement** (`../region-s
 - **Named NPCs** among the 13 households (silver-keeper, smith, elders, edge-household
   heads) — deferred to per-NPC authoring under the 40-cap (`../../Npcs/`).
 - The dungeon layout and exactly what the cleric's room reveals (and the reveal-split
-  with the Ancient Deity Sanctum).
+  with the Ancient Divine Labyrinth).
 - The **Training Camp** (coming-of-age settlement) at the far end of the caravan tie —
   registered (`../region-set.md`) but unbuilt.
 - The exact road/corridor shape between Magizhee, the Training Camp, and Vendur, and

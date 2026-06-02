@@ -41,18 +41,22 @@ Magizhee / start / living procedure  ⇄  Rosetta / origin wound / seal mystery
 
 | Region | Tier | Map position | Role |
 |---|---:|---|---|
-| **Sword Sanctum** | late-return destination | SW mountain, above the human pocket | True-sword maiden. Visible/implied early; terrain + danger block early entry; meaningful only after right-side lore. |
+| **Sword Sanctum** | mini (late-gated) | SW mountain, above the human pocket | True-sword maiden. Mini in scale; **story-gated to a late return** via right-side lore. Visible/implied early; terrain + danger block early entry. |
 | **Belgond** | dense | West of Magizhee, partway up the predator-mountain Sanctum road | Vendur's raw-materials supplier (quarry/timber/hide/mushroom/game). Reached by armed caravan through the predator gauntlet; last inhabited place before the Sanctum trail. |
 | **Magizhee** | mid | Center of the human pocket | Starter settlement and tutorial root. The hub the four early directions radiate from. |
-| **Old Dock** | gate/corridor | North of Magizhee, on the water's edge | The ferry crossing — **and a husk-infested chokepoint.** Crossing is both a tool gate (ferry) and a fight. |
+| **Old Dock (Mauzuli)** | mid | North of Magizhee, on the water's edge | Two states: the displaced **Fishermen Camp** sub-node + the **reclaimed Dock**. The ferry is the **only** river crossing (hard gate); repairing it via the fishermen's arc opens the hive side. |
 | **Training Camp** | mid | NE of Magizhee (top-right of the pocket) | The coming-of-age / militia hardening settlement. A safe early direction. |
 | **Vendur Militia** | (Vendur sub-node) | South of Magizhee | The militia/defence node of Vendur; the southern early route. |
-| **Vendur Hill Fort Market** | dense | Up beyond the Vendur Militia (further south) | Hillfort trade hub, first dungeon, sword homecoming, full forge. |
+| **Vendur Hill Fort Market** | dense | Up beyond the Vendur Militia (further south) | Hillfort trade hub, first dungeon, sword homecoming, **forge basics (L1→2)**. |
+| **Teling** | dense | SE of Vendur, human-pocket side | Mastery smithing (**L3→4**: glyph-embedding, silver wards, masterwork). Smith-guild / glyph-keepers with old-hero links; the forge endgame gate. |
+| **Velduri** | mid | **South of Vendur**, deeper in the southern mountains; **mountain-defended** (not a hillfort), off the main spine | Wealthy self-exiled **silver-elite** (the pure ~20% reserve); rare Vendur client. Depends on the nearby medicine hermit for healing. Endgame alliance = elite soldiers + pure-silver weapon supply. |
 | **Arghanzza** | mini | Across the water, a short distance past the Old Dock landing | First post-crossing region; mangrove-like, possessed-matter threshold. **The fork point of the hive side.** |
 | **Vengarz Hold** | mid | Across the water, reached from Arghanzza via the puzzle route | Mobile wooden/tent stronghold ("camp" they call a "hold"); old hero-legion remnant and Rosetta sortie base. |
 | **Rosetta** | dense | North of Vengarz Hold | Hive arrival site; old research region; main lore source for seal, magic, and Sanctum reinterpretation. |
-| **Silent Core** | endgame-tier | North of Rosetta (top-right) | Most hive-concentrated region; final hive-mind pressure. |
-| **Ancient Deity Sanctum** | mini (dungeon-spoke) | Across the water, reached from Arghanzza via a **second** path (not the Vengarz route) | Channel-point of the forgotten deities; first Light-glyph knowledge. |
+| **Silent Core** | undecided | North of Rosetta (top-right) | Most hive-concentrated ground; final hive-mind pressure. **May not be a walkable region at all** — could dissolve into the endgame war structure (Stage 7). |
+| **Ancient Divine Labyrinth** | mini (dungeon-spoke) | Across the water, reached from Arghanzza via a **second** path (not the Vengarz route) | Channel-point of the forgotten deities; first Light-glyph knowledge. |
+| **Glyph hermit's hole** | mini (single-NPC spoke) | **SE of the hive side**, off the main spine (not Arghanzza-linked) | A strong, self-warded lone glyph-master in a dug-in "hobbit-hole"; an off-grid reward who gives a new glyph/modifier. Access route TBD. |
+| **Medicine hermit's homestead** | mini (small-household spoke) | **Human side, near Velduri** (south of Vendur, southern mountains), off the main spine | A herbalist/medicine hermit + wife + apprentice; patronized by Velduri (silver for medicine), welcomes any who make the trek. Off-grid healing reward (TBD). |
 
 ## Early-game routing — the Magizhee compass
 
@@ -87,8 +91,13 @@ each gated diegetically — readable world limits, not invisible walls:
   ascent), not a flat "blocked early" wall. Belgond is reachable early *with a
   caravan*; the Sanctum beyond it is not.
 - **East → Training Camp:** the safe early direction. The coming-of-age settlement.
-- **South → Vendur:** the other safe early direction — the **Vendur Militia** first,
-  then up to the **Vendur Hill Fort Market** beyond it.
+- **South → Vendur (→ Teling / Velduri):** the other safe early direction — the
+  **Vendur Militia** first, then up to the **Vendur Hill Fort Market**, and beyond it
+  the southern cluster forks: **SE to Teling** (mastery smithing, L3→4) and **S to
+  Velduri** (the mountain-defended silver-elite enclave, with the medicine hermit
+  nearby). The southern corridor *deepens* the further you go — basics at Vendur,
+  mastery at Teling, the rich reserve at Velduri — all on the human-pocket side, no
+  river crossing needed.
 
 So the **two safe solo early routes are East (Training Camp) and South (Vendur)**;
 North is self-evident danger, and **West is danger you only take with a caravan** —
@@ -105,12 +114,19 @@ that the world is older than the local survival problem.
 
 ## Midgame river threshold — the ferry from the husk-held dock
 
-The water is the true act boundary.
+The water is the true act boundary, and the **ferry is the only way across — a hard
+gate.** No repaired dock = no hive side = no midgame.
 
 - The player cannot cross it freely at the start.
 - Crossing is via a **ferry from the Old Dock** — but the **dock itself is
   husk-infested**, so reaching and holding the crossing is a midgame achievement, not
   a free move.
+- **The reclamation chain (mandatory main-spine):** the **Old Dock** is a mid region
+  with two coupled states — the displaced **Fishermen Camp** (sub-node, where the
+  pushed-out fisherfolk cling now) and the **reclaimed Dock** itself. The player
+  **meets the fishermen at the camp → clears & repairs the Old Dock → the fisherfolk
+  shift back onto it → the ferry runs → the river opens.** The fisherfolk are the
+  ferry's old operators (`region-set.md` #9).
 - The first crossing should feel like leaving the human-maintained half of the map
   and entering ground the hive has had time to re-grow.
 
@@ -125,16 +141,21 @@ dangerous in a different way from the left-side survival pocket.
 ```text
                                          ┌─ (puzzle route) ─▶ [Vengarz Hold] ─N─▶ [Rosetta] ─N─▶ [Silent Core]
 [Old Dock] ──ferry──▶ [Arghanzza] ──────┤
-                                         └─ (second path) ──▶ [Ancient Deity Sanctum]
+                                         └─ (second path) ──▶ [Ancient Divine Labyrinth]
 ```
 
 - **Puzzle route → Vengarz Hold:** a **traversal/puzzle gate** out of Arghanzza
   leads to the Vengarz human foothold. From Vengarz Hold, **north** reaches
   **Rosetta**; **north** of Rosetta reaches the **Silent Core**. This is the main
   hive-side spine.
-- **Second path → Ancient Deity Sanctum:** a different route out of Arghanzza
+- **Second path → Ancient Divine Labyrinth:** a different route out of Arghanzza
   reaches the deities' sanctum (first Light-glyph knowledge). It hangs off
   **Arghanzza**, not off Rosetta.
+- **Off-spine SE:** the **glyph hermit's hole** sits in the **southeast of the hive
+  side**, **not** on the Arghanzza fork and **not** on the Vengarz → Rosetta → Silent
+  Core spine. It's an exploration reward (a strong lone glyph-master in a dug-in
+  hobbit-hole who gives a new glyph/modifier), reached by going *out of the way* into
+  deep hive ground; exact access route TBD (`region-set.md` #12).
 
 Vengarz Hold is the human foothold before Rosetta: a mid-size mobile palisade /
 tent / wagon stronghold of old anti-hive fighters. Technically a camp; they call it
