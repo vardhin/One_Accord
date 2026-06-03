@@ -22,11 +22,23 @@ inherited doctrine:
 - Recovery sorties into Rosetta, usually in disciplined bands of about six.
 - A culture of duty to the old hero's unfinished war.
 
-## Scale
+## Scale & census (~20, a self-contained war-order)
 
 Mid-size zone, roughly **20 adults**, all hardened. No soft village structure, no
-children as the default image, no broad civilian economy. The camp should feel like
-a war remnant and expeditionary base, not a normal settlement.
+children, no broad civilian economy. The camp should feel like a war remnant and
+expeditionary base, not a normal settlement.
+
+**Demographically, Vengarz is a martial dissenter — off the Naerchu grid**
+(`../../Mechanics/demographic-and-food-system.md`). As a hereditary fighting order with
+inherited doctrine, it **raises and trains its own** rather than feeding the shared
+reproduction/training cycle; there are **no children at the Hold** (any are sent to
+relatives elsewhere), and its ~20 fighters are **not Naerchu-posted** — they are the
+order's own. This is the war-side parallel to Velduri's elite opt-out and Teling's
+guild-raising: the three regions that keep their own people out of the common engine,
+each for a different reason (wealth, craft-secrecy, martial lineage). The ~20 break
+down as the fighting cohort + the glyph/silver-smith pair + cook/quartermaster roles
+(the facilities below imply the jobs); **all named NPCs draw on the 40-cap** sparingly
+(a handful — the captain, the glyph-smith, a sortie lead — `../../Npcs/`).
 
 Likely facilities:
 

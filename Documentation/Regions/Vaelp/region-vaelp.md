@@ -35,6 +35,15 @@ inhabited place before the trail climbs. Physically near the early region but
 stops an early player; right-side lore (especially **Rosetta**) teaches the
 reinterpretation that lets them return (`../connectivity-map.md`).
 
+## Census (1 — the sword maiden)
+
+Vaelp has **one inhabitant: the true sword maiden** herself
+(`../../Lore/premise-and-the-one-accord.md`). The sanctum is **untouched** — only the
+hero ever came — so there is no settlement, no staff, no population. **1 NPC** (a
+Tier-0-adjacent deep character given her story weight), wholly **off the Naerchu grid**
+(she is not a survivor of the human system at all). The region's "population" is the
+maiden + the empty sanctum + the ascent to her.
+
 ## Concept pass — deferred
 
 **Mini** in scale (the maiden + the sanctum, a handful of beats) but story-gated late.

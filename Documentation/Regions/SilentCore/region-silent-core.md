@@ -23,6 +23,13 @@ convergence to one total Hivemind (`../../Mechanics/hivemind-threads.md`).
   spine: Arghanzza → Vengarz Hold → Rosetta → **Silent Core**.
 - **Role:** final hive-mind pressure — where the merge arc terminates.
 
+## Census (0 — no living population)
+
+The Silent Core has **no human residents** — it is the densest hive-mind ground (or the
+shape of the final convergence, if it dissolves into the endgame). Its "population" is
+**hive mind only.** Off the demographic system entirely
+(`../../Mechanics/demographic-and-food-system.md`).
+
 ## Open
 
 - Single endgame region vs. region cluster vs. not-a-walkable-region.

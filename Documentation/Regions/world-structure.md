@@ -21,9 +21,11 @@ below).
 
 > **Regions concluded/locked so far, tiered:**
 >
-> - **Vendur** — *dense.* The sword-girl's birthplace estate, now a trade hub — an
->   earth-rampart **hillfort of ~13 trader households** read as **two coupled nodes**
->   (upper fort / exposed lower town). "Dense" still means band-scale (~55–60 souls).
+> - **Vendur** — *dense.* The sword-girl's birthplace estate, now a trade hub — a
+>   **two-tier artificial-mud-hill fortress** (hilltop market+trades / foot defense+storage).
+>   **~83 residents**, heavily guarded and mostly import-fed. (Revised 2026-06-03 from the
+>   earlier "~13 households / 55–60 souls" via the top-down census pass —
+>   `Vendur/vendur-census-and-economy.md` is authoritative.)
 > - **Belgond** — *dense.* Vendur's raw-materials supplier on the western
 >   predator-mountain road. Dense by activity but *scattered*: one main colony of homes,
 >   worksites ~5 min out (quarry / timber / hide / mushroom / game). Concept pass deferred.
@@ -62,11 +64,14 @@ pocket** from the **upper / across-the-water hive ground**.
   The **western predator road** (big cats, bears) is no longer a flat wall: **Belgond**,
   the raw-materials supplier town, sits partway up it (reached by armed caravan), and
   it is the last inhabited place before the Sanctum trail.
-- **Magizhee:** the **hub** at the center of the human pocket. Four early directions
-  radiate from it: **north** to the husk-held Old Dock (the crossing), **west** into
-  predator-mountains (caravan route to **Belgond**, then up toward the Sanctum), **east**
-  to Naerchu (the Training Camp), **south** to Vendur. East and south are the safe early routes;
-  west is braved by armed caravan, not solo.
+- **Magizhee:** the **hub** at the center of the human pocket **and the world's
+  breadbasket** — the one farm-dense region (**26 farmers / 13 couples**) whose grain
+  surplus feeds the map (Naerchu especially) via the rotating food caravan
+  (`../Mechanics/demographic-and-food-system.md`). Four early directions radiate from it:
+  **north** to the husk-held Old Dock (the crossing), **west** into predator-mountains
+  (caravan route to **Belgond**, then up toward the Sanctum), **east** to Naerchu (the
+  Training Camp), **south** to Vendur. East and south are the safe early routes; west is
+  braved by armed caravan, not solo.
 - **Belgond:** west of Magizhee, partway up the predator-mountain Sanctum road. The
   human pocket's **raw-materials supplier** — a dense but *scattered* extraction town
   (quarry, timber, hide, mushroom, game). One main colony of homes with worksites ~5
@@ -88,8 +93,11 @@ pocket** from the **upper / across-the-water hive ground**.
   **silver-elite** — old-order remnants holding the map's only **pure silver reserve**
   (~20%; Vendur's ~80% is all in circulation). A rare Vendur client; their endgame
   alliance yields elite soldiers + pure-silver weapon supply.
-- **Naerchu (the Training Camp):** NE of Magizhee. The coming-of-age / militia
-  hardening settlement; safe early direction.
+- **Naerchu (the Training Camp):** NE of Magizhee. **The world's demographic engine** —
+  training, mating, and the regulated permission to reproduce all run through it (every
+  child arrives at 6, returns ~18 as a posted guard). Caps at ~50, grows no food, fed by
+  the rotating caravan. The highest-value node on the human side
+  (`../Mechanics/demographic-and-food-system.md`).
 - **Vendur:** south of Magizhee — the **Vendur Militia** node first, then up to the
   **Vendur Hill Fort Market** beyond it. The defended hillfort trade hub. From
   Vendur the mountain trail toward the Sanctum becomes visible but stops an early
@@ -163,6 +171,11 @@ some deeply simulated.
 
 ## Why the world is small: famine already settled it
 
+> **How the equilibrium is actively held** — reproduction regulated at Naerchu, food
+> circulated by the ownerless rotating caravan, Magizhee the breadbasket — is specified
+> in `../Mechanics/demographic-and-food-system.md`. The section below is the *history*
+> that produced the equilibrium; that doc is the *system* that maintains it.
+
 The low population is not an active crisis — it is **history.** After the binding,
 a **few thousand** survived the *plague* — but a manuscript-clockwork society
 **cannot feed thousands.** No potatoes, no fertilizer, no canning at scale, no
@@ -178,10 +191,15 @@ high-yield grain; ruined farmland and too few hands. So:
 what the land can feed. So the felt tone is a **thin, settled, post-famine
 stillness** — not desperate scrambling.
 
-- Everyone is **food-self-sufficient to a point**: each place has its own gardens,
-  fishing spot, goat, mushroom cellar, terrace — small, personal, *enough*. There is
-  **no food economy**; trade is for irreplaceables (silver, tools, maintenance
-  knowledge, seed varieties, medicine).
+- Most places are **food-self-sufficient to a point**: each has its own gardens,
+  chickens, fishing spot, mushroom cellar, terrace — small, personal, *mostly enough*.
+  **But not all balance alone:** **Magizhee** is a net grain **exporter** (the
+  breadbasket), **Belgond** supplies protein/forage, **Naerchu** grows nothing and is
+  **fully fed by import**, and dense fortresses like **Vendur** run a deliberate deficit
+  topped up by caravan. So there **is** a food backbone — the **ownerless rotating food
+  caravan** circulating staples from the producers to the shortfall — alongside the
+  irreplaceables economy (silver, tools, knowledge, medicine).
+  See `../Mechanics/demographic-and-food-system.md`.
 - **There is no slack.** A region doesn't fear hunger; it fears **disruption** of a
   balance it can't rebuild — lose a few people and it may drop below viability and
   have to merge or die. The hive is the one thing that can still tip it.
@@ -196,24 +214,38 @@ holding at least a `region-<name>.md` doc — fully authored for concluded regio
 
 **Region folders** (tier · status):
 
-- `Magizhee/` — *mid* · concluded. The Goodsprings-scale first settlement and hub.
+- `Magizhee/` — *mid* · concluded. The Goodsprings-scale first settlement and hub —
+  **also the world's breadbasket** (26 farmers; feeds the map via the rotating caravan).
 - `Vendur/` — *dense* · concluded. The sword-girl's birthplace estate, now a trade hub
   (the baseline fully-authored region).
-- `Vengarz/` — *mid* · concluded. The mobile stronghold ("Hold") near Rosetta.
-- `Arghanzza/` — *mini* · concluded (demoted to pass-through). The corpse-burner pass.
+- `Vengarz/` — *mid* · concluded. The mobile stronghold ("Hold") near Rosetta (~20; a
+  **self-contained martial war-order**, off the Naerchu grid).
+- `Arghanzza/` — *mini* · concluded (demoted to pass-through). The corpse-burner pass
+  (census: **1** — the corpse-burner / Mauzuli ferryman).
 - `Digzarr/` — *dense* · concluded. The great fallen city on the hive side; old-tech
   source and first-horror ground.
-- `Belgond/` — *dense* · stub. Vendur's raw-materials supplier on the predator road.
-- `Teling/` — *dense* · stub. The mastery-smithing guild (forge L3→4) SE of Vendur.
-- `Rosetta/` — *dense* · stub. The old research region where the world ended.
-- `Velduri/` — *mid* · stub. The self-exiled silver-elite enclave.
-- `Mauzuli/` — *mid* · stub. The Old Dock — fishermen camp + the hard river-crossing gate.
-- `Naerchu/` — *mid* · stub. The Training Camp — coming-of-age / militia hardening settlement.
-- `Vaelp/` — *mini (late-gated)* · stub. The mountain Sword Sanctum of the true maiden.
-- `Pathali/` — *mini (maze-dungeon)* · stub. The Divine Labyrinth; first Light-glyph.
-- `GlyphHermit/` — *mini (single-NPC spoke)* · stub. The dug-in lone glyph-master.
-- `MedicineHermit/` — *mini (small-household spoke)* · stub. The off-grid herbalist near Velduri.
-- `SilentCore/` — *undecided* · stub. The densest hive-mind ground (may dissolve into endgame).
+- `Belgond/` — *dense* · census done. Vendur's raw-materials supplier on the predator
+  road; ~37 present, work-militia = the foragers/miners/hunters. Concept pass partial.
+- `Teling/` — *dense* · census done. The mastery-smithing guild (forge L3→4) SE of
+  Vendur (~48); **partial dissenter** — guild-raises ~80% of its kids to keep its craft.
+- `Rosetta/` — *dense* · stub (census: **0 residents** — a ruin). The old research
+  region where the world ended.
+- `Velduri/` — *mid* · census done. The self-exiled silver-elite enclave (~64); the
+  **demographic dissenter** — arranged marriage, in-house training, off the Naerchu grid.
+- `Mauzuli/` — *mid* · census done. The Old Dock — fishermen camp (~24, displaced;
+  **a fish food-source**) + the hard river-crossing gate. Dock proper empty until reclaimed.
+- `Naerchu/` — *mid* · concluded (role). The Training Camp — **the world's demographic
+  engine** (training + mating + regulated reproduction; ~50, import-fed).
+- `Vaelp/` — *mini (late-gated)* · stub (census: **1** — the sword maiden). The mountain
+  Sword Sanctum of the true maiden.
+- `Pathali/` — *mini (maze-dungeon)* · stub (census: **0** — a maze). The Divine
+  Labyrinth; first Light-glyph.
+- `GlyphHermit/` — *mini (single-NPC spoke)* · stub (census: **1** — the hermit). The
+  dug-in lone glyph-master.
+- `MedicineHermit/` — *mini (small-household spoke)* · census done. The off-grid
+  herbalist (3: husband, wife, apprentice) near Velduri — the map's external healer.
+- `SilentCore/` — *undecided* · stub (census: **0** — hive mind only). The densest
+  hive-mind ground (may dissolve into endgame).
 
 **Index docs (root):**
 

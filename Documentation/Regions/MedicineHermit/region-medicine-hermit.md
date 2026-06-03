@@ -1,8 +1,10 @@
 # The Medicine Hermit's Homestead — Off-Grid Healing Reward
 
-> **[stub]** — seeded from the catalogue (`../region-set.md` #13). Reason, tier, heat,
-> and map role are pinned; the concept pass (reward, cast, exact placement, name) is
-> deferred. Fill against the six-point checklist in `../world-structure.md`.
+> **[census done; concept pass partial]** — seeded from the catalogue
+> (`../region-set.md` #13). Reason, tier, heat, map role, and now the **census** are
+> pinned. An **off-grid single household** — outside the Naerchu system by nature
+> (`../../Mechanics/demographic-and-food-system.md`). Still deferred: the reward, exact
+> placement, naming.
 
 - **Tier / heat:** *mini (small-household spoke)* · safe / cool.
 - **One line:** the human-side companion to the glyph hermit (#12) — an off-grid
@@ -33,6 +35,19 @@ Velduri a **second dependency** beyond Vendur. Everyone else reaches him by pilg
 
 **Human-pocket side, near Velduri** (so **south of Vendur**, in the southern mountain
 zone), off the main spine. The **journey** is the gate.
+
+## Census (3 people; off-grid)
+
+| Person | Role |
+| --- | --- |
+| **The hermit (husband)** | The herbalist/medicine researcher — the healing-reward source. |
+| **His wife** | Partner in the homestead and the research. |
+| **The apprentice (woman)** | Learning the craft; the household's third hand. |
+
+**3 people, all named NPCs** (≈3 of the 40-cap — `../../Npcs/`). Off the Naerchu grid
+entirely (a single off-grid household, like the glyph hermit). **The map's external
+healer by design:** this is *why* Velduri and Teling have no in-house healer — medicine
+is deliberately off-grid, reached by pilgrimage (`../../Mechanics/demographic-and-food-system.md`).
 
 ## Concept pass — deferred
 

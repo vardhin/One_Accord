@@ -31,6 +31,12 @@ The **southeast of the hive side** — **not** Arghanzza-linked, **not** on the 
 the across-the-water half. Reaching him is itself the reward-gate (he's out of the
 way). Exact access route **deferred.**
 
+## Census (1 — the glyph hermit)
+
+**One person:** the lone glyph-master in his dug-in hobbit-hole. No household, no staff
+— a single-NPC spoke, **off the Naerchu grid** (a self-warded hermit deep on the hive
+side). **1 named NPC** on the 40-cap.
+
 ## Concept pass — deferred
 
 A **single-NPC spoke**, not a settlement. **Deferred:** which **glyph/modifier**, the

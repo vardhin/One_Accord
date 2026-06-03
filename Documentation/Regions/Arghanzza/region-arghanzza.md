@@ -44,6 +44,21 @@ Trees are body horror · mud can be hive-mind · rocks listen · paths loop · p
 breathe · pyres anchor space · whispers lure the player · the forest becomes a
 labyrinth.
 
+## Census (1 — the corpse-burner / ferryman)
+
+Arghanzza has **no settlement** — it is a body-horror forest, not a place people live.
+Its one living soul is the **corpse-burner**, who is **also the ferryman** linked to
+**Mauzuli** (`../Mauzuli/region-mauzuli.md`): he sails across with a few corpses and
+**burns them at his pyres near Arghanzza** (pyrecraft — `../../Mechanics/kill-resolution.md`).
+
+- **1 named NPC**, off the Naerchu grid (a lone hive-side figure). He is the reciter of
+  the poem (`old-npc-and-poem.md`) — one of the last who remembers the beautiful
+  Arghanzza.
+- He is **linked to Mauzuli by function** (he runs their ferry / handles their dead) but
+  **lives here, not in the camp** — so he's counted as Arghanzza's lone resident, not in
+  Mauzuli's ~24. His pyres double as the **diegetic ferry operator** for the crossing the
+  reclamation arc restores.
+
 ## Midgame systems it can unlock
 
 - **Pyrecraft** / proper ash rites.

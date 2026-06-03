@@ -222,11 +222,23 @@ upgraded past Magizhee's bare starter versions:
   river-crossing/right-side lore regions (Arghanzza → Rosetta → Silent Core), or
   toward the mountain trail that an early player cannot yet complete.
 
+> **Census & economy concluded:** the exact head-count, the per-adult labor
+> allocation, the building→function→staff map, the ~7-named draw on the 40-cap, and
+> how Vendur's economy balances now live in **`vendur-census-and-economy.md`** — the
+> buildable substrate. Vendur is the first region taken from "functions pinned, roster
+> deferred" to **simulable.** This Open list is what remains *past* that.
+>
+> **Note:** that pass **revised the population** — Vendur is a **two-tier mud-hill
+> fortress of ~83 residents**, not the "13 households / 55–60" this doc's body still
+> says in places. `vendur-census-and-economy.md` is authoritative on numbers and layout;
+> this doc's *meaning* (functions-not-factions, the homecoming beats, the wound) stands.
+
 ## Open
 
-- **Named NPCs** among the 13 households — who is the silver-keeper, the smith, the
-  remembering elders, the edge-household heads — **deferred to per-NPC authoring** under
-  the 40-cap roster (`../../Npcs/`). The *functions* are pinned; the names are not.
+- **Names + per-NPC depth** for the 7 function-holders (silver-keeper, smith, the two
+  remembering elders, head trader, healer, edge-ward head). The roster — count, role,
+  and what each unlocks — is now **pinned** in `vendur-census-and-economy.md` §4; only
+  the **names** stay deferred to per-NPC authoring under the 40-cap (`../../Npcs/`).
 - The **dungeon layout** and exactly how much of the soul-economy reveal lands here vs.
   is reserved for the underground sanctum.
 - The **militia / coming-of-age settlement** at the other end of Vendur's caravan tie —

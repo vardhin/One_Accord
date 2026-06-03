@@ -1,7 +1,15 @@
 # Vendur — Region Overview
 
 > Full design (factions, buildings, the dungeon, the homecoming arc as beats) lives in
-> `vendur-detail.md`. This file is the overview.
+> `vendur-detail.md`. The **buildable substrate** — exact census, per-adult labor,
+> building→function map, and how the economy balances — lives in
+> `vendur-census-and-economy.md`. This file is the overview.
+>
+> **Figure revision (2026-06-03):** the top-down census pass revised Vendur from
+> "~13 households / ~55–60 souls" to a **two-tier mud-hill fortress of ~83 residents**
+> (heavily guarded, mostly import-fed). Where this doc's older "13 households / 55–60"
+> phrasing survives below, **`vendur-census-and-economy.md` is authoritative** on all
+> numbers and the physical layout.
 >
 > The sword-girl's **birthplace estate** — now a living **trade hub
 > built on her grave.** The map's one crowded place, and the region where her arc
@@ -93,8 +101,9 @@ a caravan tie to a separate **militia / coming-of-age settlement** (`../region-s
 
 ## Open
 
-- **Named NPCs** among the 13 households (silver-keeper, smith, elders, edge-household
-  heads) — deferred to per-NPC authoring under the 40-cap (`../../Npcs/`).
+- **Named NPCs** among the 13 households — the roster (count, role, what each holds:
+  ~7 named) is now **pinned** in `vendur-census-and-economy.md` §4; only the **names**
+  stay deferred to per-NPC authoring under the 40-cap (`../../Npcs/`).
 - The dungeon layout and exactly what the cleric's room reveals (and the reveal-split
   with Pathali, the Divine Labyrinth).
 - **Naerchu** (the Training Camp — coming-of-age settlement) at the far end of the

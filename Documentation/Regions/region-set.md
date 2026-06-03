@@ -43,7 +43,9 @@
 ### 1. Magizhee — *mid* · coolest heat · **[concluded]**
 
 - **Why it exists:** the player's entry; teaches the world by procedure
-  (`../Player/opening-and-tutorial.md`). The spine's root.
+  (`../Player/opening-and-tutorial.md`). The spine's root. **Also the world's
+  breadbasket** — the one farm-dense region (26 farmers / 13 couples) whose grain
+  surplus feeds the map, Naerchu above all (`../Mechanics/demographic-and-food-system.md`).
 - **Lore role:** where the player is handed the rusty sword and becomes the breaking
   point by being **the first to trust it.**
 - **Quest-hook:** the local "accused of turning" crisis; the first sword bond.
@@ -58,6 +60,8 @@
 - **Why it exists:** the sword-girl's **hometown** and the old **prime silver-trade
   hub**; the place her **lost-knowledge questline routes the player to first.** Now a
   diminished-but-real barter hub with solid defenses (`Vendur/region-vendur.md`).
+  **(Census revised 2026-06-03** to a two-tier mud-hill fortress of **~83 residents**;
+  `Vendur/vendur-census-and-economy.md` is authoritative on numbers.)
 - **Lore role:** her homecoming (Witness → Partner); the **sealed cleric's room beneath
   the town** holds the truth of her making and the rite. Full forge + silver supply. A
   **hillfort of ~13 trader households** read as two coupled nodes (upper fort / exposed
@@ -172,13 +176,14 @@
 
 > Name **locked: Naerchu** (labelled "the Training Camp" on the map by its function).
 
-- **Why it exists:** Vendur is a town of **traders, not soldiers** (`Vendur/vendur-detail.md`),
-  and at band scale **no settlement can afford to train fighters at home** — every adult
-  is a working household (`world-structure.md`: no slack). So the lore *requires* a
-  separate place that does nothing but **harden people**: where Vendur (and likely other
-  hubs) **send their teenagers to mature** — learn basic self-defence, and some become
-  **militia**. A rite-of-passage region: kids leave home soft and come back adults, or
-  don't come back.
+- **Why it exists:** at band scale **no settlement can afford to train fighters at
+  home** — every adult is a working household (`world-structure.md`: no slack) — *and*
+  reproduction must be regulated so it never outruns the food. **One institution does
+  both:** **every** settlement sends its children here at 6; they return ~18 as posted
+  guards; the mating-age cohort pairs here; and Naerchu **gates who may reproduce.** Not
+  just Vendur's militia school — **the world's single demographic engine**
+  (`../Mechanics/demographic-and-food-system.md`). A rite-of-passage region: kids leave
+  home soft and come back adults, or don't come back.
 - **Lore role:** the **militia supply** at the far end of Vendur's caravan tie — Vendur
   sends people + trade goods, gets back trained adults + defence. Emotionally it's
   **where childhood ends** in this world, which keeps it from being a generic "army town."

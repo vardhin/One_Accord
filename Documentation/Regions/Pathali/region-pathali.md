@@ -30,6 +30,14 @@ Across the water, on the **second path out of Arghanzza** (the one that does *no
 to Vengarz Hold). It hangs off **Arghanzza**, not Rosetta. Gated by a traversal/tool
 gate on the Arghanzza branch, then by the maze itself.
 
+## Census (0 — no living population)
+
+Pathali has **no residents** — it is a **maze-dungeon**, not a settlement. Its
+"inhabitants" are the labyrinth's hazards and the abstaining deities' indirect presence
+(`../../Lore/the-deities-and-the-soul-economy.md`), not people. Off the demographic
+system entirely. The reward (first Light-glyph) is earned by surviving the maze, not by
+meeting anyone.
+
 ## Concept pass — deferred
 
 A **mini maze-dungeon** hung off Arghanzza (#6), not a settlement. Six-point checklist

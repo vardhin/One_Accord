@@ -56,8 +56,19 @@ hivemind thread scheduler, and the seal / soft-infected model.
   **forks** to Vengarz Hold → Rosetta → Silent Core or to Pathali (the Divine Labyrinth).
   Natural boundaries, heat gates, traversal gates, and story/lore gates define the
   route. — `Regions/connectivity-map.md`
-- [ ] **Per-region concept pass** for each new region: theme, the one mechanic it
+- [~] **Per-region concept pass** for each new region: theme, the one mechanic it
   teaches/owns, its crisis, its tie to the hive's concentration map, and its tier.
+  **Census/economy layer DONE for the whole map (2026-06-03):** every region now has a
+  pinned headcount — who lives there, what each does, what buildings, how the economy
+  closes — derived **top-down from services**, conserving into one world model
+  (`Mechanics/demographic-and-food-system.md`, **WORLD TOTAL ~403**, matching the
+  "~400 alive" figure). This pass promoted **Naerchu** to the world's reproduction
+  engine, **Magizhee** to the breadbasket, and established the demographic taxonomy
+  (participating / partial-dissenter Teling / full-dissenter Velduri+Vengarz / off-grid
+  spokes / zero-resident hive ruins). **Vendur fully done**
+  (`Regions/Vendur/vendur-census-and-economy.md`). **Still open per region:** the
+  *narrative* six-point concept pass (mood, crisis, hive behavior, sword-history) for the
+  stubs — the census is the substrate, not the story.
 - [ ] **Concentration / difficulty layout** across the map — where the hive's
   authored baseline attention is high vs. low, and how that shapes route order.
   — `Mechanics/hive-concentration.md`

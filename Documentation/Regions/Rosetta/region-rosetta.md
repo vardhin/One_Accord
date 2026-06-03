@@ -31,6 +31,15 @@ Rosetta); diagonal-opposite Magizhee on the design diagonal (start/living proced
 origin-wound/seal mystery). The **Vengarz** (#3b) are the living link to its routes and
 send recovery sorties into it. **Digzarr** (#15) sits in the same hive-side orbit.
 
+## Census (0 — no living population)
+
+Rosetta has **no residents.** It is a **dense ruin, not a settlement** — dense because
+the *site* is (old research halls, field camps, decade-old expedition remains), not
+because anyone lives there. The living link to it is **Vengarz** (#3b), who send
+recovery sorties in from outside. Rosetta's "population" is **hive presence + the dead
+record**, never a human census. Off the demographic system entirely
+(`../../Mechanics/demographic-and-food-system.md`).
+
 ## Concept pass — deferred
 
 Six-point checklist still open: **mood**, local **survival/social problem** (it has no
