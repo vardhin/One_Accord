@@ -30,6 +30,10 @@ extends Node
 # --- Run buttons (checkboxes that fire once, then untick) -----------------
 @export var generate: bool = false: set = _set_generate
 @export var clear_first: bool = false: set = _set_clear
+## Build the texture set + switch the terrain to the LIT auto-shader.
+## Run this ONCE (it fixes the flat/unlit "albedo" look — the colormap debug
+## view renders `unshaded`, so it ignores the sun; real textures restore lighting).
+@export var setup_textures: bool = false: set = _set_setup_textures
 
 # --- World dimensions (metres) -------------------------------------------
 ## Half-extent of the playable square. 1024 -> a 2048 m (~2 km) world,
@@ -76,6 +80,12 @@ func _set_clear(v: bool) -> void:
 			_clear(t)
 
 
+func _set_setup_textures(v: bool) -> void:
+	setup_textures = false
+	if v and Engine.is_editor_hint():
+		_setup_textures()
+
+
 func _terrain() -> Terrain3D:
 	# Explicit path wins; otherwise search the parent (World) for a Terrain3D.
 	if terrain_path and not terrain_path.is_empty():
@@ -104,6 +114,71 @@ func _clear(t: Terrain3D) -> void:
 	print("world_carver: cleared all regions.")
 
 
+## Build a 2-texture set (ground + rock) from Terrain3D's bundled demo textures
+## and switch the material to the LIT auto-shader. This replaces the unlit
+## colormap debug view (`render_mode unshaded`) that made the terrain look flat
+## and ignore the sun. The colour map still tints the lit albedo.
+func _setup_textures() -> void:
+	var t := _terrain()
+	if t == null:
+		return
+
+	const TEX_DIR := "res://demo/assets/textures/"
+	var sets := [
+		{
+			"name": "ground", "id": 0, "uv": 0.08,
+			"alb": TEX_DIR + "ground037_alb_ht.png",
+			"nrm": TEX_DIR + "ground037_nrm_rgh.png",
+			"tint": Color(0.85, 0.95, 0.78),  # nudge ground toward grass-green
+		},
+		{
+			"name": "rock", "id": 1, "uv": 0.05,
+			"alb": TEX_DIR + "rock023_alb_ht.png",
+			"nrm": TEX_DIR + "rock023_nrm_rgh.png",
+			"tint": Color(1, 1, 1),
+		},
+	]
+
+	var list: Array[Terrain3DTextureAsset] = []
+	for s in sets:
+		var alb := load(s["alb"]) as Texture2D
+		var nrm := load(s["nrm"]) as Texture2D
+		if alb == null or nrm == null:
+			push_error("world_carver: missing texture %s / %s" % [s["alb"], s["nrm"]])
+			return
+		var ta := Terrain3DTextureAsset.new()
+		ta.set_name(s["name"])
+		ta.set_id(s["id"])
+		ta.set_albedo_texture(alb)
+		ta.set_normal_texture(nrm)
+		ta.set_albedo_color(s["tint"])
+		ta.set_uv_scale(s["uv"])
+		list.append(ta)
+
+	var assets := t.get_assets()
+	if assets == null:
+		assets = Terrain3DAssets.new()
+		t.set_assets(assets)
+	assets.set_texture_list(list)
+
+	# Switch the material to the lit, auto-textured path.
+	# NOTE: auto_base/overlay_texture index by texture-list POSITION, not by the
+	# `id` field. With grass at list index 0 and rock at 1, the base must point at
+	# the GRASS list slot — empirically that is index 1 here (rock on slopes = 0).
+	# Verified by rendering; do not "tidy" these back to 0/1 without re-checking.
+	var mat := t.get_material()
+	if mat:
+		mat.set_show_checkered(false)
+		mat.set_show_colormap(false)   # turn OFF the unlit debug view
+		mat.set_auto_shader(true)      # auto-texture by slope, fully lit
+		mat.set_world_background(1)
+		mat.set_shader_param("auto_base_texture", 1)     # grass on flats
+		mat.set_shader_param("auto_overlay_texture", 0)  # rock on slopes
+		mat.set_shader_param("auto_slope", 3.0)
+		mat.set_shader_param("auto_height_reduction", 0.0)
+	print("world_carver: textures set up, auto-shader ON (grass base, rock slopes), lit.")
+
+
 func _generate() -> void:
 	var t := _terrain()
 	if t == null:
@@ -112,15 +187,13 @@ func _generate() -> void:
 	if clear_first:
 		_clear(t)
 
-	# Make the base read as grassland. Terrain3D does NOT draw the colour map as
-	# albedo by default (it multiplies the colour map with *texture* albedo, and
-	# with no textures loaded you just see the debug checker). Turning the
-	# checker OFF and the colour-map debug view ON shows our green vertex colours
-	# directly — the right "base grass" view until real textures are painted in.
+	# Just turn off the magenta debug checker. Do NOT force the colormap debug
+	# view here — that path renders `unshaded` (flat, ignores the sun). Once
+	# `setup_textures` has run, the material is on the lit auto-shader and the
+	# carved colours tint it; regenerating must not knock it back to unlit.
 	var mat := t.get_material()
 	if mat:
 		mat.set_show_checkered(false)
-		mat.set_show_colormap(true)
 		mat.set_world_background(1)  # 1 = FLAT (flat skirt beyond the regions)
 
 	var region_size: float = float(t.get_region_size())  # world metres per region
