@@ -59,10 +59,11 @@ call this thesis leads to.
 | `01-architecture.md` | The sim-core ↔ render-frontend boundary; where the LLM service, thread scheduler, logs, and save live; data flow |
 | `02-engine-evaluation.md` | Godot 4 + Rust GDExtension vs full-Rust vs alternatives — weighed against the dev's actual portfolio. **Recommendation: Godot 4 (render/scene/anim) + Rust GDExtension (sim).** |
 | `03-assets-and-animation.md` | **Where every mesh/animation/terrain/grass asset comes from.** The "I can't model or animate" answer: bought realistic-ish characters + Mixamo retarget for people; procedural/instanced for the world; hand-made only for hero props. Per-class Vega-8 cost. |
-| `04-rendering-and-shaders.md` | *(next batch)* The DS1 look on an iGPU; fog/atmosphere as the cheap win; the shader catalogue (toon, glyph VFX, possession, soul-dimension); camera |
-| `05-combat-feel.md` | *(next batch)* Translating the Soulslike sim (stamina, consent, hit-quality, Stillpoint) into 3D animation + hitboxes |
-| `06-soul-duel-tech.md` | *(next batch)* The signature 3D set-piece: dimension shift, the relationship-reshaped playable body |
-| `07-render-derisk-plan.md` | *(next batch)* The cheap spikes to run *first* to kill the 3D risk before committing |
+| `04-open-world-streaming.md` | **The world is one continuous, seamless, streamed open landmass** (no loading screens; Skyrim-legible; landmark navigation, no minimap). Chunk streaming, LOD tiers, impostor landmarks, fog-as-horizon, the Vega-8 streaming budget, and how the documented regions become POIs on one map. **Revises the "not open world" stance in `../Documentation/Regions/world-structure.md`.** |
+| `05-rendering-and-shaders.md` | *(next batch)* The DS1 look on an iGPU; fog/atmosphere as the cheap win; the shader catalogue (toon, glyph VFX, possession, soul-dimension); camera |
+| `06-combat-feel.md` | *(next batch)* Translating the Soulslike sim (stamina, consent, hit-quality, Stillpoint) into 3D animation + hitboxes |
+| `07-soul-duel-tech.md` | *(next batch)* The signature 3D set-piece: dimension shift, the relationship-reshaped playable body |
+| `08-render-derisk-plan.md` | *(next batch)* The cheap spikes to run *first* to kill the 3D risk before committing |
 
 ## Relationship to the vision docs
 

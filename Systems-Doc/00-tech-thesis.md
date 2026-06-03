@@ -83,7 +83,7 @@ Design rules that follow directly from a bandwidth-limited iGPU:
 - **Overdraw is the enemy.** Transparent/additive particles (glyph VFX!) are the most
   likely thing to tank a Vega 8 — they re-shade the same pixels many times. Glyph and
   soul-duel VFX must be budgeted *as overdraw*, not as particle count. See
-  `04-rendering-and-shaders.md`.
+  `05-rendering-and-shaders.md`.
 - **Fog is free mood AND a perf tool.** DS1 fog both *makes the look* and **justifies
   aggressive distance culling / short draw distance** — you cannot see the thing you
   didn't draw. The aesthetic and the optimization are the same decision.
@@ -123,7 +123,7 @@ These become the standing constraints the rest of Systems-Doc obeys:
 ## Open / to-measure
 
 - Actual Vega 8 headroom for additive particle overdraw — **the first spike to run**
-  (`07-render-derisk-plan.md`).
+  (`08-render-derisk-plan.md`).
 - Whether 60 FPS is realistic at intended density or whether 30-locked is the honest
   default for combat-heavy scenes.
 - LLM inference latency on this CPU (LFM2-8B-A1B, Q4_K_M, llama.cpp) under a realistic
@@ -133,7 +133,7 @@ These become the standing constraints the rest of Systems-Doc obeys:
 
 - `01-architecture.md` — the sim/render split that makes "sim tick is sacred" real.
 - `02-engine-evaluation.md` — the engine that delivers this budget on a Vega 8.
-- `04-rendering-and-shaders.md` — fog, resolution scaling, overdraw, the shader
+- `05-rendering-and-shaders.md` — fog, resolution scaling, overdraw, the shader
   catalogue.
 - `../Documentation/Glyphs/glyph-system.md` — the VFX-heavy system this budget must
   survive.

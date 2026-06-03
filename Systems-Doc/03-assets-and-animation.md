@@ -44,7 +44,7 @@ hand-animation of humanoids** and **near-zero character modeling.**
   human places are *empty* (`../Documentation/OVERVIEW.md`). That cap is a gift: you
   need a *small* number of distinct character meshes, dressed and palette-shifted into
   variety, not hundreds. Husks especially can share a few base meshes with shader-driven
-  decay/possession variation (`04-rendering-and-shaders.md`).
+  decay/possession variation (`05-rendering-and-shaders.md`).
 
 ### Where the animations come from — the Mixamo pipeline
 
@@ -63,7 +63,7 @@ This is the load-bearing answer to "walking, sprinting, attacks":
 4. **Root motion vs. in-place** is a knob Godot exposes; for a Soulslike you'll mostly
    want **in-place locomotion driven by sim velocity** (the sim owns movement —
    `01-architecture.md`) and **root-motion or curve-driven lunges for attacks** so
-   attack animations move the body the way the combat sim expects (`05-combat-feel.md`).
+   attack animations move the body the way the combat sim expects (`06-combat-feel.md`).
 
 **Net:** your entire locomotion set + basic combat moveset can be free Mixamo clips on
 bought meshes, with your effort going into the *blend graph* and *how animation events
@@ -121,7 +121,7 @@ yourself.
 - **It is also the #1 Vega-8 overdraw risk** (`00-tech-thesis.md`): dense alpha-blended
   grass re-shades pixels brutally. So grass is budgeted as overdraw, kept to a short
   radius around the camera (fade into fog), and uses alpha-*scissor*/dither rather than
-  full alpha-blend where possible. This is a designed spike in `07-render-derisk-plan.md`.
+  full alpha-blend where possible. This is a designed spike in `08-render-derisk-plan.md`.
 
 ### Trees, rocks, props — scatter pre-made meshes
 
@@ -154,7 +154,7 @@ A short list of assets that are *uniquely One Accord* and can't be bought generi
   `../Documentation/Glyphs/glyph-system.md`). Hero prop; hand-made or commissioned.
 - **The sword-girl's soul-body** — the playable body in soul duels, which *reshapes by
   relationship state* (`../Documentation/Sword/soul-duels.md`,
-  `06-soul-duel-tech.md`). Hero character; the one place bespoke modeling really earns
+  `07-soul-duel-tech.md`). Hero character; the one place bespoke modeling really earns
   it (and where shader-driven variation does a lot of the "reshaping" work cheaply).
 - **A signature husk/active silhouette or two**, and **key bosses** (the endgame
   Hivemind). These define enemy identity and deserve bespoke work.
@@ -169,7 +169,7 @@ budget, not a modeling career.
 | --- | --- | --- | --- |
 | Player / NPC / husk meshes | **Bought** (realistic-ish, game-ready) | re-skin/variant only | ~40-NPC cap + empty world = small set, heavily reused |
 | Humanoid animations (walk/run/sprint/dodge/attack/hit/death) | **Mixamo (free)** → Godot retarget | author the **blend graph**, not the clips | one library drives all humanoids |
-| Animation blend / state machine | **You, in Godot** | logic/graph work | feeds combat sim — `05-combat-feel.md` |
+| Animation blend / state machine | **You, in Godot** | logic/graph work | feeds combat sim — `06-combat-feel.md` |
 | Terrain / mountains | **Heightfield** (plugin or custom tools-layer gen) | math/shader (your lane) | bounded per authored region, not open world |
 | Grass | **MultiMesh / grass shader** | hand-written shader (your lane) | top overdraw risk — `07` spike |
 | Trees / rocks / props | **Bought/generated kit, instanced & scattered** | scatter setup | one mesh × many instances |
@@ -177,14 +177,14 @@ budget, not a modeling career.
 | The rusty sword | **Hand-made / commissioned** | hero asset | reforms across forms |
 | Sword-girl soul-body | **Hand-made / commissioned** | hero asset | reshaped by relationship + shaders |
 | Key bosses / signature husks | **Hand-made / commissioned** | hero asset | enemy identity |
-| Glyph / possession / soul VFX | **Hand-written shaders + particles** | your lane | `04-rendering-and-shaders.md` |
+| Glyph / possession / soul VFX | **Hand-written shaders + particles** | your lane | `05-rendering-and-shaders.md` |
 
 ## What this means for the build order
 
 - **You can greybox and play the whole vertical slice with placeholder/bought assets
   before any hero art exists** — because the sim is authoritative and locomotion is
   bought Mixamo. Art is a *skin* applied to a working game, not a prerequisite for it.
-- **The first content spike** (`07-render-derisk-plan.md`) is exactly:
+- **The first content spike** (`08-render-derisk-plan.md`) is exactly:
   *a bought character + Mixamo locomotion + a hand-written toon/atmosphere shader + an
   instanced-grass overdraw test, all on the Vega 8.* That single spike validates the
   entire character+world+shader pipeline of this doc against the budget of `00`.
@@ -205,8 +205,8 @@ budget, not a modeling career.
 
 - `00-tech-thesis.md` — the Vega 8 budget that "realistic-ish" must be disciplined to.
 - `02-engine-evaluation.md` — why Godot pays Cost A (the playback/render tech) for free.
-- `04-rendering-and-shaders.md` — the shaders that make bought meshes read as DS1 and
+- `05-rendering-and-shaders.md` — the shaders that make bought meshes read as DS1 and
   do the husk/possession/soul variation cheaply.
-- `05-combat-feel.md` — how Mixamo attack clips feed the authoritative combat sim.
-- `06-soul-duel-tech.md` — the sword-girl hero body and its relationship-driven reshape.
-- `07-render-derisk-plan.md` — the spike that validates this whole pipeline on-device.
+- `06-combat-feel.md` — how Mixamo attack clips feed the authoritative combat sim.
+- `07-soul-duel-tech.md` — the sword-girl hero body and its relationship-driven reshape.
+- `08-render-derisk-plan.md` — the spike that validates this whole pipeline on-device.

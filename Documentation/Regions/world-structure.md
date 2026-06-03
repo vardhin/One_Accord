@@ -1,5 +1,21 @@
 # World Structure
 
+> ⚠️ **PRESENTATION REVISION (2026-06-03) — see `../../Systems-Doc/04-open-world-streaming.md`.**
+> The **build** is now a **true open world**: one continuous, seamless, streamed
+> landmass with **no loading screens**, navigated by **landmarks, not a minimap**
+> (Skyrim-legible). This supersedes the "not a huge open world / Dark Souls
+> [loaded-zone] structure" framing below. **What survives unchanged:** the region set,
+> tiers, populations, connectivity graph, gates (the ferry/water), and the
+> "wide in implication, focused in gameplay / feels large because empty" identity —
+> the regions become **dense points-of-interest on one map** rather than separately
+> loaded scenes, ~200 m (≤2 min walk) apart, on a ~1.5–2 km² landmass. The mountain
+> edges and water divide become literal bounding geometry. New region-design
+> obligation: each dense region needs a **distance-readable silhouette/landmark**
+> (no minimap). A fuller rewrite of the "shape" section below is queued; this banner
+> is the interim canon flag so the change is deliberate, not silent.
+
+<!-- original framing (superseded by the open-world revision above): -->
+
 > Not a huge open world. Not one tiny village. A handful of dense regions with
 > quieter traversal corridors between them. Dark Souls structure, Stardew
 > presentation scale, Fallout: New Vegas settlement scale.

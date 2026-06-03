@@ -120,9 +120,9 @@ authoritative on a fixed tick.
 | Clarity / Trust / Resonance metrics | **Sim core** | Driven by typed events; renderer only shows the bars. |
 | Stillpoint contest (`Mechanics/stillpoint.md`) | **Sim core** | A sim state/mode; renderer presents it. |
 | Log & agent-memory (`Mechanics/log-and-agent-memory.md`) | **Sim core** | Perspective-split logs, world-centric context packets. Pure data. |
-| Combat (Soulslike rules, stamina, hitboxes-as-rules) | **Sim core (rules) + Frontend (animation/visual hitwork)** | Split carefully — see `05-combat-feel.md`. The *authority* is the sim; the *feel* needs the renderer's animation timing fed back. This is the one boundary that needs real care. |
+| Combat (Soulslike rules, stamina, hitboxes-as-rules) | **Sim core (rules) + Frontend (animation/visual hitwork)** | Split carefully — see `06-combat-feel.md`. The *authority* is the sim; the *feel* needs the renderer's animation timing fed back. This is the one boundary that needs real care. |
 | Glyph effects (`Glyphs/glyph-system.md`) | **Sim core (what fires, cost, class, kill-resolution) + Frontend (the VFX)** | Sim says "Ember Edge fired, kill-class, carrier motion m"; frontend renders the fire. |
-| Soul duels (`Sword/soul-duels.md`) | **Sim core (rules, who-wins, relationship→moveset) + Frontend (the set-piece)** | The signature 3D moment; tech in `06-soul-duel-tech.md`. |
+| Soul duels (`Sword/soul-duels.md`) | **Sim core (rules, who-wins, relationship→moveset) + Frontend (the set-piece)** | The signature 3D moment; tech in `07-soul-duel-tech.md`. |
 | Dialogue *selection* (which function: WARN/GUIDE/…) | **Sim core** | Deterministic, per canon. |
 | Dialogue *phrasing* (the actual words) | **LLM service** | Async, downstream, non-authoritative. |
 | Save / load | **Sim core** | Serialize the sim; the renderer rebuilds its view from a loaded sim. Save = sim state only, never render state. |
@@ -181,7 +181,7 @@ GDExtension the scene observes. Full reasoning, alternatives, and the escape hat
 - Exact snapshot format and update cadence (per-tick full snapshot vs. event-delta +
   transform stream). Decide once the first combat spike exists.
 - The combat sim↔animation feedback loop (sim authority vs. animation-driven timing)
-  is the one genuinely tricky boundary — designed in `05-combat-feel.md`.
+  is the one genuinely tricky boundary — designed in `06-combat-feel.md`.
 - Whether save serialization uses the same Rust types directly (serde) — almost
   certainly yes, given the sim is Rust.
 
@@ -190,7 +190,7 @@ GDExtension the scene observes. Full reasoning, alternatives, and the escape hat
 - `00-tech-thesis.md` — why the sim tick is sacred and the renderer is the scarce-GPU
   consumer.
 - `02-engine-evaluation.md` — the engine that fits this boundary.
-- `05-combat-feel.md` — the one boundary (combat feel) that needs special care.
+- `06-combat-feel.md` — the one boundary (combat feel) that needs special care.
 - `../Documentation/Sword/dialogue-system.md`,
   `../Documentation/Mechanics/log-and-agent-memory.md` — the canon this architecture
   serves.

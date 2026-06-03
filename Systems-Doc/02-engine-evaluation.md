@@ -31,7 +31,7 @@ that the architecture deliberately preserves.
 2. **Strong 3D on a Vega 8.** The engine must render DS1-tier 3D well on an integrated
    GPU, with a forward/light renderer path, good fog/atmosphere tools, resolution
    scaling, and a real shader language (the glyph VFX and soul-duel look are
-   hand-written shaders — `00-tech-thesis.md`, `04-rendering-and-shaders.md`).
+   hand-written shaders — `00-tech-thesis.md`, `05-rendering-and-shaders.md`).
 3. **Let Rust be authoritative.** Per `01-architecture.md`, the game lives in a Rust
    sim core. The engine must allow native Rust to drive it cleanly and in-process, not
    force the game logic into a scripting language.
@@ -113,7 +113,7 @@ to *also* build the renderer in Rust.
   improving fast but is still behind, and wgpu gives you none of it. This is the part
   of 3D the dev has *least* feel for and most needs handed to them.
 
-**When B becomes right:** if, after the de-risk spikes (`07-render-derisk-plan.md`),
+**When B becomes right:** if, after the de-risk spikes (`08-render-derisk-plan.md`),
 Godot proves to fight the architecture or the boundary friction is intolerable — the
 sim core is *already* a clean Rust crate, so swapping the frontend to Bevy/wgpu is a
 contained move, not a rewrite. **This is the escape hatch, and the architecture is
@@ -179,7 +179,7 @@ without touching the game.
 ## First validation
 
 Before committing real content to Godot, run the render de-risk spikes
-(`07-render-derisk-plan.md`) — most importantly the **additive-particle overdraw test
+(`08-render-derisk-plan.md`) — most importantly the **additive-particle overdraw test
 on the Vega 8** and a **skeletal-animation + hand-written toon shader** smoke test.
 These confirm A delivers `00-tech-thesis.md`'s budget *before* the architecture is
 poured in concrete.
@@ -196,5 +196,5 @@ poured in concrete.
 
 - `01-architecture.md` — the sim/render split this engine choice serves.
 - `00-tech-thesis.md` — the Vega 8 budget the engine must hit.
-- `04-rendering-and-shaders.md` — the hand-written shader work Godot enables.
-- `07-render-derisk-plan.md` — the spikes that validate this choice before commitment.
+- `05-rendering-and-shaders.md` — the hand-written shader work Godot enables.
+- `08-render-derisk-plan.md` — the spikes that validate this choice before commitment.
