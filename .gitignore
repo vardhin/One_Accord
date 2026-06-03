@@ -3,6 +3,10 @@
 .godot/
 # Godot 3 legacy import cache (harmless if absent).
 .import/
+#godot addons
+game-root-oa/addons/
+#godot demo
+game-root-oa/demo/
 
 # Exported builds / packaged game.
 /game-root-oa/build/
