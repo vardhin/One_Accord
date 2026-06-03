@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://c8hud0oa00001"]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_hud"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
+content_margin_left = 14.0
+content_margin_top = 10.0
+content_margin_right = 14.0
+content_margin_bottom = 10.0
+bg_color = Color(0, 0, 0, 0.45)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_hud")
+
+[node name="Controls" type="PanelContainer" parent="."]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 250.0
+offset_bottom = 220.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="Label" type="RichTextLabel" parent="Controls"]
+layout_mode = 2
+bbcode_enabled = true
+fit_content = true
+custom_minimum_size = Vector2(210, 0)
+text = "[b]Controls[/b]
+[color=#cfe]WASD[/color]   Move
+[color=#cfe]Mouse[/color]  Look
+[color=#cfe]Shift[/color]  Sprint
+[color=#cfe]Space[/color]  Jump
+[color=#cfe]Y[/color]      Fullscreen
+[color=#cfe]H[/color]      Hide / show this
+[color=#cfe]Esc[/color]    Free mouse"

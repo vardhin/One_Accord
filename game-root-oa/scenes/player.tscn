@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://b0nhxf5p2t441"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_player"]
+[ext_resource type="PackedScene" uid="uid://cq1bvqd32elwc" path="res://assets/player/X_Bot.fbx" id="2_xbot"]
+[ext_resource type="AnimationLibrary" path="res://assets/player/player_anims.res" id="3_anims"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_player"]
+radius = 0.4
+height = 1.8
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_player")
+
+[node name="Body" type="Node3D" parent="."]
+
+[node name="X_Bot" parent="Body" instance=ExtResource("2_xbot")]
+
+[node name="AnimationPlayer" parent="Body/X_Bot" index="1"]
+libraries = {
+&"": ExtResource("3_anims")
+}
+
+[node name="Collision" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+shape = SubResource("CapsuleShape3D_player")
+
+[node name="CameraPivot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot"]
+spring_length = 5.0
+margin = 0.2
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm3D"]
+far = 2000.0
