@@ -1,12 +1,12 @@
-[gd_scene format=3 uid="uid://b8world0oa001"]
+[gd_scene format=3]
 
-[ext_resource type="Script" uid="uid://cv3d3g2gakj5n" path="res://scripts/world_carver.gd" id="1_carver"]
-[ext_resource type="Texture2D" uid="uid://ddprscrpsofah" path="res://demo/assets/textures/ground037_alb_ht.png" id="2_grass_alb"]
-[ext_resource type="Texture2D" uid="uid://c1ots7w6i0i1q" path="res://demo/assets/textures/ground037_nrm_rgh.png" id="3_grass_nrm"]
-[ext_resource type="Texture2D" uid="uid://c88j3oj0lf6om" path="res://demo/assets/textures/rock023_alb_ht.png" id="4_rock_alb"]
-[ext_resource type="Texture2D" uid="uid://c307hdmos4gtm" path="res://demo/assets/textures/rock023_nrm_rgh.png" id="5_rock_nrm"]
-[ext_resource type="Shader" uid="uid://7tofbttuj3vh" path="res://shaders/water.gdshader" id="7_water"]
+[ext_resource type="Script" path="res://scripts/world_carver.gd" id="1_carver"]
+[ext_resource type="Texture2D" path="res://demo/assets/textures/ground037_alb_ht.png" id="2_grass_alb"]
+[ext_resource type="Texture2D" path="res://demo/assets/textures/ground037_nrm_rgh.png" id="3_grass_nrm"]
+[ext_resource type="Texture2D" path="res://demo/assets/textures/rock023_alb_ht.png" id="4_rock_alb"]
+[ext_resource type="Texture2D" path="res://demo/assets/textures/rock023_nrm_rgh.png" id="5_rock_nrm"]
 [ext_resource type="Shader" path="res://shaders/sky_clouds.gdshader" id="6_sky"]
+[ext_resource type="Shader" path="res://shaders/water.gdshader" id="7_water"]
 
 [sub_resource type="Gradient" id="Gradient_e5uuo"]
 offsets = PackedFloat32Array(0.2, 1)
@@ -143,6 +143,7 @@ ambient_light_source = 2
 ambient_light_color = Color(0.62, 0.69, 0.8, 1)
 ambient_light_energy = 0.35
 tonemap_mode = 2
+tonemap_white = 1.0
 fog_enabled = true
 fog_mode = 1
 fog_light_color = Color(0.66, 0.73, 0.82, 1)
@@ -169,7 +170,9 @@ surface_material_override/0 = SubResource("WaterMat_oa")
 [node name="Sun" type="DirectionalLight3D" parent="." unique_id=825010047]
 transform = Transform3D(0.866, -0.321, 0.383, 0, 0.766, 0.643, -0.5, -0.557, 0.663, 0, 60, 0)
 light_color = Color(1, 0.96, 0.89, 1)
+light_energy = 1.0
 shadow_enabled = true
+directional_shadow_mode = 2
 directional_shadow_max_distance = 400.0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=489763629]
