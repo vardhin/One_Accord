@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://b8world0oa001"]
+[gd_scene load_steps=2 format=3 uid="uid://b8world0oa001"]
+
+[ext_resource type="Script" path="res://scripts/world_carver.gd" id="1_carver"]
 
 [sub_resource type="Gradient" id="Gradient_e5uuo"]
 offsets = PackedFloat32Array(0.2, 1)
@@ -40,7 +42,9 @@ _shader_parameters = {
 &"noise_texture": SubResource("NoiseTexture2D_rwgxs"),
 &"projection_threshold": null
 }
-show_checkered = true
+world_background = 1
+show_checkered = false
+show_colormap = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k0juu"]
 transparency = 4
@@ -64,6 +68,13 @@ lod0_range = 128.0
 mesh_list = Array[Terrain3DMeshAsset]([SubResource("Terrain3DMeshAsset_71j4m")])
 
 [sub_resource type="ProceduralSkyMaterial" id="Sky_oa"]
+sky_top_color = Color(0.39, 0.58, 0.86, 1)
+sky_horizon_color = Color(0.78, 0.83, 0.87, 1)
+sky_curve = 0.18
+ground_bottom_color = Color(0.42, 0.45, 0.46, 1)
+ground_horizon_color = Color(0.74, 0.79, 0.83, 1)
+sun_angle_max = 30.0
+sun_curve = 0.08
 
 [sub_resource type="Sky" id="SkyRes_oa"]
 sky_material = SubResource("Sky_oa")
@@ -71,10 +82,14 @@ sky_material = SubResource("Sky_oa")
 [sub_resource type="Environment" id="Env_oa"]
 background_mode = 2
 sky = SubResource("SkyRes_oa")
-ambient_light_source = 3
+ambient_light_source = 2
+ambient_light_color = Color(0.62, 0.69, 0.8, 1)
+ambient_light_energy = 0.35
 fog_enabled = true
 fog_light_color = Color(0.65, 0.68, 0.72, 1)
-fog_density = 0.008
+fog_density = 0.0015
+tonemap_mode = 2
+tonemap_white = 1.0
 
 [node name="World" type="Node3D" unique_id=1860126879]
 
@@ -82,13 +97,15 @@ fog_density = 0.008
 data_directory = "res://terrain_data/"
 material = SubResource("Terrain3DMaterial_4wyf3")
 assets = SubResource("Terrain3DAssets_qfnet")
-show_checkered = true
 top_level = true
-metadata/_edit_lock_ = true
 
 [node name="Sun" type="DirectionalLight3D" parent="." unique_id=825010047]
-transform = Transform3D(0.86, -0.35, 0.37, 0, 0.72, 0.69, -0.51, -0.59, 0.62, 0, 60, 0)
+transform = Transform3D(0.866, -0.321, 0.383, 0, 0.766, 0.643, -0.5, -0.557, 0.663, 0, 60, 0)
+light_color = Color(1, 0.96, 0.89, 1)
+light_energy = 1.0
 shadow_enabled = true
+directional_shadow_mode = 2
+directional_shadow_max_distance = 400.0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=489763629]
 environment = SubResource("Env_oa")
@@ -96,3 +113,7 @@ environment = SubResource("Env_oa")
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1358905424]
 transform = Transform3D(1, 0, 0, 0, 0.94, 0.34, 0, -0.34, 0.94, 0, 40, 80)
 far = 2000.0
+
+[node name="WorldCarver" type="Node" parent="."]
+script = ExtResource("1_carver")
+terrain_path = NodePath("../Terrain3D")
