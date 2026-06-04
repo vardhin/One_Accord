@@ -10,6 +10,10 @@
 [ext_resource type="PackedScene" uid="uid://b0nhxf5p2t441" path="res://scenes/player.tscn" id="8_player"]
 [ext_resource type="PackedScene" uid="uid://c8hud0oa00001" path="res://scenes/hud.tscn" id="9_hud"]
 [ext_resource type="PackedScene" uid="uid://d3sr0a7dxfkr8" path="res://addons/terrain_3d/extras/particle_example/Terrain3DParticles.tscn" id="10_grass_particles"]
+[ext_resource type="Material" uid="uid://whqm7n2ok8u5" path="res://shaders/grass_process.tres" id="12_grass_proc"]
+[ext_resource type="Material" path="res://shaders/grass_material.tres" id="13_grass_mat"]
+[ext_resource type="Script" uid="uid://da1ggtvxqhxiu" path="res://scripts/grass_benders.gd" id="14_benders"]
+[ext_resource type="Material" path="res://shaders/grass_process_tall.tres" id="16_tall_proc"]
 
 [sub_resource type="Gradient" id="Gradient_e5uuo"]
 offsets = PackedFloat32Array(0.2, 1)
@@ -151,7 +155,23 @@ terrain = NodePath("..")
 instance_spacing = 0.296875
 rows = 80
 amount = 6400
+process_material = ExtResource("12_grass_proc")
+mesh_material_override = ExtResource("13_grass_mat")
 particle_count = 160000
+
+[node name="GrassBenders" type="Node" parent="Terrain3D/Terrain3DParticles" unique_id=2145310832 node_paths=PackedStringArray("benders")]
+script = ExtResource("14_benders")
+grass_materials = Array[ShaderMaterial]([ExtResource("13_grass_mat")])
+benders = Array[NodePath]([NodePath("../../../Player")])
+bend_radius = 1.6
+
+[node name="Terrain3DParticlesTall" parent="Terrain3D" node_paths=PackedStringArray("terrain") instance=ExtResource("10_grass_particles")]
+terrain = NodePath("..")
+instance_spacing = 2.0
+cell_width = 48.0
+grid_width = 5
+process_material = ExtResource("16_tall_proc")
+mesh_material_override = ExtResource("13_grass_mat")
 
 [node name="Water" type="MeshInstance3D" parent="." unique_id=771100022]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)

@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3]
+
+[ext_resource type="Shader" path="res://shaders/grass_interactive.gdshader" id="1_grass"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_grass")
+shader_parameter/wind_direction = Vector2(1, 1)
+shader_parameter/bend_strength = 0.55
+shader_parameter/grass_bender_count = 0
+shader_parameter/grass_benders = PackedVector4Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
