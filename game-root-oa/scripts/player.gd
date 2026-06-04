@@ -36,16 +36,25 @@ extends CharacterBody3D
 @export var pitch_max_deg: float = 75.0
 @export var arm_length: float = 5.0
 
+@export_group("Sprint feel")
+@export var base_fov: float = 75.0          ## camera FOV at rest / walking
+@export var sprint_fov: float = 88.0        ## camera FOV at full sprint (the "zoom")
+@export var fov_lerp_speed: float = 6.0     ## how fast FOV eases in/out
+@export var blur_lerp_speed: float = 8.0    ## how fast the speed-blur eases in/out
+
 # --- Nodes ----------------------------------------------------------------
 @onready var _body: Node3D = $Body
 @onready var _pivot: Node3D = $CameraPivot
 @onready var _spring: SpringArm3D = $CameraPivot/SpringArm3D
+@onready var _camera: Camera3D = $CameraPivot/SpringArm3D/Camera3D
 @onready var _anim: AnimationPlayer = $Body/X_Bot/AnimationPlayer
 
 var _yaw: float = 0.0     ## camera yaw (around Y), radians
 var _pitch: float = 0.0   ## camera pitch, radians
 var _current_anim: String = ""
 var _air_jump: String = "jump"   ## which jump clip is mid-air (set at takeoff)
+var _sprint_factor: float = 0.0  ## smoothed 0..1, how "sprinting" we look right now
+var _blur_mat: ShaderMaterial    ## fullscreen speed-blur material, driven each frame
 
 
 func _ready() -> void:
@@ -53,6 +62,12 @@ func _ready() -> void:
 	_spring.spring_length = arm_length
 	# Don't let the spring arm collide with the player's own body.
 	_spring.add_excluded_object(get_rid())
+	_camera.fov = base_fov
+	# Grab the fullscreen speed-blur material (a ColorRect in the HUD, tagged
+	# "speed_blur") so we can ramp its strength with sprint. Safe if absent.
+	var blur := get_tree().get_first_node_in_group("speed_blur") as CanvasItem
+	if blur and blur.material is ShaderMaterial:
+		_blur_mat = blur.material
 	_play("idle")
 
 	# The spawn position is a teleport; without this, physics interpolation
@@ -89,9 +104,21 @@ func _unhandled_input(event: InputEvent) -> void:
 
 ## Camera orbit runs every RENDER frame, not every physics tick, so mouse-look
 ## stays perfectly smooth regardless of physics rate.
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
 	_pivot.rotation.y = _yaw
 	_pivot.rotation.x = _pitch
+
+	# Sprint feel: ease toward 1.0 when actually sprinting + moving fast, else 0.
+	var planar := Vector2(velocity.x, velocity.z).length()
+	var sprinting := Input.is_action_pressed("sprint") and planar > walk_speed + 0.5
+	var target := 1.0 if sprinting else 0.0
+	_sprint_factor = move_toward(_sprint_factor, target, fov_lerp_speed * delta)
+
+	_camera.fov = lerpf(base_fov, sprint_fov, _sprint_factor)
+	if _blur_mat:
+		var cur: float = _blur_mat.get_shader_parameter("strength")
+		_blur_mat.set_shader_parameter("strength",
+			move_toward(cur, _sprint_factor, blur_lerp_speed * delta))
 
 
 func _physics_process(delta: float) -> void:
