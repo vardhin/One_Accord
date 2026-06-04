@@ -35,6 +35,10 @@ extends Node
 ## view renders `unshaded`, so it ignores the sun; real textures restore lighting).
 @export var setup_textures: bool = false: set = _set_setup_textures
 
+# NOTE: grass is now the Terrain3D particle system (Terrain3DParticles under the
+# Terrain3D node in world.tscn), which renders a camera-following grass grid. The
+# old instancer-scatter approach lived here and has been removed.
+
 # --- World dimensions (metres) -------------------------------------------
 ## Half-extent of the playable square. 1024 -> a 2048 m (~2 km) world,
 ## matching the "~1.5-2 km across" sizing rule.
