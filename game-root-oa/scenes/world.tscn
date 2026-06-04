@@ -49,17 +49,17 @@ _shader_parameters = {
 &"bias_distance": null,
 &"blend_sharpness": null,
 &"depth_blur": null,
-&"enable_macro_variation": null,
+&"enable_macro_variation": true,
 &"enable_projection": null,
 &"flat_terrain_normals": null,
-&"macro_variation1": null,
-&"macro_variation2": null,
-&"macro_variation_slope": null,
+&"macro_variation1": Color(0.42, 0.52, 0.31, 1),
+&"macro_variation2": Color(0.68, 0.62, 0.44, 1),
+&"macro_variation_slope": 0.62,
 &"mipmap_bias": null,
 &"noise1_angle": null,
 &"noise1_offset": null,
-&"noise1_scale": null,
-&"noise2_scale": null,
+&"noise1_scale": 0.18,
+&"noise2_scale": 0.045,
 &"noise_texture": SubResource("NoiseTexture2D_rwgxs"),
 &"projection_threshold": null
 }
@@ -155,15 +155,17 @@ ambient_light_color = Color(0.62, 0.69, 0.8, 1)
 ambient_light_energy = 0.35
 tonemap_mode = 2
 fog_enabled = true
-fog_light_color = Color(0.72, 0.79, 0.87, 1)
-fog_light_energy = 0.7
-fog_sun_scatter = 0.15
-fog_density = 0.0
-fog_aerial_perspective = 0.6
-fog_sky_affect = 0.35
-fog_depth_curve = 1.4
-fog_depth_begin = 180.0
-fog_depth_end = 900.0
+fog_light_color = Color(0.28, 0.34, 0.38, 1)
+fog_light_energy = 0.42
+fog_sun_scatter = 0.08
+fog_density = 0.0038
+fog_aerial_perspective = 0.35
+fog_sky_affect = 0.12
+fog_height = 18.0
+fog_height_density = 0.025
+fog_depth_curve = 0.55
+fog_depth_begin = 145.0
+fog_depth_end = 245.0
 
 [node name="World" type="Node3D" unique_id=1860126879]
 
