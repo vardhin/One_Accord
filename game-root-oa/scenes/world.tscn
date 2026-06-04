@@ -14,6 +14,9 @@
 [ext_resource type="Material" path="res://shaders/grass_material.tres" id="13_grass_mat"]
 [ext_resource type="Script" uid="uid://da1ggtvxqhxiu" path="res://scripts/grass_benders.gd" id="14_benders"]
 [ext_resource type="Material" uid="uid://poofl1nucd0a" path="res://shaders/grass_process_tall.tres" id="16_tall_proc"]
+[ext_resource type="PackedScene" uid="uid://b481lq7j3p4fw" path="res://assets/mountains/Mountain.fbx" id="17_mountain"]
+[ext_resource type="PackedScene" uid="uid://dvpnsr1tqo3bv" path="res://assets/mountains/Mountain2.fbx" id="18_mountain2"]
+[ext_resource type="PackedScene" uid="uid://dt2u6sn5r3qch" path="res://assets/mountains/Mountain3.fbx" id="19_mountain3"]
 
 [sub_resource type="Gradient" id="Gradient_e5uuo"]
 offsets = PackedFloat32Array(0.2, 1)
@@ -199,6 +202,23 @@ particle_count = 19600
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 mesh = SubResource("WaterMesh_oa")
 surface_material_override/0 = SubResource("WaterMat_oa")
+
+[node name="MountainAssetPreview" type="Node3D" parent="."]
+
+[node name="Mountain" parent="MountainAssetPreview" instance=ExtResource("17_mountain")]
+position = Vector3(-180, 30, 90)
+rotation = Vector3(0, 0.436332, 0)
+scale = Vector3(10, 10, 10)
+
+[node name="Mountain2" parent="MountainAssetPreview" instance=ExtResource("18_mountain2")]
+position = Vector3(0, 32, 35)
+rotation = Vector3(0, -0.261799, 0)
+scale = Vector3(11, 11, 11)
+
+[node name="Mountain3" parent="MountainAssetPreview" instance=ExtResource("19_mountain3")]
+position = Vector3(185, 34, 95)
+rotation = Vector3(0, -0.698132, 0)
+scale = Vector3(12, 12, 12)
 
 [node name="Sun" type="DirectionalLight3D" parent="." unique_id=825010047]
 transform = Transform3D(0.43300954, -0.16071889, 0.19149983, 0, 0.38299125, 0.3214307, -0.25000548, -0.27836514, 0.33167773, 0, 60, 0)
