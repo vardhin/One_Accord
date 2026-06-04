@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://b0nhxf5p2t441"]
+[gd_scene load_steps=8 format=3 uid="uid://b0nhxf5p2t441"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_player"]
 [ext_resource type="PackedScene" uid="uid://cq1bvqd32elwc" path="res://assets/player/X_Bot.fbx" id="2_xbot"]
 [ext_resource type="AnimationLibrary" path="res://assets/player/player_anims.res" id="3_anims"]
+[ext_resource type="Resource" uid="uid://bjd4vsl6qp7nt" path="res://resources/sword.tres" id="4_weapon"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_player"]
 radius = 0.4
@@ -13,6 +14,7 @@ radius = 0.3
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_player")
+weapon_profile = ExtResource("4_weapon")
 
 [node name="Body" type="Node3D" parent="."]
 

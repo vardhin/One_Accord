@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8sword0oa0001"]
+
+[ext_resource type="Script" uid="uid://ci1dymj3qx0f5" path="res://scripts/sword.gd" id="1_sword"]
+
+[node name="Sword" type="Node3D"]
+script = ExtResource("1_sword")

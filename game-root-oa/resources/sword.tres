@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="WeaponProfile" load_steps=3 format=3 uid="uid://bjd4vsl6qp7nt"]
+
+[ext_resource type="Script" path="res://scripts/weapon_profile.gd" id="1_wp"]
+[ext_resource type="PackedScene" path="res://scenes/sword.tscn" id="2_mesh"]
+
+[resource]
+script = ExtResource("1_wp")
+display_name = "Sword"
+weapon_scene = ExtResource("2_mesh")
+unsheath = "sword_unsheath"
+sheath = "sword_sheath"
+light_combo = Array[String](["sword_light_1", "sword_light_2", "sword_light_3", "sword_light_4"])
+heavy = "sword_heavy"
+armed_idle = "sword_idle"
+armed_walk = "sword_walk"
+armed_run = "sword_run"
+armed_jump = "sword_jump"
+armed_run_jump = "sword_run_jump"
+attack_speed_scale = 1.15
+light_lunge = Array[float]([3.5, 4.0, 5.0, 5.0])
+heavy_lunge = 8.0
+sprint_carry = 0.6
+lunge_decay = 6.0
