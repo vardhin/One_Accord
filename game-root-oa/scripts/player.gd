@@ -32,8 +32,8 @@ extends CharacterBody3D
 
 @export_group("Camera")
 @export var mouse_sensitivity: float = 0.0025
-@export var pitch_min_deg: float = -60.0
-@export var pitch_max_deg: float = 50.0
+@export var pitch_min_deg: float = -55.0
+@export var pitch_max_deg: float = 75.0
 @export var arm_length: float = 5.0
 
 # --- Nodes ----------------------------------------------------------------
