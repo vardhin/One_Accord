@@ -30,6 +30,7 @@ func _rock_material() -> StandardMaterial3D:
 	mat.normal_enabled = true
 	mat.normal_texture = load(ROCK_NORMAL)
 	mat.roughness = 0.86
+	mat.cull_mode = BaseMaterial3D.CULL_DISABLED
 	mat.uv1_scale = Vector3(0.08, 0.08, 0.08)
 	mat.texture_filter = BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC
 	return mat

@@ -1,13 +1,13 @@
 @tool
 extends Node3D
-## Keeps imported mountain meshes sitting above the Terrain3D surface.
+## Applies the world rock material to imported mountain meshes.
 
 const ROCK_ALBEDO := "res://demo/assets/textures/rock023_alb_ht.png"
 const ROCK_NORMAL := "res://demo/assets/textures/rock023_nrm_rgh.png"
 
 @export_node_path("Terrain3D") var terrain_path: NodePath = NodePath("../Terrain3D")
 @export var apply_rock_material: bool = true
-@export var lift_above_terrain: bool = true
+@export var lift_above_terrain: bool = false
 @export var terrain_clearance: float = 6.0
 @export var snap_on_ready: bool = true
 @export var snap_now: bool = false:
@@ -43,6 +43,7 @@ func _rock_material() -> StandardMaterial3D:
 	mat.normal_enabled = true
 	mat.normal_texture = load(ROCK_NORMAL)
 	mat.roughness = 0.86
+	mat.cull_mode = BaseMaterial3D.CULL_DISABLED
 	mat.uv1_scale = Vector3(0.08, 0.08, 0.08)
 	mat.texture_filter = BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC
 	return mat
