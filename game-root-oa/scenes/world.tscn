@@ -160,6 +160,7 @@ fog_sky_affect = 0.0
 data_directory = "res://terrain_data/"
 material = SubResource("Terrain3DMaterial_4wyf3")
 assets = SubResource("Terrain3DAssets_qfnet")
+collision_mode = 3
 top_level = true
 metadata/_edit_lock_ = true
 

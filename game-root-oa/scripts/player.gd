@@ -55,6 +55,25 @@ func _ready() -> void:
 	_spring.add_excluded_object(get_rid())
 	_play("idle")
 
+	# The spawn position is a teleport; without this, physics interpolation
+	# smears the body across the screen on the very first frame.
+	reset_physics_interpolation()
+
+	# Guarantee terrain collision at runtime. The Terrain3D editor plugin tends to
+	# strip collision_enabled/collision_mode from world.tscn on re-save, so we
+	# force a full static bake here (mode 3 = Full/Game) instead of trusting the
+	# scene. Full bake = one upfront cost, then NO per-frame collision streaming —
+	# which is what caused the "catch and snap" stutter with the dynamic mode.
+	var terrain := get_tree().get_first_node_in_group("terrain") as Terrain3D
+	if terrain == null:
+		# Fall back to a direct lookup if the group isn't set.
+		var w := get_parent()
+		if w:
+			terrain = w.get_node_or_null("Terrain3D") as Terrain3D
+	if terrain:
+		# Collision is enabled simply by a non-zero mode. 3 = Full / Game.
+		terrain.collision_mode = 3
+
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
