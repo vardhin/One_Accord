@@ -153,11 +153,9 @@ metadata/_edit_lock_ = true
 [node name="Terrain3DParticles" parent="Terrain3D" unique_id=1589583568 node_paths=PackedStringArray("terrain") instance=ExtResource("10_grass_particles")]
 terrain = NodePath("..")
 instance_spacing = 0.296875
-rows = 80
-amount = 6400
+cell_width = 28.5
 process_material = ExtResource("12_grass_proc")
 mesh_material_override = ExtResource("13_grass_mat")
-particle_count = 160000
 
 [node name="GrassBenders" type="Node" parent="Terrain3D/Terrain3DParticles" unique_id=2145310832 node_paths=PackedStringArray("benders")]
 script = ExtResource("14_benders")
@@ -168,7 +166,7 @@ bend_radius = 1.6
 [node name="Terrain3DParticlesTall" parent="Terrain3D" node_paths=PackedStringArray("terrain") instance=ExtResource("10_grass_particles")]
 terrain = NodePath("..")
 instance_spacing = 2.0
-cell_width = 48.0
+cell_width = 57.6
 grid_width = 5
 process_material = ExtResource("16_tall_proc")
 mesh_material_override = ExtResource("13_grass_mat")
