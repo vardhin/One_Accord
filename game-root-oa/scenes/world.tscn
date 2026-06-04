@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://b481lq7j3p4fw" path="res://assets/mountains/Mountain.fbx" id="17_mountain"]
 [ext_resource type="PackedScene" uid="uid://dvpnsr1tqo3bv" path="res://assets/mountains/Mountain2.fbx" id="18_mountain2"]
 [ext_resource type="PackedScene" uid="uid://dt2u6sn5r3qch" path="res://assets/mountains/Mountain3.fbx" id="19_mountain3"]
+[ext_resource type="Script" uid="uid://dfu500vmafeho" path="res://scripts/mountain_asset_preview.gd" id="20_mountain_preview"]
 
 [sub_resource type="Gradient" id="Gradient_e5uuo"]
 offsets = PackedFloat32Array(0.2, 1)
@@ -203,22 +204,26 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 mesh = SubResource("WaterMesh_oa")
 surface_material_override/0 = SubResource("WaterMat_oa")
 
-[node name="MountainAssetPreview" type="Node3D" parent="."]
+[node name="MountainAssetPreview" type="Node3D" parent="." unique_id=913430379]
+script = ExtResource("20_mountain_preview")
 
-[node name="Mountain" parent="MountainAssetPreview" instance=ExtResource("17_mountain")]
-position = Vector3(-180, 30, 90)
-rotation = Vector3(0, 0.436332, 0)
-scale = Vector3(10, 10, 10)
+[node name="Mountain" parent="MountainAssetPreview" unique_id=1552044399 instance=ExtResource("17_mountain")]
+transform = Transform3D(-33.671757, 0, 55.59868, 0, 65, 0, -55.59868, 0, -33.671757, -921.6297, 30.904755, 11.768951)
 
-[node name="Mountain2" parent="MountainAssetPreview" instance=ExtResource("18_mountain2")]
-position = Vector3(0, 32, 35)
-rotation = Vector3(0, -0.261799, 0)
-scale = Vector3(11, 11, 11)
+[node name="Mountain2" parent="MountainAssetPreview" unique_id=1479795051 instance=ExtResource("18_mountain2")]
+transform = Transform3D(26.955063, 0, -59.147484, 0, 65, 0, 59.147484, 0, 26.955063, -965.2849, 14.568626, -248.33789)
 
-[node name="Mountain3" parent="MountainAssetPreview" instance=ExtResource("19_mountain3")]
-position = Vector3(185, 34, 95)
-rotation = Vector3(0, -0.698132, 0)
-scale = Vector3(12, 12, 12)
+[node name="Mountain3" parent="MountainAssetPreview" unique_id=1898027438 instance=ExtResource("19_mountain3")]
+transform = Transform3D(38.002853, 0, 46.430412, 0, 60, 0, -46.430412, 0, 38.002853, -656.2509, -24.499756, -755.63306)
+
+[node name="Mountain4" parent="MountainAssetPreview" unique_id=411290273 instance=ExtResource("17_mountain")]
+transform = Transform3D(-44.619606, 0, 66.40098, 0, 80, 0, -66.40098, 0, -44.619606, -903.9838, 30.904755, 396.67538)
+
+[node name="Mountain5" parent="MountainAssetPreview" unique_id=1344251419 instance=ExtResource("17_mountain")]
+transform = Transform3D(-77.127625, 0, -21.244495, 0, 80, 0, 21.244495, 0, -77.127625, -307.50604, -1.9618988, -1142.1294)
+
+[node name="Mountain6" parent="MountainAssetPreview" unique_id=437911026 instance=ExtResource("17_mountain")]
+transform = Transform3D(72.81153, 0, 52.900673, 0, 90, 0, -52.900673, 0, 72.81153, 340.15793, -12.815491, -944.4683)
 
 [node name="Sun" type="DirectionalLight3D" parent="." unique_id=825010047]
 transform = Transform3D(0.43300954, -0.16071889, 0.19149983, 0, 0.38299125, 0.3214307, -0.25000548, -0.27836514, 0.33167773, 0, 60, 0)
