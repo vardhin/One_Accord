@@ -60,14 +60,19 @@ void sky() {
 	if (up >= 0.0) {
 		float t = pow(1.0 - up, horizon_falloff);
 		base = mix(sky_top_color, sky_horizon_color, t);
+		// Extra atmospheric haze in the lowest band so distant geometry/fog blends in.
+		float haze = pow(1.0 - up, 12.0);
+		base = mix(base, sky_horizon_color, haze * 0.5);
 	} else {
 		base = mix(sky_horizon_color, ground_color, clamp(-up * 2.0, 0.0, 1.0));
 	}
 
 	// Sun disk (LIGHT0 is the DirectionalLight3D acting as sun).
+	// Crisp core + a faint, tight halo instead of one broad bloom.
 	float sun_d = dot(dir, LIGHT0_DIRECTION);
-	float sun_disk = smoothstep(1.0 - sun_size - sun_blur, 1.0 - sun_size, sun_d);
-	base += sun_color * sun_disk * LIGHT0_ENERGY;
+	float sun_core = smoothstep(1.0 - sun_size - sun_blur, 1.0 - sun_size, sun_d);
+	float sun_halo = smoothstep(1.0 - sun_size - sun_blur * 2.0, 1.0 - sun_size, sun_d);
+	base += sun_color * (sun_core + sun_halo * 0.08) * LIGHT0_ENERGY;
 
 	// Clouds: project the view direction onto a dome plane and sample drifting fbm.
 	// Only above the horizon; fade out near it so clouds don't smear into the ground.
