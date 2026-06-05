@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b3yvqfeeok442"]
+
+[ext_resource type="PackedScene" uid="uid://5qaowcyex15l" path="res://assets/weapons/sword.glb" id="1_mesh"]
+
+[node name="Sword" type="Node3D" unique_id=315281054]
+
+[node name="Mesh" parent="." unique_id=55206842 instance=ExtResource("1_mesh")]
+transform = Transform3D(0.09484549, 0.88819236, -0.086261176, -0.72375476, 0.11747362, 0, 0.009132583, 0.085523196, 0.89585656, 0.095, -0.02, 0.05)

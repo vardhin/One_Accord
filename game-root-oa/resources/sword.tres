@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="WeaponProfile" load_steps=3 format=3 uid="uid://bjd4vsl6qp7nt"]
 
 [ext_resource type="Script" path="res://scripts/weapon_profile.gd" id="1_wp"]
-[ext_resource type="PackedScene" path="res://scenes/sword.tscn" id="2_mesh"]
+[ext_resource type="PackedScene" path="res://scenes/sword_real.tscn" id="2_mesh"]
 
 [resource]
 script = ExtResource("1_wp")

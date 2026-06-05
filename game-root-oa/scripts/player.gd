@@ -49,6 +49,11 @@ extends CharacterBody3D
 @export var weapon_profile: WeaponProfile
 ## Movement is scaled by this while an attack/draw clip plays (0 = rooted).
 @export var attack_move_damp: float = 0.15
+## DEBUG: re-apply weapon_profile.grip_offset/grip_rotation_deg to the held sword
+## every frame, so you can tune the grip live (edit the .tres while playing and
+## watch the sword move in the fist). Also forces the sword visible. Turn OFF for
+## release — it overrides sheathing. Tune, copy the final numbers, flip this back.
+@export var debug_live_grip: bool = false
 
 # --- Nodes ----------------------------------------------------------------
 @onready var _body: Node3D = $Body
@@ -331,6 +336,16 @@ func _is_action_locked() -> bool:
 func _process(delta: float) -> void:
 	_pivot.rotation.y = _yaw
 	_pivot.rotation.x = _pitch
+
+	# Live grip tuning: push the profile's grip transform onto the held sword each
+	# frame so edits to sword.tres show instantly. Debug-only (see export above).
+	if debug_live_grip and _sword and weapon_profile:
+		_sword.visible = true
+		_sword.position = weapon_profile.grip_offset
+		_sword.rotation = Vector3(
+			deg_to_rad(weapon_profile.grip_rotation_deg.x),
+			deg_to_rad(weapon_profile.grip_rotation_deg.y),
+			deg_to_rad(weapon_profile.grip_rotation_deg.z))
 
 	# Sprint feel: ease toward 1.0 when actually sprinting + moving fast, else 0.
 	var planar := Vector2(velocity.x, velocity.z).length()
