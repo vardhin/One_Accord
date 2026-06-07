@@ -49,11 +49,12 @@ extends CharacterBody3D
 @export var weapon_profile: WeaponProfile
 ## Movement is scaled by this while an attack/draw clip plays (0 = rooted).
 @export var attack_move_damp: float = 0.15
-## DEBUG: re-apply weapon_profile.grip_offset/grip_rotation_deg to the held sword
-## every frame, so you can tune the grip live (edit the .tres while playing and
-## watch the sword move in the fist). Also forces the sword visible. Turn OFF for
-## release — it overrides sheathing. Tune, copy the final numbers, flip this back.
-@export var debug_live_grip: bool = false
+
+# --- Pose authoring -------------------------------------------------------
+## Set true by the in-game pose tool (scripts/pose_animator.gd). While active the
+## controller surrenders ALL control: no movement, no combat input, no camera
+## look, and it stops driving the AnimationPlayer so the tool owns the skeleton.
+var pose_mode_active: bool = false
 
 # --- Nodes ----------------------------------------------------------------
 @onready var _body: Node3D = $Body
@@ -168,6 +169,15 @@ func _find_skeleton(n: Node) -> Skeleton3D:
 
 
 func _unhandled_input(event: InputEvent) -> void:
+	if pose_mode_active:
+		# The pose tool owns most input, but camera-look still works via RIGHT-drag
+		# (left-click is reserved for picking/dragging handles). Only motion that
+		# the pose tool didn't consume reaches here.
+		if event is InputEventMouseMotion and Input.is_mouse_button_pressed(MOUSE_BUTTON_RIGHT):
+			_yaw -= event.relative.x * mouse_sensitivity
+			_pitch -= event.relative.y * mouse_sensitivity
+			_pitch = clampf(_pitch, deg_to_rad(pitch_min_deg), deg_to_rad(pitch_max_deg))
+		return
 	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		_yaw -= event.relative.x * mouse_sensitivity
 		_pitch -= event.relative.y * mouse_sensitivity
@@ -334,18 +344,15 @@ func _is_action_locked() -> bool:
 ## Camera orbit runs every RENDER frame, not every physics tick, so mouse-look
 ## stays perfectly smooth regardless of physics rate.
 func _process(delta: float) -> void:
+	if pose_mode_active:
+		# Still orbit the camera while posing (mouse is free to click handles, so
+		# camera-look is bound to right-drag — see _unhandled_input). Skip the
+		# movement/FOV/blur work; just keep the pivot following yaw/pitch.
+		_pivot.rotation.y = _yaw
+		_pivot.rotation.x = _pitch
+		return
 	_pivot.rotation.y = _yaw
 	_pivot.rotation.x = _pitch
-
-	# Live grip tuning: push the profile's grip transform onto the held sword each
-	# frame so edits to sword.tres show instantly. Debug-only (see export above).
-	if debug_live_grip and _sword and weapon_profile:
-		_sword.visible = true
-		_sword.position = weapon_profile.grip_offset
-		_sword.rotation = Vector3(
-			deg_to_rad(weapon_profile.grip_rotation_deg.x),
-			deg_to_rad(weapon_profile.grip_rotation_deg.y),
-			deg_to_rad(weapon_profile.grip_rotation_deg.z))
 
 	# Sprint feel: ease toward 1.0 when actually sprinting + moving fast, else 0.
 	var planar := Vector2(velocity.x, velocity.z).length()
@@ -364,6 +371,17 @@ func _process(delta: float) -> void:
 
 
 func _physics_process(delta: float) -> void:
+	if pose_mode_active:
+		# Hold still and let the pose tool drive the skeleton. Still apply gravity
+		# so we don't float, but zero out horizontal motion and skip anim updates.
+		velocity.x = 0.0
+		velocity.z = 0.0
+		if not is_on_floor():
+			velocity.y -= gravity * delta
+		else:
+			velocity.y = 0.0
+		move_and_slide()
+		return
 	_move(delta)
 
 

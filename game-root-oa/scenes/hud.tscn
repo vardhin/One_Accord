@@ -36,7 +36,7 @@ mouse_filter = 2
 offset_left = 16.0
 offset_top = 16.0
 offset_right = 250.0
-offset_bottom = 290.0
+offset_bottom = 300.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
 
 [node name="Label" type="RichTextLabel" parent="Controls"]
@@ -54,4 +54,8 @@ text = "[b]Controls[/b]
 [color=#cfe]RMB[/color]    Heavy attack
 [color=#cfe]Y[/color]      Fullscreen
 [color=#cfe]H[/color]      Hide / show this
-[color=#cfe]Esc[/color]    Free mouse"
+[color=#cfe]Esc[/color]    Free mouse
+
+[b]Pose / animation tool[/b]
+[color=#fd9]K[/color]      Enter pose mode
+[color=#9cf]       [/color] (panels + on-screen help appear)"

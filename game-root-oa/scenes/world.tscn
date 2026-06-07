@@ -239,8 +239,7 @@ directional_shadow_max_distance = 400.0
 environment = SubResource("Env_oa")
 
 [node name="Player" parent="." unique_id=984514988 instance=ExtResource("8_player")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20, 200)
-debug_live_grip = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.513793, 200)
 
 [node name="HUD" parent="." unique_id=1188910831 instance=ExtResource("9_hud")]
 
