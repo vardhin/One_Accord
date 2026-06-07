@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SpellProfile" load_steps=3 format=3 uid="uid://c0sp3llf1reba"]
+
+[ext_resource type="Script" path="res://scripts/spell_profile.gd" id="1_sp"]
+[ext_resource type="Shader" path="res://shaders/spell_fireball.gdshader" id="2_sh"]
+
+[resource]
+script = ExtResource("1_sp")
+display_name = "Fireball"
+emit_mode = 0
+projectile_speed = 20.0
+lifetime = 3.0
+max_range = 60.0
+primitive = "Sphere"
+scale = 0.4
+shader = ExtResource("2_sh")
+color = Color(1.0, 0.45, 0.1, 1.0)
+color2 = Color(1.0, 0.92, 0.45, 1.0)
+intensity = 3.5
+emit_light = true
+light_color = Color(1.0, 0.55, 0.2, 1.0)
+light_energy = 5.0
+light_range = 7.0

@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://c8hud0oa00001"]
+[gd_scene load_steps=5 format=3 uid="uid://c8hud0oa00001"]
 
 [ext_resource type="Script" path="res://scripts/hud.gd" id="1_hud"]
 [ext_resource type="Shader" path="res://shaders/speed_blur.gdshader" id="2_blur"]
+[ext_resource type="Script" path="res://scripts/spell_bar.gd" id="3_spellbar"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_blur"]
 shader = ExtResource("2_blur")
@@ -32,6 +33,15 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
+[node name="SpellBar" type="Control" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("3_spellbar")
+
 [node name="Controls" type="PanelContainer" parent="."]
 offset_left = 16.0
 offset_top = 16.0
@@ -52,6 +62,8 @@ text = "[b]Controls[/b]
 [color=#cfe]R[/color]      Draw / sheath sword
 [color=#cfe]LMB[/color]    Light attack (combo)
 [color=#cfe]RMB[/color]    Heavy attack
+[color=#cfe]1 2 3[/color]  Select spell
+[color=#cfe]Q[/color]      Cast (tap = fire, hold = channel)
 [color=#cfe]Y[/color]      Fullscreen
 [color=#cfe]H[/color]      Hide / show this
 [color=#cfe]Esc[/color]    Free mouse

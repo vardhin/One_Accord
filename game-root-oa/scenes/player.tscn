@@ -1,10 +1,15 @@
-[gd_scene load_steps=9 format=3 uid="uid://b0nhxf5p2t441"]
+[gd_scene load_steps=14 format=3 uid="uid://b0nhxf5p2t441"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_player"]
 [ext_resource type="PackedScene" uid="uid://b7ilhpapg14va" path="res://assets/player/skins/player_skin_temp.fbx" id="2_xbot"]
 [ext_resource type="AnimationLibrary" path="res://assets/player/player_anims.res" id="3_anims"]
 [ext_resource type="Resource" uid="uid://bjd4vsl6qp7nt" path="res://resources/sword.tres" id="4_weapon"]
 [ext_resource type="Script" path="res://scripts/pose_animator.gd" id="5_pose"]
+[ext_resource type="Animation" path="res://resources/poses/spell_cast.tres" id="6_spell"]
+[ext_resource type="Script" path="res://scripts/spell_caster.gd" id="7_caster"]
+[ext_resource type="Resource" path="res://resources/spells/fireball.tres" id="8_fire"]
+[ext_resource type="Resource" path="res://resources/spells/magic_bolt.tres" id="9_bolt"]
+[ext_resource type="Resource" path="res://resources/spells/lightning.tres" id="10_light"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_player"]
 radius = 0.4
@@ -13,9 +18,11 @@ height = 1.8
 [sub_resource type="SphereShape3D" id="SphereShape3D_cam"]
 radius = 0.3
 
-[node name="Player" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D" groups=["player"]]
 script = ExtResource("1_player")
 weapon_profile = ExtResource("4_weapon")
+spell_clips = Array[Animation]([ExtResource("6_spell")])
+spells = Array[Resource]([ExtResource("8_fire"), ExtResource("9_bolt"), ExtResource("10_light")])
 
 [node name="Body" type="Node3D" parent="."]
 
@@ -43,3 +50,6 @@ far = 2000.0
 
 [node name="PoseAnimator" type="Node3D" parent="."]
 script = ExtResource("5_pose")
+
+[node name="SpellCaster" type="Node" parent="."]
+script = ExtResource("7_caster")

@@ -26,6 +26,10 @@ extends Resource
 @export var grip_offset: Vector3 = Vector3(0.0, 0.04, 0.0)
 @export var grip_rotation_deg: Vector3 = Vector3(-90.0, 0.0, 0.0)
 
+# Spells emit from a Marker3D named "SpellMuzzle" placed INSIDE the weapon scene
+# (e.g. scenes/sword_real.tscn) — drag it to the blade tip in the editor. The
+# player finds it at attach time, so there's nothing to configure here.
+
 @export_group("Action clips")
 @export var unsheath: String = "sword_unsheath"   ## draw the weapon
 @export var sheath: String = "sword_sheath"        ## put it away

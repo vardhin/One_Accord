@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SpellProfile" load_steps=3 format=3 uid="uid://c0sp3llm4gb0l"]
+
+[ext_resource type="Script" path="res://scripts/spell_profile.gd" id="1_sp"]
+[ext_resource type="Shader" path="res://shaders/spell_magic_bolt.gdshader" id="2_sh"]
+
+[resource]
+script = ExtResource("1_sp")
+display_name = "Magic Bolt"
+emit_mode = 0
+projectile_speed = 30.0
+lifetime = 2.5
+max_range = 70.0
+primitive = "Sphere"
+scale = 0.3
+shader = ExtResource("2_sh")
+color = Color(0.35, 0.55, 1.0, 1.0)
+color2 = Color(0.85, 0.95, 1.0, 1.0)
+intensity = 4.0
+emit_light = true
+light_color = Color(0.4, 0.6, 1.0, 1.0)
+light_energy = 5.0
+light_range = 7.0

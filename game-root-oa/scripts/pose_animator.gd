@@ -45,7 +45,8 @@ extends Node3D
 
 # --- Tunables -------------------------------------------------------------
 @export var save_dir: String = "res://resources/poses"
-@export var clip_name: String = "authored_pose"
+## Pre-filled into the save dialog; updated to whatever you last saved.
+@export var clip_name: String = "spell_cast"
 ## Seconds between consecutive frozen keyframes in the baked animation.
 @export var frame_spacing: float = 0.5
 ## Handle pick/visual radius (metres).
@@ -690,15 +691,61 @@ func _preview() -> void:
 	_flash_hud("Previewing %d checkpoints (%.2fs)…" % [_poses.size(), anim.length])
 
 
+## Ctrl+S: ask for a clip name (pre-filled with the last one), then save.
 func _save() -> void:
 	if _poses.is_empty():
-		_flash_hud("Nothing to save — freeze a pose first.")
+		_flash_hud("Nothing to save — add a checkpoint first.")
 		return
+	_prompt_save_name()
+
+
+## Pop up a small dialog asking what to call the clip. Confirming writes
+## <save_dir>/<name>.tres (overwriting if it already exists, which is fine for
+## re-recording the same clip).
+func _prompt_save_name() -> void:
+	_ensure_ui_layer()
+	var dlg := AcceptDialog.new()
+	dlg.title = "Save animation"
+	dlg.dialog_hide_on_ok = true
+	dlg.ok_button_text = "Save"
+	dlg.add_cancel_button("Cancel")
+
+	var box := VBoxContainer.new()
+	box.custom_minimum_size = Vector2(320, 0)
+	var lbl := Label.new()
+	lbl.text = "Clip name (saved to %s/<name>.tres):" % save_dir
+	box.add_child(lbl)
+	var edit := LineEdit.new()
+	edit.text = clip_name
+	edit.placeholder_text = "e.g. spell_cast"
+	edit.select_all()
+	box.add_child(edit)
+	dlg.add_child(box)
+
+	_ui_layer.add_child(dlg)
+	# Confirm on the button OR on Enter in the field; tidy up the dialog after.
+	dlg.confirmed.connect(func() -> void: _do_save(edit.text))
+	edit.text_submitted.connect(func(_t: String) -> void: dlg.get_ok_button().emit_signal("pressed"))
+	dlg.close_requested.connect(dlg.queue_free)
+	dlg.confirmed.connect(dlg.queue_free)
+	dlg.canceled.connect(dlg.queue_free)
+	dlg.popup_centered()
+	edit.grab_focus()
+
+
+func _do_save(name: String) -> void:
+	# Sanitise to a safe, predictable filename.
+	var clean := name.strip_edges()
+	if clean == "":
+		_flash_hud("Save cancelled — empty name.")
+		return
+	clean = clean.to_lower().replace(" ", "_").validate_filename()
+	clip_name = clean   # remember for the next prompt
+
 	var anim := _build_animation()
-	var dir := DirAccess.open("res://")
 	if not DirAccess.dir_exists_absolute(save_dir):
 		DirAccess.make_dir_recursive_absolute(save_dir)
-	var path := "%s/%s.tres" % [save_dir, clip_name]
+	var path := "%s/%s.tres" % [save_dir, clean]
 	var err := ResourceSaver.save(anim, path)
 	if err == OK:
 		_flash_hud("Saved → %s" % path)

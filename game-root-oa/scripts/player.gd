@@ -50,6 +50,27 @@ extends CharacterBody3D
 ## Movement is scaled by this while an attack/draw clip plays (0 = rooted).
 @export var attack_move_damp: float = 0.15
 
+@export_group("Spells")
+## Authored spell-cast clips (made with the in-game pose tool). Each .tres is
+## loaded into the AnimationPlayer at startup under its file name (e.g.
+## "spell_cast"). The Cast key (Q) plays one of these as the cast ANIMATION; the
+## rig is the same Mixamo X_Bot the clips were authored on, so they drop straight
+## in. Index by `active_spell`, falling back to clip 0 if a spell has no own clip.
+@export var spell_clips: Array[Animation] = []
+## The spells themselves (VFX + behaviour). Each .tres is a SpellProfile — the
+## mesh/shader/emit-mode. The active one (1/2/3 keys) is what Q casts. Kept
+## separate from spell_clips so one cast animation can serve several spells.
+@export var spells: Array[SpellProfile] = []
+## Which spell the Cast key casts (index into `spells`, set by the 1/2/3 keys).
+@export var active_spell: int = 0
+## Spell-cast animation speed during the WINDUP (you asked for 2× = snappy). The
+## channel loop (while holding) plays at normal speed; see _cast / _channel.
+@export var cast_speed_scale: float = 2.0
+## Seconds of the cast clip's TAIL that loop while channelling a held spell. The
+## windup is everything before this; the last `channel_loop_secs` repeat at
+## normal speed for as long as the cast key is held.
+@export var channel_loop_secs: float = 1.0
+
 # --- Pose authoring -------------------------------------------------------
 ## Set true by the in-game pose tool (scripts/pose_animator.gd). While active the
 ## controller surrenders ALL control: no movement, no combat input, no camera
@@ -77,11 +98,36 @@ var _blur_mat: ShaderMaterial    ## fullscreen speed-blur material, driven each 
 enum Combat { SHEATHED, UNSHEATHING, READY, SHEATHING, ATTACKING }
 var _combat: Combat = Combat.SHEATHED
 var _sword: Node3D               ## the attached weapon instance (may be null)
+var _muzzle: Marker3D            ## spell emitter at the sword tip (rides the hand bone)
 var _combo_index: int = 0        ## which light hit/lunge is active
 var _state_clip: String = ""     ## the action clip the current state is waiting on
 var _lunge_vel: Vector3 = Vector3.ZERO  ## active forward lunge (XZ), decays over the swing
 var _blur_hold: bool = false     ## freeze speed-blur at its current strength (sprint-attack)
 var _sprint_attack_fov_suppressed: bool = false  ## sprint-attacks drop camera FOV punch
+
+# --- Spells ---------------------------------------------------------------
+var _spell_names: PackedStringArray = []  ## clip names loaded from spell_clips
+var _casting: bool = false                ## a cast clip is currently playing
+var _cast_clip: String = ""               ## the clip name we're waiting to finish
+@onready var _spell_caster := $SpellCaster   ## spawns spell VFX (added in player.tscn)
+## A cast is queued because we had to draw the sword first; fired on UNSHEATHING→READY.
+var _pending_cast: bool = false
+## We're past the windup and now looping the clip's tail because the key is held.
+var _channelling: bool = false
+## A projectile shot has already been spawned this cast (so it fires exactly once).
+var _cast_fired: bool = false
+## True between key-down and the moment we decide tap-vs-hold (windup not finished).
+var _cast_held: bool = false
+## The SpellProfile this cast is using (resolved at key-down from active_spell).
+var _cast_spell: SpellProfile
+## Absolute time in the cast clip where the channel loop begins (windup end).
+var _channel_loop_start: float = 0.0
+var _cast_clip_len: float = 0.0
+## DEBUG: hold B to force the active spell's beam ON (no animation), so the muzzle
+## marker can be dragged in the running editor and the beam follows it live. The
+## beam parents to the muzzle, so moving the marker re-aims it instantly. Remove
+## this + the `debug_channel` input action when muzzle tuning is done.
+var _debug_channel: bool = false
 
 
 func _ready() -> void:
@@ -97,6 +143,10 @@ func _ready() -> void:
 		_blur_mat = blur.material
 
 	_attach_sword()
+	_load_spells()
+	# Hand the spell emitter (sword-tip muzzle) to the caster so spells spawn there.
+	if _spell_caster and _muzzle:
+		_spell_caster.set_muzzle(_muzzle)
 	# Connect attack/sheath clips so state transitions fire when a REAL clip ends.
 	_anim.animation_finished.connect(_on_anim_finished)
 	_play("idle")
@@ -157,6 +207,15 @@ func _attach_sword() -> void:
 		deg_to_rad(weapon_profile.grip_rotation_deg.z))
 	_sword.visible = false   # sheathed at spawn
 
+	# Spell emitter ("muzzle"): a Marker3D named "SpellMuzzle" authored INSIDE the
+	# sword scene (scenes/sword_real.tscn). You drag it to the blade tip in the
+	# editor and see it live; the player just finds it. Spells fire along its local
+	# -Z. The cyan Gizmo child is its visible marker — delete that child (or hide
+	# it) for release; the muzzle itself is invisible without it.
+	_muzzle = _sword.find_child("SpellMuzzle", true, false) as Marker3D
+	if _muzzle == null:
+		push_warning("Player: no 'SpellMuzzle' Marker3D in the weapon scene; spells will have no emitter.")
+
 
 func _find_skeleton(n: Node) -> Skeleton3D:
 	if n is Skeleton3D:
@@ -166,6 +225,119 @@ func _find_skeleton(n: Node) -> Skeleton3D:
 		if found:
 			return found
 	return null
+
+
+# --- Spells ---------------------------------------------------------------
+## Load each authored spell clip into the AnimationPlayer's default library so it
+## can be played by name. Names come from the resource file ("spell_cast.tres"
+## → "spell_cast"); falls back to "spell_<i>" if the path can't be read.
+func _load_spells() -> void:
+	if spell_clips.is_empty():
+		return
+	var lib := _anim.get_animation_library("")
+	if lib == null:
+		lib = AnimationLibrary.new()
+		_anim.add_animation_library("", lib)
+	for i in spell_clips.size():
+		var clip := spell_clips[i]
+		if clip == null:
+			continue
+		var nm := clip.resource_path.get_file().get_basename()
+		if nm == "":
+			nm = "spell_%d" % i
+		if lib.has_animation(nm):
+			lib.remove_animation(nm)
+		lib.add_animation(nm, clip)
+		_spell_names.append(nm)
+
+
+## Set the active spell slot (1/2/3 keys). Clamped to the configured spells.
+func _select_spell(index: int) -> void:
+	if index < 0 or index >= spells.size():
+		return
+	active_spell = index
+	# Let any spell-bar HUD react. The bar listens on this group.
+	get_tree().call_group("spell_bar", "set_active_spell", active_spell)
+
+
+## The cast clip name for the active spell: its own clip if `spell_clips` has one
+## at that index, else the first loaded clip (one animation can serve many spells).
+func _active_cast_clip() -> String:
+	if _spell_names.is_empty():
+		return ""
+	var i := active_spell if active_spell < _spell_names.size() else 0
+	return _spell_names[i]
+
+
+## The active SpellProfile (the VFX/behaviour), or null if none configured.
+func _active_spell_profile() -> SpellProfile:
+	if active_spell >= 0 and active_spell < spells.size():
+		return spells[active_spell]
+	return null
+
+
+# ── Cast key down / up ─────────────────────────────────────────────────────
+## Q pressed: begin the cast windup. If the sword is sheathed we must draw it
+## first (spells emit from the blade tip) — the cast is queued and fires when the
+## unsheath finishes. Tap-vs-hold is decided later: a beam spell channels while
+## held, a projectile spell fires once when the windup ends or the key releases.
+func _cast_pressed() -> void:
+	_cast_held = true
+	# Already mid-action (attack / sheath / cast): ignore, don't interrupt.
+	if _casting or _combat == Combat.ATTACKING \
+			or _combat == Combat.UNSHEATHING or _combat == Combat.SHEATHING:
+		return
+	_cast_spell = _active_spell_profile()
+	if _combat == Combat.SHEATHED:
+		# ER-style: casting draws the sword first, then the cast auto-fires.
+		_pending_cast = true
+		_enter_unsheathing()
+		return
+	_begin_cast()
+
+
+## Q released: stop channelling. A held beam ends; a projectile that hasn't fired
+## yet (released during windup) still fires when the windup completes.
+func _cast_released() -> void:
+	_cast_held = false
+	if _channelling:
+		_channelling = false
+		_spell_caster.end_beam()
+		# Let the clip play out from the loop tail back to its end at windup speed.
+		_anim.speed_scale = 1.0
+		if _anim.has_animation(_cast_clip):
+			_anim.play(_cast_clip, 0.1, cast_speed_scale)
+			_anim.seek(_channel_loop_start, true)
+
+
+## Start the cast animation windup at 2× speed. Records where the channel tail
+## begins so _process can switch to the looped channel if the key is still held.
+func _begin_cast() -> void:
+	var clip := _active_cast_clip()
+	if clip == "" or not _anim.has_animation(clip):
+		return
+	_casting = true
+	_channelling = false
+	_cast_fired = false
+	_cast_clip = clip
+	_current_anim = clip
+	_cast_clip_len = _anim.get_animation(clip).length
+	_channel_loop_start = maxf(0.0, _cast_clip_len - channel_loop_secs)
+	_anim.speed_scale = 1.0
+	_anim.play(clip, 0.15, cast_speed_scale)
+
+
+## Tear down all cast state and restore normal animation playback. Called when the
+## cast clip finishes (or is cancelled).
+func _end_cast() -> void:
+	_casting = false
+	_channelling = false
+	_cast_fired = false
+	_cast_clip = ""
+	_cast_spell = null
+	_current_anim = ""            # force a fresh crossfade back to locomotion
+	_anim.speed_scale = 1.0       # undo the channel slow-down
+	_spell_caster.end_beam()
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -188,7 +360,19 @@ func _unhandled_input(event: InputEvent) -> void:
 			if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED
 			else Input.MOUSE_MODE_CAPTURED)
 	elif Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-		_combat_input(event)
+		# Spell-bar selection: 1/2/3 pick which spell the Cast key (Q) uses.
+		if event.is_action_pressed("spell_slot_1"):
+			_select_spell(0)
+		elif event.is_action_pressed("spell_slot_2"):
+			_select_spell(1)
+		elif event.is_action_pressed("spell_slot_3"):
+			_select_spell(2)
+		elif event.is_action_pressed("cast_spell"):
+			_cast_pressed()
+		elif event.is_action_released("cast_spell"):
+			_cast_released()
+		else:
+			_combat_input(event)
 
 
 ## Discrete combat buttons: draw/sheath the sword and start swings.
@@ -313,6 +497,13 @@ func _begin_action(clip: String) -> void:
 ## Called when an animation finishes. Only react if it's the action clip the
 ## current state is waiting on (locomotion clips loop / get interrupted instead).
 func _on_anim_finished(anim_name: StringName) -> void:
+	if _casting and String(anim_name) == _cast_clip:
+		# If the key is still held on a BEAM spell we keep channelling — the tail is
+		# re-seeked in _update_cast, so a "finished" here just means a loop wrapped.
+		if _channelling and _cast_held:
+			return
+		_end_cast()
+		return
 	if String(anim_name) == _state_clip and _state_clip != "":
 		_advance_combat_state()
 
@@ -323,6 +514,10 @@ func _advance_combat_state() -> void:
 	match _combat:
 		Combat.UNSHEATHING:
 			_combat = Combat.READY
+			# A cast that was waiting on the draw now fires (ER-style auto-unsheath).
+			if _pending_cast:
+				_pending_cast = false
+				_begin_cast()
 		Combat.SHEATHING:
 			_combat = Combat.SHEATHED
 			if _sword:
@@ -336,9 +531,47 @@ func _advance_combat_state() -> void:
 
 ## True while the player shouldn't get full movement control.
 func _is_action_locked() -> bool:
-	return _combat == Combat.ATTACKING \
+	return _casting \
+		or _combat == Combat.ATTACKING \
 		or _combat == Combat.UNSHEATHING \
 		or _combat == Combat.SHEATHING
+
+
+## Drive the cast windup → fire/channel transition each frame. When the cast clip
+## reaches the channel-loop point (windup done): a PROJECTILE spell fires one shot
+## and the cast plays out; a BEAM spell, if the key is still held, starts the beam
+## and loops the clip's tail (at normal speed) until release.
+func _update_cast() -> void:
+	if not _casting:
+		return
+	# Already channelling: keep the beam alive and re-loop the tail while held.
+	if _channelling:
+		if not _cast_held:
+			return                            # release handled in _cast_released
+		var pos := _anim.current_animation_position
+		if pos >= _cast_clip_len - 0.02:
+			# Loop the tail at normal speed for a sustained channel pose.
+			_anim.seek(_channel_loop_start, true)
+		return
+
+	# Windup phase: watch for the playhead crossing the channel-loop start.
+	if _current_anim != _cast_clip or _cast_fired:
+		return
+	if _anim.current_animation_position >= _channel_loop_start:
+		var profile := _cast_spell if _cast_spell else _active_spell_profile()
+		if profile == null:
+			_cast_fired = true
+			return
+		if profile.emit_mode == SpellProfile.EmitMode.BEAM and _cast_held:
+			# Channel: sustain the beam and slow the clip to normal speed for the loop.
+			_channelling = true
+			_cast_fired = true
+			_anim.speed_scale = (1.0 / cast_speed_scale) if cast_speed_scale != 0.0 else 1.0
+			_spell_caster.begin_beam(profile)
+		else:
+			# Tap (or projectile spell): fire one shot; the clip plays out normally.
+			_cast_fired = true
+			_spell_caster.cast_projectile(profile)
 
 
 ## Camera orbit runs every RENDER frame, not every physics tick, so mouse-look
@@ -353,6 +586,8 @@ func _process(delta: float) -> void:
 		return
 	_pivot.rotation.y = _yaw
 	_pivot.rotation.x = _pitch
+
+	_update_cast()
 
 	# Sprint feel: ease toward 1.0 when actually sprinting + moving fast, else 0.
 	var planar := Vector2(velocity.x, velocity.z).length()
@@ -426,6 +661,11 @@ func _move(delta: float) -> void:
 		var steer := dir * walk_speed * attack_move_damp
 		velocity.x = _lunge_vel.x + steer.x
 		velocity.z = _lunge_vel.z + steer.z
+	elif _casting:
+		# Casting: rooted in place (you asked for "can't move while casting") but the
+		# body can still TURN to aim the spell. Hard-zero horizontal velocity.
+		velocity.x = 0.0
+		velocity.z = 0.0
 	elif _is_action_locked():
 		# Drawing / sheathing: nearly rooted (small ER-style drift) so it commits.
 		var target := dir * speed * attack_move_damp
@@ -441,7 +681,16 @@ func _move(delta: float) -> void:
 
 	# Rotate the visual body to face the travel direction (GTA-style). Don't spin
 	# while committed to a swing.
-	if dir.length() > 0.1 and not _is_action_locked():
+	if _casting:
+		# Aim the cast: turn the body toward where you're steering, else toward the
+		# camera's forward, so you can re-aim a held beam / pick a projectile's line.
+		var aim := dir
+		if aim.length() < 0.1:
+			aim = forward          # camera-forward flattened to XZ (computed above)
+		if aim.length() > 0.1:
+			var want_yaw := atan2(aim.x, aim.z)
+			_body.rotation.y = lerp_angle(_body.rotation.y, want_yaw, rotation_speed * delta)
+	elif dir.length() > 0.1 and not _is_action_locked():
 		var want_yaw := atan2(dir.x, dir.z)
 		_body.rotation.y = lerp_angle(_body.rotation.y, want_yaw, rotation_speed * delta)
 

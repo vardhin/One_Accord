@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="SpellProfile" load_steps=3 format=3 uid="uid://c0sp3lll1ghtn"]
+
+[ext_resource type="Script" path="res://scripts/spell_profile.gd" id="1_sp"]
+[ext_resource type="Shader" path="res://shaders/spell_lightning.gdshader" id="2_sh"]
+
+[resource]
+script = ExtResource("1_sp")
+display_name = "Lightning"
+emit_mode = 1
+beam_length = 14.0
+beam_thickness = 0.6
+primitive = "Box"
+scale = 0.3
+shader = ExtResource("2_sh")
+color = Color(0.55, 0.7, 1.0, 1.0)
+color2 = Color(0.95, 0.98, 1.0, 1.0)
+intensity = 6.0
+emit_light = true
+light_color = Color(0.6, 0.7, 1.0, 1.0)
+light_energy = 6.0
+light_range = 8.0
