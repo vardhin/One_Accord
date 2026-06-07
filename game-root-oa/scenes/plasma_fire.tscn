@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bplasmf1re001"]
+
+[ext_resource type="Script" path="res://scripts/plasma_emitter.gd" id="1_plasma"]
+
+[node name="PlasmaFire" type="GPUParticles3D"]
+script = ExtResource("1_plasma")
+channel_rate = 2600.0
+burst_count = 700.0
+emit_radius = 0.08
+parcel_life = 0.55
+parcel_size = 0.13
+jet_speed = 9.0
+jet_spread = 0.12
+burst_speed = 7.0
+turbulence = 4.5
+turb_scale = 3.4
+turb_speed = 2.6
+push = 14.0
+buoyancy = 0.6
+drag = 1.6
+swirl = 0.0
+intensity = 2.6
+softness = 2.2
+flicker = 0.5

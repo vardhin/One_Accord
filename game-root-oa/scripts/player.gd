@@ -400,6 +400,8 @@ func _unhandled_input(event: InputEvent) -> void:
 			_select_spell(1)
 		elif event.is_action_pressed("spell_slot_3"):
 			_select_spell(2)
+		elif event.is_action_pressed("spell_slot_4"):
+			_select_spell(3)
 		elif event.is_action_pressed("cast_spell"):
 			_cast_pressed()
 		elif event.is_action_released("cast_spell"):
@@ -416,6 +418,13 @@ func _unhandled_input(event: InputEvent) -> void:
 func _combat_input(event: InputEvent) -> void:
 	if weapon_profile == null:
 		return   # unarmed: no combat
+	# Don't let an attack button hijack an in-progress cast/channel: a swing would
+	# interrupt the cast animation while the spell keeps emitting, tangling state.
+	# (Block the press; the cast owns the body until Q is released.)
+	if _casting or _channelling \
+			or (event.is_action_pressed("attack_light") and _cast_held) \
+			or (event.is_action_pressed("attack_heavy") and _cast_held):
+		return
 	if event.is_action_pressed("sheath_toggle"):
 		if _combat == Combat.READY:
 			_enter_sheathing()
@@ -599,8 +608,14 @@ func _update_cast() -> void:
 		if profile == null:
 			_cast_fired = true
 			return
-		if profile.emit_mode == SpellProfile.EmitMode.BEAM and _cast_held:
-			# Channel: sustain the beam and slow the clip to normal speed for the loop.
+		var channels := profile.emit_mode == SpellProfile.EmitMode.BEAM \
+				or profile.emit_mode == SpellProfile.EmitMode.PLASMA
+		if profile.emit_mode == SpellProfile.EmitMode.PLASMA and not _cast_held:
+			# Plasma TAP: one explosive burst; the clip plays out normally.
+			_cast_fired = true
+			_spell_caster.cast_projectile(profile)
+		elif channels and _cast_held:
+			# Channel (beam, or held plasma jet): sustain and slow the clip for the loop.
 			_channelling = true
 			_cast_fired = true
 			_anim.speed_scale = (1.0 / cast_speed_scale) if cast_speed_scale != 0.0 else 1.0

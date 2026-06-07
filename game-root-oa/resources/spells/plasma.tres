@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="SpellProfile" format=3 uid="uid://c0sp3llpl4sma"]
+
+[ext_resource type="Script" path="res://scripts/spell_profile.gd" id="1_sp"]
+[ext_resource type="PackedScene" path="res://scenes/plasma_fire.tscn" id="2_scene"]
+
+[resource]
+script = ExtResource("1_sp")
+display_name = "Plasma"
+emit_mode = 2
+lifetime = 3.0
+emit_light = true
+light_color = Color(1.0, 0.5, 0.18, 1.0)
+light_energy = 6.0
+light_range = 9.0
+plasma_scene = ExtResource("2_scene")

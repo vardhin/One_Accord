@@ -1,8 +1,11 @@
 shader_type spatial;
-// One Accord — FIREBALL spell (gl_compatibility friendly).
-// A roiling, particulate fire orb: domain-warped 3D value noise drives an
-// emissive fire gradient, a fresnel core glows white-hot, and the surface boils
-// outward. Additive + depth-write-off so many overlapping orbs read as light.
+// One Accord — FIREBALL core (gl_compatibility friendly).
+// This is the DENSE, white-hot heart of the fireball. It is deliberately NOT a
+// translucent shell — the soap-bubble look came from an unshaded sphere whose
+// alpha was driven by fresnel, so you saw straight through it. Here the core is
+// opaque-ish and hot in the middle, ragged/transparent only at the very rim,
+// where the GPUParticles flames take over (see spell_caster.gd). Domain-warped
+// fbm boils the surface and drives a blackbody-style fire gradient.
 // Shares the spell uniform contract: time / color / color2 / intensity / charge.
 render_mode blend_add, cull_disabled, unshaded, depth_draw_never, shadows_disabled;
 
@@ -11,9 +14,8 @@ uniform vec4 color : source_color = vec4(1.0, 0.45, 0.10, 1.0);   // outer flame
 uniform vec4 color2 : source_color = vec4(1.0, 0.92, 0.45, 1.0);  // hot core
 uniform float intensity : hint_range(0.0, 12.0) = 3.0;
 uniform float charge : hint_range(0.0, 1.0) = 0.0;  // ramps while channelling
-uniform float fresnel_power : hint_range(0.5, 8.0) = 2.2;
-uniform float boil = 2.6;                 // surface displacement speed
-uniform float noise_scale = 3.5;
+uniform float boil = 3.4;                 // surface displacement speed
+uniform float noise_scale = 3.2;
 
 // --- cheap 3D value noise + fbm (no textures; Vega-8 safe) -----------------
 vec3 hash3(vec3 p) {
@@ -47,44 +49,68 @@ float vnoise(vec3 p) {
 float fbm(vec3 p) {
 	float a = 0.5;
 	float s = 0.0;
-	for (int i = 0; i < 4; i++) {
+	for (int i = 0; i < 5; i++) {
 		s += a * vnoise(p);
-		p *= 2.02;
+		p *= 2.03;
 		a *= 0.5;
 	}
 	return s;
+}
+
+// Blackbody-ish ramp: dark red -> orange -> yellow -> white as t rises.
+vec3 fire_ramp(float t, vec3 cool, vec3 hot) {
+	t = clamp(t, 0.0, 1.0);
+	vec3 c = mix(cool * 0.25, cool, smoothstep(0.0, 0.35, t)); // ember -> flame
+	c = mix(c, hot, smoothstep(0.35, 0.75, t));                // flame -> core
+	c = mix(c, vec3(1.0, 0.97, 0.85), smoothstep(0.8, 1.0, t));// core -> white hot
+	return c;
 }
 
 varying vec3 v_local;
 
 void vertex() {
 	v_local = VERTEX;
-	// Boil the surface: push vertices along their normal by animated noise so the
-	// silhouette churns. Charge swells the whole orb.
+	// Boil the silhouette so it never reads as a clean sphere. Faster + deeper
+	// than before, and charge swells the orb while channelling.
 	float t = time * boil;
-	float d = fbm(NORMAL * noise_scale + vec3(0.0, t, 0.0));
+	float d = fbm(NORMAL * noise_scale + vec3(0.0, t * 0.6, 0.0));
+	float d2 = fbm(NORMAL * (noise_scale * 2.1) - vec3(t * 0.4, 0.0, t * 0.2));
+	float disp = d * 0.22 + d2 * 0.10 + 0.02;
 	float swell = 1.0 + charge * 0.5;
-	VERTEX += NORMAL * (d * 0.18 + 0.02) * swell;
+	VERTEX += NORMAL * disp * swell;
 }
 
 void fragment() {
 	vec3 p = normalize(v_local);
 	float t = time * boil;
-	// Domain-warped fire field.
+
+	// Two-octave domain warp -> turbulent, licking flame field.
 	vec3 q = p * noise_scale;
-	float warp = fbm(q + vec3(0.0, t, 0.0));
-	float fire = fbm(q + warp * 1.5 + vec3(t * 0.5, t, -t * 0.3));
-	fire = pow(clamp(fire * 1.6, 0.0, 1.0), 1.4);
+	vec3 warp = vec3(
+		fbm(q + vec3(0.0, t, 0.0)),
+		fbm(q + vec3(5.2, t * 0.8, 1.3)),
+		fbm(q + vec3(-2.1, t * 1.2, 4.7))
+	);
+	float fire = fbm(q + warp * 2.0 + vec3(t * 0.4, t, -t * 0.3));
+	// abs()-folded turbulence sharpens flame tongues vs the old soft blob.
+	float turb = abs(fbm(q * 1.8 + warp - vec3(0.0, t * 1.6, 0.0)) - 0.5) * 2.0;
+	fire = clamp(fire * 1.3 + (1.0 - turb) * 0.4, 0.0, 1.0);
+	fire = pow(fire, 1.25);
 
-	// Fresnel hot core (white-hot toward the centre/edge facing the eye).
-	float fres = pow(1.0 - clamp(dot(normalize(NORMAL), normalize(VIEW)), 0.0, 1.0), fresnel_power);
+	// Radial heat: hot, opaque centre that cools toward the rim. This is what
+	// kills the bubble look — the middle is a solid glowing mass, not see-through.
+	float facing = clamp(dot(normalize(NORMAL), normalize(VIEW)), 0.0, 1.0);
+	float core = smoothstep(0.15, 0.95, facing); // 1 at centre, 0 at rim
 
-	vec3 flame = mix(color.rgb, color2.rgb, fire);
-	flame = mix(flame, color2.rgb * 1.6, fres);
-	float glow = intensity * (0.6 + 0.8 * fire + charge * 0.6);
+	float heat = clamp(fire * 0.55 + core * 0.65 + charge * 0.2, 0.0, 1.0);
+	vec3 flame = fire_ramp(heat, color.rgb, color2.rgb);
 
+	float glow = intensity * (0.7 + 1.1 * heat + charge * 0.6);
 	EMISSION = flame * glow;
 	ALBEDO = vec3(0.0);
-	// Soft, additive: dim, sooty rim fades the orb edge so it isn't a hard ball.
-	ALPHA = clamp(fire * 0.9 + fres * 0.7, 0.0, 1.0);
+
+	// Opaque, ragged core; only the noisy rim fades out so flame particles blend
+	// in. No fresnel-driven transparency = no soap bubble.
+	float rim = smoothstep(0.0, 0.45, core);
+	ALPHA = clamp(rim + fire * 0.6, 0.05, 1.0);
 }

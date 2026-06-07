@@ -16,6 +16,12 @@ extends Resource
 ##   BEAM       — while the cast key is HELD the spell sustains a stretched mesh
 ##                from the muzzle forward (channelled). Release ends it. No
 ##                discrete projectile. (lightning at the sword tip)
+##   PLASMA     — a CURL-NOISE FLUID emitter anchored at the muzzle (a
+##                PlasmaEmitter node). Tap = one explosive burst of plasma;
+##                hold = a sustained jet that keeps releasing while held. The
+##                fluid sim variables live on the node as inspector sliders;
+##                the `plasma_*` fields below seed its defaults. (fire/plasma,
+##                and later wind, with the same module.)
 ##
 ## SHADER UNIFORM CONTRACT (every spell shader should declare these so params are
 ## interchangeable across spells):
@@ -26,7 +32,7 @@ extends Resource
 ##   uniform float charge;      // 0..1 channel charge (beams ramp this while held)
 ## Anything extra a specific shader wants goes in `extra_params`.
 
-enum EmitMode { PROJECTILE, BEAM }
+enum EmitMode { PROJECTILE, BEAM, PLASMA }
 
 @export_group("Identity")
 @export var display_name: String = "Spell"
@@ -70,6 +76,14 @@ enum EmitMode { PROJECTILE, BEAM }
 @export var light_range: float = 6.0
 ## Any shader-specific uniforms beyond the shared contract (name -> value).
 @export var extra_params: Dictionary = {}
+
+@export_group("Plasma (PLASMA mode)")
+## PLASMA: a PackedScene whose root is a PlasmaEmitter (the fluid module). The
+## caster instances it at the muzzle, then taps it with burst() / holds it with
+## set_channelling(). Open this scene and select the root to tweak every fluid
+## slider (turbulence, jet_speed, buoyancy, drag, swirl, colours…). If left null
+## a default PlasmaEmitter is created with its built-in slider defaults.
+@export var plasma_scene: PackedScene
 
 
 ## Build the mesh to paint the shader on. Honours `mesh` if set, else the chosen
