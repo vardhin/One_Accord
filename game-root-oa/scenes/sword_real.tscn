@@ -18,7 +18,7 @@ height = 0.06
 transform = Transform3D(0.09484549, 0.88819236, -0.086261176, -0.72375476, 0.11747362, 0, 0.009132583, 0.085523196, 0.89585656, 0.095, -0.02, 0.05)
 
 [node name="SpellMuzzle" type="Marker3D" parent="." unique_id=547086047]
-transform = Transform3D(0.48552766, 0.85816723, -0.16676874, -0.87035567, 0.49242356, 0, 0.08212086, 0.14514813, 0.985996, 0.73889166, 0.042813934, 0.118339136)
+transform = Transform3D(0.48552775, 0.85816723, -0.16676879, 0.10082789, -0.24445938, -0.96440315, -0.86838734, 0.4514295, -0.20521902, 0.73889166, 0.062224053, 0.11427863)
 
 [node name="Gizmo" type="MeshInstance3D" parent="SpellMuzzle" unique_id=197568547]
 material_override = SubResource("StandardMaterial3D_muzzle")

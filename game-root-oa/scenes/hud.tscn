@@ -64,6 +64,7 @@ text = "[b]Controls[/b]
 [color=#cfe]RMB[/color]    Heavy attack
 [color=#cfe]1 2 3[/color]  Select spell
 [color=#cfe]Q[/color]      Cast (tap = fire, hold = channel)
+[color=#fd9]B[/color]      Debug: hold = force beam (tune muzzle)
 [color=#cfe]Y[/color]      Fullscreen
 [color=#cfe]H[/color]      Hide / show this
 [color=#cfe]Esc[/color]    Free mouse

@@ -310,6 +310,39 @@ func _cast_released() -> void:
 			_anim.seek(_channel_loop_start, true)
 
 
+# ── DEBUG: hold-to-channel for muzzle tuning ───────────────────────────────
+## B pressed: force the active spell's beam on immediately (no cast animation),
+## drawing the sword first if needed so the muzzle exists. The beam parents to the
+## muzzle marker, so while it's up you can drag SpellMuzzle in the running editor
+## and watch the beam re-aim live. Falls back to a beam even for projectile spells
+## so any spell can be used to eyeball the emitter.
+func _debug_channel_start() -> void:
+	_debug_channel = true
+	if _combat == Combat.SHEATHED:
+		_enter_unsheathing()        # need the blade out so the muzzle is visible
+
+
+## B released: kill the debug beam.
+func _debug_channel_stop() -> void:
+	_debug_channel = false
+	_spell_caster.end_beam()
+
+
+## Drive the debug beam each frame: keep it alive while B is held + the muzzle
+## exists, so it survives the unsheath and tracks the marker.
+func _update_debug_channel() -> void:
+	if not _debug_channel:
+		return
+	if not _spell_caster.has_muzzle():
+		return
+	var profile := _active_spell_profile()
+	if profile == null:
+		return
+	# begin_beam is a no-op if this exact profile's beam is already up, and rebuilds
+	# if you switched spells (1/2/3) mid-hold, so any spell can be previewed.
+	_spell_caster.begin_beam(profile)
+
+
 ## Start the cast animation windup at 2× speed. Records where the channel tail
 ## begins so _process can switch to the looped channel if the key is still held.
 func _begin_cast() -> void:
@@ -371,6 +404,10 @@ func _unhandled_input(event: InputEvent) -> void:
 			_cast_pressed()
 		elif event.is_action_released("cast_spell"):
 			_cast_released()
+		elif event.is_action_pressed("debug_channel"):
+			_debug_channel_start()
+		elif event.is_action_released("debug_channel"):
+			_debug_channel_stop()
 		else:
 			_combat_input(event)
 
@@ -588,6 +625,7 @@ func _process(delta: float) -> void:
 	_pivot.rotation.x = _pitch
 
 	_update_cast()
+	_update_debug_channel()
 
 	# Sprint feel: ease toward 1.0 when actually sprinting + moving fast, else 0.
 	var planar := Vector2(velocity.x, velocity.z).length()
